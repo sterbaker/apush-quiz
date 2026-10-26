@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APUSH Road to a 5 | Unit 3 & Cumulative Mastery Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Navigation Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand" id="brandHomeBtn" role="button" tabindex="0" title="Return to Dashboard">
+        <div class="brand-badge">APUSH</div>
+        <div class="brand-text">
+          <h1>Road to a 5 <span class="unit-highlight">Unit 3 Mastery Lab</span></h1>
+          <p>Period 3 (1754–1800) + Cumulative Units 1–2 Test Prep</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <button class="nav-tab active" data-view="dashboard">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          Dashboard & Generator
+        </button>
+        <button class="nav-tab" data-view="mastery">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          Topic Mastery & Analytics
+        </button>
+        <button class="nav-tab" data-view="strategy">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          Unit 3 Cheat Sheet & Tips
+        </button>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn ai-btn" id="openAiModalBtn" title="Generate Unlimited Custom Questions with AI">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          <span>AI Generator</span>
+        </button>
+        <button class="icon-btn" id="themeToggleBtn" title="Toggle Dark/Light Theme" aria-label="Toggle Theme">
+          <svg id="themeIconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="hidden"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg id="themeIconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="app-container">
+
+    <!-- ==================== VIEW 1: DASHBOARD & QUIZ BUILDER ==================== -->
+    <section id="view-dashboard" class="view-section active">
+      <!-- Top Score & Readiness Hero Banner -->
+      <div class="hero-stats-grid">
+        <div class="stat-card primary-stat">
+          <div class="stat-top">
+            <span class="stat-label">Projected AP Score</span>
+            <span class="ap-score-pill" id="projectedApBadge">Take a Quiz</span>
+          </div>
+          <div class="stat-value-row">
+            <div class="big-score" id="overallAccuracyVal">--%</div>
+            <div class="stat-subtext" id="overallAnsweredSub">0 questions answered across 0 quizzes</div>
+          </div>
+          <div class="progress-bar-track">
+            <div class="progress-bar-fill" id="overallProgressFill" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-top">
+            <span class="stat-label">Unit 3 Mastery (1754–1800)</span>
+            <span class="unit-tag">Primary Focus</span>
+          </div>
+          <div class="stat-value-row">
+            <div class="big-score" id="unit3AccuracyVal">--%</div>
+            <div class="stat-subtext" id="unit3CoverageSub">0 / 11 Unit 3 topics practiced</div>
+          </div>
+          <div class="mini-action-row">
+            <button class="btn-inline-action" id="quickUnit3DrillBtn">Launch Unit 3 Mixed Quiz &rarr;</button>
+          </div>
+        </div>
+
+        <div class="stat-card weak-focus-card">
+          <div class="stat-top">
+            <span class="stat-label">Priority Target Area</span>
+            <span class="alert-pill" id="weakestBadge">Diagnostic Needed</span>
+          </div>
+          <div class="weak-topic-title" id="weakestTopicName">Complete your first quiz to unlock smart weak-topic targeting</div>
+          <div class="mini-action-row">
+            <button class="btn-inline-action urgent" id="quickWeakDrillBtn">Drill Weakest & Missed Questions &rarr;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Smart Quiz Presets Bar -->
+      <div class="presets-bar">
+        <span class="presets-label">Urgent Unit 3 Section Drills:</span>
+        <button class="preset-chip urgent-chip" data-preset="u3-part-a">
+          <span class="chip-icon">&#128293;</span> 3A: Imperial Crisis &amp; Taxes (3.2–3.4)
+        </button>
+        <button class="preset-chip urgent-chip" data-preset="u3-part-b">
+          <span class="chip-icon">&#128220;</span> 3B: Revolutionary War &amp; Ideals (3.5–3.6)
+        </button>
+        <button class="preset-chip urgent-chip" data-preset="u3-part-c">
+          <span class="chip-icon">&#9878;&#65039;</span> 3C: Articles &amp; Constitution (3.7–3.9)
+        </button>
+        <button class="preset-chip urgent-chip" data-preset="u3-part-d">
+          <span class="chip-icon">&#127963;&#65039;</span> 3D: Early Republic &amp; Hamilton (3.10–3.12)
+        </button>
+        <button class="preset-chip" data-preset="weak-remediation">
+          <span class="chip-icon">&#127919;</span> Weak Unit 3 Sections &amp; Missed Qs
+        </button>
+      </div>
+
+      <!-- Custom Auto-Quiz Generator Form -->
+      <div class="builder-layout">
+        <div class="builder-card">
+          <div class="card-header">
+            <div>
+              <h2>Section-Controlled Quiz Builder</h2>
+              <p>Choose the exact Unit 3 sections your son needs to master right now, or toggle on cumulative general knowledge when ready.</p>
+            </div>
+            <span class="matching-pool-badge" id="poolCountBadge">48 Unit 3 Questions Selected</span>
+          </div>
+
+          <div class="builder-section">
+            <div class="section-header-inline">
+              <label class="section-label" style="margin-bottom:0;">1. Choose Which Sections to Quiz (Unit 3 Primary Focus)</label>
+              <div class="unit-quick-toggles">
+                <button type="button" class="btn-xs active" id="selectUnit3OnlyBtn" title="Select all Unit 3 sections (3.2–3.12)">All Unit 3 (3.2–3.12)</button>
+                <button type="button" class="btn-xs" id="clearTopicsBtn" title="Uncheck all so you can pick 1 or 2 specific sections">Clear All (Pick Specific)</button>
+                <button type="button" class="btn-xs" id="selectAllUnitsBtn" title="Include Units 1 & 2 for general APUSH review">+ Add General Knowledge (Units 1–2)</button>
+              </div>
+            </div>
+
+            <!-- Unit 3 Sub-Section Cluster Quick-Select Pills -->
+            <div class="u3-cluster-bar" id="u3ClusterBar">
+              <span class="cluster-bar-label">Filter Unit 3 by Module:</span>
+              <button type="button" class="cluster-pill" data-cluster="3.2,3.3,3.4">Road to Revolution (3.2–3.4)</button>
+              <button type="button" class="cluster-pill" data-cluster="3.5,3.6">Revolutionary War (3.5–3.6)</button>
+              <button type="button" class="cluster-pill" data-cluster="3.7,3.8,3.9">Articles &amp; Constitution (3.7–3.9)</button>
+              <button type="button" class="cluster-pill" data-cluster="3.10,3.11,3.12">Washington, Adams &amp; Early Republic (3.10–3.12)</button>
+            </div>
+
+            <!-- Unit Accordion / Checkboxes -->
+            <div class="units-filter-container" id="unitsFilterContainer">
+              <!-- Populated dynamically by app.js -->
+            </div>
+          </div>
+
+          <div class="builder-section">
+            <label class="section-label">2. Select Quiz Mode &amp; Targeting Strategy</label>
+            <div class="mode-cards-grid" id="quizStrategyGrid">
+              <label class="mode-option selected">
+                <input type="radio" name="quizStrategy" value="smart" checked />
+                <div class="mode-content">
+                  <div class="mode-title">Smart Adaptive Mix</div>
+                  <div class="mode-desc">Prioritizes unseen questions, missed questions, and lower-accuracy sections.</div>
+                </div>
+              </label>
+              <label class="mode-option">
+                <input type="radio" name="quizStrategy" value="weak" />
+                <div class="mode-content">
+                  <div class="mode-title">Weak Sections &amp; Missed Only</div>
+                  <div class="mode-desc">Targets sections under 75% accuracy and previously missed questions.</div>
+                </div>
+              </label>
+              <label class="mode-option">
+                <input type="radio" name="quizStrategy" value="unseen" />
+                <div class="mode-content">
+                  <div class="mode-title">Fresh / Unseen Questions</div>
+                  <div class="mode-desc">Draws exclusively from questions he hasn't practiced yet.</div>
+                </div>
+              </label>
+              <label class="mode-option">
+                <input type="radio" name="quizStrategy" value="random" />
+                <div class="mode-content">
+                  <div class="mode-title">Pure Random Shuffle</div>
+                  <div class="mode-desc">Randomly samples questions and shuffles answer choices to prevent memorizing letters.</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="builder-row-3col">
+            <div class="builder-section">
+              <label class="section-label">3. Question Format</label>
+              <select id="questionFormatSelect" class="form-select">
+                <option value="all">Authentic Mix (Stimulus Sets + Standalone)</option>
+                <option value="stimulus">AP Stimulus-Based Sets Only (Sources/Charts)</option>
+                <option value="standalone">Standalone Conceptual / Recall Only</option>
+              </select>
+            </div>
+
+            <div class="builder-section">
+              <label class="section-label">4. Number of Questions</label>
+              <select id="questionCountSelect" class="form-select">
+                <option value="5">5 Questions (Quick 5-Min Warmup)</option>
+                <option value="10" selected>10 Questions (Focused Topic Drill)</option>
+                <option value="15">15 Questions (Standard Section Quiz)</option>
+                <option value="20">20 Questions (Full Unit Practice Test)</option>
+                <option value="30">30 Questions (Endurance Challenge)</option>
+              </select>
+            </div>
+
+            <div class="builder-section">
+              <label class="section-label">5. Feedback & Pacing Mode</label>
+              <select id="feedbackModeSelect" class="form-select">
+                <option value="tutor" selected>Tutor Mode (Instant Explanations & Coaching)</option>
+                <option value="exam">Exam Simulation (Feedback at End + AP Pacing)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="builder-footer">
+            <label class="checkbox-label">
+              <input type="checkbox" id="apTimerCheckbox" checked />
+              <span>Enable AP Pacing Clock (1:00 per question recommended pace)</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="shuffleOptionsCheckbox" checked />
+              <span>Shuffle A/B/C/D order every attempt</span>
+            </label>
+            <button class="btn-primary btn-large" id="startCustomQuizBtn">
+              Generate & Start Quiz
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sidebar: Recent Quiz History & Missed Question Vault -->
+        <aside class="sidebar-stack">
+          <div class="side-card">
+            <div class="side-card-header">
+              <h3>Recent Quiz Attempts</h3>
+              <button class="btn-link-danger" id="resetStatsBtn" title="Clear saved history">Reset</button>
+            </div>
+            <div id="recentHistoryList" class="history-list">
+              <!-- Populated dynamically -->
+            </div>
+          </div>
+
+          <div class="side-card coach-tip-card">
+            <div class="coach-badge">AP Exam Strategy Tip</div>
+            <h4>How to Beat APUSH Multiple Choice</h4>
+            <p id="dailyStrategyTip">
+              Always read the <strong>source attribution line</strong> first! Before reading a tough 18th-century excerpt, check the author, date, and audience. Frequently, 1 or 2 answer choices can be eliminated immediately because they are <em>out of the time period</em>.
+            </p>
+            <div class="coach-shortcuts">
+              <span><strong>Right-click</strong> or click <kbd>&times;</kbd> to cross out wrong options</span>
+              <span>Use <kbd>1</kbd>–<kbd>4</kbd> or <kbd>A</kbd>–<kbd>D</kbd> keys to select</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 2: ACTIVE QUIZ RUNNER ==================== -->
+    <section id="view-quiz" class="view-section">
+      <!-- Sticky Quiz Control Bar -->
+      <div class="quiz-topbar">
+        <div class="quiz-topbar-left">
+          <button class="btn-ghost" id="exitQuizBtn">
+            &larr; Exit Quiz
+          </button>
+          <div class="quiz-progress-pill">
+            Question <strong id="currentQIndex">1</strong> of <strong id="totalQCount">10</strong>
+          </div>
+          <span class="quiz-mode-badge" id="activeQuizModeBadge">Tutor Mode</span>
+        </div>
+
+        <div class="quiz-nav-dots" id="quizNavDots" aria-label="Question Navigation">
+          <!-- Populated dynamically -->
+        </div>
+
+        <div class="quiz-topbar-right">
+          <div class="timer-display" id="quizTimerBox" title="AP Exam Pace is 1 minute per question">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span id="timerText">00:00</span>
+            <span class="pace-indicator" id="paceIndicator">On Pace</span>
+          </div>
+          <button class="btn-flag" id="flagQuestionBtn" title="Flag question for review (Shortcut: F)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+            <span>Flag</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Split-Screen AP Exam Layout (Stimulus Left, Question Right) -->
+      <div class="quiz-workspace" id="quizWorkspace">
+        <!-- Left Column: Historical Stimulus (Shown when question has stimulusId) -->
+        <div class="stimulus-pane" id="stimulusPane">
+          <div class="stimulus-header">
+            <span class="stimulus-type-badge" id="stimulusTypeBadge">Primary Source</span>
+            <span class="stimulus-set-info" id="stimulusSetInfo">Questions 1–3 refer to the following excerpt</span>
+          </div>
+          <h3 class="stimulus-title" id="stimulusTitle">Document Title</h3>
+          <div class="stimulus-body" id="stimulusBody">
+            <!-- Excerpt or Table -->
+          </div>
+          <div class="stimulus-attribution" id="stimulusAttribution">
+            — Attribution line
+          </div>
+        </div>
+
+        <!-- Right Column: Question Stem, Options, and Coaching Feedback -->
+        <div class="question-pane">
+          <div class="question-meta-bar">
+            <span class="meta-badge unit-badge" id="qUnitBadge">Unit 3</span>
+            <span class="meta-badge topic-badge" id="qTopicBadge">3.3 Taxation Without Representation</span>
+            <span class="meta-badge skill-badge" id="qSkillBadge">Skill: Causation</span>
+            <span class="meta-badge diff-badge" id="qDiffBadge">Medium</span>
+          </div>
+
+          <div class="question-stem" id="questionStem">
+            Question text goes here...
+          </div>
+
+          <div class="eliminator-hint">
+            <span>Tip: Click the <strong>Strike (<del>ABC</del>)</strong> button on any choice to use Process of Elimination.</span>
+          </div>
+
+          <div class="options-list" id="optionsList">
+            <!-- Option cards populated dynamically -->
+          </div>
+
+          <!-- Action Buttons Row -->
+          <div class="question-actions-bar">
+            <button class="btn-secondary" id="prevQuestionBtn">&larr; Previous</button>
+            <div class="center-actions">
+              <button class="btn-primary" id="submitAnswerBtn" disabled>Check Answer</button>
+            </div>
+            <button class="btn-primary" id="nextQuestionBtn">Next Question &rarr;</button>
+          </div>
+
+          <!-- Deep Rationale & Coaching Drawer (Shown after checking answer in Tutor Mode or Review Mode) -->
+          <div class="rationale-box hidden" id="rationaleBox">
+            <div class="rationale-banner" id="rationaleBanner">
+              <span class="rationale-status-icon" id="rationaleStatusIcon"></span>
+              <div class="rationale-status-text">
+                <h4 id="rationaleHeadline">Correct!</h4>
+                <p id="rationaleSubline">Great historical reasoning.</p>
+              </div>
+            </div>
+
+            <div class="rationale-takeaway">
+              <strong>Key Historical Takeaway:</strong>
+              <p id="rationaleTakeawayText"></p>
+            </div>
+
+            <div class="rationale-test-tip">
+              <strong>AP Test-Taking Strategy Tip:</strong>
+              <p id="rationaleTestTipText"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 3: QUIZ RESULTS & DIAGNOSTIC REPORT ==================== -->
+    <section id="view-results" class="view-section">
+      <div class="results-header-card">
+        <div class="results-score-circle">
+          <div class="results-pct" id="resultPctText">80%</div>
+          <div class="results-fraction" id="resultFractionText">8 / 10 Correct</div>
+        </div>
+        <div class="results-summary-info">
+          <div class="results-ap-projection" id="resultApLevelBadge">On Track for AP Score: 5</div>
+          <h2 id="resultHeadlineText">Strong Command of Period 3!</h2>
+          <p id="resultCoachingAdvice">You demonstrated strong mastery of primary source analysis. Review the 2 missed questions below to lock in those sub-topics.</p>
+          <div class="results-metrics-row">
+            <div class="metric-pill">
+              <span>Total Time:</span> <strong id="resultTotalTime">06:14</strong>
+            </div>
+            <div class="metric-pill">
+              <span>Avg Pace:</span> <strong id="resultAvgPace">37s / question</strong>
+            </div>
+            <div class="metric-pill">
+              <span>Flagged Qs:</span> <strong id="resultFlaggedCount">1</strong>
+            </div>
+          </div>
+        </div>
+        <div class="results-cta-stack">
+          <button class="btn-primary" id="retryMissedBtn">
+            Retake Missed Questions (<span id="missedCountBtnSpan">0</span>)
+          </button>
+          <button class="btn-secondary" id="drillWeakFromResultsBtn">
+            Generate New Quiz on Weak Topics
+          </button>
+          <button class="btn-ghost" id="backToDashboardFromResultsBtn">
+            &larr; Return to Dashboard
+          </button>
+        </div>
+      </div>
+
+      <!-- Topic Breakdown for This Quiz -->
+      <div class="results-grid-2col">
+        <div class="card">
+          <h3>Performance by Topic in This Quiz</h3>
+          <div id="resultTopicBreakdown" class="breakdown-list"></div>
+        </div>
+        <div class="card">
+          <h3>Performance by AP Historical Thinking Skill</h3>
+          <div id="resultSkillBreakdown" class="breakdown-list"></div>
+        </div>
+      </div>
+
+      <!-- Question-by-Question Review Accordion -->
+      <div class="card review-list-card">
+        <div class="review-header-row">
+          <h3>Detailed Question-by-Question Review & Distractor Analysis</h3>
+          <div class="review-filter-btns">
+            <button class="btn-xs active" data-review-filter="all">All Questions</button>
+            <button class="btn-xs" data-review-filter="missed">Missed Only</button>
+            <button class="btn-xs" data-review-filter="flagged">Flagged Only</button>
+          </div>
+        </div>
+        <div id="resultsQuestionReviewList" class="review-questions-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 4: TOPIC MASTERY & ANALYTICS ==================== -->
+    <section id="view-mastery" class="view-section">
+      <div class="section-intro">
+        <div>
+          <h2>Curriculum Mastery Matrix (Units 1–3)</h2>
+          <p>Track accuracy across every College Board APUSH topic and launch targeted 1-click drills on any sub-topic.</p>
+        </div>
+        <button class="btn-primary" id="masteryWeakestDrillBtn">
+          &#127919; Auto-Drill Lowest 3 Topics
+        </button>
+      </div>
+
+      <!-- Skills Mastery Bar -->
+      <div class="card skills-mastery-card">
+        <h3>AP Historical Thinking Skills Breakdown</h3>
+        <div class="skills-grid" id="skillsMasteryGrid">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- Units & Topics Breakdown -->
+      <div id="unitMasteryContainers" class="unit-mastery-stack">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 5: UNIT 3 CHEAT SHEET & TEST STRATEGY ==================== -->
+    <section id="view-strategy" class="view-section">
+      <div class="section-intro">
+        <div>
+          <h2>Unit 3 (1754–1800) Rapid Review & AP MCQ Strategy Guide</h2>
+          <p>High-yield turning points, causal chains, and how to spot the 4 classic College Board trap answers.</p>
+        </div>
+      </div>
+
+      <div class="strategy-grid">
+        <div class="card">
+          <h3>The 4 Classic APUSH Multiple-Choice Traps</h3>
+          <p class="card-sub">Every incorrect option ("distractor") on an AP US History test is designed using one of these patterns. Learn to spot them and cross them out immediately:</p>
+          <div class="trap-list">
+            <div class="trap-item">
+              <span class="trap-badge">Trap 1: Out of Period (Chronology Trap)</span>
+              <p>The statement is historically true, <strong>but happened in the wrong era</strong> (e.g., mentioning the Nullification Crisis of 1832 or Bacon's Rebellion of 1676 on a question about 1765). <em>Fix: Check the date in the source attribution line first!</em></p>
+            </div>
+            <div class="trap-item">
+              <span class="trap-badge">Trap 2: Reversed Causation</span>
+              <p>Flips cause and effect (e.g., claiming the Proclamation of 1763 caused the French and Indian War, rather than the war causing the Proclamation).</p>
+            </div>
+            <div class="trap-item">
+              <span class="trap-badge">Trap 3: Extreme / Absolute Language</span>
+              <p>Uses words like <em>"completely eliminated," "universal support,"</em> or <em>"all colonists agreed."</em> History is complex—correct AP answers use measured language.</p>
+            </div>
+            <div class="trap-item">
+              <span class="trap-badge">Trap 4: Wrong Theme / Category</span>
+              <p>The question asks about an <em>economic</em> motive or <em>political</em> debate, and the choice gives a true <em>religious</em> fact that doesn't answer the prompt.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Unit 3 Chronological Anchor Timeline (1754–1800)</h3>
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <span class="tl-year">1754–1763</span>
+              <div class="tl-body">
+                <strong>Seven Years' War (French & Indian War)</strong>
+                <p>Albany Plan of Union fails; Britain expels France (Treaty of Paris 1763) but incurs massive war debt &rarr; <strong>End of Salutary Neglect</strong>.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="tl-year">1763</span>
+              <div class="tl-body">
+                <strong>Pontiac's Rebellion & Proclamation of 1763</strong>
+                <p>Native confederacy resists British expansion; Crown bans colonial settlement west of Appalachians, angering colonists.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="tl-year">1764–1773</span>
+              <div class="tl-body">
+                <strong>Imperial Taxation & Colonial Resistance</strong>
+                <p>Sugar Act, Stamp Act (1765), Townshend Acts, Tea Act. Colonists respond with boycotts (nonimportation), Sons/Daughters of Liberty, and arguments against "virtual representation."</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="tl-year">1776</span>
+              <div class="tl-body">
+                <strong><em>Common Sense</em> & Declaration of Independence</strong>
+                <p>Thomas Paine attacks monarchy; Jefferson applies Locke's natural rights & social contract theory. Crucial French alliance follows Battle of Saratoga (1777).</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="tl-year">1781–1787</span>
+              <div class="tl-body">
+                <strong>Articles of Confederation & Shays' Rebellion</strong>
+                <p>Weak central government (no power to tax or regulate commerce; no executive). Success: <strong>Northwest Ordinance of 1787</strong> (banned slavery in NW Territory, path to statehood). Shays' Rebellion exposes federal weakness.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="tl-year">1787–1791</span>
+              <div class="tl-body">
+                <strong>Constitution, Ratification & Bill of Rights</strong>
+                <p>Great Compromise, 3/5 Compromise. <em>Federalist Papers</em> (Hamilton/Madison) vs. Anti-Federalists (demanded Bill of Rights to protect individual liberties).</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="tl-year">1789–1800</span>
+              <div class="tl-body">
+                <strong>First Party System & Early Republic</strong>
+                <p>Hamilton's Financial Plan (Assumption, National Bank, Tariffs, Whiskey Tax) sparks split between <strong>Federalists</strong> (Hamilton/Adams) and <strong>Democratic-Republicans</strong> (Jefferson/Madison). Washington's Farewell Address warns against permanent foreign alliances and political factions. Alien & Sedition Acts (1798) prompt Virginia & Kentucky Resolutions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== MODAL: OPTIONAL AI LIVE GENERATOR ==================== -->
+  <div class="modal-backdrop hidden" id="aiModalBackdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h3>AI Infinite APUSH Question Generator</h3>
+          <p>Optional: Connect a Gemini or OpenAI API key to generate brand-new stimulus sets on the fly and add them to your question bank.</p>
+        </div>
+        <button class="icon-btn" id="closeAiModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="ai-info-callout">
+          <strong>Note:</strong> Your app already includes a large built-in bank of curated Unit 1–3 questions with full explanations! Use this generator only if you want to synthesize extra custom questions with an LLM.
+        </div>
+        <div class="form-group">
+          <label>AI Provider</label>
+          <select id="aiProviderSelect" class="form-select">
+            <option value="gemini">Google Gemini API (gemini-2.5-flash)</option>
+            <option value="openai">OpenAI API (gpt-4o-mini)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>API Key (Stored locally in your browser only)</label>
+          <input type="password" id="aiApiKeyInput" class="form-input" placeholder="Paste your Gemini or OpenAI API key..." />
+        </div>
+        <div class="form-row-2col">
+          <div class="form-group">
+            <label>Target Topic</label>
+            <select id="aiTopicSelect" class="form-select">
+              <!-- Populated dynamically -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Question Style</label>
+            <select id="aiStyleSelect" class="form-select">
+              <option value="stimulus">3-Question Primary Source Stimulus Set</option>
+              <option value="conceptual">3 Standalone Conceptual Questions</option>
+            </select>
+          </div>
+        </div>
+        <div id="aiStatusMessage" class="ai-status-msg hidden"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" id="cancelAiModalBtn">Close</button>
+        <button class="btn-primary" id="generateAiQuestionsBtn">Generate & Launch Mini-Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
