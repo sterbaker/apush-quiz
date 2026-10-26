@@ -30,19 +30,23 @@
     return {
       theme: "light",
       quizzesCompleted: 0,
+      totalStudySeconds: 0,
+      lastActiveIso: null,
       questionHistory: {}, // qId -> { attempts, correct, lastCorrect, lastSeen }
       topicStats: {},      // topicId -> { attempts, correct }
       skillStats: {},      // skillName -> { attempts, correct }
-      recentQuizzes: []    // [{ date, scorePct, correct, total, label }]
+      recentQuizzes: []    // [{ date, scorePct, correct, total, label, durationSeconds, sections, missedQuestions }]
     };
   }
 
   function saveStats() {
+    userStats.lastActiveIso = new Date().toISOString();
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(userStats));
     } catch (e) {
       console.warn("Could not save localStorage stats:", e);
     }
+    pushStatsToCloudIfSignedIn();
   }
 
   function loadCustomQuestions() {
@@ -63,6 +67,15 @@
   let activeQuiz = null;
   let timerInterval = null;
 
+  // Cloud / Firebase State
+  const FIREBASE_CFG_KEY = "apush_firebase_config_v1";
+  let firebaseApp = null;
+  let firebaseAuth = null;
+  let firestoreDb = null;
+  let currentGoogleUser = null;
+  let cloudStudentsCache = {}; // uid -> { uid, displayName, email, photoURL, updatedAt, stats }
+  let selectedParentStudentId = "local";
+
   // ==================== INITIALIZATION ====================
   document.addEventListener("DOMContentLoaded", () => {
     initTheme();
@@ -72,6 +85,7 @@
     initQuizControls();
     initResultsControls();
     initAiModalControls();
+    initCloudAndParentControls();
     refreshDashboardAndMastery();
   });
 
@@ -138,6 +152,8 @@
 
     if (viewName === "dashboard" || viewName === "mastery") {
       refreshDashboardAndMastery();
+    } else if (viewName === "parent") {
+      renderParentTrackerView();
     }
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -1128,16 +1144,36 @@
     const total = activeQuiz.items.length;
     const correct = activeQuiz.items.filter((it) => it.isCorrect).length;
     const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+    const durationSecs = activeQuiz.elapsedSeconds || 0;
+    const uniqueSections = Array.from(new Set(activeQuiz.items.map((it) => it.question.topic)));
+    const missedDetails = activeQuiz.items
+      .filter((it) => !it.isCorrect)
+      .map((it) => {
+        const chosenOpt = it.selectedIndex !== null ? it.options[it.selectedIndex] : null;
+        const correctOpt = it.options.find((o) => o.isCorrect);
+        return {
+          id: it.question.id,
+          topic: it.question.topic,
+          stem: it.question.stem,
+          chosenText: chosenOpt ? chosenOpt.text : "(Unanswered)",
+          correctText: correctOpt ? correctOpt.text : ""
+        };
+      });
 
     userStats.quizzesCompleted = (userStats.quizzesCompleted || 0) + 1;
+    userStats.totalStudySeconds = (userStats.totalStudySeconds || 0) + durationSecs;
     userStats.recentQuizzes.unshift({
       date: new Date().toLocaleDateString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }),
+      isoDate: new Date().toISOString(),
       scorePct: pct,
       correct,
       total,
+      durationSeconds: durationSecs,
+      sections: uniqueSections,
+      missedQuestions: missedDetails,
       label: activeQuiz.config.label || "Practice Quiz"
     });
-    userStats.recentQuizzes = userStats.recentQuizzes.slice(0, 8);
+    userStats.recentQuizzes = userStats.recentQuizzes.slice(0, 30);
     saveStats();
 
     renderResultsScreen();
@@ -1698,6 +1734,540 @@ Return ONLY valid JSON matching this structure:
       const data = await res.json();
       const rawText = data.choices?.[0]?.message?.content || "{}";
       return JSON.parse(rawText);
+    }
+  }
+
+  // ==================== GOOGLE SIGN-IN, CLOUD SYNC & PARENT PROGRESS PORTAL ====================
+  function parseFirebaseConfigText(rawInput) {
+    if (!rawInput || !rawInput.trim()) return null;
+    let cleaned = rawInput.trim();
+    // Extract {...} if user pasted `const firebaseConfig = { ... };`
+    const firstBrace = cleaned.indexOf("{");
+    const lastBrace = cleaned.lastIndexOf("}");
+    if (firstBrace !== -1 && lastBrace !== -1) {
+      cleaned = cleaned.slice(firstBrace, lastBrace + 1);
+    }
+    try {
+      return JSON.parse(cleaned);
+    } catch (e) {
+      // Handle unquoted JS keys like `apiKey: "..."`
+      const jsonNormalized = cleaned
+        .replace(/(['"])?([a-zA-Z0-9_]+)(['"])?\s*:/g, '"$2":')
+        .replace(/,\s*}/g, "}");
+      return JSON.parse(jsonNormalized);
+    }
+  }
+
+  function buildShareableSetupLink(cfgObj) {
+    try {
+      const b64 = btoa(JSON.stringify(cfgObj));
+      const url = new URL(window.location.href);
+      url.searchParams.set("cloud", b64);
+      return url.toString();
+    } catch (e) {
+      return "";
+    }
+  }
+
+  function loadSavedFirebaseConfig() {
+    // 1. Check URL query parameter `?cloud=` for 1-click setup on son's or parent's device
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const cloudParam = params.get("cloud");
+      if (cloudParam) {
+        const decoded = JSON.parse(atob(cloudParam));
+        if (decoded && decoded.apiKey && decoded.projectId) {
+          localStorage.setItem(FIREBASE_CFG_KEY, JSON.stringify(decoded));
+          // Clean URL query param cleanly
+          const cleanUrl = window.location.origin + window.location.pathname;
+          window.history.replaceState({}, document.title, cleanUrl);
+          return decoded;
+        }
+      }
+    } catch (e) {
+      console.warn("Could not parse ?cloud= setup link:", e);
+    }
+
+    // 2. Check window.APUSH_FIREBASE_CONFIG if hardcoded
+    if (window.APUSH_FIREBASE_CONFIG && window.APUSH_FIREBASE_CONFIG.apiKey) {
+      return window.APUSH_FIREBASE_CONFIG;
+    }
+
+    // 3. Check localStorage
+    try {
+      const saved = localStorage.getItem(FIREBASE_CFG_KEY);
+      if (saved) return JSON.parse(saved);
+    } catch (e) {}
+    return null;
+  }
+
+  function initCloudAndParentControls() {
+    const signInBtn = document.getElementById("googleSignInBtn");
+    const signOutBtn = document.getElementById("googleSignOutBtn");
+    const openSetupBtn = document.getElementById("openCloudSetupBtn");
+    const parentSetupBtn = document.getElementById("parentSetupCloudBtn");
+    const closeSetupBtn = document.getElementById("closeCloudModalBtn");
+    const cancelSetupBtn = document.getElementById("cancelCloudModalBtn");
+    const saveSetupBtn = document.getElementById("saveCloudConfigBtn");
+    const copyLinkBtn = document.getElementById("copyShareLinkBtn");
+    const backdrop = document.getElementById("cloudModalBackdrop");
+    const studentSelect = document.getElementById("parentStudentSelect");
+    const refreshBtn = document.getElementById("refreshParentDataBtn");
+
+    const openCloudModal = () => {
+      backdrop?.classList.remove("hidden");
+      const existing = loadSavedFirebaseConfig();
+      const inputEl = document.getElementById("firebaseConfigInput");
+      const shareEl = document.getElementById("familyShareLinkInput");
+      if (existing && inputEl) {
+        inputEl.value = JSON.stringify(existing, null, 2);
+        if (shareEl) shareEl.value = buildShareableSetupLink(existing);
+      }
+    };
+
+    const closeCloudModal = () => backdrop?.classList.add("hidden");
+
+    openSetupBtn?.addEventListener("click", openCloudModal);
+    parentSetupBtn?.addEventListener("click", openCloudModal);
+    closeSetupBtn?.addEventListener("click", closeCloudModal);
+    cancelSetupBtn?.addEventListener("click", closeCloudModal);
+
+    copyLinkBtn?.addEventListener("click", () => {
+      const shareEl = document.getElementById("familyShareLinkInput");
+      if (shareEl && shareEl.value) {
+        navigator.clipboard?.writeText(shareEl.value);
+        copyLinkBtn.textContent = "Copied!";
+        setTimeout(() => {
+          copyLinkBtn.textContent = "Copy Link";
+        }, 1800);
+      }
+    });
+
+    saveSetupBtn?.addEventListener("click", () => {
+      const raw = document.getElementById("firebaseConfigInput")?.value || "";
+      const statusMsg = document.getElementById("cloudModalStatusMsg");
+      try {
+        const cfg = parseFirebaseConfigText(raw);
+        if (!cfg || !cfg.apiKey || !cfg.projectId) {
+          throw new Error("Config must include at least apiKey, authDomain, and projectId.");
+        }
+        localStorage.setItem(FIREBASE_CFG_KEY, JSON.stringify(cfg));
+        const shareEl = document.getElementById("familyShareLinkInput");
+        if (shareEl) shareEl.value = buildShareableSetupLink(cfg);
+
+        initializeFirebaseInstance(cfg);
+        if (statusMsg) {
+          statusMsg.classList.remove("hidden");
+          statusMsg.textContent = "Firebase connected! Clicking 'Sign in with Google' now...";
+        }
+        setTimeout(() => {
+          closeCloudModal();
+          triggerGoogleSignInPopup();
+        }, 600);
+      } catch (err) {
+        if (statusMsg) {
+          statusMsg.classList.remove("hidden");
+          statusMsg.textContent = `Invalid Firebase config: ${err.message}`;
+        }
+      }
+    });
+
+    signInBtn?.addEventListener("click", () => {
+      if (!firebaseAuth) {
+        openCloudModal();
+      } else {
+        triggerGoogleSignInPopup();
+      }
+    });
+
+    signOutBtn?.addEventListener("click", async () => {
+      if (firebaseAuth) {
+        await firebaseAuth.signOut();
+      }
+      currentGoogleUser = null;
+      updateAuthHeaderUI();
+    });
+
+    studentSelect?.addEventListener("change", () => {
+      selectedParentStudentId = studentSelect.value;
+      renderParentTrackerView();
+    });
+
+    refreshBtn?.addEventListener("click", () => {
+      fetchAllStudentsFromFirestore();
+    });
+
+    // Auto-initialize if config already saved or passed via ?cloud= link
+    const savedCfg = loadSavedFirebaseConfig();
+    if (savedCfg) {
+      initializeFirebaseInstance(savedCfg);
+    }
+  }
+
+  function initializeFirebaseInstance(cfg) {
+    if (!window.firebase) {
+      console.warn("Firebase SDK not loaded.");
+      return;
+    }
+    try {
+      if (!firebase.apps.length) {
+        firebaseApp = firebase.initializeApp(cfg);
+      } else {
+        firebaseApp = firebase.app();
+      }
+      firebaseAuth = firebase.auth();
+      firestoreDb = firebase.firestore();
+
+      // Listen for Google Auth state changes
+      firebaseAuth.onAuthStateChanged(async (user) => {
+        currentGoogleUser = user || null;
+        updateAuthHeaderUI();
+
+        if (user) {
+          await syncUserStatsOnLogin(user);
+          subscribeToCloudStudentsLive();
+        }
+      });
+
+      // Also subscribe to student list for Parent View
+      subscribeToCloudStudentsLive();
+    } catch (err) {
+      console.error("Firebase init error:", err);
+    }
+  }
+
+  async function triggerGoogleSignInPopup() {
+    if (!firebaseAuth) return;
+    try {
+      const provider = new firebase.auth.GoogleAuthProvider();
+      provider.setCustomParameters({ prompt: "select_account" });
+      await firebaseAuth.signInWithPopup(provider);
+    } catch (err) {
+      alert(`Google Sign-In error: ${err.message}\n\nMake sure Google Sign-In is enabled in Firebase Authentication and '${window.location.hostname}' is added to Authorized Domains.`);
+    }
+  }
+
+  function updateAuthHeaderUI() {
+    const signInBtn = document.getElementById("googleSignInBtn");
+    const profilePill = document.getElementById("userProfilePill");
+    const avatarImg = document.getElementById("userAvatarImg");
+    const nameText = document.getElementById("userNameText");
+
+    if (currentGoogleUser) {
+      signInBtn?.classList.add("hidden");
+      profilePill?.classList.remove("hidden");
+      if (avatarImg) {
+        avatarImg.src =
+          currentGoogleUser.photoURL ||
+          `https://ui-avatars.com/api/?name=${encodeURIComponent(currentGoogleUser.displayName || "S")}&background=1d4ed8&color=fff`;
+      }
+      if (nameText) {
+        nameText.textContent = currentGoogleUser.displayName || currentGoogleUser.email || "Signed In";
+      }
+    } else {
+      signInBtn?.classList.remove("hidden");
+      profilePill?.classList.add("hidden");
+    }
+  }
+
+  async function syncUserStatsOnLogin(user) {
+    if (!firestoreDb || !user) return;
+    try {
+      const docRef = firestoreDb.collection("apush_students").doc(user.uid);
+      const snap = await docRef.get();
+
+      if (snap.exists) {
+        const cloudData = snap.data();
+        const cloudStats = cloudData.stats;
+        // Merge if cloud has more completed quizzes than local
+        if (cloudStats && (cloudStats.quizzesCompleted || 0) > (userStats.quizzesCompleted || 0)) {
+          userStats = Object.assign({}, userStats, cloudStats);
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(userStats));
+          renderUnitsFilterUI([3]);
+          refreshDashboardAndMastery();
+        }
+      }
+      await pushStatsToCloudIfSignedIn();
+    } catch (err) {
+      console.warn("Could not sync initial user stats with Firestore:", err);
+    }
+  }
+
+  async function pushStatsToCloudIfSignedIn() {
+    if (!firestoreDb || !currentGoogleUser) return;
+    try {
+      const syncDot = document.getElementById("syncStatusText");
+      if (syncDot) syncDot.textContent = "\u21BB Syncing...";
+
+      await firestoreDb
+        .collection("apush_students")
+        .doc(currentGoogleUser.uid)
+        .set(
+          {
+            uid: currentGoogleUser.uid,
+            displayName: currentGoogleUser.displayName || "Student",
+            email: currentGoogleUser.email || "",
+            photoURL: currentGoogleUser.photoURL || "",
+            updatedAt: new Date().toISOString(),
+            stats: userStats
+          },
+          { merge: true }
+        );
+
+      if (syncDot) syncDot.textContent = "\u25CF Cloud Synced";
+    } catch (err) {
+      console.warn("Error pushing stats to Firestore:", err);
+    }
+  }
+
+  function subscribeToCloudStudentsLive() {
+    if (!firestoreDb) return;
+    try {
+      firestoreDb.collection("apush_students").onSnapshot(
+        (snapshot) => {
+          snapshot.forEach((doc) => {
+            cloudStudentsCache[doc.id] = doc.data();
+          });
+          populateParentStudentDropdown();
+          const parentSec = document.getElementById("view-parent");
+          if (parentSec && parentSec.classList.contains("active")) {
+            renderParentTrackerView();
+          }
+        },
+        (err) => {
+          console.warn("Firestore listener warning:", err);
+        }
+      );
+    } catch (e) {}
+  }
+
+  async function fetchAllStudentsFromFirestore() {
+    if (!firestoreDb) {
+      renderParentTrackerView();
+      return;
+    }
+    try {
+      const snap = await firestoreDb.collection("apush_students").get();
+      snap.forEach((doc) => {
+        cloudStudentsCache[doc.id] = doc.data();
+      });
+      populateParentStudentDropdown();
+      renderParentTrackerView();
+    } catch (e) {
+      console.warn("Error fetching students:", e);
+    }
+  }
+
+  function populateParentStudentDropdown() {
+    const select = document.getElementById("parentStudentSelect");
+    if (!select) return;
+
+    const entries = Object.values(cloudStudentsCache).sort((a, b) =>
+      (b.updatedAt || "").localeCompare(a.updatedAt || "")
+    );
+
+    let optionsHtml = `<option value="local">This Device (Local Browser Profile)</option>`;
+    entries.forEach((st) => {
+      const qCount = st.stats?.quizzesCompleted || 0;
+      optionsHtml += `<option value="${st.uid}">${st.displayName} (${st.email}) — ${qCount} Quizzes</option>`;
+    });
+
+    select.innerHTML = optionsHtml;
+
+    // Automatically select the most recently active cloud student if available
+    if (selectedParentStudentId === "local" && entries.length > 0) {
+      selectedParentStudentId = entries[0].uid;
+    }
+    select.value = selectedParentStudentId;
+  }
+
+  function renderParentTrackerView() {
+    const bank = getFullBank();
+    const u3 = bank.units.find((u) => u.id === 3);
+    const u3Topics = u3 ? u3.topics : [];
+
+    // Determine which stats object we are inspecting (Cloud Student vs Local Device)
+    let activeProfileName = "This Device (Local Browser)";
+    let targetStats = userStats;
+    let isCloudProfile = false;
+    let lastUpdatedIso = userStats.lastActiveIso;
+
+    if (selectedParentStudentId !== "local" && cloudStudentsCache[selectedParentStudentId]) {
+      const cloudDoc = cloudStudentsCache[selectedParentStudentId];
+      targetStats = cloudDoc.stats || userStats;
+      activeProfileName = `${cloudDoc.displayName} (${cloudDoc.email})`;
+      lastUpdatedIso = cloudDoc.updatedAt || targetStats.lastActiveIso;
+      isCloudProfile = true;
+    }
+
+    // Update Sync Banner
+    const syncBadge = document.getElementById("parentSyncBadge");
+    const syncDesc = document.getElementById("parentSyncDesc");
+    const lastActiveTag = document.getElementById("parentLastActiveTag");
+
+    if (syncBadge && syncDesc) {
+      if (isCloudProfile) {
+        syncBadge.textContent = "Live Cloud Sync";
+        syncBadge.classList.add("live");
+        syncDesc.innerHTML = `Streaming live progress for <strong>${activeProfileName}</strong> via Google Cloud Firestore.`;
+      } else if (firestoreDb) {
+        syncBadge.textContent = "Cloud Ready";
+        syncBadge.classList.add("live");
+        syncDesc.textContent = "Cloud sync is connected! Have your son click 'Sign in with Google' on his device so his profile appears in the dropdown above.";
+      } else {
+        syncBadge.textContent = "Local Device Mode";
+        syncBadge.classList.remove("live");
+        syncDesc.textContent = "Viewing progress stored on this browser. Click 'Connect Cloud Sync' above to link Google Sign-In across your son's device and yours.";
+      }
+    }
+
+    if (lastActiveTag) {
+      if (lastUpdatedIso) {
+        const dt = new Date(lastUpdatedIso);
+        lastActiveTag.textContent = `Last active: ${dt.toLocaleDateString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" })}`;
+      } else {
+        lastActiveTag.textContent = "Last active: No activity yet";
+      }
+    }
+
+    // Compute Parent Summary KPIs
+    let totalAnswered = 0;
+    Object.values(targetStats.topicStats || {}).forEach((st) => {
+      totalAnswered += st.attempts || 0;
+    });
+    const quizzesDone = targetStats.quizzesCompleted || 0;
+    const studyMins = Math.max(1, Math.round((targetStats.totalStudySeconds || 0) / 60));
+
+    document.getElementById("parentQuizzesBadge").textContent = `${quizzesDone} Quizzes Completed`;
+    document.getElementById("parentTotalQsVal").textContent = `${totalAnswered} Qs`;
+    document.getElementById("parentStudyTimeSub").textContent =
+      (targetStats.totalStudySeconds || 0) > 0 ? `${studyMins} min total timed practice` : "0 min timed practice";
+
+    const latestQuiz = (targetStats.recentQuizzes || [])[0];
+    document.getElementById("parentLastQuizDateSub").textContent = latestQuiz
+      ? `Latest: ${latestQuiz.label} (${latestQuiz.scorePct}% on ${latestQuiz.date})`
+      : "No quizzes completed yet";
+
+    // Unit 3 Readiness
+    let u3Att = 0;
+    let u3Corr = 0;
+    let u3PracticedCount = 0;
+    const weakSections = [];
+
+    u3Topics.forEach((t) => {
+      const st = (targetStats.topicStats || {})[t.id];
+      if (st && st.attempts > 0) {
+        u3Att += st.attempts;
+        u3Corr += st.correct;
+        u3PracticedCount++;
+        const acc = Math.round((st.correct / st.attempts) * 100);
+        if (acc < 75) {
+          weakSections.push(`${t.id} ${t.title} (${acc}%)`);
+        }
+      }
+    });
+
+    const u3Acc = u3Att > 0 ? Math.round((u3Corr / u3Att) * 100) : null;
+    document.getElementById("parentU3AccVal").textContent = u3Acc !== null ? `${u3Acc}%` : "--%";
+    document.getElementById("parentU3SectionsSub").textContent = `${u3PracticedCount} of ${u3Topics.length} Unit 3 sections practiced`;
+    document.getElementById("parentU3ProgressFill").style.width = `${u3Acc || 0}%`;
+    document.getElementById("parentU3ProjectedPill").textContent =
+      u3Acc !== null ? `Projected AP Score: ${getProjectedApScoreInfo(u3Acc).score}` : "Needs Diagnostic";
+
+    // Weak Sections Card
+    document.getElementById("parentWeakCountPill").textContent = `${weakSections.length} Below 75%`;
+    document.getElementById("parentWeakListText").textContent =
+      weakSections.length > 0
+        ? weakSections.join(" • ")
+        : u3PracticedCount > 0
+        ? "All practiced Unit 3 sections are at 75% accuracy or higher!"
+        : "No sections flagged yet — have him take a Unit 3 quiz to identify weak areas.";
+
+    // Populate Unit 3 Section-by-Section Table
+    const tbody = document.getElementById("parentSectionTableBody");
+    if (tbody) {
+      tbody.innerHTML = u3Topics
+        .map((t) => {
+          const st = (targetStats.topicStats || {})[t.id] || { attempts: 0, correct: 0 };
+          const pct = st.attempts > 0 ? Math.round((st.correct / st.attempts) * 100) : null;
+          let statusCls = "acc-none";
+          let statusText = "Not Started";
+          if (pct !== null) {
+            if (pct >= 80) {
+              statusCls = "acc-high";
+              statusText = "Mastered (80%+)";
+            } else if (pct >= 65) {
+              statusCls = "acc-med";
+              statusText = "Developing";
+            } else {
+              statusCls = "acc-low";
+              statusText = "Needs Drill (<65%)";
+            }
+          }
+          return `
+            <tr>
+              <td><strong>${t.id}</strong></td>
+              <td>${t.title}</td>
+              <td>${st.correct} / ${st.attempts}</td>
+              <td><strong>${pct !== null ? `${pct}%` : "--"}</strong></td>
+              <td><span class="topic-acc-mini ${statusCls}">${statusText}</span></td>
+            </tr>
+          `;
+        })
+        .join("");
+    }
+
+    // Populate Detailed Quiz Log & Missed Question Inspector
+    const logContainer = document.getElementById("parentQuizLogContainer");
+    if (logContainer) {
+      const logs = targetStats.recentQuizzes || [];
+      if (logs.length === 0) {
+        logContainer.innerHTML = `<p style="color: var(--text-muted); font-size: 0.85rem;">No quiz attempts recorded yet.</p>`;
+      } else {
+        logContainer.innerHTML = logs
+          .map((rq, idx) => {
+            const cls = rq.scorePct >= 75 ? "acc-high" : rq.scorePct >= 60 ? "acc-med" : "acc-low";
+            const durText = rq.durationSeconds
+              ? `${Math.floor(rq.durationSeconds / 60)}m ${rq.durationSeconds % 60}s`
+              : "Untimed";
+            const secList = rq.sections && rq.sections.length > 0 ? `Sections: ${rq.sections.join(", ")}` : "";
+            const missedArr = rq.missedQuestions || [];
+
+            const missedHtml =
+              missedArr.length > 0
+                ? `<div class="parent-missed-drawer">
+                    <strong style="font-size:0.76rem; color:var(--danger-text);">Missed Questions (${missedArr.length}):</strong>
+                    ${missedArr
+                      .map(
+                        (mq) => `
+                        <div class="parent-missed-q">
+                          <div><strong>[${mq.topic}]</strong> ${mq.stem}</div>
+                          <div style="color:var(--danger-text); margin-top:0.15rem;">Chose: ${mq.chosenText}</div>
+                          <div style="color:var(--success-text);">Correct: ${mq.correctText}</div>
+                        </div>
+                      `
+                      )
+                      .join("")}
+                  </div>`
+                : `<div style="margin-top:0.4rem; font-size:0.76rem; color:var(--success-text);">&#10003; Perfect score or no missed question details recorded.</div>`;
+
+            return `
+              <div class="parent-log-card">
+                <div class="parent-log-top">
+                  <strong>#${logs.length - idx}: ${rq.label}</strong>
+                  <span class="history-score ${cls}">${rq.scorePct}% (${rq.correct}/${rq.total})</span>
+                </div>
+                <div class="parent-log-meta">
+                  <span>&#128197; ${rq.date}</span>
+                  <span>&#9201; Duration: ${durText}</span>
+                  ${secList ? `<span>&#128218; ${secList}</span>` : ""}
+                </div>
+                ${missedHtml}
+              </div>
+            `;
+          })
+          .join("");
+      }
     }
   }
 })();

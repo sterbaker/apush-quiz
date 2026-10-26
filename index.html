@@ -24,19 +24,44 @@
       <nav class="main-nav" aria-label="Main Navigation">
         <button class="nav-tab active" data-view="dashboard">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
-          Dashboard & Generator
+          Dashboard &amp; Builder
         </button>
         <button class="nav-tab" data-view="mastery">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
-          Topic Mastery & Analytics
+          Topic Mastery
+        </button>
+        <button class="nav-tab" data-view="parent">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Parent Tracker
         </button>
         <button class="nav-tab" data-view="strategy">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          Unit 3 Cheat Sheet & Tips
+          Unit 3 Cheat Sheet
         </button>
       </nav>
 
       <div class="header-actions">
+        <div class="auth-header-box" id="authHeaderBox">
+          <button class="google-signin-btn" id="googleSignInBtn" title="Sign in with Google to sync progress to the cloud">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.11-6.72-4.96H1.29v3.14C3.26 21.3 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.28 14.24c-.24-.72-.38-1.49-.38-2.24s.14-1.52.38-2.24V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.99-3.14z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.99 3.14c.95-2.85 3.6-4.96 6.72-4.96z"/></svg>
+            <span id="googleSignInBtnText">Sign in with Google</span>
+          </button>
+
+          <div class="user-profile-pill hidden" id="userProfilePill">
+            <img id="userAvatarImg" src="" alt="Profile" class="user-avatar" />
+            <div class="user-profile-meta">
+              <span class="user-name" id="userNameText">Student</span>
+              <span class="sync-status-dot" id="syncStatusText">&#9679; Cloud Synced</span>
+            </div>
+            <button class="btn-signout-mini" id="googleSignOutBtn" title="Sign out">&times;</button>
+          </div>
+        </div>
+
+        <button class="icon-btn" id="openCloudSetupBtn" title="Configure Cloud Database &amp; Google Auth">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+          <span>Cloud Sync</span>
+        </button>
+
         <button class="icon-btn ai-btn" id="openAiModalBtn" title="Generate Unlimited Custom Questions with AI">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
           <span>AI Generator</span>
@@ -451,6 +476,106 @@
       </div>
     </section>
 
+    <!-- ==================== VIEW 4B: PARENT / COACH REAL-TIME PROGRESS TRACKER ==================== -->
+    <section id="view-parent" class="view-section">
+      <div class="section-intro">
+        <div>
+          <h2>Parent &amp; Coach Live Progress Tracker</h2>
+          <p>View your son's real-time APUSH Unit 3 quiz history, section accuracy, study time, and exact missed questions from any device.</p>
+        </div>
+        <div class="parent-controls-bar">
+          <div class="student-selector-wrap">
+            <label for="parentStudentSelect">Viewing Student Profile:</label>
+            <select id="parentStudentSelect" class="form-select" style="min-width: 240px;">
+              <option value="local">This Device (Local Browser Profile)</option>
+            </select>
+          </div>
+          <button class="btn-secondary" id="refreshParentDataBtn">
+            &#8635; Refresh Cloud Data
+          </button>
+          <button class="btn-primary" id="parentSetupCloudBtn">
+            &#9729; Connect Cloud Sync
+          </button>
+        </div>
+      </div>
+
+      <!-- Cloud Status Callout Banner -->
+      <div class="parent-sync-banner" id="parentSyncBanner">
+        <div class="sync-banner-left">
+          <span class="sync-badge-pill" id="parentSyncBadge">Local Mode</span>
+          <span id="parentSyncDesc">Currently viewing progress saved on this browser. Connect Google Sign-In &amp; Cloud Sync so his scores automatically stream to your phone or laptop!</span>
+        </div>
+        <span class="last-updated-tag" id="parentLastActiveTag">Last active: --</span>
+      </div>
+
+      <!-- Top 3 Summary KPI Cards for Parent -->
+      <div class="hero-stats-grid" style="margin-top: 1.15rem;">
+        <div class="stat-card">
+          <div class="stat-top">
+            <span class="stat-label">Study Activity &amp; Consistency</span>
+            <span class="ap-score-pill" id="parentQuizzesBadge">0 Quizzes</span>
+          </div>
+          <div class="stat-value-row">
+            <div class="big-score" id="parentTotalQsVal">0 Qs</div>
+            <div class="stat-subtext" id="parentStudyTimeSub">0m total timed practice</div>
+          </div>
+          <div class="stat-subtext" id="parentLastQuizDateSub">No quizzes completed yet</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-top">
+            <span class="stat-label">Unit 3 Exam Readiness (1754–1800)</span>
+            <span class="unit-tag" id="parentU3ProjectedPill">Diagnostic Needed</span>
+          </div>
+          <div class="stat-value-row">
+            <div class="big-score" id="parentU3AccVal">--%</div>
+            <div class="stat-subtext" id="parentU3SectionsSub">0 of 11 Unit 3 sections practiced</div>
+          </div>
+          <div class="progress-bar-track">
+            <div class="progress-bar-fill" id="parentU3ProgressFill" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="stat-card weak-focus-card">
+          <div class="stat-top">
+            <span class="stat-label">Sections Needing Review (&lt;75%)</span>
+            <span class="alert-pill" id="parentWeakCountPill">0 Flagged</span>
+          </div>
+          <div class="weak-topic-title" id="parentWeakListText">Once he completes quizzes, any Unit 3 sections below 75% accuracy will be highlighted here.</div>
+        </div>
+      </div>
+
+      <!-- Two-Column Detailed Parent Report: Unit 3 Section Table + Full Quiz Attempt Log -->
+      <div class="results-grid-2col" style="align-items: start;">
+        <div class="card">
+          <h3>Unit 3 Section-by-Section Mastery (3.2–3.12)</h3>
+          <p class="card-sub">Track which specific sections of Unit 3 he has mastered (80%+), is developing (60–79%), or hasn't practiced yet.</p>
+          <table class="topic-mastery-table" id="parentSectionTable">
+            <thead>
+              <tr>
+                <th>Section</th>
+                <th>Topic Name</th>
+                <th>Answered</th>
+                <th>Accuracy</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="parentSectionTableBody">
+              <!-- Populated dynamically -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h3>Detailed Quiz Log &amp; Missed Question Inspector</h3>
+          <p class="card-sub">Every quiz attempt with score, pacing, sections covered, and the exact questions missed.</p>
+          <div id="parentQuizLogContainer" class="parent-quiz-log-stack">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ==================== VIEW 5: UNIT 3 CHEAT SHEET & TEST STRATEGY ==================== -->
     <section id="view-strategy" class="view-section">
       <div class="section-intro">
@@ -587,11 +712,63 @@
       </div>
       <div class="modal-footer">
         <button class="btn-secondary" id="cancelAiModalBtn">Close</button>
-        <button class="btn-primary" id="generateAiQuestionsBtn">Generate & Launch Mini-Quiz</button>
+        <button class="btn-primary" id="generateAiQuestionsBtn">Generate &amp; Launch Mini-Quiz</button>
       </div>
     </div>
   </div>
 
+  <!-- ==================== MODAL: GOOGLE LOGIN & CLOUD SYNC SETUP ==================== -->
+  <div class="modal-backdrop hidden" id="cloudModalBackdrop">
+    <div class="modal-card" style="max-width: 640px;">
+      <div class="modal-header">
+        <div>
+          <h3>Google Account Login &amp; Live Parent Cloud Sync</h3>
+          <p>Connect a free Google Firebase project so your son can sign in with Google and you can track his progress live from your own computer or phone.</p>
+        </div>
+        <button class="icon-btn" id="closeCloudModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="ai-info-callout">
+          <strong>2-Minute Free Setup (Firebase Spark Plan):</strong>
+          <ol style="margin: 0.45rem 0 0 1.2rem; line-height: 1.55;">
+            <li>Go to <a href="https://console.firebase.google.com/" target="_blank" rel="noopener" style="color:inherit; font-weight:700;">console.firebase.google.com</a> &rarr; <strong>Create a project</strong>.</li>
+            <li>Click <strong>Authentication</strong> &rarr; <em>Sign-in method</em> &rarr; Enable <strong>Google</strong>, and under <em>Settings &rarr; Authorized domains</em> add <code>sterbaker.github.io</code>.</li>
+            <li>Click <strong>Firestore Database</strong> &rarr; <em>Create database</em> (start in <strong>test mode</strong> or allow authenticated read/write).</li>
+            <li>In Project Overview, click the Web icon (<code>&lt;/&gt;</code>) to register an app and paste the <code>firebaseConfig</code> snippet below!</li>
+          </ol>
+        </div>
+
+        <div class="form-group">
+          <label for="firebaseConfigInput">Paste Firebase Config Object or JSON</label>
+          <textarea id="firebaseConfigInput" class="form-input" rows="6" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;" placeholder='{
+  "apiKey": "AIzaSy...",
+  "authDomain": "your-project.firebaseapp.com",
+  "projectId": "your-project",
+  "appId": "1:123456789:web:abcdef"
+}'></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="familyShareLinkInput">1-Click Magic Setup Link (Send to your son's device or bookmark on your phone)</label>
+          <div style="display:flex; gap: 0.5rem;">
+            <input type="text" id="familyShareLinkInput" class="form-input" readonly placeholder="Save config below to generate a 1-click magic link for any device..." />
+            <button type="button" class="btn-secondary" id="copyShareLinkBtn">Copy Link</button>
+          </div>
+        </div>
+
+        <div id="cloudModalStatusMsg" class="ai-status-msg hidden"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" id="cancelCloudModalBtn">Close</button>
+        <button class="btn-primary" id="saveCloudConfigBtn">Save &amp; Connect Google Login</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase Compat SDKs (Google Auth + Cloud Firestore) -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
   <script src="questions.js"></script>
   <script src="app.js"></script>
 </body>
