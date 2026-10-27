@@ -67,8 +67,16 @@
   let activeQuiz = null;
   let timerInterval = null;
 
-  // Cloud / Firebase State
+  // Cloud / Firebase State (Pre-configured for project ushap-ae945)
   const FIREBASE_CFG_KEY = "apush_firebase_config_v1";
+  const DEFAULT_FIREBASE_CONFIG = {
+    apiKey: "AIzaSyDJvKDBKUKO45CazAutPpyr-yDek8deZlk",
+    authDomain: "ushap-ae945.firebaseapp.com",
+    projectId: "ushap-ae945",
+    storageBucket: "ushap-ae945.firebasestorage.app",
+    messagingSenderId: "126023447629",
+    appId: "1:126023447629:web:ee0f38107607763daa1804"
+  };
   let firebaseApp = null;
   let firebaseAuth = null;
   let firestoreDb = null;
@@ -1798,7 +1806,9 @@ Return ONLY valid JSON matching this structure:
       const saved = localStorage.getItem(FIREBASE_CFG_KEY);
       if (saved) return JSON.parse(saved);
     } catch (e) {}
-    return null;
+
+    // 4. Built-in default project config (ushap-ae945)
+    return DEFAULT_FIREBASE_CONFIG;
   }
 
   function initCloudAndParentControls() {
