@@ -1177,6 +1177,7 @@ kbd {
   line-height: 1.48;
   color: var(--text-primary);
   margin-bottom: 0.6rem;
+  white-space: pre-line;
 }
 
 .eliminator-hint {
@@ -1558,6 +1559,7 @@ kbd {
   font-weight: 700;
   font-size: 0.96rem;
   margin-bottom: 0.75rem;
+  white-space: pre-line;
 }
 
 .review-options-stack {
