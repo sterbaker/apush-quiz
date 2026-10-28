@@ -408,6 +408,11 @@
       formatSelect.addEventListener("change", updateMatchingPoolBadge);
     }
 
+    const diffSelect = document.getElementById("questionDifficultySelect");
+    if (diffSelect) {
+      diffSelect.addEventListener("change", updateMatchingPoolBadge);
+    }
+
     // Start Custom Quiz Button
     const startBtn = document.getElementById("startCustomQuizBtn");
     if (startBtn) {
@@ -478,6 +483,7 @@
       renderUnitsFilterUI([3]);
     }
     const format = document.getElementById("questionFormatSelect")?.value || "all";
+    const difficulty = document.getElementById("questionDifficultySelect")?.value || "all";
     const count = parseInt(document.getElementById("questionCountSelect")?.value || "10", 10);
     const feedbackMode = document.getElementById("feedbackModeSelect")?.value || "tutor";
     const timerEnabled = document.getElementById("apTimerCheckbox")?.checked ?? true;
@@ -495,6 +501,7 @@
       strategy,
       topics,
       format,
+      difficulty,
       count,
       feedbackMode,
       timerEnabled,
@@ -506,11 +513,13 @@
     const bank = getFullBank();
     const topics = getSelectedTopicsFromUI();
     const format = document.getElementById("questionFormatSelect")?.value || "all";
+    const difficulty = document.getElementById("questionDifficultySelect")?.value || "all";
 
     const matching = bank.questions.filter((q) => {
       if (!topics.includes(q.topic)) return false;
       if (format === "stimulus" && !q.stimulusId) return false;
       if (format === "standalone" && q.stimulusId) return false;
+      if (difficulty !== "all" && q.difficulty !== difficulty) return false;
       return true;
     });
 
@@ -667,6 +676,9 @@
     if (q.unit === 3) {
       score += 8; // Slight boost for Unit 3 primary focus
     }
+    if (q.difficulty === "Hard") {
+      score += 12; // Favor harder AP exam-level questions first
+    }
     return score + Math.random() * 15;
   }
 
@@ -681,6 +693,7 @@
       if (!config.topics.includes(q.topic)) return false;
       if (config.format === "stimulus" && !q.stimulusId) return false;
       if (config.format === "standalone" && q.stimulusId) return false;
+      if (config.difficulty && config.difficulty !== "all" && q.difficulty !== config.difficulty) return false;
       return true;
     });
 
@@ -1681,12 +1694,17 @@
   async function callAiQuestionGenerator({ provider, apiKey, unitNum, topicId, topicTitle, style }) {
     const stamp = Date.now();
     const stimId = style === "stimulus" ? `stim_ai_${stamp}` : null;
-    const prompt = `You are an AP US History College Board exam writer. Generate 3 authentic APUSH multiple-choice questions for Unit ${unitNum}, Topic ${topicId} (${topicTitle}).
+    const prompt = `You are a senior AP US History College Board exam writer creating HARD, honors-level exam questions for Unit ${unitNum}, Topic ${topicId} (${topicTitle}).
+CRITICAL DIFFICULTY RULES:
+1. Every single distractor (wrong option) MUST be historically plausible, from the same era or adjacent decade, and written in measured academic prose. NEVER use giveaway extreme words ('unanimously', 'completely') or silly fabrications that an 8th grader could eliminate by common sense.
+2. Test fine-grained APUSH constitutional, economic, ideological, or historiographical distinctions (e.g. virtual vs. actual representation, external trade regulation vs. internal revenue taxation, Land Ordinance 1785 vs. Northwest Ordinance 1787, Report on Public Credit vs. Report on Manufactures).
+3. Use a lesser-known, dense primary source excerpt or historian argument if stimulus-based.
+
 Return ONLY valid JSON matching this structure:
 {
   "stimulus": ${
     stimId
-      ? `{ "id": "${stimId}", "unit": ${unitNum}, "type": "Primary Source", "title": "...", "content": "80-120 word historical excerpt", "attribution": "— Author, Title, Year" }`
+      ? `{ "id": "${stimId}", "unit": ${unitNum}, "type": "Primary Source", "title": "...", "content": "90-140 word authentic historical excerpt", "attribution": "— Author, Title, Year" }`
       : `null`
   },
   "questions": [
@@ -1696,14 +1714,14 @@ Return ONLY valid JSON matching this structure:
       "topic": "${topicId}",
       "topicTitle": "${topicTitle}",
       "skill": "Causation",
-      "difficulty": "Medium",
+      "difficulty": "Hard",
       "stimulusId": ${stimId ? `"${stimId}"` : "null"},
       "stem": "Question stem...",
       "options": [
         { "id": "A", "text": "...", "isCorrect": true, "explanation": "Correct. ..." },
-        { "id": "B", "text": "...", "isCorrect": false, "distractorType": "Out of Period", "explanation": "Incorrect. ..." },
-        { "id": "C", "text": "...", "isCorrect": false, "distractorType": "Reversed Causation", "explanation": "Incorrect. ..." },
-        { "id": "D", "text": "...", "isCorrect": false, "distractorType": "Wrong Theme", "explanation": "Incorrect. ..." }
+        { "id": "B", "text": "...", "isCorrect": false, "distractorType": "Subtle Era/Policy Trap", "explanation": "Incorrect. ..." },
+        { "id": "C", "text": "...", "isCorrect": false, "distractorType": "Reversed Causal Chain", "explanation": "Incorrect. ..." },
+        { "id": "D", "text": "...", "isCorrect": false, "distractorType": "Constitutional Misattribution", "explanation": "Incorrect. ..." }
       ],
       "keyTakeaway": "...",
       "testTip": "..."

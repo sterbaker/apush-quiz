@@ -213,31 +213,37 @@
 
           <div class="builder-row-3col">
             <div class="builder-section">
-              <label class="section-label">3. Question Format</label>
+              <label class="section-label">3. Difficulty &amp; Rigor Level</label>
+              <select id="questionDifficultySelect" class="form-select">
+                <option value="all" selected>All Rigorous AP Exam Questions (Hard + Medium)</option>
+                <option value="Hard">Hard / Honors Exam-Killer Only</option>
+              </select>
+            </div>
+
+            <div class="builder-section">
+              <label class="section-label">4. Question Format</label>
               <select id="questionFormatSelect" class="form-select">
                 <option value="all">Authentic Mix (Stimulus Sets + Standalone)</option>
                 <option value="stimulus">AP Stimulus-Based Sets Only (Sources/Charts)</option>
-                <option value="standalone">Standalone Conceptual / Recall Only</option>
+                <option value="standalone">Standalone Conceptual / Analysis Only</option>
               </select>
             </div>
 
             <div class="builder-section">
-              <label class="section-label">4. Number of Questions</label>
-              <select id="questionCountSelect" class="form-select">
-                <option value="5">5 Questions (Quick 5-Min Warmup)</option>
-                <option value="10" selected>10 Questions (Focused Topic Drill)</option>
-                <option value="15">15 Questions (Standard Section Quiz)</option>
-                <option value="20">20 Questions (Full Unit Practice Test)</option>
-                <option value="30">30 Questions (Endurance Challenge)</option>
-              </select>
-            </div>
-
-            <div class="builder-section">
-              <label class="section-label">5. Feedback & Pacing Mode</label>
-              <select id="feedbackModeSelect" class="form-select">
-                <option value="tutor" selected>Tutor Mode (Instant Explanations & Coaching)</option>
-                <option value="exam">Exam Simulation (Feedback at End + AP Pacing)</option>
-              </select>
+              <label class="section-label">5. Number &amp; Pacing Mode</label>
+              <div style="display:flex; gap:0.45rem;">
+                <select id="questionCountSelect" class="form-select">
+                  <option value="5">5 Qs</option>
+                  <option value="10" selected>10 Qs</option>
+                  <option value="15">15 Qs</option>
+                  <option value="20">20 Qs</option>
+                  <option value="30">30 Qs</option>
+                </select>
+                <select id="feedbackModeSelect" class="form-select">
+                  <option value="tutor" selected>Tutor Mode</option>
+                  <option value="exam">Exam Mode</option>
+                </select>
+              </div>
             </div>
           </div>
 
