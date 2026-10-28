@@ -1695,10 +1695,11 @@
     const stamp = Date.now();
     const stimId = style === "stimulus" ? `stim_ai_${stamp}` : null;
     const prompt = `You are a senior AP US History College Board exam writer creating HARD, honors-level exam questions for Unit ${unitNum}, Topic ${topicId} (${topicTitle}).
-CRITICAL DIFFICULTY RULES:
+CRITICAL DIFFICULTY & LENGTH-BALANCE RULES:
 1. Every single distractor (wrong option) MUST be historically plausible, from the same era or adjacent decade, and written in measured academic prose. NEVER use giveaway extreme words ('unanimously', 'completely') or silly fabrications that an 8th grader could eliminate by common sense.
-2. Test fine-grained APUSH constitutional, economic, ideological, or historiographical distinctions (e.g. virtual vs. actual representation, external trade regulation vs. internal revenue taxation, Land Ordinance 1785 vs. Northwest Ordinance 1787, Report on Public Credit vs. Report on Manufactures).
-3. Use a lesser-known, dense primary source excerpt or historian argument if stimulus-based.
+2. DO NOT make the correct answer the longest option! All 4 options (A, B, C, D) must have closely matched word/character lengths, and on at least 2 of the 3 questions the incorrect distractors MUST be slightly longer than the correct option so option length is never a giveaway.
+3. Test fine-grained APUSH constitutional, economic, ideological, or historiographical distinctions (e.g. virtual vs. actual representation, external trade regulation vs. internal revenue taxation, Land Ordinance 1785 vs. Northwest Ordinance 1787, Report on Public Credit vs. Report on Manufactures).
+4. Use a lesser-known, dense primary source excerpt or historian argument if stimulus-based.
 
 Return ONLY valid JSON matching this structure:
 {

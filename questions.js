@@ -319,14 +319,14 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "The decline of female social authority as men assumed exclusive control over agricultural planting and land tenure",
+          "text": "The rapid decline of female social authority as male warriors assumed exclusive control over agricultural planting, seed selection, and communal land tenure across the region",
           "isCorrect": false,
           "distractorType": "Factual Inversion",
           "explanation": "Incorrect. Among Northeastern Woodland societies such as the Haudenosaunee, women—not men—controlled agricultural cultivation and food distribution, which reinforced matrilineal descent, matrilocal residence, and women's political power to select and depose male council sachems."
         },
         {
           "id": "B",
-          "text": "The abandonment of seasonal hunting and fishing in favor of a centralized tributary empire modeled on Tenochtitlan",
+          "text": "The abandonment of seasonal hunting and fishing in favor of a centralized tributary empire modeled directly on Tenochtitlan in the Valley of Mexico",
           "isCorrect": false,
           "distractorType": "Conceptual Overreach",
           "explanation": "Incorrect. Northeastern Woodland peoples combined women's agricultural production with men's seasonal hunting and fishing, and the Haudenosaunee Confederacy operated as a consensual council of five (later six) autonomous nations rather than a coercive tributary empire."
@@ -339,7 +339,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "The rapid exhaustion of topsoil fertility due to monocrop cultivation, forcing a return to nomadic foraging by 1450",
+          "text": "The rapid exhaustion of topsoil fertility due to monocrop cultivation, forcing a return to nomadic foraging across the Northeast by 1450",
           "isCorrect": false,
           "distractorType": "Ecological Misinterpretation",
           "explanation": "Incorrect. Three Sisters polyculture was ecologically complementary—beans fixed nitrogen in the soil, corn stalks supported bean vines, and squash leaves retained soil moisture—allowing villages to remain in place for a decade or more before relocating locally."
@@ -360,27 +360,27 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Whether Indigenous peoples possessed rational civic capacity under natural law that rendered violent conquest and coerced subjugation illegitimate prior to peaceful evangelization",
+          "text": "Whether Indigenous peoples possessed rational civic capacity under natural law that barred violent conquest prior to peaceful conversion",
           "isCorrect": true,
           "explanation": "Correct. Sepúlveda invoked Aristotle's doctrine of 'natural slavery' to argue that Indigenous practices proved their rational inferiority and justified military subjugation prior to conversion, whereas Las Casas argued that Native societies were rational, legitimate polities under natural law that could only be converted through peaceful persuasion."
         },
         {
           "id": "B",
-          "text": "Whether the papal donation of the Treaty of Tordesillas granted the Spanish Crown temporal jurisdiction over the Western Hemisphere to the exclusion of Portugal",
+          "text": "Whether the papal donation of the Treaty of Tordesillas granted the Spanish Crown exclusive temporal jurisdiction over the Western Hemisphere relative to Portugal",
           "isCorrect": false,
           "distractorType": "Shared Premise Confusion",
           "explanation": "Incorrect. Neither Sepúlveda nor Las Casas contested Castile's exclusive papal mandate in the Americas relative to Portugal; rather, they debated the legitimate terms under which Spain could exercise sovereignty and evangelize Indigenous peoples within that sphere."
         },
         {
           "id": "C",
-          "text": "Whether the Spanish Crown should replace Roman Catholicism with a syncretic religion incorporating Mesoamerican cosmological rituals",
+          "text": "Whether the Spanish Crown should replace Catholicism with a syncretic religion incorporating Mesoamerican cosmological rituals",
           "isCorrect": false,
           "distractorType": "Ideological Distortion",
           "explanation": "Incorrect. As a Dominican friar and bishop, Las Casas was wholly committed to orthodox Catholic conversion of Indigenous peoples; he opposed military coercion and the encomienda as unchristian obstacles to genuine conversion, not Christian orthodoxy itself."
         },
         {
           "id": "D",
-          "text": "Whether the trans-Atlantic importation of enslaved Africans violated canon law to the same degree as the enslavement of Caribbean Tainos",
+          "text": "Whether the trans-Atlantic importation of enslaved West Africans violated Catholic canon law to the same degree as the enslavement of Caribbean Tainos",
           "isCorrect": false,
           "distractorType": "Chronological / Topical Nuance",
           "explanation": "Incorrect. During his early career (before his later repentance in the 1550s), Las Casas had actually advocated importing enslaved Africans to relieve Indigenous laborers, and the Valladolid debate focused specifically on the legal status of American Indians under the Crown of Castile."
@@ -401,28 +401,28 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "A diplomatic agreement with the surviving Inca court at Vilcabamba to abolish all forms of Indigenous tribute in exchange for access to Pacific trade routes",
+          "text": "A formal diplomatic treaty with the surviving Inca royal court at Vilcabamba to abolish all Indigenous tribute in exchange for Spanish access to Pacific trade routes",
           "isCorrect": false,
           "distractorType": "Historical Misattribution",
           "explanation": "Incorrect. As shown in the New Laws, the Spanish Crown did not abolish Indigenous tribute; rather, it sought to transfer Indigenous tribute from private conquistador encomenderos directly to the Royal Crown."
         },
         {
           "id": "B",
-          "text": "Pressure from English and Dutch joint-stock companies that threatened to boycott Spanish silver unless New World labor conditions were reformed",
+          "text": "Sustained commercial pressure from English and Dutch joint-stock companies that threatened to boycott Spanish silver unless New World labor conditions were reformed",
           "isCorrect": false,
           "distractorType": "Anachronism / Plausible Mechanism",
           "explanation": "Incorrect. English and Dutch joint-stock companies (such as the Dutch East India Company and Virginia Company) emerged at the turn of the seventeenth century (1600–1607), nearly sixty years after the New Laws of 1542, and sought to plunder or trade for Spanish silver rather than boycott it."
         },
         {
           "id": "C",
-          "text": "The discovery that free-wage European immigrants from Castile could extract silver at Potosí and Zacatecas more cheaply than coerced Indigenous laborers",
+          "text": "The economic discovery that free-wage European immigrants from Castile could extract silver at Potosí and Zacatecas more cheaply than coerced Indigenous laborers",
           "isCorrect": false,
           "distractorType": "Factual Fabrication",
           "explanation": "Incorrect. Spanish emigrants refused manual mining labor; when the encomienda declined, the Crown and colonial elites shifted to the repartimiento (and the Andean mita)—state-administered rotational forced labor drafts—alongside enslaved African labor."
         },
         {
           "id": "D",
-          "text": "Fear that entrenched conquistador families would transform hereditary encomiendas into an autonomous feudal aristocracy capable of defying royal absolutism in the Americas",
+          "text": "Fear that conquistador families would turn hereditary encomiendas into an autonomous feudal nobility capable of defying royal authority",
           "isCorrect": true,
           "explanation": "Correct. Alongside humanitarian pressure from Dominican reformers like Las Casas, the Habsburg monarchy feared that if encomenderos made their grants of Indigenous labor and tribute hereditary in perpetuity, they would become a rebellious feudal nobility independent of royal viceroys and audiencias."
         }
@@ -442,21 +442,21 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Conquistador elites successfully overthrew Habsburg sovereignty in the 1550s, establishing independent creole republics across Mexico and the Andes.",
+          "text": "Conquistador elites successfully overthrew Habsburg sovereignty in the 1550s, establishing independent creole republics across Mexico and the Andean highlands.",
           "isCorrect": false,
           "distractorType": "Chronological Anachronism",
           "explanation": "Incorrect. While Gonzalo Pizarro led an encomendero rebellion in Peru in the 1540s, royal forces crushed the uprising; Spanish American independence movements did not occur until the early nineteenth century (1810s–1820s)."
         },
         {
           "id": "B",
-          "text": "Viceroys enforced immediate unconditional emancipation for all Indigenous and African laborers, transitioning New Spain to a system of seven-year European indentured servitude.",
+          "text": "Viceroys enforced immediate unconditional emancipation for all Indigenous and African laborers, transitioning New Spain to seven-year European indentured servitude.",
           "isCorrect": false,
           "distractorType": "Colonial Model Confusion",
           "explanation": "Incorrect. Seven-year European indentured servitude was the primary early labor system of the seventeenth-century English Chesapeake colonies, whereas New Spain relied on coerced Indigenous labor drafts and African chattel slavery."
         },
         {
           "id": "C",
-          "text": "Royal authorities gradually replaced private encomienda grants with Crown-regulated rotational labor drafts (repartimiento and mita), debt peonage on haciendas, and increased importation of enslaved Africans under the asiento.",
+          "text": "Royal officials curbed private encomiendas in favor of Crown-regulated labor drafts (repartimiento and mita), hacienda debt peonage, and enslaved African labor under the asiento.",
           "isCorrect": true,
           "explanation": "Correct. Although Charles V had to suspend the most radical inheritance bans after encomenderos revolted in Peru, the Crown gradually curbed private encomiendas as Indigenous populations declined, substituting state-allocated rotational labor drafts (repartimiento in Mexico, mita in the Andes), hacienda debt peonage, and enslaved African labor."
         },
@@ -483,27 +483,27 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Tlaxcalan statecraft in allying with Hernán Cortés to overthrow the Mexica Triple Alliance, and the later adoption of Spanish horses by Plains nations such as the Comanche and Lakota to build expansive trading and raiding empires",
+          "text": "Tlaxcalan statecraft in allying with Hernán Cortés against the Mexica Triple Alliance, and the later adoption of Spanish horses by Plains nations like the Comanche and Lakota",
           "isCorrect": true,
           "explanation": "Correct. Tlaxcala and other Mesoamerican city-states deliberately allied with Cortés's small Spanish force to destroy their hated imperial overlords in Tenochtitlan, while Indigenous nations on the Great Plains later integrated Spanish horses (especially after the 1680 Pueblo Revolt) to transform themselves into formidable equestrian powers."
         },
         {
           "id": "B",
-          "text": "The decision of the Inca ruling elite to voluntary cede Cuzco to Francisco Pizarro in exchange for seats in the Spanish Cortes at Madrid",
+          "text": "The decision of the Inca ruling elite to voluntarily cede Cuzco to Francisco Pizarro in 1533 in exchange for hereditary noble seats in the Spanish Cortes at Madrid",
           "isCorrect": false,
           "distractorType": "Factual Fabrication",
           "explanation": "Incorrect. Pizarro exploited a devastating smallpox epidemic and a dynastic civil war between Atahualpa and Huáscar to capture and execute Atahualpa; Indigenous rulers were never granted parliamentary seats in the Spanish Cortes."
         },
         {
           "id": "C",
-          "text": "The formation of the New England Confederation by Algonquian and Iroquoian nations in 1585 to monopolize the export of American maize to Iberian markets",
+          "text": "The formation of the New England Confederation by Algonquian and Iroquoian nations in 1585 to monopolize the maritime export of American maize, furs, and timber to Iberian markets",
           "isCorrect": false,
           "distractorType": "Misattribution",
           "explanation": "Incorrect. The New England Confederation (1643) was a military alliance of four English Puritan colonies (Massachusetts Bay, Plymouth, Connecticut, and New Haven) formed against Native Americans and the Dutch, not an Indigenous trade consortium."
         },
         {
           "id": "D",
-          "text": "The mass migration of Caribbean Taino populations to the silver mines of Upper Peru to escape sugar cultivation in Hispaniola",
+          "text": "The organized mass migration of Caribbean Taino populations to the silver mines of Upper Peru in order to escape coercive sugar cultivation on Hispaniola",
           "isCorrect": false,
           "distractorType": "Historical Distortion",
           "explanation": "Incorrect. The Taino population of Hispaniola was decimated in place by epidemic disease, famine, and forced mining/agricultural labor within decades of 1492; they did not migrate to Upper Peru."
@@ -524,28 +524,28 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "The replacement of Eurasian draft animals with domesticated North American bison across agricultural regions of the Mediterranean basin",
+          "text": "The replacement of Eurasian draft animals with domesticated North American bison across agricultural regions of the Mediterranean",
           "isCorrect": false,
           "distractorType": "Factual Inversion",
           "explanation": "Incorrect. The Americas had almost no large domesticated draft animals (apart from Andean llamas), so livestock transfer flowed overwhelmingly from Europe to the Americas (horses, cattle, pigs, sheep, goats)."
         },
         {
           "id": "B",
-          "text": "A catastrophic 50 percent contraction of the West African population caused by the introduction of virulent American strains of yellow fever and malaria",
+          "text": "A catastrophic fifty percent contraction of the West African population caused by the introduction of virulent American strains of yellow fever and malaria",
           "isCorrect": false,
           "distractorType": "Vector Reversal",
           "explanation": "Incorrect. Yellow fever and falciparum malaria were Old World (African) mosquito-borne diseases transferred to the Americas via the slave trade, not American diseases exported to Africa."
         },
         {
           "id": "C",
-          "text": "The immediate collapse of European feudal land tenure as cheap American wheat imports bankrupted aristocratic estates in France and Prussia",
+          "text": "The immediate collapse of European feudal land tenure as cheap American wheat imports bankrupted aristocratic grain estates across France and Prussia",
           "isCorrect": false,
           "distractorType": "Commodity & Period Misattribution",
           "explanation": "Incorrect. Wheat was an Old World Eurasian grain introduced *to* the Americas by Europeans, and large-scale transatlantic grain competition did not undermine European aristocratic estates until the late nineteenth century."
         },
         {
           "id": "D",
-          "text": "Sustained demographic growth across Europe and parts of Asia and Africa driven by the adoption of calorie-dense American crops such as potatoes, maize, and manioc (cassava)",
+          "text": "Sustained demographic growth across Europe, Asia, and Africa driven by calorie-dense American crops such as potatoes, maize, and manioc",
           "isCorrect": true,
           "explanation": "Correct. New World staples—particularly the Andean potato in northern Europe, maize in southern Europe and China, and manioc/cassava in West and Central Africa—yielded far more calories per acre than Old World grains and thrived in marginal soils, fueling long-term Old World population growth."
         }
@@ -565,27 +565,27 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "The early Protestant Reformation in Iberia, which prompted Spanish and Portuguese monarchs to seek overseas refuges for religious dissenters and surplus industrial laborers",
+          "text": "The early triumph of the Protestant Reformation in Iberia, which prompted Spanish and Portuguese monarchs to seek overseas refuges for religious dissenters and surplus laborers",
           "isCorrect": false,
           "distractorType": "Ideological & Chronological Misattribution",
           "explanation": "Incorrect. Spain and Portugal remained militant bastions of Roman Catholic orthodoxy (establishing the Spanish Inquisition in 1478 and later leading the Counter-Reformation); furthermore, Martin Luther's Protestant Reformation did not begin until 1517."
         },
         {
           "id": "B",
-          "text": "Geographic proximity to Atlantic wind gyres, the consolidation of centralized monarchies through the Reconquista, the integration of Arab-Mediterranean navigational technologies, and the desire to bypass Ottoman-Venetian intermediaries in the Asian spice trade",
+          "text": "Access to Atlantic wind gyres, monarchic consolidation via the Reconquista, Arab-Mediterranean navigation tools, and a drive to bypass Ottoman-Venetian spice middlemen",
           "isCorrect": true,
           "explanation": "Correct. Portugal and Spain benefited from Atlantic coastline access to the trade winds, militant religious and political centralization culminating in the 1492 completion of the Reconquista, adoption of the astrolabe, quadrant, and lateen-rigged caravel, and an urgent fiscal motive to circumvent Muslim and Italian middlemen after the 1453 fall of Constantinople."
         },
         {
           "id": "C",
-          "text": "The pioneering development of private joint-stock corporations and parliamentary central banking in Lisbon and Seville during the 1480s",
+          "text": "The pioneering development of private joint-stock corporations, limited-liability commercial charters, and parliamentary central banking in Lisbon and Seville during the 1480s",
           "isCorrect": false,
           "distractorType": "Institutional Misattribution",
           "explanation": "Incorrect. Iberian exploration and trade were directed and monopolized by royal absolutism (such as Spain's Casa de Contratación in Seville), whereas private joint-stock companies and central banking were pioneered by the Dutch and English in the seventeenth century."
         },
         {
           "id": "D",
-          "text": "The exhaustion of Iberian gold and silver mines in the 1470s coupled with a papal ban prohibiting Catholic kingdoms from trading within the Mediterranean Sea",
+          "text": "The sudden exhaustion of Iberian gold and silver mines in the 1470s coupled with a papal bull prohibiting Catholic kingdoms from trading anywhere in the Mediterranean basin",
           "isCorrect": false,
           "distractorType": "Factual Fabrication",
           "explanation": "Incorrect. Mediterranean trade remained active and fiercely contested among Italian city-states, the Crown of Aragon, and the Ottoman Empire; the motivation for Atlantic routes was the high tariff cost of eastern Mediterranean middlemen, not a papal ban."
@@ -613,21 +613,21 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "Enforcing strict physical segregation and anti-miscegenation statutes modeled on the English Chesapeake in order to prevent the emergence of a mixed-race population",
+          "text": "Enforcing strict physical segregation and binary anti-miscegenation statutes modeled on the English Chesapeake in order to prevent the emergence of a mixed-race colonial population",
           "isCorrect": false,
           "distractorType": "Colonial Model Confusion",
           "explanation": "Incorrect. Unlike the English colonies—which migrated in greater gender balance and enacted strict anti-miscegenation laws alongside a binary hypodescent ('one-drop') racial line—Spanish colonial authorities recognized and regulated intermarriage through a graduated hierarchy."
         },
         {
           "id": "C",
-          "text": "Granting mestizo and mulato artisans proportional representation in the Council of the Indies in exchange for military service on the northern frontier",
+          "text": "Granting mestizo and mulato artisans proportional representation in the Council of the Indies in exchange for militia service on the northern frontier",
           "isCorrect": false,
           "distractorType": "Institutional Fabrication",
           "explanation": "Incorrect. The Council of the Indies in Madrid was an appointed royal body dominated by peninsular jurists and aristocrats; castas were legally barred from high imperial offices, priesthoods, and university degrees (though wealthy individuals sometimes purchased gracias al sacar exemptions)."
         },
         {
           "id": "D",
-          "text": "Codifying a legal and fiscal hierarchy based on perceived proportions of Spanish, Indigenous, and African ancestry in order to preserve peninsular and creole privilege in a rapidly intermarrying society",
+          "text": "Codifying a legal and fiscal hierarchy based on proportions of Spanish, Indigenous, and African ancestry to preserve peninsular and creole elite privilege",
           "isCorrect": true,
           "explanation": "Correct. Because Spanish expeditions included relatively few European women, widespread intermarriage and sexual unions among Spaniards, Indigenous peoples, and Africans produced a complex multiracial population (mestizos, mulatos, zambos). The casta system categorized these groups to regulate tax/tribute obligations, guild access, officeholding, and elite status."
         }
@@ -647,20 +647,20 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Europeans conceptualized land as alienable private property enclosed for exclusive individual use, whereas Indigenous societies generally understood land treaty agreements as permissions to share ecological usufruct rights within reciprocal alliances",
+          "text": "Europeans viewed land as alienable private property for exclusive use, whereas Native societies saw land treaties as shared usufruct rights within alliances",
           "isCorrect": true,
           "explanation": "Correct. European legal systems treated land as a bounded commodity that could be permanently bought, sold, and fenced off, whereas Native American nations viewed land as a communal resource held in trust for subsistence (hunting, fishing, seasonal planting) and interpreted gift-giving treaties as ongoing kinship alliances rather than permanent alienation of soil."
         },
         {
           "id": "B",
-          "text": "Indigenous nations rejected all participation in commercial exchange for European manufactured goods, whereas Europeans sought to adopt Native subsistence reciprocity",
+          "text": "Indigenous nations rejected all participation in commercial exchange for European manufactured goods, whereas European colonists sought to adopt Native subsistence reciprocity",
           "isCorrect": false,
           "distractorType": "Factual Inversion",
           "explanation": "Incorrect. Indigenous peoples eagerly integrated European metal tools, textiles, copper kettles, and firearms into their economies through the fur and deerskin trades, though they often embedded trade within diplomatic gift-giving protocols."
         },
         {
           "id": "C",
-          "text": "European missionaries insisted on preserving matrilineal kinship networks among converts, whereas Native leaders demanded the adoption of patriarchal coverture",
+          "text": "European missionaries insisted on preserving matrilineal kinship networks among converts, whereas Native leaders demanded patriarchal coverture",
           "isCorrect": false,
           "distractorType": "Gender Role Inversion",
           "explanation": "Incorrect. European missionaries and officials sought to dismantle Native matrilineal clans, bride-wealth/divorce customs, and female farming in order to impose European patriarchal nuclear households and male-plow agriculture."
@@ -688,7 +688,7 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "The immediate abolition of property and church-membership requirements for voting in elections to the Massachusetts General Court",
+          "text": "The immediate abolition of property and church-membership requirements for voting in annual elections to the Massachusetts General Court",
           "isCorrect": false,
           "distractorType": "Factual Inversion",
           "explanation": "Incorrect. Until the Crown revoked its charter and issued a new royal charter in 1691, Massachusetts Bay restricted the franchise ('freeman' status) strictly to adult male 'visible saints' who were full members of a Puritan Congregational church."
@@ -729,27 +729,27 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "The Fundamental Orders of Connecticut, which replaced Congregational churches with Quaker meetinghouses across the Connecticut River Valley",
+          "text": "The Fundamental Orders of Connecticut, which disestablished Congregationalism and replaced Puritan churches with Quaker meetinghouses across the Connecticut River Valley",
           "isCorrect": false,
           "distractorType": "Document Misinterpretation",
           "explanation": "Incorrect. The Fundamental Orders of Connecticut (1639), drafted under Thomas Hooker, was an early colonial frame of government that slightly broadened male voting beyond church membership, but Connecticut remained staunchly Puritan Congregationalist, not Quaker."
         },
         {
           "id": "B",
-          "text": "The Maryland Act of Toleration, which extended civil rights and tax exemptions to all Trinitarian Christians residing in New England port towns",
+          "text": "The Maryland Act of Toleration, which extended full civil equality and tax exemptions to all Trinitarian Christians residing in New England port towns",
           "isCorrect": false,
           "distractorType": "Colonial Misattribution",
           "explanation": "Incorrect. The Maryland Toleration Act of 1649 was enacted by the Calvert family (Lord Baltimore) in the Chesapeake colony of Maryland to protect the Catholic minority from a growing Protestant majority, not by New England Puritans."
         },
         {
           "id": "C",
-          "text": "The Half-Way Covenant, which permitted the baptized children of visible saints to have their own infants baptized—even without testifying to a personal conversion experience—in order to maintain church authority over the second and third generations",
+          "text": "The Half-Way Covenant, which allowed baptized children of visible saints to have their own infants baptized without testifying to a conversion experience",
           "isCorrect": true,
           "explanation": "Correct. As commercial prosperity grew and fewer second-generation New Englanders could recount a harrowing personal conversion ('saving grace') required for full church membership, the Synod of 1662 adopted the Half-Way Covenant, allowing baptized 'half-way' members to baptize their children (though without taking communion or voting) to keep the rising generation within the church covenant."
         },
         {
           "id": "D",
-          "text": "The Charter of Liberties and Privileges, which abolished town meetings and transferred local governance to hereditary manorial patroons",
+          "text": "The Charter of Liberties and Privileges, which abolished New England town meetings and transferred local governance to hereditary manorial patroons",
           "isCorrect": false,
           "distractorType": "Regional Misattribution",
           "explanation": "Incorrect. Manorial patroonships and the 1683 Charter of Liberties and Privileges belonged to New Netherland/New York, whereas New England retained its nucleated town meetings and freehold family farms."
@@ -777,7 +777,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "Rising real wages in England that reduced the supply of white indentured servants, planter fear of landless former servants after Bacon’s Rebellion (1676), and the termination of the Royal African Company’s monopoly in 1698",
+          "text": "Rising English real wages curbing servant migration, planter fear of landless rebels after Bacon’s Rebellion, and the end of the Royal African Company monopoly",
           "isCorrect": true,
           "explanation": "Correct. Before the 1680s, Chesapeake tobacco planters relied heavily on white indentured servants (82% of bound labor in 1670). However, declining Chesapeake mortality rates meant more servants survived to claim freedom dues, culminating in Bacon's Rebellion (1676). Simultaneously, improving economic conditions in England slowed servant migration, and Parliament's opening of the slave trade to private merchants in 1698 expanded the supply of enslaved Africans."
         },
@@ -790,7 +790,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "The mass emancipation of enslaved Native Americans following the Pueblo Revolt of 1680, which forced Virginia planters to turn to West African labor markets",
+          "text": "The mass emancipation of enslaved Native Americans following the Pueblo Revolt of 1680, which forced Virginia tobacco planters to turn exclusively to West African labor markets",
           "isCorrect": false,
           "distractorType": "Geographic Misattribution",
           "explanation": "Incorrect. The Pueblo Revolt of 1680 occurred in Spanish New Mexico (the Rio Grande Valley), not the British Chesapeake, where prior bound labor had consisted primarily of English indentured servants rather than Pueblo Indians."
@@ -818,14 +818,14 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "South Carolina planters prohibited the direct importation of captives from West Africa after 1700, relying exclusively on natural reproduction among American-born enslaved families, whereas the Chesapeake imported captives solely from the West Indies.",
+          "text": "South Carolina planters prohibited the direct importation of captives from West Africa after 1700, relying on natural reproduction, whereas the Chesapeake imported captives solely from the West Indies.",
           "isCorrect": false,
           "distractorType": "Factual Inversion",
           "explanation": "Incorrect. This reverses the demographic pattern: by the 1720s–1740s, the Chesapeake enslaved population achieved self-sustaining natural increase due to a more balanced sex ratio and lower disease mortality, whereas South Carolina's brutal lowcountry rice swamps suffered high mortality and depended on continuous direct African imports (save for a temporary pause after the 1739 Stono Rebellion)."
         },
         {
           "id": "C",
-          "text": "Lowcountry rice and indigo plantations utilized the 'task system' with minimal white supervision on malaria-prone estates, enabling enslaved people to preserve stronger West African linguistic and cultural continuities (such as Gullah) than on the smaller, gang-labor tobacco estates of the Chesapeake.",
+          "text": "Lowcountry rice estates used the task system with sparse white oversight, enabling stronger West African cultural and linguistic survival (like Gullah) than Chesapeake gang labor.",
           "isCorrect": true,
           "explanation": "Correct. In South Carolina's lowcountry, enslaved Africans formed a substantial majority of the population (over 60%), worked under the 'task system' (completing a daily quota of rice/indigo work, after which they tended their own garden plots), and lived on large plantations where white owners fled seasonal malaria—fostering the Gullah/Geechee language and West African cultural syncretism. By contrast, Chesapeake tobacco plantations used closely supervised 'gang labor' on smaller units, though natural population reproduction began earlier in the Chesapeake."
         },
@@ -852,7 +852,7 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "The fracturing of established denominations, the founding of new sectarian colleges, and a widespread habit of ordinary colonists questioning traditional institutional authority and choosing their own congregations",
+          "text": "The fracturing of established denominations, the founding of new sectarian colleges, and a widespread habit of ordinary colonists questioning traditional institutional authority",
           "isCorrect": true,
           "explanation": "Correct. By asserting that individual spiritual rebirth ('new birth') outweighed formal clerical ordination and parish boundaries, the First Great Awakening split Congregationalists and Presbyterians, spurred the growth of Baptists and Methodists, led to the founding of New Light colleges (Princeton, Brown, Rutgers, Dartmouth), and accustomed ordinary colonists to challenging established elites."
         },
@@ -872,7 +872,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "A successful parliamentary campaign led by Old Light ministers to outlaw the printing press and revoke the charters of Rhode Island and Pennsylvania",
+          "text": "A successful parliamentary campaign led by Old Light ministers to outlaw the printing press and revoke the corporate charters of Rhode Island and Pennsylvania",
           "isCorrect": false,
           "distractorType": "Historical Fabrication",
           "explanation": "Incorrect. Although Old Light legislatures in colonies like Connecticut passed temporary laws restricting itinerant preachers from speaking without the local pastor's consent, colonial print culture expanded rapidly (aided by printers like Benjamin Franklin who published George Whitefield's sermons)."
@@ -907,14 +907,14 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "New France focused exclusively on large-scale plantation monoculture along the Mississippi River from its founding in 1608, whereas English colonies prohibited commercial agriculture",
+          "text": "New France focused exclusively on large-scale plantation monoculture using coerced labor along the St. Lawrence River from 1608, whereas English colonies prohibited commercial export agriculture",
           "isCorrect": false,
           "distractorType": "Economic Misattribution",
           "explanation": "Incorrect. Samuel de Champlain founded Quebec in 1608 as a fur-trading outpost; French plantation agriculture in Louisiana developed only in the eighteenth century and remained far smaller on the mainland than English tobacco and rice cultivation."
         },
         {
           "id": "D",
-          "text": "New France relied on a small demographic footprint of fur traders (coureurs de bois), military forts, and Jesuit missionaries who accommodated Indigenous diplomatic protocols and formed kinship alliances, whereas English colonies dispatched large settler populations that displaced Native landholders",
+          "text": "New France relied on a small footprint of fur traders, forts, and Jesuits who formed kinship alliances with Native nations, whereas populous English settlements displaced Native landholders",
           "isCorrect": true,
           "explanation": "Correct. Because New France had a small European population and depended economically on the beaver peltry trade harvested by Algonquian and Wendat (Huron) hunters, French officials, fur traders, and Jesuits had to negotiate on a 'Middle Ground' of reciprocal gift-giving and intermarriage, whereas rapidly growing English agricultural colonies continuously encroached on Indigenous lands."
         }
@@ -948,7 +948,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "While the Navigation Acts stimulated New England shipbuilding and guaranteed protected British markets for Chesapeake tobacco, lax customs enforcement under Robert Walpole allowed colonial merchants to smuggle French West Indian molasses and enabled provincial assemblies to wield the 'power of the purse' over royal governors",
+          "text": "Protected markets aided colonial shipping and tobacco, while lax enforcement under Walpole permitted molasses smuggling and assembly control over royal governors' pay",
           "isCorrect": true,
           "explanation": "Correct. British mercantilism was not purely onerous before 1763: colonial shipbuilders counted as 'English' under the Navigation Acts, southern staple planters enjoyed a monopoly in the home market, and under Prime Minister Robert Walpole's policy of 'salutary neglect,' customs officials rarely enforced the Molasses Act of 1733, while elected colonial assemblies routinely withheld royal governors' salaries to extract political concessions."
         },
@@ -975,27 +975,27 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Both involved multi-community Indigenous coalitions that forged unity across traditional village or linguistic boundaries to resist colonial encroachment and religious coercion, though the Pueblo succeeded in expelling the Spanish for twelve years while Southern New England tribes suffered catastrophic defeat and enslavement",
+          "text": "Both forged multi-village Native coalitions against colonial intrusion, though the Pueblo expelled Spain for twelve years while New England tribes were defeated",
           "isCorrect": true,
           "explanation": "Correct. Wampanoag leader Metacom (King Philip) forged a pan-Indian alliance with Nipmuc and Narragansett communities against Puritan land encroachment and legal subordination, while Tewa religious leader Popé coordinated dozens of autonomous Pueblo towns across linguistic lines to expel Franciscan friars and Spanish encomenderos. Metacom's coalition was defeated (with help from Mohawk and Mohegan allies of the English), whereas the Pueblo drove the Spanish out of Santa Fe from 1680 to 1692 and forced Spain to abandon the encomienda and tolerate Pueblo ritual kivas upon reconquest."
         },
         {
           "id": "B",
-          "text": "Both were instigated by French military officers from Quebec who supplied artillery to Native insurgents as part of King William’s War",
+          "text": "Both were directly instigated by French military officers from Quebec who supplied heavy siege artillery to Native insurgents as part of King William’s War along the frontier",
           "isCorrect": false,
           "distractorType": "Chronological & Causal Misattribution",
           "explanation": "Incorrect. Both conflicts erupted before King William's War (1689–1697) and were driven by internal Indigenous grievances over land loss, livestock destruction of Native crops, and missionary suppression, without French involvement."
         },
         {
           "id": "C",
-          "text": "Both resulted in the permanent withdrawal of European powers from the contested regions and the recognition of sovereign Indigenous nation-states by European treaties",
+          "text": "Both resulted in the permanent withdrawal of European colonial empires from the contested regions and the formal recognition of sovereign Indigenous nation-states by European treaties",
           "isCorrect": false,
           "distractorType": "Outcome Overstatement",
           "explanation": "Incorrect. New England colonists crushed Metacom's forces in 1676 (executing or selling hundreds of Native captives into Caribbean slavery), and while the Pueblo expelled Spain for twelve years, Diego de Vargas reconquered New Mexico in 1692—albeit under much more accommodating terms."
         },
         {
           "id": "D",
-          "text": "Both were joint uprisings of landless European indentured servants and enslaved Africans who allied with Native nations to overthrow colonial governors",
+          "text": "Both began as joint uprisings of landless European indentured servants and enslaved Africans who allied with neighboring Native nations to overthrow royal colonial governors",
           "isCorrect": false,
           "distractorType": "Event Confusion (Bacon's Rebellion)",
           "explanation": "Incorrect. An uprising of landless white indentured servants and enslaved Africans against a colonial governor (William Berkeley) occurred in Virginia during Bacon's Rebellion (1676)—and Bacon's rebels actually *attacked* Native Americans rather than allying with them."
@@ -1016,28 +1016,28 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "How an interracial conspiracy of Irish indentured servants and enslaved dockworkers sought to burn the colonial capital and install a Jacobite governor",
+          "text": "How an interracial conspiracy of Irish indentured servants and enslaved dockworkers sought to burn the colonial capital and install a Catholic Jacobite governor",
           "isCorrect": false,
           "distractorType": "Event Confusion (New York Conspiracy of 1741)",
           "explanation": "Incorrect. Rumors of an interracial plot involving enslaved workers, Irish soldiers/servants, and Catholic/Jacobite agents to burn the city occurred during the New York Conspiracy Trials of 1741, not the Stono Rebellion in rural South Carolina."
         },
         {
           "id": "B",
-          "text": "How the influence of radical Quaker abolitionist pamphlets distributed in Charleston Harbor convinced lowcountry rice planters to transition to gradual emancipation statutes",
+          "text": "How the influence of radical Quaker abolitionist pamphlets distributed in Charleston Harbor convinced lowcountry rice planters to enact gradual emancipation statutes",
           "isCorrect": false,
           "distractorType": "Ideological & Regional Anachronism",
           "explanation": "Incorrect. The Stono Rebellion occurred in 1739—decades before organized Quaker antislavery societies gained traction in the North—and caused South Carolina planters to tighten, not loosen, the legal apparatus of chattel slavery."
         },
         {
           "id": "C",
-          "text": "How Royal Governor Lord Dunmore’s offer of emancipation for joining British regiments triggered a colony-wide desertion of enslaved tobacco workers",
+          "text": "How Royal Governor Lord Dunmore’s offer of emancipation for joining British regiments triggered a colony-wide desertion of enslaved tobacco workers in 1739",
           "isCorrect": false,
           "distractorType": "Chronological Confusion",
           "explanation": "Incorrect. Lord Dunmore's Proclamation occurred in Virginia in November 1775 at the outbreak of the American Revolutionary War, thirty-six years after the 1739 Stono Rebellion."
         },
         {
           "id": "D",
-          "text": "How imperial geopolitical rivalries—specifically Spanish Florida’s offer of freedom to Catholic converts escaping British plantations—intersected with African military traditions to spark armed resistance, prompting South Carolina to enact the draconian Negro Act of 1740",
+          "text": "How Spanish Florida’s sanctuary offer to Catholic converts intersected with Kongolese military traditions to spark armed revolt, prompting the harsh Negro Act of 1740",
           "isCorrect": true,
           "explanation": "Correct. Led by Jemmy and other Kongolese captives (many of whom were Catholic and experienced in Central African warfare), the Stono rebels seized weapons and marched toward Spanish St. Augustine, where the Spanish governor had promised freedom to fugitives from British colonies. In response, the South Carolina assembly passed the Negro Act of 1740, prohibiting enslaved people from learning to read, assembling in groups, growing their own food, or earning money, while Restricting private manumissions."
         }
@@ -1064,7 +1064,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "Colonial elites increasingly emulated British Georgian architecture, genteel consumer habits, and English common law, yet colonial political culture developed a much broader property-owning electorate, entrenched practices of direct ('actual') representation, and greater religious pluralism than existed in Great Britain",
+          "text": "Elites emulated British consumer culture and law, yet the colonies developed broader freehold suffrage, actual representation, and greater religious pluralism",
           "isCorrect": true,
           "explanation": "Correct. Even as eighteenth-century colonial merchants and planters became more 'Anglicized' through transatlantic print culture, imported British luxury goods, and English legal training, American political and social realities diverged: widespread land ownership enabled roughly 50–75% of adult white men to vote (compared to under 15–20% in Britain), voters expected assemblymen to reside in and answer directly to their districts, and the Zenger Trial (1735) and religious diversity fostered a more open public sphere."
         },
@@ -1112,14 +1112,14 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "Southern plantation colonies blocked the plan in Parliament because the proposed representation formula apportioned delegates strictly by free white population rather than total tax revenue",
+          "text": "Southern plantation colonies blocked the plan on the floor of Parliament because the proposed representation formula apportioned delegates strictly by free white population rather than tax revenue",
           "isCorrect": false,
           "distractorType": "Constitutional Convention Conflation",
           "explanation": "Incorrect. The Albany Plan actually apportioned seats in the Grand Council according to each colony's financial contribution to the common treasury (between 2 and 7 delegates per colony), and it never reached a parliamentary floor vote because not a single colonial assembly ratified it."
         },
         {
           "id": "D",
-          "text": "Colonial assemblies refused to surrender their exclusive authority over local taxation and militia appropriations to an intercolonial Grand Council, while British officials feared that a consolidated colonial legislature would erode royal prerogative",
+          "text": "Colonial assemblies refused to yield local taxing and militia power to an intercolonial council, while London feared a unified colonial legislature would erode royal prerogative",
           "isCorrect": true,
           "explanation": "Correct. Under the Albany Plan, a royally appointed President-General and an elected intercolonial Grand Council would have possessed power to levy duties, raise troops, and regulate Indian treaties. Provincial assemblies jealously guarded their own 'power of the purse' and refused to share taxing power, while Whitehall considered the proposed union dangerously autonomous."
         }
@@ -1139,7 +1139,7 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "The expulsion of France from North America ended Indigenous nations' 'play-off' diplomacy, and General Jeffrey Amherst’s suspension of diplomatic gift-giving triggered Pontiac’s pan-Indian uprising across the Great Lakes and Ohio Valley",
+          "text": "France's expulsion ended Native play-off diplomacy, and Jeffrey Amherst's halt to gift-giving sparked Pontiac's uprising across the Great Lakes and Ohio Valley",
           "isCorrect": true,
           "explanation": "Correct. With the Treaty of Paris (1763) removing New France, Native nations could no longer play Britain and France off against one another. When British Commander-in-Chief Jeffrey Amherst treated former French-allied tribes as conquered subjects, halted traditional gift-giving of gunpowder and lead, and allowed settlers onto western lands, Ottawa leader Pontiac (inspired by the Delaware prophet Neolin) captured eight British forts—convincing London to establish the Proclamation Line of 1763 to prevent another costly frontier war."
         },
@@ -1159,7 +1159,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "The collapse of the Hudson’s Bay Company’s fur monopoly, which required the Crown to relocate French Acadian habitants into the Ohio River Valley to harvest pelts",
+          "text": "The collapse of the Hudson’s Bay Company’s fur monopoly, which required the Crown to relocate French Acadian habitants into the Ohio Valley to harvest pelts",
           "isCorrect": false,
           "distractorType": "Historical Misattribution",
           "explanation": "Incorrect. The British had forcibly deported French Acadians (le Grand Dérangement) from Nova Scotia beginning in 1755, and the Proclamation of 1763 organized new royal provinces in Quebec, East Florida, and West Florida while reserving the Ohio Valley for Indigenous nations."
@@ -1180,27 +1180,27 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "While the British Crown allied with eastern Quaker merchants to abolish colonial militias, western backcountry settlers petitioned Parliament to dissolve the Pennsylvania Assembly and establish direct military rule under General Thomas Gage",
+          "text": "While the Crown allied with Quaker merchants to abolish colonial militias, backcountry settlers petitioned Parliament to establish direct military rule under General Gage",
           "isCorrect": false,
           "distractorType": "Internal Faction Misinterpretation",
           "explanation": "Incorrect. Although Benjamin Franklin and the Anti-Proprietary faction in Pennsylvania did petition the Crown to convert Pennsylvania from Penn family proprietary rule into a royal colony, the Paxton Boys demanded greater representation *within* the Pennsylvania Assembly and provincial funding for frontier rangers, not military rule under Gage."
         },
         {
           "id": "B",
-          "text": "While the Imperial Cabinet sought to contain military expenditures by restraining settler expansion, Scots-Irish backcountry settlers resorted to racialized vigilante violence against all Native peoples and marched against eastern colonial elites whom they accused of political underrepresentation and military neglect",
+          "text": "While London sought to curb military costs by halting western settlement, Scots-Irish frontier vigilantes massacred Native peoples and marched against underrepresentation by eastern elites",
           "isCorrect": true,
           "explanation": "Correct. Excerpt 1 reflects Whitehall's imperial calculation that halting trans-Appalachian settlement would stabilize the frontier and reduce army costs, whereas Excerpt 2 expresses the grievances of the Paxton Boys—Scots-Irish frontier settlers in western Pennsylvania who massacred peaceful Christian Conestoga Indians in December 1763 and marched on Philadelphia in 1764 to protest the Quaker-dominated eastern assembly's refusal to reapportion legislative seats or fund frontier garrisons."
         },
         {
           "id": "C",
-          "text": "Both the Royal Privy Council and the Pennsylvania frontier inhabitants agreed that the Haudenosaunee Confederacy should exercise sovereign jurisdiction over the Susquehanna Valley to prevent French reconquest",
+          "text": "Both the Royal Privy Council and the Pennsylvania frontier inhabitants agreed that the Haudenosaunee Confederacy should exercise sovereign jurisdiction over the Susquehanna Valley",
           "isCorrect": false,
           "distractorType": "Perspective Contradiction",
           "explanation": "Incorrect. The Paxton Boys' Remonstrance vehemently rejected any accommodation with Native Americans, lumping peaceful Christian Conestoga and Moravian Indians together with hostile combatants and defying the Crown's Proclamation Line."
         },
         {
           "id": "D",
-          "text": "Eastern colonial assemblies enthusiastically enforced the Royal Proclamation of 1763 by deploying provincial regiments to arrest land speculators and evict squatters from the Ohio Country",
+          "text": "Eastern colonial assemblies enthusiastically enforced the Royal Proclamation of 1763 by deploying provincial regiments to arrest land speculators and evict squatters",
           "isCorrect": false,
           "distractorType": "Factual Inversion",
           "explanation": "Incorrect. Neither colonial assemblies nor frontier settlers respected the Proclamation Line; colonial governors and elite speculators (such as Lord Dunmore and the Walpole Company) continually lobbied to push the boundary westward (as in the 1768 Treaties of Fort Stanwix and Hard Labor), while thousands of squatters crossed the mountains illegally."
@@ -1269,7 +1269,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "Dulany argues that non-voting residents in Britain were protected against fiscal predation because Members of Parliament and their British constituents personally bore a proportional share of every domestic tax they enacted, whereas parliamentary taxes on America reduced British tax burdens at colonial expense",
+          "text": "Dulany argues that British MPs and electors personally shared the burden of every domestic tax they passed, whereas taxing America relieved British taxpayers at colonial expense",
           "isCorrect": true,
           "explanation": "Correct. Dulany exposed the fatal flaw in Whately's theory of 'virtual representation': in Great Britain, an MP who voted for a tax burdened his own property and that of his local electors alongside non-voters in Manchester, creating a shared community of interest. By contrast, no MP owned taxable colonial land or answered to colonial voters; taxing America actually *relieved* British taxpayers, creating a direct conflict of interest."
         },
@@ -1282,7 +1282,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "Dulany proposes that the colonies would willingly pay the Stamp Act duties if Parliament allocated thirty seats in the House of Commons to colonial delegates elected by provincial legislatures",
+          "text": "Dulany proposes that the colonies would willingly pay the Stamp Act duties if Parliament allocated thirty seats in the House of Commons to colonial delegates",
           "isCorrect": false,
           "distractorType": "Colonial Position Inversion",
           "explanation": "Incorrect. Both Dulany and the Stamp Act Congress of 1765 explicitly rejected the idea of sending colonial MPs to Westminster, recognizing that distance and a tiny minority of seats in London would merely legitimize outvoting the colonies on every tax bill."
@@ -1303,7 +1303,7 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Townshend transferred the power to levy colonial taxes from the House of Commons to the King’s Privy Council, prompting colonists to appeal to Parliament for protection against royal absolutism",
+          "text": "Townshend transferred the power to levy colonial taxes from Commons to the Privy Council, prompting colonists to appeal to Parliament for protection against royal absolutism",
           "isCorrect": false,
           "distractorType": "Institutional Reversal",
           "explanation": "Incorrect. Throughout the 1760s and early 1770s, taxes were enacted by Parliament (the House of Commons and Lords), and colonists actually appealed to King George III to restrain parliamentary overreach until 1775–1776."
@@ -1317,13 +1317,13 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "Townshend levied 'external' import duties on colonial ports (glass, lead, paint, paper, and tea) rather than an 'internal' stamp tax, prompting John Dickinson to argue that any parliamentary duty—external or internal—collected to raise revenue and pay royal officials' salaries was unconstitutional",
+          "text": "Townshend levied external import duties to raise revenue and pay royal governors' salaries, prompting John Dickinson to argue that any parliamentary tax for revenue was unconstitutional",
           "isCorrect": true,
           "explanation": "Correct. Because Benjamin Franklin and other colonists during the Stamp Act debates had distinguished between 'internal' taxes and 'external' customs duties, Chancellor of the Exchequer Charles Townshend in 1767 placed external port duties on goods imported *from* Britain and earmarked the revenue to pay royal governors and judges (stripping assemblies of the power of the purse). In *Letters from a Farmer in Pennsylvania* (1767–1768), John Dickinson clarified that the constitutional test was *intent*: trade regulation was legal, but any external or internal duty designed to raise revenue was unconstitutional."
         },
         {
           "id": "D",
-          "text": "Townshend exempted British East India Company tea from all imperial duties in 1767, convincing colonial Whigs to abandon nonimportation agreements until the passage of the Coercive Acts",
+          "text": "Townshend exempted British East India Company tea from all imperial duties in 1767, convincing colonial Whigs to abandon nonimportation agreements until the Coercive Acts",
           "isCorrect": false,
           "distractorType": "Chronological Conflation (1767 vs. 1770/1773)",
           "explanation": "Incorrect. Tea was one of the core items taxed under the 1767 Townshend Act, and when Lord North repealed the other Townshend duties in 1770, he specifically *retained* the three-pence tax on tea as a symbol of parliamentary supremacy under the Declaratory Act."
@@ -1344,7 +1344,7 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Its preamble explicitly declared the purpose of raising a parliamentary revenue in America, and its enforcement provisions transferred smuggling trials from sympathetic local common-law juries to juryless Vice-Admiralty courts in Halifax",
+          "text": "It explicitly taxed trade to raise parliamentary revenue and moved smuggling trials from local juries to juryless Vice-Admiralty courts in Halifax",
           "isCorrect": true,
           "explanation": "Correct. Under the 1733 Molasses Act, the prohibitive 6-pence duty had been a mercantilist trade barrier that merchants routinely evaded by paying a 1-pence bribe to customs officials. George Grenville's 1764 Revenue (Sugar) Act cut the rate in half to 3 pence but strictly enforced collection via the Royal Navy, explicitly stated its goal of raising revenue to defend the colonies, required complex cargo bonds, and tried accused smugglers in a Vice-Admiralty court at Halifax, Nova Scotia—without a jury and with the burden of proof placed on the defendant."
         },
@@ -1399,14 +1399,14 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "It restored the Ohio River Valley to the French monarchy under King Louis XVI in exchange for French neutrality during the Massachusetts rebellion",
+          "text": "It restored the Ohio River Valley to the French monarchy under King Louis XVI in exchange for a guarantee of French neutrality during the Massachusetts rebellion",
           "isCorrect": false,
           "distractorType": "Diplomatic Fabrication",
           "explanation": "Incorrect. Great Britain retained full sovereignty over Quebec; the Quebec Act placed the Ohio Valley under the jurisdiction of the *British* royal governor at Quebec rather than returning it to France."
         },
         {
           "id": "D",
-          "text": "It established governance by an appointed governor and council without an elected assembly, recognized the official status and tithes of the Roman Catholic Church, and extended Quebec’s boundaries south to the Ohio River—alarming Protestant New Englanders and invalidating the western land claims of Virginia and Pennsylvania speculators",
+          "text": "It instituted rule without an elected assembly, legalized Catholic tithes, and annexed the Ohio Valley to Quebec—alarming Protestant New Englanders and Virginia land speculators",
           "isCorrect": true,
           "explanation": "Correct. Passed in June 1774, the Quebec Act retained French civil law (without English jury trials in civil cases), governed the province through a Crown-appointed legislative council without an elected assembly, legalized Catholic tithes, and annexed the entire Illinois and Ohio Country (between the Ohio and Mississippi Rivers) to Quebec. Colonists saw it as a terrifying blueprint for autocratic rule, 'popery' on their border, and the permanent seizure of trans-Appalachian lands claimed by Virginia, Connecticut, and Pennsylvania."
         }
@@ -1433,20 +1433,20 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "Financial subsidies provided by the Bank of Amsterdam and the French Crown that compensated colonial merchants for all lost customs revenue between 1765 and 1770",
+          "text": "Direct financial subsidies provided by the Bank of Amsterdam and the French Crown that compensated colonial merchants for all lost customs revenue between 1765 and 1770",
           "isCorrect": false,
           "distractorType": "Chronological Anachronism",
           "explanation": "Incorrect. Neither France nor the Dutch Republic subsidized colonial merchant boycotts during the 1760s; covert French financial and munitions aid (via Roderigue Hortalez and Company) did not begin until 1776, after armed conflict was underway."
         },
         {
           "id": "C",
-          "text": "The mobilization of ordinary urban artisans, dockworkers, and 'Daughters of Liberty' who transformed domestic household production—such as spinning homespun cloth and boycotting British tea—into a badge of patriotic civic virtue and enforced compliance through local committees of inspection",
+          "text": "Broad mobilization of urban artisans and 'Daughters of Liberty' who spun homespun cloth, boycotted British tea, and enforced compliance via inspection committees",
           "isCorrect": true,
           "explanation": "Correct. Because eighteenth-century colonists had become major consumers of British manufactured textiles, ceramics, and tea, commercial boycotts could not succeed solely through elite assembly resolutions. They required mass participation by women (the Daughters of Liberty holding public 'spinning bees' to replace British broadcloth with homespun and brewing herbal 'Liberty Tea'), artisans, and Continental Association committees who published the names of boycott violators."
         },
         {
           "id": "D",
-          "text": "The unanimous refusal of British merchants in London, Bristol, and Liverpool to petition Parliament for repeal of the Stamp and Townshend Acts",
+          "text": "The unanimous refusal of British export merchants in London, Bristol, and Liverpool to petition Parliament for the immediate repeal of the Stamp and Townshend Acts",
           "isCorrect": false,
           "distractorType": "Factual Inversion",
           "explanation": "Incorrect. The primary mechanism by which colonial nonimportation worked was by slashing orders to British exporters in London, Bristol, and Glasgow, who then lobbied Parliament (such as the Marquis of Rockingham in 1766 and Lord North in 1770) to repeal the taxes to save British manufacturing jobs."
@@ -1467,7 +1467,7 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Colonial pamphleteers’ pervasive citations of John Trenchard and Thomas Gordon’s Cato’s Letters to warn that the stationing of peacetime standing armies in Boston and the creation of new customs patronage posts were part of a ministerial plot to subvert the balanced British Constitution",
+          "text": "Colonial pamphleteers' pervasive citations of Trenchard and Gordon's Cato's Letters warning that peacetime standing armies and customs sinecures were a ministerial plot against liberty",
           "isCorrect": true,
           "explanation": "Correct. Bailyn argued that American Patriots viewed imperial policy through the lens of early-18th-century English 'Country' or 'Real Whig' opposition writers (like Trenchard and Gordon). In this ideology, executive power was inherently aggressive, and the combination of peacetime standing armies (1768 Boston garrison), multiplying customs sinecures ('placemen'), juryless courts, and threats to assemblies proved a coordinated ministerial conspiracy against liberty."
         },
@@ -1480,14 +1480,14 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "The decision of the Virginia House of Burgesses to rally behind independence only after Royal Governor Lord Dunmore seized the Williamsburg gunpowder magazine and threatened to arm enslaved laborers in 1775",
+          "text": "The Virginia House of Burgesses' decision to back independence after Governor Lord Dunmore seized the Williamsburg powder magazine and offered freedom to enslaved recruits",
           "isCorrect": false,
           "distractorType": "Supports Historian B (Holton)",
           "explanation": "Incorrect. This evidence is the centerpiece of Historian B's (Woody Holton's) argument in *Forced Founders*—that Southern gentry were pushed into revolution by fear of a British alliance with enslaved people and Native nations."
         },
         {
           "id": "D",
-          "text": "Data showing that per capita taxes paid by residents of Massachusetts and Virginia in 1765 averaged less than one-twentieth of the tax burden borne by subjects residing in England",
+          "text": "Data showing that per capita taxes paid by residents of Massachusetts and Virginia in 1765 averaged less than one-twentieth of the tax burden borne by subjects in England",
           "isCorrect": false,
           "distractorType": "Contextual Fact / Does Not Prove Ideological Mechanism",
           "explanation": "Incorrect. While the low actual economic burden of colonial taxes helps explain why a purely economic-hardship theory fails, Bailyn's specific thesis rests on the *content* of Radical Whig ideological writings about ministerial corruption, standing armies, and constitutional conspiracy."
@@ -1515,21 +1515,21 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "Radical Whig constitutional theory was merely cynical propaganda invented by Tidewater planters who secretly wished to abolish private property and establish an egalitarian democracy",
+          "text": "Radical Whig constitutional theory was merely cynical propaganda invented by Tidewater planters who secretly wished to abolish private property and establish democracy",
           "isCorrect": false,
           "distractorType": "Historiographical Distortion",
           "explanation": "Incorrect. Neither Bailyn nor Holton argues that Tidewater planters sought to abolish private property; Bailyn emphasizes the sincerity of their Whig constitutionalism, while Holton argues they sought to *protect* their property and social mastery."
         },
         {
           "id": "C",
-          "text": "Because Virginia planters had no ideological objections to parliamentary taxation before 1775, the Revolution in the South was entirely a civil war among rival factions of the Anglican clergy",
+          "text": "Because Virginia planters had no ideological objections to parliamentary taxation before 1775, the Revolution in the South was entirely a civil war among rival Anglican clergy",
           "isCorrect": false,
           "distractorType": "Factual Inversion",
           "explanation": "Incorrect. Virginia's House of Burgesses led the ideological opposition to the Stamp Act (Patrick Henry's Virginia Resolves of 1765) and the Townshend Acts (the Virginia Association of 1769) long before 1775."
         },
         {
           "id": "D",
-          "text": "Material grievances over British credit restrictions, western land vetoes, and Dunmore’s emancipation threat made Chesapeake planters acutely receptive to Radical Whig warnings that a corrupt British ministry sought to reduce freeholders to political slavery",
+          "text": "Pressures from British debt, western land vetoes, and Dunmore's emancipation proclamation made Virginia planters acutely receptive to Radical Whig warnings of ministerial conspiracy",
           "isCorrect": true,
           "explanation": "Correct. A sophisticated synthesis recognizes that ideology and material/social pressures reinforced each other: Chesapeake elites possessed a daily visceral understanding of 'slavery' (because they held enslaved people) and experienced concrete imperial constraints on land and credit (Holton), which made Country Whig warnings against parliamentary 'enslavement' and ministerial tyranny (Bailyn) resonate with existential urgency."
         }
@@ -1556,7 +1556,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "King George III’s refusal to read the Olive Branch Petition, his August 1775 Proclamation of Rebellion, Parliament’s Prohibitory Act placing the colonies outside royal protection, the hiring of German Hessian mercenaries, and the publication of Thomas Paine’s Common Sense",
+          "text": "George III's rejection of the Olive Branch Petition, the Prohibitory Act, the hiring of German Hessian mercenaries, and the publication of Thomas Paine's Common Sense",
           "isCorrect": true,
           "explanation": "Correct. Under the 'dominion theory' developed by James Wilson, Thomas Jefferson, and John Adams in 1774, colonists argued that they were outside Parliament's jurisdiction and bound to Britain *solely* through their voluntary allegiance to the Crown. When George III rejected the Second Continental Congress's Olive Branch Petition in August 1775, declared the colonies in open rebellion, contracted for 18,000 German mercenaries, and signed the Prohibitory Act (December 1775) blockading American trade, Paine's *Common Sense* (January 1776) and the Declaration of Independence (July 1776) indicted the King directly for severing the social contract."
         },
@@ -1611,7 +1611,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "That the British imperial framework had provided naval security, protected mercantilist markets, and balanced constitutional liberty, whereas republican separation would bring commercial devastation, heavy war debts, and the extra-legal tyranny of local Patriot committees",
+          "text": "That British rule provided naval security, protected markets, and balanced liberty, whereas independence would bring ruinous debt, naval blockade, and local committee tyranny",
           "isCorrect": true,
           "explanation": "Correct. Inglis—an Anglican clergyman in New York whose pamphlet was the most widely read Loyalist rebuttal to Paine—argued on pragmatic and constitutional grounds: British naval protection and access to British/West Indian markets under the Navigation Acts had fueled colonial prosperity, while independence meant losing those markets, fighting the Royal Navy, incurring massive debts for standing armies, and enduring the coercive conformity enforced by Patriot Committees of Safety."
         }
@@ -1631,27 +1631,27 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Backcountry farmers in the Carolina interior (such as former Regulators), ethnic and religious minorities outside the New England Congregationalist/Virginia Anglican Patriot elite, and Haudenosaunee warriors led by Joseph Brant who viewed the Crown as a bulwark against Patriot land speculators",
+          "text": "Carolina backcountry farmers, non-English ethnic minorities, and Haudenosaunee warriors under Joseph Brant who saw the Crown as a shield against Patriot speculators",
           "isCorrect": true,
           "explanation": "Correct. Loyalism (~15–20% of the white population, plus key Indigenous and enslaved allies) was strongest among groups who feared domination by local Patriot elites: Anglican clergy in the North, royal officials, New York/Mid-Atlantic merchants, Carolina backcountry farmers who hated coastal Whig planters after the Regulator crisis, enslaved African Americans responding to British emancipation offers, and four of the six Haudenosaunee nations (Mohawk, Onondaga, Cayuga, Seneca) led by Joseph Brant (Thayendanegea)."
         },
         {
           "id": "B",
-          "text": "Congregationalist ministers in rural Massachusetts and Connecticut together with indebted Tidewater tobacco planters in Virginia who depended on Scottish credit",
+          "text": "Congregationalist ministers in rural Massachusetts and Connecticut together with heavily indebted Tidewater tobacco planters in Virginia who depended on Scottish credit",
           "isCorrect": false,
           "distractorType": "Patriot Core Inversion",
           "explanation": "Incorrect. New England Congregationalist ministers ('the Black Regiment') and Chesapeake Tidewater planters formed the most militant core of the Patriot movement, whereas Anglican clergy in the North and non-English minorities in the South leaned Loyalist."
         },
         {
           "id": "C",
-          "text": "Scots-Irish Presbyterian settlers in the Shenandoah Valley and western Pennsylvania who supported the Royal Proclamation of 1763 and the Quebec Act",
+          "text": "Scots-Irish Presbyterian settlers in the Shenandoah Valley and western Pennsylvania who enthusiastically supported both the Royal Proclamation of 1763 and the 1774 Quebec Act",
           "isCorrect": false,
           "distractorType": "Ethnic/Regional Inversion",
           "explanation": "Incorrect. Scots-Irish Presbyterians in Pennsylvania and the Shenandoah Valley fiercely opposed both the Crown's Proclamation of 1763 and the Anglican establishment, making them overwhelmingly Patriot during the Revolution."
         },
         {
           "id": "D",
-          "text": "Urban mechanics, dockworkers, and sailors in Boston and Philadelphia who depended on the British East India Company’s tea monopoly for employment",
+          "text": "Urban mechanics, dockworkers, and liberty-pole sailors in Boston, New York, and Philadelphia who depended on the British East India Company’s tea monopoly for employment",
           "isCorrect": false,
           "distractorType": "Class Alignment Inversion",
           "explanation": "Incorrect. Urban artisans, mechanics, and maritime workers in Boston, New York, and Philadelphia formed the backbone of the Sons of Liberty and radical Patriot street mobilization."
@@ -1672,27 +1672,27 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "While the British Parliament enacted immediate unconditional abolition across the entire British Empire in 1775, northern state legislatures rejected all antislavery petitions until the ratification of the Thirteenth Amendment",
+          "text": "While Parliament enacted immediate abolition across the Empire in 1775, northern legislatures rejected all antislavery petitions until the Thirteenth Amendment",
           "isCorrect": false,
           "distractorType": "Chronological & Statutory Inversion",
           "explanation": "Incorrect. Britain did not abolish slavery in its empire (including Jamaica and Barbados) until 1833; meanwhile, northern states *did* respond to petitions and courtroom lawsuits during the Revolutionary era—with Vermont (1777) and Massachusetts (via the 1783 Quock Walker judicial decisions) ending slavery and Pennsylvania (1780), Connecticut (1784), and Rhode Island (1784) enacting gradual emancipation laws."
         },
         {
           "id": "B",
-          "text": "While British commanders offered emancipation solely as a pragmatic military measure targeting rebel slaveholders without abolishing slavery in loyal colonies, African Americans in the North appropriated the Patriots’ own Lockean natural-rights ideology to demand the universal abolition of slavery",
+          "text": "While British commanders offered freedom solely as a military tactic against rebels, Northern Black petitioners invoked Lockean natural rights to demand universal abolition",
           "isCorrect": true,
           "explanation": "Correct. Notice the careful limitation in Dunmore's Proclamation: he offered freedom *only* to enslaved men and indentured servants '(appertaining to Rebels)' who were 'able and willing to bear arms'—leaving enslaved people owned by Loyalists or inside the British West Indies in bondage (though the later 1779 Philipsburg Proclamation broadened this to all rebel-owned runaways). Conversely, Prince Hall and northern Black petitioners turned the Declaration of Independence's natural-rights language directly against American hypocrisy to press for legislative and judicial emancipation."
         },
         {
           "id": "C",
-          "text": "While George Washington and the Continental Congress immediately offered unconditional emancipation to any enslaved Virginian who enlisted in the Continental Army in 1775, Lord Dunmore restricted Black recruits to non-combat labor",
+          "text": "While Washington and Congress immediately offered freedom to any enslaved Virginian enlisting in 1775, Lord Dunmore restricted Black recruits to unarmed camp labor",
           "isCorrect": false,
           "distractorType": "Policy Inversion",
           "explanation": "Incorrect. In July–November 1775, Washington and the Continental Congress initially *barred* Black men from enlisting in the Continental Army; it was only *after* Dunmore formed his 'Ethiopian Regiment' that Washington reversed course in 1776–1777 to allow free Black men (and eventually enslaved recruits from northern states and Maryland, though South Carolina and Georgia refused even when Congress offered to buy them in 1779) to serve."
         },
         {
           "id": "D",
-          "text": "Both documents demonstrate that eighteenth-century emancipation initiatives originated exclusively from white evangelical revivalists rather than from the political and military agency of African Americans themselves",
+          "text": "Both documents show that Revolutionary emancipation initiatives came exclusively from white evangelicals rather than the political agency of African Americans",
           "isCorrect": false,
           "distractorType": "Agency Erasure",
           "explanation": "Incorrect. Both documents underscore African American agency: before Dunmore even issued his proclamation, hundreds of enslaved Virginians had already fled to his warships offering their military service in exchange for freedom, while Prince Hall (a free Black Bostonian and founder of Black Freemasonry) organized collective political petitions."
@@ -1713,7 +1713,7 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "The victory enabled George Washington’s forces to annex the province of Quebec as the fourteenth state in the Confederation, depriving Britain of its northern staging ground",
+          "text": "The victory enabled George Washington’s forces to annex the province of Quebec as the fourteenth state in the Confederation, depriving Britain of its northern base",
           "isCorrect": false,
           "distractorType": "Military Outcome Distortion",
           "explanation": "Incorrect. The earlier American invasion of Canada (led by Richard Montgomery and Benedict Arnold in 1775–1776) had ended in defeat at Quebec City; while Saratoga defeated Burgoyne's invasion *southward* from Canada into New York, Canada remained firmly in British hands."
@@ -1727,7 +1727,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "General John Burgoyne’s surrender of an entire British field army convinced French Foreign Minister Vergennes that the Continental Army was viable, shifting France from covert munitions aid to a formal Treaty of Alliance (1778) that transformed a colonial rebellion into a global naval war",
+          "text": "Burgoyne's surrender convinced France that the Continental Army was viable, securing the formal 1778 Treaty of Alliance and turning the war into a global naval conflict",
           "isCorrect": true,
           "explanation": "Correct. From 1776 to 1777, France's Comte de Vergennes had secretly funneled gunpowder and loans to the Americans through a dummy corporation (Roderigue Hortalez and Company) to bleed Britain, but refused an open alliance lest the colonists capitulate or reconcile with London. After Horatio Gates and Benedict Arnold forced Burgoyne's surrender at Saratoga—and Lord North prepared the Carlisle Peace Commission offering the colonies home rule within the empire—France signed the February 1778 Treaties of Amity and Commerce and Alliance, bringing the French Navy (and soon Spain and the Dutch Republic) into the war."
         },
@@ -1761,7 +1761,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "Articles IV and V—which stipulated that British creditors should face 'no lawful impediment' to recovering prewar sterling debts and that Congress would 'earnestly recommend' that state legislatures restore confiscated Loyalist estates—whose violation by the states gave Britain a pretext to retain its military forts in the Old Northwest",
+          "text": "Articles IV and V on prewar British debt recovery and Loyalist property restitution, whose violation by states gave Britain a pretext to hold the Northwest forts",
           "isCorrect": true,
           "explanation": "Correct. Under Articles IV and V of the 1783 Treaty of Paris, the U.S. agreed that prewar debts owed to British merchants would be paid in full and that Congress would recommend Loyalist property restitution. When southern states blocked British debt recovery and northern/southern states refused to compensate Loyalists, Britain cited American treaty violations (alongside its own desire to protect the Great Lakes fur trade and omitted articles on enslaved evacuees) to refuse to evacuate Northwest posts like Detroit, Niagara, and Mackinac until Jay's Treaty (1794)."
         },
@@ -1809,7 +1809,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "Northern states enacted either judicial abolition or gradual emancipation statutes that freed ONLY the future-born children of enslaved mothers after extended periods of indentured service into their twenties, whereas Upper South states like Virginia (in 1782) temporarily legalized private manumissions before tightening slave codes in the 1790s and 1800s",
+          "text": "Northern states passed gradual abolition laws freeing only future-born children in their twenties, while Virginia briefly allowed private manumissions in 1782 before tightening slave laws",
           "isCorrect": true,
           "explanation": "Correct. This tests the crucial mechanics of First Emancipation: outside Vermont (1777) and Massachusetts/New Hampshire (where courts ruled slavery unconstitutional under state declarations of rights in the 1780s), northern states like Pennsylvania (1780), Connecticut (1784), Rhode Island (1784), New York (1799), and New Jersey (1804) passed *gradual* emancipation acts. To protect masters' property investments, these laws freed ZERO living enslaved people; instead, children born *after* the law's passage remained bound servants until age 21 to 28. Meanwhile, Virginia passed a 1782 law permitting private manumissions (freeing ~10,000 people), but later closed that window after Gabriel's Conspiracy (1800)."
         },
@@ -1836,27 +1836,27 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "It justified a significant expansion of female academies and literacy by arguing that the survival of the republic required educated mothers to instill civic virtue and moral self-discipline in their sons, even as states maintained the English common-law doctrine of coverture (feme covert) and denied women the ballot",
+          "text": "It expanded female academies and literacy so educated mothers could instill republican civic virtue in their sons, while preserving legal coverture and denying women the ballot",
           "isCorrect": true,
           "explanation": "Correct. Because classical republican theory held that a republic without a king depended entirely on the 'civic virtue' of its citizens, reformers like Benjamin Rush (*Thoughts upon Female Education*, 1787) and Judith Sargent Murray (*On the Equality of the Sexes*, 1790) argued that women needed formal schooling in history, geography, and moral philosophy to train the next generation of virtuous citizens. However, this civic role remained channeled through the domestic sphere, leaving legal coverture intact and excluding women from voting (apart from unmarried property-owning women in New Jersey between 1776 and 1807)."
         },
         {
           "id": "B",
-          "text": "It led the majority of newly drafted state constitutions in the 1780s to abolish the common-law doctrine of coverture and grant married women independent control over their wages and real estate",
+          "text": "It led the majority of newly drafted state constitutions in the 1780s to abolish the common-law doctrine of coverture and grant married women control over their wages",
           "isCorrect": false,
           "distractorType": "Chronological Anachronism (1840s Married Women's Property Acts)",
           "explanation": "Incorrect. Revolutionary-era state constitutions left the common-law doctrine of *feme covert* (under which a married woman's legal and property identity was subsumed into her husband's) virtually untouched; state Married Women's Property Acts were not enacted until the late 1830s and 1840s."
         },
         {
           "id": "C",
-          "text": "It prompted the Continental Congress to adopt Abigail Adams’s proposal guaranteeing property-owning widows and unmarried women the right to vote in all federal elections until the passage of the Fourteenth Amendment",
+          "text": "It prompted the Continental Congress to adopt Abigail Adams’s proposal guaranteeing property-owning widows and unmarried women the right to vote in all federal elections until the Fourteenth Amendment",
           "isCorrect": false,
           "distractorType": "New Jersey Exception Overgeneralization",
           "explanation": "Incorrect. Only *one* state—New Jersey, whose 1776 constitution granted suffrage to 'all inhabitants' worth £50—allowed unmarried property-owning women (femes sole) and free Black residents to vote, and the New Jersey legislature closed that loophole in 1807 by restricting suffrage to white male taxpayers."
         },
         {
           "id": "D",
-          "text": "It confined upper-class women strictly to ornamental accomplishments such as French needlework while barring them from reading political histories or religious tracts",
+          "text": "It confined upper-class women strictly to ornamental accomplishments such as French needlework while barring them from reading political histories",
           "isCorrect": false,
           "distractorType": "Pre-Revolutionary Model Inversion",
           "explanation": "Incorrect. Benjamin Rush and Judith Sargent Murray explicitly *attacked* the older aristocratic model of 'ornamental' female education (needlework, dancing, French parlor music) in favor of rigorous academic curricula at institutions like the Young Ladies' Academy of Philadelphia (1787)."
@@ -1884,7 +1884,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "All thirteen state constitutions enacted between 1776 and 1780 abolished property and taxpaying qualifications for voting, instituted universal white manhood suffrage, and disestablished all state-supported churches",
+          "text": "All thirteen state constitutions enacted between 1776 and 1780 abolished property and taxpaying qualifications for voting and disestablished state churches",
           "isCorrect": false,
           "distractorType": "Chronological Overstatement (Jacksonian Era)",
           "explanation": "Incorrect. Almost every Revolutionary state constitution retained either a freehold property requirement or (as in Pennsylvania) a taxpaying requirement for voting (universal white male suffrage did not triumph until the 1820s–1830s), and while Virginia disestablished the Anglican Church via Jefferson's 1786 Statute for Religious Freedom, New England states like Massachusetts (until 1833) and Connecticut (until 1818) maintained tax support for Congregational churches."
@@ -1898,7 +1898,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "Most state constitutions sharply curtailed executive power—stripping governors of veto and patronage authority and subjecting them to annual election—while shifting power to elected legislatures, though radical frames like Pennsylvania’s 1776 Constitution created a unicameral assembly with taxpayer suffrage whereas conservative frames like Massachusetts’s 1780 Constitution retained property qualifications and a strong governor",
+          "text": "Most state constitutions curbed governors and empowered legislatures, though Pennsylvania's 1776 frame created a radical unicameral assembly while Massachusetts's 1780 frame kept property requirements and a veto",
           "isCorrect": true,
           "explanation": "Correct. Haunted by royal governors, almost all 1776 state constitutions made the legislature supreme, reduced governors to one-year terms (often elected by the legislature itself) without a veto or appointment power, included Bills of Rights, and lowered property requirements slightly. However, they varied internally: Pennsylvania's radical 1776 constitution abolished the governor and upper house entirely in favor of a unicameral assembly elected by all male taxpayers, whereas John Adams's 1780 Massachusetts Constitution restored a balanced bicameral legislature, higher property requirements for officeholding, and an independently elected governor with a veto."
         }
@@ -1932,7 +1932,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "'Landless' states with fixed western borders, led by Maryland, refused to ratify the Articles until 'landed' states with expansive colonial charters, led by Virginia, agreed to cede their trans-Appalachian land claims to the national Congress to form a common public domain",
+          "text": "Landless states led by Maryland refused to ratify the Articles until landed states like Virginia ceded their trans-Appalachian charter claims to Congress to form a common domain",
           "isCorrect": true,
           "explanation": "Correct. Because ratification of the Articles required the unanimous consent of all thirteen states, states without western charter claims (Maryland, New Jersey, Delaware) feared that huge 'landed' states like Virginia and New York would sell off western lands to pay off their war debts without taxing their citizens, dwarfing smaller neighbors and invalidating private land-company purchases. Only after Virginia agreed in January 1781 to cede its claims north of the Ohio River to Congress did Maryland sign the Articles on March 1, 1781."
         },
@@ -1959,7 +1959,7 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Northern commercial states sought to trade away American navigation rights on the Mississippi River for twenty-five years in exchange for access to Spanish markets, while the nine-state supermajority requirement for treaties allowed five southern states to block the Jay-Gardoqui agreement—leaving western settlers furious at eastern indifference and Congress paralyzed",
+          "text": "Seven northern states backed yielding Mississippi navigation for Spanish trade access, while five southern states used the nine-state treaty rule to block the deal",
           "isCorrect": true,
           "explanation": "Correct. In 1784, Spain closed the lower Mississippi River and New Orleans to American commerce to strangle trans-Appalachian settlement. In 1786, Foreign Secretary John Jay negotiated with Spanish envoy Diego de Gardoqui to forfeit U.S. Mississippi navigation rights for 25–30 years in exchange for Spanish trade concessions favoring New England fish and timber merchants. All 7 northern states voted to change Jay's instructions, while all 5 southern states voted no. Because treaties required 9 of 13 states under the Articles, the treaty died, but southern/western leaders (like Monroe and Madison) were horrified that a bare northern majority had nearly sacrificed the West."
         },
@@ -2021,7 +2021,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "The Land Ordinance of 1785 established a rectilinear survey grid of six-mile-square townships that generated federal revenue through land auctions and reserved Section 16 for public schools, whereas the Northwest Ordinance of 1787 established a three-stage political process for admitting equal new states at 60,000 inhabitants and banned slavery north of the Ohio River while including a fugitive slave return clause",
+          "text": "The 1785 Ordinance set a township grid for land sales and public schools (Section 16), while the 1787 Ordinance set a three-stage path to equal statehood and banned slavery north of the Ohio",
           "isCorrect": true,
           "explanation": "Correct. Students frequently conflate these two laws: (1) The Land Ordinance of 1785 was a *surveying and fiscal* measure—dividing the Old Northwest into 6x6 mile townships of 36 one-square-mile (640-acre) sections sold at $1/acre minimum to pay down the national debt, with Section 16 set aside to fund public education. (2) The Northwest Ordinance of 1787 was a *political and constitutional* governance framework—rejecting colonial subordination by creating a three-stage path to full equal statehood (appointed territorial governor/judges -> territorial legislature at 5,000 free adult males -> statehood on equal footing at 60,000 inhabitants), guaranteeing a bill of rights, and banning slavery in the Northwest Territory (Article VI) alongside a fugitive slave clause."
         }
@@ -2041,20 +2041,20 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "The Confederation Congress imposed a regressive federal excise tax on corn whiskey and dispatched a thirteen-thousand-man federal militia led by George Washington into western Massachusetts to collect the revenue",
+          "text": "The Confederation Congress imposed a regressive federal excise tax on corn whiskey and dispatched a thirteen-thousand-man federal militia led by George Washington into western Massachusetts",
           "isCorrect": false,
           "distractorType": "Event Confusion (Shays' Rebellion 1786 vs. Whiskey Rebellion 1794)",
           "explanation": "Incorrect. This describes the Whiskey Rebellion of 1794 in western Pennsylvania under the new U.S. Constitution. In 1786–1787, the Confederation Congress had *no* power to levy excise taxes and was unable to raise troops or funds when Massachusetts appealed for help; Shays' Rebellion had to be crushed by a privately funded eastern Massachusetts militia led by General Benjamin Lincoln."
         },
         {
           "id": "B",
-          "text": "Eastern commercial creditors and Governor James Bowdoin’s legislature levied heavy direct taxes payable only in scarce hard specie to pay off Massachusetts’s war bonds at face value while refusing to issue paper money or stay laws, prompting indebted western farmers (many of them unpaid Revolutionary veterans) to shut down county courts to halt farm foreclosures and debtors’ prison",
+          "text": "Boston creditors and Governor Bowdoin's legislature levied heavy hard-specie taxes to pay state war bonds at par while rejecting paper money, prompting indebted western farmers to close county courts",
           "isCorrect": true,
           "explanation": "Correct. Unlike Rhode Island (where a populist legislature issued abundant paper money that creditors had to accept at face value), Massachusetts was controlled by Boston merchants and bondholders under the conservative 1780 constitution. To pay off state war bonds held by eastern speculators, the legislature imposed steep poll and land taxes payable strictly in gold/silver specie during a post-war depression. Captain Daniel Shays and western 'Regulators'—adopting the exact crowd tactics of the 1760s–1770s Revolution—closed county courts at Northampton, Worcester, and Springfield before marching on the federal arsenal, convincing nationalists that the Articles could neither fund an army to suppress domestic insurrection nor restrain populist or creditor extremes in the states."
         },
         {
           "id": "C",
-          "text": "The Massachusetts General Court enacted hyperinflationary legal-tender paper currency laws that wiped out the savings of western yeoman farmers, who took up arms to demand a return to the gold standard",
+          "text": "The Massachusetts General Court enacted hyperinflationary legal-tender paper currency laws that wiped out the savings of western yeoman farmers, who took up arms to demand a gold standard",
           "isCorrect": false,
           "distractorType": "Monetary Policy Inversion (Rhode Island vs. Massachusetts)",
           "explanation": "Incorrect. This inverts the monetary positions of debtors and creditors: indebted western Massachusetts farmers *demanded* paper currency and 'stay laws' (moratoriums on debt collection) to pay taxes and mortgages, whereas it was Rhode Island's legislature that printed legal-tender paper money—both of which horrified James Madison and Alexander Hamilton for opposite reasons."
@@ -2103,7 +2103,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "Whereas Montesquieu and Brutus argued that a free republic could survive only in a small, homogeneous territory because a large empire would require despotic consolidation, Madison argued that an extended republic encompasses so many competing economic and religious factions that no single majority faction can easily coordinate to tyrannize minorities",
+          "text": "Whereas Montesquieu and Brutus held that free republics must be small and homogeneous, Madison argued that an extended republic multiplies factions so no majority can tyrannize minorities",
           "isCorrect": true,
           "explanation": "Correct. For centuries, classical political theory (Montesquieu's *Spirit of the Laws*) held that republics had to be small and homogeneous (like ancient city-states or Swiss cantons), and that vast territories inevitably degenerated into empires. Having watched small state legislatures (like Rhode Island's debtor majority) trample minority property rights in the 1780s, Madison inverted Montesquieu in *Federalist No. 10*: in a small republic, a tyrannical majority easily unites; in a large ('extended') republic with representative filtration, diverse factions neutralize one another."
         }
@@ -2123,27 +2123,27 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "The concurrent power to lay and collect unlimited direct and indirect taxes (Article I, Section 8, Clause 1), the Necessary and Proper Clause (Article I, Section 8, Clause 18), and the Supremacy Clause (Article VI, Clause 2)",
+          "text": "The power to lay and collect direct and indirect taxes (Art. I, Sec. 8), the Necessary and Proper Clause (Art. I, Sec. 8), and the Supremacy Clause (Art. VI)",
           "isCorrect": true,
           "explanation": "Correct. Brutus (likely New York judge Robert Yates, an Anti-Federalist delegate who walked out of the Philadelphia Convention) pinpointed the exact legal engine of national centralization: Congress could levy 'taxes, duties, imposts, and excises' of every kind (preempting state tax sources), pass any law 'necessary and proper' to execute its powers, and enforce those laws as the 'supreme Law of the Land' overriding state constitutions and state courts."
         },
         {
           "id": "B",
-          "text": "The Three-Fifths Clause (Article I, Section 2), the Fugitive Slave Clause (Article IV, Section 2), and the Tenth Amendment reserving undelegated powers to the states",
+          "text": "The Three-Fifths Clause (Art. I, Sec. 2), the Fugitive Slave Clause (Art. IV, Sec. 2), and the Tenth Amendment reserving undelegated powers to the states",
           "isCorrect": false,
           "distractorType": "Clause Misattribution",
           "explanation": "Incorrect. Brutus No. 1 (published in October 1787) analyzed how federal taxing, legislative, and judicial supremacy would annihilate state sovereignty; the Tenth Amendment was not ratified until December 1791—and was actually adopted in response to warnings like Brutus's!"
         },
         {
           "id": "C",
-          "text": "The Presidential Veto Clause (Article I, Section 7), the Impeachment Clause (Article II, Section 4), and the Ex Post Facto Clause (Article I, Section 9)",
+          "text": "The Presidential Veto Clause (Art. I, Sec. 7), the Impeachment Clause (Art. II, Sec. 4), and the Ex Post Facto Clause (Art. I, Sec. 9)",
           "isCorrect": false,
           "distractorType": "Irrelevant Constitutional Clauses",
           "explanation": "Incorrect. The Presidential Veto and Impeachment clauses regulate horizontal checks and balances *among* the federal branches, and Article I, Section 9 *limits* Congress's power, whereas Brutus is analyzing the vertical destruction of state power via federal taxation, the Elastic Clause, and the Supremacy Clause."
         },
         {
           "id": "D",
-          "text": "The Full Faith and Credit Clause (Article IV, Section 1), the Guarantee of Republican Government Clause (Article IV, Section 4), and the Religious Test Ban (Article VI, Clause 3)",
+          "text": "The Full Faith and Credit Clause (Art. IV, Sec. 1), the Guarantee Clause (Art. IV, Sec. 4), and the Religious Test Ban (Art. VI, Cl. 3)",
           "isCorrect": false,
           "distractorType": "Clause Misattribution",
           "explanation": "Incorrect. None of those Article IV or VI provisions are cited in Excerpt 2; Brutus explicitly quotes the Taxation Clause ('taxes, duties, imposts, and excises'), the Necessary and Proper Clause, and the Supremacy Clause."
@@ -2171,13 +2171,13 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "While the Virginia Plan proposed scrapping the Articles entirely for a bicameral national legislature apportioned by population with power to veto state laws, the New Jersey Plan retained a unicameral Congress with equal state votes—yet Paterson’s plan still granted Congress the power to levy import tariffs, regulate commerce, and enforce federal laws as the supreme law of the land through a plural executive and supreme court",
+          "text": "While the Virginia Plan proposed a proportional bicameral legislature with a veto over state laws, the New Jersey Plan kept an equal-state unicameral Congress yet added federal tariff, trade, and supremacy powers",
           "isCorrect": true,
           "explanation": "Correct. A common misconception is that the New Jersey Plan simply defended the unmodified Articles of Confederation. In reality, small-state delegates like William Paterson recognized that the Articles needed fiscal and commercial teeth: the New Jersey Plan kept the unicameral one-state-one-vote Congress to prevent large states (Virginia, Pennsylvania, Massachusetts) from dominating, *but* it added federal power to tax imports, regulate interstate/foreign trade, a plural federal executive, a federal judiciary, and the prototype of the Supremacy Clause! The Connecticut (Great) Compromise blended the two."
         },
         {
           "id": "C",
-          "text": "While the Virginia Plan allocated representation in both houses equally among the states, the New Jersey Plan apportioned the Senate by free white population and the House of Representatives by total tax contributions",
+          "text": "While the Virginia Plan allocated representation in both houses equally among the states, the New Jersey Plan apportioned the Senate by free white population and the House by tax quotas",
           "isCorrect": false,
           "distractorType": "Factual Inversion",
           "explanation": "Incorrect. This reverses the two plans: the Virginia Plan apportioned *both* houses of a bicameral legislature proportionally (by free population or tax quotas), whereas the New Jersey Plan retained equal representation (one vote per state) in a unicameral legislature."
@@ -2219,7 +2219,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "Northern delegates agreed to bar Congress from prohibiting the trans-Atlantic importation of enslaved persons prior to 1808 (limiting any interim duty to $10 per person) and included the Fugitive Slave Clause, in exchange for Deep South delegates dropping their demand for a two-thirds congressional supermajority to pass commercial navigation acts",
+          "text": "Northern delegates barred Congress from banning the Atlantic slave trade before 1808 and added a Fugitive Slave Clause, while Deep South delegates dropped a two-thirds rule for navigation acts",
           "isCorrect": true,
           "explanation": "Correct. In August 1787, Charles Pinckney and John Rutledge of South Carolina threatened to bolt the Union if the Constitution banned the Atlantic slave trade or allowed a simple northern majority in Congress to pass Navigation Acts (which could monopolize southern rice/indigo shipping). In the 'dirty compromise' negotiated in committee, New England delegates voted to protect the Atlantic slave trade for twenty years until 1808 (Article I, Section 9) and adopt the Fugitive Slave Clause (Article IV, Section 2), while Deep South delegates agreed that Congress could pass commercial/navigation laws by a simple majority (and banned export taxes entirely)."
         },
@@ -2253,7 +2253,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "The 'Massachusetts Compromise' (brokered with John Hancock and Samuel Adams), in which Federalists defeated Anti-Federalist demands for *conditional* ratification by pledging that the First Congress would immediately propose a Bill of Rights as amendments under Article V after unconditional ratification",
+          "text": "The 'Massachusetts Compromise,' in which Federalists defeated conditional ratification by pledging that the First Congress would immediately propose a Bill of Rights under Article V",
           "isCorrect": true,
           "explanation": "Correct. Anti-Federalists initially tried to make ratification *conditional* upon prior amendments or a second constitutional convention (which Madison and Hamilton knew would unravel the entire Philadelphia framework). In February 1788, Massachusetts Federalists won over moderate skeptics John Hancock and Samuel Adams by agreeing to ratify the Constitution unconditionally while attaching a list of *recommended* amendments (a Bill of Rights). This 'Massachusetts Compromise' formula subsequently carried Virginia (89–79) and New York (30–27)."
         },
@@ -2301,7 +2301,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "To insulate national policymaking and constitutional adjudication from sudden swings of popular passion ('excesses of democracy') while preserving republican legitimacy through indirect popular filtration and staggered terms of office",
+          "text": "To insulate national policymaking and constitutional adjudication from sudden swings of popular passion while preserving republican legitimacy through indirect filtration and staggered terms",
           "isCorrect": true,
           "explanation": "Correct. Under the original 1787 Constitution, ONLY the House of Representatives (2-year terms) was elected directly by the voters. State legislatures chose U.S. Senators (6-year staggered terms, until the 17th Amendment in 1913), state-appointed electors chose the President (4-year terms), and the President with Senate consent appointed federal judges for life. This architecture created a 'mixed' republican system that checked both executive autocracy and populist debtor majorities like those of the 1780s."
         },
@@ -2328,7 +2328,7 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Opposition to federal assumption of state debts did not follow a simple North-South line; rather, states that had already retired most of their wartime debts (such as Virginia and Maryland) voted against assumption, whereas heavily indebted states—including Deep South South Carolina as well as Massachusetts—voted in favor",
+          "text": "States that had retired most of their war debts (like Virginia and Maryland) opposed assumption, while heavily indebted states (like South Carolina and Massachusetts) supported it",
           "isCorrect": true,
           "explanation": "Correct. Look closely at the data in the table: while the 1791 Bank vote split starkly along North-South lines, the April 1790 vote on *Assumption of State Debts* depended on each state's unpaid debt balance! Virginia (~80% retired) and Maryland (~70% retired) voted overwhelmingly Nay because their taxpayers would be taxed twice to pay off delinquent states' debts, whereas South Carolina (<10% retired, $5.38M unpaid debt from the brutal southern war) joined Massachusetts ($5.22M unpaid) in voting 5–0 Yea."
         },
@@ -2369,7 +2369,7 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "President George Washington used his executive veto to strike down the Assumption bill and ordered the Treasury to repudiate all depreciated Continental loan certificates",
+          "text": "President George Washington used his executive veto to strike down the Assumption bill and ordered the Treasury to repudiate all depreciated Continental loan certificates in 1790",
           "isCorrect": false,
           "distractorType": "Factual Inversion",
           "explanation": "Incorrect. Washington strongly backed Hamilton's entire fiscal program, signing both the Funding/Assumption Act of 1790 and the Bank Act of 1791."
@@ -2390,7 +2390,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "In the Compromise of 1790 (the Residence and Funding Acts), Hamilton recalculated Virginia’s final settlement accounts so its net contribution matched its obligations, and Madison agreed to allow two Potomac-district congressmen to switch their votes in favor of assumption in exchange for moving the temporary capital to Philadelphia for ten years and locating the permanent national capital on the Potomac River",
+          "text": "In the 1790 Compromise, Hamilton adjusted Virginia's settlement accounts and Madison yielded votes for assumption in exchange for placing the permanent capital on the Potomac",
           "isCorrect": true,
           "explanation": "Correct. When the House defeated Assumption in April 1790 (31–29), Hamilton warned that New England might secede if its war debts were not assumed, while Southern delegates refused to pass the funding bill without a settlement deal. At Jefferson's famous June 1790 dinner with Madison and Hamilton, they struck a two-part bargain: (1) Hamilton adjusted the federal accounting formula for Virginia's debt settlement so Virginia wouldn't be penalized, and (2) Hamilton delivered northern votes for the Residence Act (placing the permanent capital on the Potomac border of Virginia and Maryland after 10 years in Philadelphia) while Madison stopped blocking two Potomac congressmen (Richard Bland Lee and Alexander White) from switching their votes to pass Assumption (34–28)."
         }
@@ -2424,7 +2424,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "Whether the federal government should fund depreciated Continental debt certificates 'at par' (100 percent of face value plus interest) exclusively to the current secondary speculators who held them, or 'discriminate' between current speculators and the original soldiers and farmers who had sold their certificates under duress",
+          "text": "Whether to fund depreciated Continental securities at full face value solely for current speculators, or discriminate between current holders and the original soldiers who sold them",
           "isCorrect": true,
           "explanation": "Correct. Note carefully that Madison did *not* propose repudiating the national debt! Both Hamilton and Madison agreed that the United States must pay 100% of the face value ('at par') of its $54 million national debt. Their fierce clash in February 1790 was over *to whom* that money should be paid: Hamilton insisted on paying 100% to the current bearer (mostly wealthy northern speculators who had bought up bonds at 10–25 cents on the dollar) to establish ironclad sacredness of contracts and bind monied elites to the government; Madison proposed 'discrimination'—paying speculators the highest market price (~50%) and paying the remaining 50% to the original Revolutionary soldiers and farmers."
         },
@@ -2451,7 +2451,7 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Jefferson argued from the Tenth Amendment and 'strict construction' that 'necessary' in Article I, Section 8 meant 'indispensably requisite' (without which an enumerated power would be nugatory), whereas Hamilton argued from 'broad construction' that 'necessary and proper' meant any 'needful, useful, or conducive' means that was not constitutionally prohibited and related to an enumerated end like taxing and borrowing",
+          "text": "Jefferson read 'necessary' strictly as 'indispensable' under the Tenth Amendment, whereas Hamilton read it broadly as any 'useful or conducive' means tied to an enumerated taxing or borrowing power",
           "isCorrect": true,
           "explanation": "Correct. This is the foundational debate of American constitutional law: Jefferson argued that because Article I, Section 8 did not enumerate the power to charter a corporation or bank, and the Tenth Amendment reserved undelegated powers to the states, the Bank was valid only if it was *indispensably necessary* (not merely convenient) to execute an enumerated power. Hamilton countered with the doctrine of *implied* and *resulting* powers: every sovereign power includes the right to employ any means 'needful, requisite, incidental, useful, or conducive' to carrying out enumerated powers (collecting taxes, borrowing money, regulating trade)—an interpretation later enshrined by Chief Justice John Marshall in *McCulloch v. Maryland* (1819)."
         },
@@ -2513,7 +2513,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "His December 1791 Report on Manufactures, which called for protective tariffs, federal bounties (subsidies) for infant industries, and federally funded internal improvements, because both Southern planter-republicans and many Northern maritime Federalist merchants preferred high-volume import trade with Britain",
+          "text": "His 1791 Report on Manufactures, which proposed protective tariffs and industrial bounties that both Southern planters and import-dependent Northern merchants opposed",
           "isCorrect": true,
           "explanation": "Correct. This is a classic APUSH exam question testing which part of Hamilton's four-report program *failed* in Congress: while Congress passed the 1789/1790 revenue tariffs (at modest ~8–10% rates to pay interest on the debt), it shelved Hamilton's ambitious December 1791 *Report on Manufactures*. Why? Not only did Jefferson and Madison oppose industrial subsidies as unconstitutional corruption favoring urban mechanics over agrarian freeholders, but even New England and New York Federalist merchant-shippers made their fortunes importing British goods and feared that protective tariffs would reduce transatlantic trade volume!"
         }
@@ -2533,14 +2533,14 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Because the Excise Act exempted all New England rum distilleries from federal taxation while prohibiting western farmers from exporting grain down the Ohio River",
+          "text": "Because the Excise Act exempted all New England rum distilleries from federal taxation while prohibiting western farmers from exporting grain down the Ohio River to Spanish New Orleans",
           "isCorrect": false,
           "distractorType": "Statutory Fabrication",
           "explanation": "Incorrect. The 1791 Act actually taxed imported molasses/rum as well as domestic whiskey; the regional inequity arose because eastern commercial distillers operated year-round near cash markets and paid a lower per-gallon rate than seasonal backcountry farmer-distillers."
         },
         {
           "id": "B",
-          "text": "Because the lack of trans-Appalachian roads and Spain’s closure of the Mississippi River forced western farmers to distill bulky rye and corn harvests into whiskey—which served both as their only transportable cash commodity across the mountains and as their local medium of exchange in a specie-scarce frontier economy—while the tax also favored large eastern commercial distilleries over small rural stills",
+          "text": "Because poor roads and Spain's closure of the Mississippi made whiskey the West's only transportable cash crop and barter medium, while the tax favored large eastern distillers",
           "isCorrect": true,
           "explanation": "Correct. A packhorse could carry only 4 bushels of raw grain across the Allegheny Mountains, but could carry the whiskey distilled from 24 bushels! Moreover, because hard money (specie) had been drained eastward, whiskey jugs literally functioned as currency in western Pennsylvania and Kentucky. Compounding the grievance, Hamilton's 1791 tax allowed large eastern commercial distillers to pay a lower flat rate per gallon while charging small western farmers a steep annual fee on still capacity payable in cash, and required accused tax evaders to travel hundreds of miles to federal court in Philadelphia."
         },
@@ -2553,7 +2553,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "Because the Washington administration used the excise tax as a pretext to confiscate western freehold farms and grant them to the Bank of the United States",
+          "text": "Because the Washington administration used the excise tax as a pretext to confiscate western freehold farms and grant them to the Bank of the United States in Philadelphia and Boston",
           "isCorrect": false,
           "distractorType": "Exaggerated Fabrication",
           "explanation": "Incorrect. While western tax resisters feared that fines and legal fees in distant Philadelphia federal courts would bankrupt their farms, the federal government did not confiscate land for the Bank of the United States; when Washington marched 13,000 militia into western Pennsylvania in 1794, the rebellion collapsed without a battle and Washington pardoned the two men convicted of treason."
@@ -2595,7 +2595,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "Jay’s Treaty averted a catastrophic naval war with Great Britain—whose imports provided roughly 75 percent of the federal tariff revenues that funded Hamilton’s fiscal system—while securing British evacuation of the Northwest forts by 1796 and referring prewar debts and maritime spoliation claims to joint arbitration commissions",
+          "text": "It averted war with Britain—preserving tariff revenues vital to Hamilton's fiscal system—while securing British withdrawal from the Northwest forts and arbitration of disputes",
           "isCorrect": true,
           "explanation": "Correct. Democratic-Republicans were furious that Jay's Treaty abandoned the neutral shipping doctrine ('free ships make free goods'), accepted British naval dominance, ignored impressment, and failed to win compensation for enslaved people evacuated by Britain in 1783. Yet Washington and Hamilton knew the infant republic could not survive a war with Britain: tariff duties on British trade generated nearly 90% of U.S. customs revenue (the lifeblood of Hamilton's bond payments), and Britain's promise to finally evacuate Detroit, Niagara, and Mackinac broke the back of British support for the Western Indian Confederacy."
         }
@@ -2615,7 +2615,7 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Hamilton argued that the 1778 defensive alliance had been made with King Louis XVI’s monarchy (now overthrown) and did not apply to an offensive war declared by the French Republic, whereas Jefferson argued that treaties bind nations rather than monarchs and should be used as diplomatic leverage—before both concurred in Washington’s April 1793 Proclamation of Neutrality (especially after French envoy Citizen Genêt defied Washington by outfitting privateers on U.S. soil)",
+          "text": "Hamilton argued the 1778 defensive treaty did not apply to France's offensive war, while Jefferson held treaties survive regime change—yet both backed Washington's 1793 Neutrality Proclamation",
           "isCorrect": true,
           "explanation": "Correct. Under the 1778 Treaty of Alliance, the U.S. had promised to defend the French West Indies 'forever.' In 1793, Hamilton argued that the violent overthrow and execution of Louis XVI suspended the treaty (and that France had declared an *offensive* war against Britain), while Jefferson argued that treaties remain valid under international law regardless of regime change—though Jefferson too agreed the U.S. was too weak to fight and backed Washington's Neutrality Proclamation (which deliberately omitted the word 'neutrality' to appease Jefferson). When French minister Edmond-Charles 'Citizen' Genêt commissioned American privateers and threatened to appeal over Washington's head to the public, even Jefferson agreed to demand Genêt's recall."
         },
@@ -2628,7 +2628,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "Washington submitted the 1778 Treaty of Alliance to the Supreme Court, where Chief Justice John Jay issued an advisory opinion nullifying the treaty and ordering the arrest of Citizen Genêt",
+          "text": "Washington submitted the 1778 Treaty of Alliance to the Supreme Court, where Chief Justice John Jay issued an advisory opinion nullifying the treaty and ordering the arrest of Citizen Genêt in Philadelphia",
           "isCorrect": false,
           "distractorType": "Constitutional Principle Inversion (No Advisory Opinions)",
           "explanation": "Incorrect. In fact, when Washington and Jefferson sent 29 legal questions on neutrality and the 1778 treaties to the Supreme Court in July 1793, Chief Justice John Jay and the associate justices famously *refused* to issue an advisory opinion, establishing the precedent that Article III federal courts decide only actual adversarial 'Cases' and 'Controversies.'"
@@ -2663,7 +2663,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "Whether the Constitution is a 'compact' among sovereign states in which each state retains the ultimate authority to judge and nullify unconstitutional federal laws, or a supreme national charter in which Article III vests the exclusive power of constitutional judicial review in the federal courts",
+          "text": "Whether the Constitution is a state compact allowing states to nullify unconstitutional federal laws, or a national charter vesting judicial review exclusively in Article III federal courts",
           "isCorrect": true,
           "explanation": "Correct. Drafted secretly by Vice President Thomas Jefferson (Kentucky Resolutions) and James Madison (Virginia Resolutions) in response to the 1798 Alien and Sedition Acts, Excerpt 1 articulates the 'Compact Theory': because the states created the federal government as their agent through a compact and there is 'no common judge,' each state has the right to declare undelegated federal acts 'void and of no force' (nullification in Jefferson's draft; interposition in Madison's more moderate Virginia draft). Not a single other state legislature endorsed their resolutions; instead, ten northern states (like Rhode Island in Excerpt 2) replied that the people—not the states as compacting agents—ratified the Constitution and that Article III vests constitutional review exclusively in the Supreme Court and federal judiciary."
         },
@@ -2711,7 +2711,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "Federalists defended the Act as a reform because it allowed truth as a legal defense, required proof of malicious intent, and let the jury decide both law and fact (codifying the 1735 Zenger standard); yet in practice, partisan Federalist judges and marshals enforced it exclusively against Democratic-Republican newspaper editors and a Jeffersonian congressman (Matthew Lyon) ahead of the 1800 election",
+          "text": "It allowed truth as a defense and jury determination of law, yet Federalist judges enforced it solely against Jeffersonian editors and politicians before expiring in March 1801",
           "isCorrect": true,
           "explanation": "Correct. This is an elite Honors/AP nuance: Why did Federalists claim the Sedition Act of 1798 was *more liberal* than English common law? Because under English common law, truth was *no* defense ('the greater the truth, the greater the libel'). The 1798 Sedition Act explicitly permitted truth as a defense and empowered juries. However, because one cannot 'prove' the truth of a political opinion, Federalist Secretary of State Timothy Pickering and partisan Federalist judges (like Samuel Chase) used the law to indict 25 Democratic-Republican editors and politicians (convicting 10, including Rep. Matthew Lyon of Vermont), while notably exempting Vice President Thomas Jefferson and setting the law to expire on March 3, 1801—the exact last day of John Adams's term!"
         },
@@ -2738,20 +2738,20 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Adams’s decision to veto the Alien and Sedition Acts of 1798 and endorse James Madison’s Virginia Resolutions",
+          "text": "Adams’s decision to veto the Alien and Sedition Acts of 1798 and endorse James Madison’s Virginia Resolutions in his annual message to Congress",
           "isCorrect": false,
           "distractorType": "Factual Inversion",
           "explanation": "Incorrect. Although John Adams had not personally requested the Alien and Sedition Acts from Congress, he willingly signed all four bills into law in June–July 1798 and approved Sedition Act prosecutions orchestrated by Secretary of State Timothy Pickering."
         },
         {
           "id": "B",
-          "text": "Adams’s decision to dispatch a second peace commission (William Vans Murray, Oliver Ellsworth, and William R. Davie) to Paris to negotiate the Convention of 1800 (Treaty of Mortefontaine), ending the Quasi-War with France, terminating the 1778 Franco-American Alliance, and rendering Hamilton’s newly raised provisional army unnecessary",
+          "text": "Adams’s dispatch of the Murray peace mission to negotiate the Convention of 1800 with France, ending the Quasi-War, terminating the 1778 Alliance, and sidelining Hamilton’s provisional army",
           "isCorrect": true,
           "explanation": "Correct. After the XYZ Affair (1797–1798), High Federalists led by Alexander Hamilton (appointed Inspector General of a new provisional army) hoped for a full-scale war with France to crush domestic Jeffersonians, ally with the British Navy, and potentially seize Spanish Louisiana and Florida. Realizing via reports from his son John Quincy Adams and French Foreign Minister Talleyrand that France wanted peace—and horrified by the Direct Tax of 1798 (which triggered Fries's Rebellion) and Hamilton's military ambition—John Adams stunned his own cabinet in February 1799 by nominating a new peace mission, firing Pickering and McHenry in 1800, and securing the Convention of 1800 with Napoleon."
         },
         {
           "id": "C",
-          "text": "Adams’s proposal to abolish the First Bank of the United States and replace federal customs duties with an progressive income tax on northern merchants",
+          "text": "Adams’s proposal to abolish the First Bank of the United States and replace federal customs duties with a progressive income tax on northern merchants",
           "isCorrect": false,
           "distractorType": "Chronological Anachronism",
           "explanation": "Incorrect. Although Adams personally distrusted speculative banking more than Hamilton did, he never sought to abolish the First Bank of the United States (whose 20-year charter ran until 1811), and Congress during Adams's presidency enacted the Direct Tax of 1798 on land, enslaved persons, and houses (measured by window panes)—not an income tax."
@@ -2793,7 +2793,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "C",
-          "text": "They argue that Great Britain could not legally cede Indigenous sovereignty in 1783 because the Crown had neither conquered the Confederacy nor included Native delegates at Paris, and that the post-1783 treaties of cession were invalid because U.S. commissioners extorted signatures from isolated, unauthorized chiefs rather than securing the unanimous consent of the Confederacy council",
+          "text": "They argue that Britain had never conquered them to cede their land in 1783, and that later U.S. treaties were coerced from unauthorized chiefs without Confederacy council consent",
           "isCorrect": true,
           "explanation": "Correct. After the Treaty of Paris (1783), the Confederation Congress initially asserted the 'right of conquest'—claiming that because Native nations had allied with defeated Britain, their lands north of the Ohio River were forfeit—and extracted piecemeal land cessions at Fort Stanwix (1784), Fort McIntosh (1785), and Fort Harmar (1789). In response, Mohawk leader Joseph Brant, Miami war chief Little Turtle (Michikinikwa), and Shawnee leader Blue Jacket (Weyapiersenwah) formed the Western Confederacy, crushed two U.S. armies (Harmar's Defeat in 1790 and St. Clair's Defeat in 1791—the worst proportional defeat of a U.S. army by Native forces in history), and insisted at the 1793 Sandusky/Glaize council that only the collective Confederacy could cede land and that the Ohio River must remain the border."
         },
@@ -2820,7 +2820,7 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "General Anthony Wayne’s victory at the Battle of Fallen Timbers (August 1794)—followed immediately by the British garrison at Fort Miami refusing to open its gates to shelter retreating Confederacy warriors and Jay’s Treaty pledging British evacuation of the Northwest posts—compelled the Confederacy to sign the Treaty of Greenville (1795), ceding two-thirds of Ohio in exchange for federal annuities and U.S. recognition that remaining lands belonged to the tribes until formally purchased by the federal government",
+          "text": "Wayne's Fallen Timbers victory, Britain barring Fort Miami's gates, and Jay's Treaty forced the 1795 Treaty of Greenville, ceding most of Ohio for annuities and recognition of tribal title",
           "isCorrect": true,
           "explanation": "Correct. After training the disciplined Legion of the United States for two years, General 'Mad Anthony' Wayne defeated Blue Jacket's Confederacy forces at the Battle of Fallen Timbers (August 20, 1794) near present-day Toledo. When retreating Native warriors reached nearby British-held Fort Miami, the British commander kept the gates barred to avoid war with the U.S. (even as John Jay was negotiating Britain's withdrawal from the Northwest forts in London). Abandoned by Britain, Native leaders signed the Treaty of Greenville (1795), ceding southern and eastern Ohio, sites like Detroit and Chicago, and accepting annual federal annuities (which created economic dependency), while the U.S. abandoned its 'right of conquest' theory and recognized Indigenous title until ceded via federal treaty."
         },
@@ -2882,7 +2882,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "The policy prohibited private individuals or states from purchasing Indian land without a formal federal treaty and funded 'civilization' programs to convert Native men into yeoman plow-farmers and Native women into domestic spinners—yet it broke down because massive waves of white frontier squatters violated treaty boundaries while Native communities resisted abandoning communal land tenure and gender roles",
+          "text": "It barred non-federal Indian land purchases and funded 'civilization' farming programs, yet failed as white squatters violated treaties and Native peoples defended their cultural norms",
           "isCorrect": true,
           "explanation": "Correct. Guided by Enlightenment environmentalism and a desire to avoid expensive frontier wars like St. Clair's Defeat, Henry Knox and Thomas Jefferson argued that Native Americans were biologically equal to Europeans and could be assimilated ('civilized') if they abandoned hunting and matrilineal farming for private property, male plow-agriculture, and female household spinning (giving up their 'surplus' hunting grounds to the U.S.). Simultaneously, the Indian Trade and Intercourse Acts starting in 1790 banned private/state land purchases without federal approval. In practice, the tiny U.S. Army could not restrain white squatters, and most Native people rejected the erasure of their cultural and gender identities."
         }
@@ -2909,14 +2909,14 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "By reducing the need for manual field labor during the cotton harvest, the cotton gin led South Carolina and Georgia to join Virginia in enacting gradual emancipation statutes in 1798",
+          "text": "By reducing the need for manual field labor during the cotton harvest, the cotton gin led South Carolina and Georgia to join Virginia in enacting gradual emancipation statutes in March 1798",
           "isCorrect": false,
           "distractorType": "Labor Demand Inversion",
           "explanation": "Incorrect. The cotton gin mechanized only the *cleaning* (ginning) bottleneck after harvest, not the planting, hoeing, or picking of cotton in the fields! Because one worker with a gin could now process fifty pounds of lint a day, planters demanded * vastly more* enslaved field hands to plant and pick cotton across millions of acres, causing South Carolina to even reopen the international African slave trade from 1803 to 1807."
         },
         {
           "id": "C",
-          "text": "By mechanically separating sticky seeds from hardy short-staple ('upland') cotton fifty times faster than hand labor—at the exact moment Congress organized the Southwest and Mississippi Territories *without* the Northwest Ordinance’s anti-slavery restriction and Pinckney’s Treaty (1795) opened New Orleans—it reversed the Chesapeake’s post-Revolutionary drift toward manumission and triggered a massive forced migration of enslaved people from the Upper South into the Deep South interior",
+          "text": "Paired with Congress permitting slavery in the Southwest and Mississippi Territories and Pinckney's Treaty opening New Orleans, the gin ignited a massive domestic slave trade",
           "isCorrect": true,
           "explanation": "Correct. Prior to 1793, luxurious long-staple ('Sea Island') cotton could grow only along the coastal islands of South Carolina and Georgia, while hardy short-staple cotton (which could grow anywhere across the southern interior) had green seeds so sticky that one laborer could clean only one pound per day. Whitney's 1793 gin, paired with Congress's decision in the Southwest Ordinance (1790) and Mississippi Territorial Act (1798) to explicitly *permit* slavery south of the Ohio River and Pinckney's Treaty opening the Mississippi/New Orleans export route, revitalized slavery and created the domestic slave trade from Virginia/Maryland to the new cotton frontier."
         },
@@ -2943,7 +2943,7 @@ window.APUSH_DATA = {
       "options": [
         {
           "id": "A",
-          "text": "Standardizing a distinct American vernacular spelling and patriotic curriculum (Webster’s 'Blue-Backed Speller'), painting monumental neoclassical portraits of Revolutionary civic virtue (Peale, Trumbull, Stuart), and writing republican histories and epics warning against European luxury and corruption",
+          "text": "Standardizing American spelling and curricula (Webster), painting neoclassical portraits of republican virtue (Peale, Trumbull), and writing histories warning against European corruption",
           "isCorrect": true,
           "explanation": "Correct. Cultural nationalists in the Early Republic argued that political independence from Britain required intellectual and cultural independence. Noah Webster published his *American Spelling Book* (1783) to unify regional dialects and shed British aristocratic orthography ('honour' -> 'honor'); painters like Charles Willson Peale, John Trumbull, and Gilbert Stuart depicted George Washington as a modern Roman Cincinnatus who surrendered military power to civilian authority; and Mercy Otis Warren and Mason Weems wrote patriotic histories celebrating republican virtue."
         },
@@ -2991,7 +2991,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "Organizing a mass migration of the majority of northern free African Americans to the newly established American Colonization Society settlement of Monrovia, Liberia, in 1795",
+          "text": "Organizing a mass migration of the majority of northern free African Americans to the newly established American Colonization Society settlement of Monrovia, Liberia, during the 1790s",
           "isCorrect": false,
           "distractorType": "Chronological Anachronism & Position Inversion",
           "explanation": "Incorrect. The American Colonization Society (ACS) was not founded until 1816–1817 (and Liberia in 1821–1822), and northern free Black leaders like Richard Allen and James Forten overwhelmingly *denounced* colonization in 1817 as a slaveholder plot to deport free Black people and secure slavery."
@@ -3005,7 +3005,7 @@ window.APUSH_DATA = {
         },
         {
           "id": "D",
-          "text": "Founding autonomous Black mutual aid societies, schools, Masonic lodges, and churches—most notably Richard Allen and Absalom Jones walking out of Philadelphia’s segregated St. George’s Methodist Church in 1787 to establish the Free African Society and Mother Bethel African Methodist Episcopal (AME) Church",
+          "text": "Founding autonomous Black mutual aid societies, schools, and churches—such as Richard Allen and Absalom Jones establishing the Free African Society and Mother Bethel AME Church",
           "isCorrect": true,
           "explanation": "Correct. As gradual emancipation and private manumissions created growing free Black communities in Philadelphia, New York, and Boston, white institutions imposed segregated pews, barred Black children from schools, and denied Black citizens burial in public cemeteries. In response, Richard Allen and Absalom Jones organized the Free African Society (1787) and founded Bethel AME Church and St. Thomas African Episcopal Church (1794), while Prince Hall chartered the African Grand Lodge in Boston and Benjamin Banneker published scientific almanacs and challenged Thomas Jefferson's racial theories in *Notes on the State of Virginia*."
         }
@@ -3032,20 +3032,20 @@ window.APUSH_DATA = {
         },
         {
           "id": "B",
-          "text": "Persistent east-west tensions between interior backcountry settlers and coastal commercial/political elites over legislative representation, taxation in hard specie, and military policy toward Native American nations—manifested successively in the Paxton Boys (1763–1764), the Carolina Regulators (1768–1771), Shays’ Rebellion (1786–1787), and the Whiskey Rebellion (1794)",
+          "text": "Persistent east-west clashes between backcountry settlers and coastal elites over representation, specie taxes, and Indian policy—from the Paxton Boys and Regulators to Shays' and the Whiskey Rebellion",
           "isCorrect": true,
           "explanation": "Correct. This synthesis question ties together one of the grandest thematic threads of APUSH Unit 3: regardless of whether sovereignty rested in Whitehall (1763–1775), the state legislatures under the Articles (1777–1788), or the new Federalist national government (1789–1800), western frontier agrarians repeatedly clashed with eastern commercial elites over regressive taxes, scarce specie/credit, representation, and aggressive warfare against Native Americans."
         },
         {
           "id": "C",
-          "text": "The steady, nationwide decline of chattel slavery across both the Upper and Lower South as tobacco and rice plantations transitioned entirely to free wage labor by 1800",
+          "text": "The steady, nationwide decline of chattel slavery across both the Upper and Lower South as tobacco and rice plantations transitioned entirely to free wage labor across the southern states by the election of 1800",
           "isCorrect": false,
           "distractorType": "Regional & Economic Inversion",
           "explanation": "Incorrect. While northern states enacted gradual emancipation, slavery expanded dramatically in the South and Southwest during the 1790s following the invention of the cotton gin (1793), with the total enslaved population rising from roughly 500,000 in 1776 to nearly 900,000 in the 1800 census."
         },
         {
           "id": "D",
-          "text": "The consistent enforcement of federal treaties guaranteeing the Ohio and Mississippi Valleys as permanent, sovereign Indigenous homelands closed to Euro-American settlement",
+          "text": "The consistent military enforcement of federal treaties guaranteeing the Ohio and Mississippi Valleys as permanent, sovereign Indigenous homelands completely closed to white Euro-American settlement until 1800",
           "isCorrect": false,
           "distractorType": "Policy Inversion",
           "explanation": "Incorrect. Neither the British Royal Proclamation of 1763 nor the U.S. Indian Trade and Intercourse Acts of the 1790s halted Euro-American westward expansion; by 1800, white settlers had poured across the Appalachians to form the states of Kentucky (1792) and Tennessee (1796) and the Northwest and Mississippi Territories."
