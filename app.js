@@ -2075,12 +2075,27 @@ Return ONLY valid JSON matching this structure:
       if (snap.exists) {
         const cloudData = snap.data();
         const cloudStats = cloudData.stats;
-        // Merge if cloud has more completed quizzes than local
-        if (cloudStats && (cloudStats.quizzesCompleted || 0) > (userStats.quizzesCompleted || 0)) {
-          userStats = Object.assign({}, userStats, cloudStats);
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(userStats));
-          renderUnitsFilterUI([3]);
-          refreshDashboardAndMastery();
+        if (cloudStats) {
+          // Merge cloud and local instead of overwriting newer local quizzes
+          const localTime = userStats.lastActiveIso ? Date.parse(userStats.lastActiveIso) : 0;
+          const cloudTime = cloudStats.lastActiveIso ? Date.parse(cloudStats.lastActiveIso) : 0;
+          if ((cloudStats.quizzesCompleted || 0) > (userStats.quizzesCompleted || 0) && cloudTime >= localTime) {
+            userStats = Object.assign({}, userStats, cloudStats);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(userStats));
+            renderUnitsFilterUI([4]);
+            refreshDashboardAndMastery();
+          } else if ((userStats.quizzesCompleted || 0) > 0 && localTime > cloudTime) {
+            // Merge any missing cloud recentQuizzes into local
+            const existingKeys = new Set((userStats.recentQuizzes || []).map((q) => q.isoDate || q.date + q.label));
+            const mergedRecent = [...(userStats.recentQuizzes || [])];
+            (cloudStats.recentQuizzes || []).forEach((cq) => {
+              const key = cq.isoDate || cq.date + cq.label;
+              if (!existingKeys.has(key)) mergedRecent.push(cq);
+            });
+            userStats.recentQuizzes = mergedRecent.slice(0, 30);
+            userStats.quizzesCompleted = Math.max(userStats.quizzesCompleted || 0, cloudStats.quizzesCompleted || 0);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(userStats));
+          }
         }
       }
       await pushStatsToCloudIfSignedIn();
@@ -2179,8 +2194,9 @@ Return ONLY valid JSON matching this structure:
 
   function renderParentTrackerView() {
     const bank = getFullBank();
+    const u4 = bank.units.find((u) => u.id === 4);
     const u3 = bank.units.find((u) => u.id === 3);
-    const u3Topics = u3 ? u3.topics : [];
+    const trackedTopics = [...(u4 ? u4.topics : []), ...(u3 ? u3.topics : [])];
 
     // Determine which stats object we are inspecting (Cloud Student vs Local Device)
     let activeProfileName = "This Device (Local Browser)";
@@ -2244,13 +2260,13 @@ Return ONLY valid JSON matching this structure:
       ? `Latest: ${latestQuiz.label} (${latestQuiz.scorePct}% on ${latestQuiz.date})`
       : "No quizzes completed yet";
 
-    // Unit 3 Readiness
+    // Unit 4 & Unit 3 Readiness
     let u3Att = 0;
     let u3Corr = 0;
     let u3PracticedCount = 0;
     const weakSections = [];
 
-    u3Topics.forEach((t) => {
+    trackedTopics.forEach((t) => {
       const st = (targetStats.topicStats || {})[t.id];
       if (st && st.attempts > 0) {
         u3Att += st.attempts;
@@ -2265,7 +2281,7 @@ Return ONLY valid JSON matching this structure:
 
     const u3Acc = u3Att > 0 ? Math.round((u3Corr / u3Att) * 100) : null;
     document.getElementById("parentU3AccVal").textContent = u3Acc !== null ? `${u3Acc}%` : "--%";
-    document.getElementById("parentU3SectionsSub").textContent = `${u3PracticedCount} of ${u3Topics.length} Unit 3 sections practiced`;
+    document.getElementById("parentU3SectionsSub").textContent = `${u3PracticedCount} of ${trackedTopics.length} Unit 4 & 3 sections practiced`;
     document.getElementById("parentU3ProgressFill").style.width = `${u3Acc || 0}%`;
     document.getElementById("parentU3ProjectedPill").textContent =
       u3Acc !== null ? `Projected AP Score: ${getProjectedApScoreInfo(u3Acc).score}` : "Needs Diagnostic";
@@ -2276,13 +2292,13 @@ Return ONLY valid JSON matching this structure:
       weakSections.length > 0
         ? weakSections.join(" • ")
         : u3PracticedCount > 0
-        ? "All practiced Unit 3 sections are at 75% accuracy or higher!"
-        : "No sections flagged yet — have him take a Unit 3 quiz to identify weak areas.";
+        ? "All practiced sections are at 75% accuracy or higher!"
+        : "No sections flagged yet — have him take a quiz to identify weak areas.";
 
-    // Populate Unit 3 Section-by-Section Table
+    // Populate Unit 4 & Unit 3 Section-by-Section Table
     const tbody = document.getElementById("parentSectionTableBody");
     if (tbody) {
-      tbody.innerHTML = u3Topics
+      tbody.innerHTML = trackedTopics
         .map((t) => {
           const st = (targetStats.topicStats || {})[t.id] || { attempts: 0, correct: 0 };
           const pct = st.attempts > 0 ? Math.round((st.correct / st.attempts) * 100) : null;
