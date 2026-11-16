@@ -88,7 +88,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     initTheme();
     initNavigation();
-    renderUnitsFilterUI([3]); // Default to Unit 3 selected
+    renderUnitsFilterUI([4]); // Default to Unit 4 (RQ 4.1-4.2) selected
     initBuilderControls();
     initQuizControls();
     initResultsControls();
@@ -175,9 +175,10 @@
     if (!container) return;
     container.innerHTML = "";
 
-    // Always put Unit 3 FIRST as urgent primary focus, followed by Units 1 and 2 inside a collapsible general-knowledge drawer
+    // Put Unit 4 FIRST (current RQ 4.1-4.2 focus), then Unit 3, and Units 1 & 2 inside a collapsible general-knowledge drawer
+    const unit4 = bank.units.find((u) => u.id === 4);
     const unit3 = bank.units.find((u) => u.id === 3);
-    const earlierUnits = bank.units.filter((u) => u.id !== 3);
+    const earlierUnits = bank.units.filter((u) => u.id !== 3 && u.id !== 4);
 
     function buildUnitBox(unit, isPrimary) {
       const box = document.createElement("div");
@@ -232,15 +233,19 @@
       return box;
     }
 
+    if (unit4) {
+      container.appendChild(buildUnitBox(unit4, true));
+    }
+
     if (unit3) {
-      container.appendChild(buildUnitBox(unit3, true));
+      container.appendChild(buildUnitBox(unit3, false));
     }
 
     // Optional collapsible section for General / Cumulative Knowledge (Units 1 & 2)
     if (earlierUnits.length > 0) {
       const hasEarlierSelected =
-        defaultSelectedUnitIds.some((id) => id !== 3) ||
-        (explicitTopicsList && explicitTopicsList.some((t) => !t.startsWith("3.")));
+        defaultSelectedUnitIds.some((id) => id === 1 || id === 2) ||
+        (explicitTopicsList && explicitTopicsList.some((t) => t.startsWith("1.") || t.startsWith("2.")));
       if (hasEarlierSelected) showCumulativeDrawer = true;
 
       const toggleDivider = document.createElement("div");
@@ -353,14 +358,28 @@
       });
     });
 
-    // Unit 3 Only / Clear All / Cumulative Quick Toggles
+    // Unit 4 / Unit 3 / Clear All / Cumulative Quick Toggles
+    const btnUnit4Only = document.getElementById("selectUnit4OnlyBtn");
     const btnUnit3Only = document.getElementById("selectUnit3OnlyBtn");
     const btnClearTopics = document.getElementById("clearTopicsBtn");
     const btnAllUnits = document.getElementById("selectAllUnitsBtn");
 
+    if (btnUnit4Only) {
+      btnUnit4Only.addEventListener("click", () => {
+        btnUnit4Only.classList.add("active");
+        btnUnit3Only?.classList.remove("active");
+        btnClearTopics?.classList.remove("active");
+        btnAllUnits?.classList.remove("active");
+        clearClusterHighlight();
+        showCumulativeDrawer = false;
+        renderUnitsFilterUI([4]);
+      });
+    }
+
     if (btnUnit3Only) {
       btnUnit3Only.addEventListener("click", () => {
         btnUnit3Only.classList.add("active");
+        btnUnit4Only?.classList.remove("active");
         btnClearTopics?.classList.remove("active");
         btnAllUnits?.classList.remove("active");
         clearClusterHighlight();
@@ -372,6 +391,7 @@
     if (btnClearTopics) {
       btnClearTopics.addEventListener("click", () => {
         btnClearTopics.classList.add("active");
+        btnUnit4Only?.classList.remove("active");
         btnUnit3Only?.classList.remove("active");
         btnAllUnits?.classList.remove("active");
         clearClusterHighlight();
@@ -382,11 +402,12 @@
     if (btnAllUnits) {
       btnAllUnits.addEventListener("click", () => {
         btnAllUnits.classList.add("active");
+        btnUnit4Only?.classList.remove("active");
         btnUnit3Only?.classList.remove("active");
         btnClearTopics?.classList.remove("active");
         clearClusterHighlight();
         showCumulativeDrawer = true;
-        renderUnitsFilterUI([1, 2, 3]);
+        renderUnitsFilterUI([1, 2, 3, 4]);
       });
     }
 
@@ -396,6 +417,7 @@
         const topicsList = (pill.getAttribute("data-cluster") || "").split(",").filter(Boolean);
         document.querySelectorAll(".cluster-pill").forEach((p) => p.classList.remove("active"));
         pill.classList.add("active");
+        btnUnit4Only?.classList.remove("active");
         btnUnit3Only?.classList.remove("active");
         btnClearTopics?.classList.remove("active");
         btnAllUnits?.classList.remove("active");
@@ -532,9 +554,54 @@
   function launchPresetQuiz(presetName) {
     const bank = getFullBank();
     const u3Topics = bank.units.find((u) => u.id === 3)?.topics.map((t) => t.id) || [];
+    const u4Topics = bank.units.find((u) => u.id === 4)?.topics.map((t) => t.id) || ["4.1", "4.2"];
     const allTopics = bank.units.flatMap((u) => u.topics.map((t) => t.id));
 
-    if (presetName === "u3-part-a") {
+    if (presetName === "rq-4-1-4-2") {
+      generateAndStartQuiz({
+        label: "RQ 4.1–4.2: Political/Econ & Defend the Nation",
+        strategy: "smart",
+        topics: ["4.1", "4.2"],
+        format: "all",
+        count: 12,
+        feedbackMode: "tutor",
+        timerEnabled: true,
+        shuffleOptions: true
+      });
+    } else if (presetName === "rq-4-3-4-5") {
+      generateAndStartQuiz({
+        label: "RQ 4.3–4.5: Market Rev, 2nd Party System & Jackson Conflicts",
+        strategy: "smart",
+        topics: ["4.3", "4.4", "4.5"],
+        format: "all",
+        count: 15,
+        feedbackMode: "tutor",
+        timerEnabled: true,
+        shuffleOptions: true
+      });
+    } else if (presetName === "rq-4-1") {
+      generateAndStartQuiz({
+        label: "RQ 4.1: Political & Economic Changes (1800–1824)",
+        strategy: "smart",
+        topics: ["4.1"],
+        format: "all",
+        count: 10,
+        feedbackMode: "tutor",
+        timerEnabled: true,
+        shuffleOptions: true
+      });
+    } else if (presetName === "rq-4-2") {
+      generateAndStartQuiz({
+        label: "RQ 4.2: Defend the Nation (1800–1824)",
+        strategy: "smart",
+        topics: ["4.2"],
+        format: "all",
+        count: 10,
+        feedbackMode: "tutor",
+        timerEnabled: true,
+        shuffleOptions: true
+      });
+    } else if (presetName === "u3-part-a") {
       generateAndStartQuiz({
         label: "Unit 3A: Imperial Crisis & Taxes (3.2–3.4)",
         strategy: "smart",

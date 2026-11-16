@@ -1,5 +1,5 @@
-// AP US History (APUSH) Comprehensive Question Bank — Units 1, 2 & 3 (Primary Focus: Unit 3)
-// Authentic College Board CED-aligned stimuli, Honors/AP Exam-level multiple-choice questions, historical thinking skills, and option-by-option explanations.
+// AP US History (APUSH) Comprehensive Question Bank — Units 1–4 (112 Questions, 26 Stimuli)
+// Authentic Honors/AP Exam-level multiple-choice questions with all-true distractors and balanced option lengths.
 
 window.APUSH_DATA = {
   "units": [
@@ -115,6 +115,35 @@ window.APUSH_DATA = {
         {
           "id": "3.12",
           "title": "Movement in the Early Republic"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "code": "Unit 4",
+      "title": "Period 4: 1800–1848 (Modules 4.1–4.5)",
+      "subtitle": "Jeffersonian Era, War of 1812, Market Revolution, 2nd Party System & Jackson",
+      "weight": "10–17% Exam Weight (Current Focus)",
+      "topics": [
+        {
+          "id": "4.1",
+          "title": "Political & Economic Changes (Jeffersonian Era, Marshall Court & American System)"
+        },
+        {
+          "id": "4.2",
+          "title": "Defend the Nation (Barbary Wars, War of 1812 & Monroe Doctrine)"
+        },
+        {
+          "id": "4.3",
+          "title": "Transportation and Market Revolutions Change America"
+        },
+        {
+          "id": "4.4",
+          "title": "The Second American Party System"
+        },
+        {
+          "id": "4.5",
+          "title": "Conflicts of the Jacksonian Era"
         }
       ]
     }
@@ -263,6 +292,70 @@ window.APUSH_DATA = {
       "title": "Diplomatic Address at the Maumee River Council, August 1793",
       "content": "“Brothers: You tell us that the King of Great Britain ceded to you all the country south of the Great Lakes in the Treaty of Peace in 1783, and that you have since confirmed that title by separate treaties at Fort Stanwix, Fort McIntosh, and Fort Harmar. We answer that the King of Great Britain never conquered us, nor had he any right to give away our country to you without our knowledge or presence. As for your treaties at McIntosh and Harmar, they were extorted from a few unauthorized chiefs of broken tribes while our general council was never consulted... Money, to us, is of no value; take back the sums you now offer to purchase Ohio, distribute that money among the poor white squatters who have crossed the river onto our hunting grounds so that they may return to your side, and agree that the Ohio River shall forever remain the boundary between the United States and the United Indian Nations.”",
       "attribution": "— Official message from the Council of the United Indian Nations to United States Peace Commissioners, August 1793"
+    },
+    "stim_u4_1": {
+      "id": "stim_u4_1",
+      "unit": 4,
+      "type": "Primary Source",
+      "title": "Presidential Inaugural Address, March 1801",
+      "content": "“Let us, then, fellow-citizens, unite with one heart and one mind. Let us restore to social intercourse that harmony and affection without which liberty and even life itself are but dreary things... Every difference of opinion is not a difference of principle. We have called by different names brethren of the same principle. We are all Republicans, we are all Federalists. If there be any among us who would wish to dissolve this Union or to change its republican form, let them stand undisturbed as monuments of the safety with which error of opinion may be tolerated where reason is left free to combat it... Equal and exact justice to all men, of whatever state or persuasion, religious or political; peace, commerce, and honest friendship with all nations, entangling alliances with none.”",
+      "attribution": "— Presidential Inaugural Address delivered in Washington, D.C., March 1801"
+    },
+    "stim_u4_2": {
+      "id": "stim_u4_2",
+      "unit": 4,
+      "type": "Primary Source",
+      "title": "Supreme Court Opinion on Federal Power and State Taxation, 1819",
+      "content": "“Although, among the enumerated powers of government, we do not find the word ‘bank’ or ‘incorporation,’ we find the great powers to lay and collect taxes; to borrow money; to regulate commerce; to declare and conduct a war; and to raise and support armies and navies... Let the end be legitimate, let it be within the scope of the constitution, and all means which are appropriate, which are plainly adapted to that end, which are not prohibited, but consist with the letter and spirit of the constitution, are constitutional... That the power to tax involves the power to destroy; that the power to destroy may defeat and render useless the power to create... are propositions not to be denied. If the states may tax one instrument, employed by the government in the execution of its powers, they may tax any and every other instrument.”",
+      "attribution": "— Majority opinion of the Supreme Court of the United States, March 1819"
+    },
+    "stim_u4_3": {
+      "id": "stim_u4_3",
+      "unit": 4,
+      "type": "Primary Source",
+      "title": "Resolutions of a Regional Convention in New England, January 1815",
+      "content": "“Resolved, That the following amendments of the Constitution of the United States be recommended to the legislatures of the several states... First. Representatives and direct taxes shall be apportioned among the several states which may be included within this Union, according to their respective numbers of free persons... Second. No new state shall be admitted into the Union by Congress... without the concurrence of two thirds of both houses. Third. Congress shall not have power to lay any embargo on the ships or vessels of the citizens of the United States... for more than sixty days. Fourth. Congress shall not have power, without the concurrence of two thirds of both houses, to interdict the commercial intercourse between the United States and any foreign nation... Fifth. Congress shall not make or declare war, or authorize acts of hostility against any foreign nation, without the concurrence of two thirds of both houses.”",
+      "attribution": "— Report and resolutions adopted by delegates from five New England states, January 1815"
+    },
+    "stim_u4_4": {
+      "id": "stim_u4_4",
+      "unit": 4,
+      "type": "Primary Source",
+      "title": "Annual Message to Congress on Foreign Intervention, December 1823",
+      "content": "“The occasion has been judged proper for asserting, as a principle in which the rights and interests of the United States are involved, that the American continents, by the free and independent condition which they have assumed and maintain, are henceforth not to be considered as subjects for future colonization by any European powers... We owe it, therefore, to candor and to the amicable relations existing between the United States and those powers to declare that we should consider any attempt on their part to extend their system to any portion of this hemisphere as dangerous to our peace and safety. With the existing colonies or dependencies of any European power we have not interfered and shall not interfere. But with the Governments who have declared their independence and maintained it, and whose independence we have, on great consideration and on just principles, acknowledged, we could not view any interposition for the purpose of oppressing them, or controlling in any other manner their destiny, by any European power in any other light than as the manifestation of an unfriendly disposition toward the United States.”",
+      "attribution": "— Seventh Annual Message to the United States Congress, December 1823"
+    },
+    "stim_u4_5": {
+      "id": "stim_u4_5",
+      "unit": 4,
+      "type": "Primary Source",
+      "title": "Factory Boarding House Regulations, New England, 1830s",
+      "content": "“All persons entering into the employment of the Company are considered as engaged for twelve months, and those who leave sooner without regular written discharge will forfeit two weeks' wages. The keepers of the boarding houses are strictly enjoined to see that their doors are closed at ten o'clock precisely every evening, and no boarder is permitted to remain abroad after that hour without a satisfactory excuse. They must also require all persons under their roofs to attend public worship on the Sabbath, to abstain from all ardent spirits, and to maintain an orderly, sober, and virtuous deportment, as the Company will not retain in its service any person who is habitually absent from religious services or who brings reproach upon the moral reputation of the establishment.”",
+      "attribution": "— Regulations issued for the boarding houses of a Massachusetts textile manufacturing corporation, 1830s"
+    },
+    "stim_u4_6": {
+      "id": "stim_u4_6",
+      "unit": 4,
+      "type": "Primary Source",
+      "title": "State Legislative Protest on Protective Tariffs, December 1828",
+      "content": "“The Constitution of the United States is a compact between sovereign States, and the General Government is their agent, possessing only delegated and limited powers. When Congress perverts the power to lay duties for revenue into an instrument for protecting the manufactures of one section at the ruinous expense of the agricultural staple exporters of another, it violates the spirit and letter of that compact. If there be no check upon such unconstitutional usurpation save the will of a bare congressional majority—which is itself the interested party—our constitutional liberty is at an end. Each State, therefore, as a party to the original compact, retains the sovereign right to judge of infractions and to interpose its authority to arrest the operation of an unconstitutional statute within its own limits.”",
+      "attribution": "— Report adopted by a southern state legislature in response to federal tariff legislation, December 1828"
+    },
+    "stim_u4_7": {
+      "id": "stim_u4_7",
+      "unit": 4,
+      "type": "Primary Source",
+      "title": "Presidential Veto Message on a National Financial Institution, July 1832",
+      "content": "“It is maintained by the advocates of the bank that its constitutionality in all its features ought to be considered as settled by precedent and by the decision of the Supreme Court. To this conclusion I cannot assent. The Congress, the Executive, and the Court must each for itself be guided by its own opinion of the Constitution. ... More than eight millions of the stock of this bank are held by foreigners, and the rest is concentrated in the hands of a few hundred of our own wealthiest citizens. It is to be regretted that the rich and powerful too often bend the acts of government to their selfish purposes. When the laws undertake to add to natural and just advantages artificial distinctions, to grant titles, gratuities, and exclusive privileges, to make the rich richer and the potent more powerful, the humble members of society—the farmers, mechanics, and laborers—have a right to complain of the injustice of their Government.”",
+      "attribution": "— Executive message returning a recharter bill to the United States Senate, July 1832"
+    },
+    "stim_u4_8": {
+      "id": "stim_u4_8",
+      "unit": 4,
+      "type": "Primary Source",
+      "title": "Memorial of a Native Nation to the United States Congress, 1830",
+      "content": "“We wish to remain on the land of our fathers. We have a perfect and original right to remain without interruption or molestation. The treaties with us, and laws of the United States made in pursuance of treaties, guaranty our residence and our privileges, and secure us against intruders. ... It cannot be that the community we are addressing, remarkable for its intelligence and religious sensibilities, and pre-eminent for its devotion to the rights of man, will lay aside this character, and become the oppressor of a people who have made rapid advances in civilization, established a constitutional government, and trusted their future to the pledged faith of the American Republic.”",
+      "attribution": "— Petition from the elected council of a southeastern Indigenous nation to the U.S. Congress, July 1830"
     }
   },
   "questions": [
@@ -3053,6 +3146,1810 @@ window.APUSH_DATA = {
       ],
       "keyTakeaway": "Lock in the two overarching syntheses of Period 3 (1754–1800): (1) The unbroken chain of East-West backcountry rebellions (Paxton Boys 1763 -> Regulators 1768–71 -> Shays' 1786 -> Whiskey 1794 -> Fries's 1799); and (2) How the Cotton Gin (1793) + Southwest Ordinance (1790) + Pinckney's Treaty (1795) entrenched and expanded slavery across the Deep South even as the North enacted gradual emancipation.",
       "testTip": "Remember the exact census numbers and technological reality of slavery in the 1790s: even with gradual emancipation in the North, the total U.S. enslaved population rose from ~700,000 in 1790 to ~900,000 in 1800 because the cotton gin (1793) made short-staple cotton profitable across the southern interior."
+    },
+    {
+      "id": "q_u4_01",
+      "unit": 4,
+      "topic": "4.1",
+      "topicTitle": "Political & Economic Changes (Jeffersonian Era, Marshall Court & American System)",
+      "skill": "Sourcing and Situation",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_1",
+      "stem": "Despite the conciliatory tone of the March 1801 address excerpted above, which of the following actions taken by the incoming administration and its congressional allies most directly challenged the institutional legacy of the outgoing Federalists?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Enacting the Judiciary Act of 1802 to abolish the circuit judgeships created under the outgoing administration and withholding undelivered judicial commissions",
+          "isCorrect": true,
+          "explanation": "Correct. Although Jefferson struck a conciliatory tone in his First Inaugural, he refused to deliver the remaining 'midnight' commissions (prompting Marbury v. Madison), and the Democratic-Republican Congress passed the Judiciary Act of 1802 to repeal the Federalist Judiciary Act of 1801."
+        },
+        {
+          "id": "B",
+          "text": "Revoking the charter of the First Bank of the United States by executive order and replacing federal paper currency with state-issued land notes",
+          "isCorrect": false,
+          "distractorType": "Chronological & Policy Mismatch",
+          "explanation": "Incorrect. Jefferson and Treasury Secretary Albert Gallatin actually left the First Bank of the United States intact until its 20-year charter expired naturally in 1811; they did not revoke it by executive order in 1801."
+        },
+        {
+          "id": "C",
+          "text": "Deploying federalized state militias to suppress western Pennsylvania farmers who refused to pay the federal excise tax on distilled whiskey",
+          "isCorrect": false,
+          "distractorType": "Chronological & Faction Inversion",
+          "explanation": "Incorrect. Suppressing the Whiskey Rebellion with federalized militias was President George Washington's Federalist action in 1794; Jefferson's administration repealed the whiskey excise tax in 1802."
+        },
+        {
+          "id": "D",
+          "text": "Passing the Alien and Sedition Acts to prosecute partisan newspaper editors who criticized the new president's diplomatic policies",
+          "isCorrect": false,
+          "distractorType": "Faction & Chronology Inversion",
+          "explanation": "Incorrect. The Alien and Sedition Acts were passed by the Federalist Congress in 1798 under John Adams; Jefferson pardoned those convicted under the Sedition Act and allowed the statutes to expire."
+        }
+      ],
+      "keyTakeaway": "Jefferson's 'Revolution of 1800' combined conciliatory rhetoric ('We are all Republicans, we are all Federalists') with targeted dismantling of Federalist judicial and fiscal measures, including the Judiciary Act of 1802 and repeal of internal excise taxes.",
+      "testTip": "Watch for questions contrasting Jefferson's rhetoric in March 1801 with his actual governance: he kept Hamilton's Bank and debt-funding system intact while reversing the Judiciary Act of 1801, internal taxes, and Alien and Sedition prosecutions."
+    },
+    {
+      "id": "q_u4_02",
+      "unit": 4,
+      "topic": "4.1",
+      "topicTitle": "Political & Economic Changes (Jeffersonian Era, Marshall Court & American System)",
+      "skill": "Continuity and Change",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_1",
+      "stem": "In the years immediately following the March 1801 address, the new administration demonstrated continuity with its predecessors' economic policies primarily by",
+      "options": [
+        {
+          "id": "A",
+          "text": "establishing the Second Bank of the United States and enacting the protective Tariff of 1816",
+          "isCorrect": false,
+          "distractorType": "Chronological Mismatch",
+          "explanation": "Incorrect. Both the Second Bank of the United States and the Tariff of 1816 were enacted under President James Madison after the War of 1812, not in the years immediately following 1801."
+        },
+        {
+          "id": "B",
+          "text": "retaining the First Bank of the United States and continuing federal debt repayment through customs revenues",
+          "isCorrect": true,
+          "explanation": "Correct. Under Treasury Secretary Albert Gallatin, the Jefferson administration preserved the First Bank of the United States and relied on import tariffs and land sales to service and reduce the national debt, maintaining core elements of Hamilton's fiscal architecture."
+        },
+        {
+          "id": "C",
+          "text": "funding a permanent standing navy of seventy-four-gun ships of the line through internal excise taxes",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion",
+          "explanation": "Incorrect. Jefferson's administration slashed military and naval budgets, favored small coastal gunboats over large warships, and repealed internal excise taxes rather than expanding them."
+        },
+        {
+          "id": "D",
+          "text": "reimposing the Townshend duties on imported tea, glass, and paper to retire Revolutionary War debts",
+          "isCorrect": false,
+          "distractorType": "Period 3 Chronological Mismatch",
+          "explanation": "Incorrect. The Townshend duties were British parliamentary taxes imposed on the American colonies in 1767 during the imperial crisis, decades before Jefferson's presidency."
+        }
+      ],
+      "keyTakeaway": "Despite partisan rhetoric, Jeffersonian fiscal policy preserved Hamilton's First Bank of the United States and used customs duties (tariffs) to pay down the national debt.",
+      "testTip": "APUSH continuity questions on the Revolution of 1800 often test what Jefferson did NOT dismantle: the First Bank of the United States (until 1811) and federal debt repayment."
+    },
+    {
+      "id": "q_u4_03",
+      "unit": 4,
+      "topic": "4.1",
+      "topicTitle": "Political & Economic Changes (Jeffersonian Era, Marshall Court & American System)",
+      "skill": "Developments and Processes",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following were direct constitutional or political consequences of the Supreme Court's 1803 ruling in <em>Marbury v. Madison</em>?<br><br>I. The Court declared Section 13 of the Judiciary Act of 1789 unconstitutional.<br>II. The Court ordered Secretary of State James Madison to deliver William Marbury's commission immediately.<br>III. The Court affirmed the principle of judicial review over federal statutes.<br>IV. The Court invalidated the Virginia and Kentucky Resolutions under the Supremacy Clause.",
+      "options": [
+        {
+          "id": "A",
+          "text": "I only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection",
+          "explanation": "Incorrect. Statement I is true—Marshall struck down Section 13 of the Judiciary Act of 1789—but Statement III is also a central consequence of the ruling."
+        },
+        {
+          "id": "B",
+          "text": "I, II, and IV only",
+          "isCorrect": false,
+          "distractorType": "Factual & Case Mismatch",
+          "explanation": "Incorrect. The Court refused to issue a writ of mandamus ordering Madison to deliver the commission (ruling it lacked original jurisdiction), and the 1798 Virginia and Kentucky Resolutions were never struck down in Marbury v. Madison."
+        },
+        {
+          "id": "C",
+          "text": "I and III only",
+          "isCorrect": true,
+          "explanation": "Correct. Chief Justice John Marshall held that Marbury had a right to his commission, but ruled that Section 13 of the Judiciary Act of 1789 unconstitutionally expanded the Supreme Court's original jurisdiction—thereby establishing federal judicial review (I and III)."
+        },
+        {
+          "id": "D",
+          "text": "I, II, and III only",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion",
+          "explanation": "Incorrect. While Statements I and III are correct, Statement II is false: Marshall avoided a direct confrontation with the Jefferson administration by declining to order Madison to deliver the commission."
+        }
+      ],
+      "keyTakeaway": "In Marbury v. Madison (1803), John Marshall denied Marbury his commission by declaring Section 13 of the Judiciary Act of 1789 unconstitutional, establishing the Supreme Court's power of judicial review over acts of Congress.",
+      "testTip": "Remember the brilliant political maneuver of Marbury v. Madison: Marshall gave Jefferson a short-term win (no commission for Marbury) while claiming a massive long-term power for the Court (judicial review)."
+    },
+    {
+      "id": "q_u4_04",
+      "unit": 4,
+      "topic": "4.1",
+      "topicTitle": "Political & Economic Changes (Jeffersonian Era, Marshall Court & American System)",
+      "skill": "Contextualization",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following best explains why the 1803 Louisiana Purchase provoked intense constitutional and sectional debate inside the United States?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Spain had simultaneously closed the Mississippi River to American flatboats in violation of the 1783 Treaty of Paris, forcing Congress to declare war on Madrid",
+          "isCorrect": false,
+          "distractorType": "Factual & Treaty Mismatch",
+          "explanation": "Incorrect. Spain had guaranteed American navigation and the right of deposit at New Orleans in Pinckney's Treaty (1795), not the 1783 Treaty of Paris, and the suspension of deposit in 1802 led to diplomatic negotiations with France rather than war with Madrid."
+        },
+        {
+          "id": "B",
+          "text": "Democratic-Republicans opposed adding agrarian lands west of the Mississippi River because they favored concentrated urban manufacturing along the Atlantic seaboard",
+          "isCorrect": false,
+          "distractorType": "Faction Inversion",
+          "explanation": "Incorrect. Democratic-Republicans championed westward agrarian expansion as the lifeblood of an independent 'empire of liberty'; it was the Federalists who favored Atlantic commercial and manufacturing centers."
+        },
+        {
+          "id": "C",
+          "text": "The Senate refused to ratify the treaty under the Article II two-thirds requirement until the Tallmadge Amendment prohibited slavery north of the 36°30′ parallel",
+          "isCorrect": false,
+          "distractorType": "Chronological Mismatch",
+          "explanation": "Incorrect. The Senate overwhelmingly ratified the Louisiana Purchase treaty in 1803; the Tallmadge Amendment and the 36°30′ Missouri Compromise line occurred sixteen years later in 1819–1820."
+        },
+        {
+          "id": "D",
+          "text": "The Constitution lacked an explicit clause authorizing foreign territorial acquisition, troubling strict constructionists and also alarming New England Federalists",
+          "isCorrect": true,
+          "explanation": "Correct. Jefferson privately worried that acquiring Louisiana exceeded his strict-constructionist view of enumerated powers (eventually relying on the Article II treaty-making power), while New England Federalists feared new agrarian states would permanently marginalize Northeast commercial interests."
+        }
+      ],
+      "keyTakeaway": "The Louisiana Purchase (1803) forced Jefferson to bend his strict-constructionist principles by using the treaty power, while fueling New England Federalist fears that new western states would permanently tip the political balance toward the Democratic-Republicans.",
+      "testTip": "Connect the Louisiana Purchase to two APUSH themes: (1) strict vs. loose construction of the Constitution, and (2) sectional anxiety among New England Federalists (such as the Essex Junto)."
+    },
+    {
+      "id": "q_u4_05",
+      "unit": 4,
+      "topic": "4.1",
+      "topicTitle": "Political & Economic Changes (Jeffersonian Era, Marshall Court & American System)",
+      "skill": "Developments and Processes",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "In <em>Fletcher v. Peck</em> (1810), the Marshall Court expanded federal judicial authority over the states for the first time by ruling that",
+      "options": [
+        {
+          "id": "A",
+          "text": "a state legislature could not rescind a corruptly obtained land grant because doing so violated the Constitution's Contract Clause",
+          "isCorrect": true,
+          "explanation": "Correct. In Fletcher v. Peck (1810), involving Georgia's Yazoo land fraud, the Supreme Court held for the first time that a state law was unconstitutional because a state grant constituted a binding contract protected by Article I, Section 10."
+        },
+        {
+          "id": "B",
+          "text": "state courts possessed final appellate authority over federal treaties whenever land titles originated under royal charters",
+          "isCorrect": false,
+          "distractorType": "Factual & Case Inversion",
+          "explanation": "Incorrect. In Martin v. Hunter's Lessee (1816), the Marshall Court rejected Virginia's claim of state-court finality and affirmed Supreme Court appellate supremacy over state courts in treaty and federal-law cases."
+        },
+        {
+          "id": "C",
+          "text": "state governments could regulate interstate steamboat monopolies even when Congress had enacted a federal coastal licensing statute",
+          "isCorrect": false,
+          "distractorType": "Case & Holding Inversion",
+          "explanation": "Incorrect. In Gibbons v. Ogden (1824), the Court struck down New York's steamboat monopoly, ruling that congressional power over interstate commerce superseded state-granted monopolies."
+        },
+        {
+          "id": "D",
+          "text": "the Cherokee Nation constituted a foreign state entitled to bring original lawsuits against Georgia in federal court",
+          "isCorrect": false,
+          "distractorType": "Chronological & Holding Mismatch",
+          "explanation": "Incorrect. In Cherokee Nation v. Georgia (1831), the Marshall Court actually ruled that the Cherokee were a 'domestic dependent nation' rather than a foreign state, and therefore lacked standing to sue Georgia directly."
+        }
+      ],
+      "keyTakeaway": "Fletcher v. Peck (1810) was the first Supreme Court decision to declare a state law unconstitutional, using the Contract Clause to protect property rights even in the wake of the Yazoo land scandal.",
+      "testTip": "Distinguish Marshall Court milestones carefully: Marbury (1803) = first federal law struck down; Fletcher (1810) = first state law struck down (Contract Clause); McCulloch (1819) = Implied Powers & Supremacy; Gibbons (1824) = Commerce Clause."
+    },
+    {
+      "id": "q_u4_06",
+      "unit": 4,
+      "topic": "4.1",
+      "topicTitle": "Political & Economic Changes (Jeffersonian Era, Marshall Court & American System)",
+      "skill": "Claims and Evidence in Sources",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_2",
+      "stem": "The constitutional reasoning articulated in the March 1819 Supreme Court opinion excerpted above directly established which pair of doctrines?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The exclusive federal regulation of interstate navigation under the Commerce Clause and the invalidation of state-chartered steamboat monopolies",
+          "isCorrect": false,
+          "distractorType": "Case Misattribution (Gibbons v. Ogden)",
+          "explanation": "Incorrect. Federal supremacy over interstate navigation and steamboat monopolies was established five years later in Gibbons v. Ogden (1824), not in McCulloch v. Maryland (1819)."
+        },
+        {
+          "id": "B",
+          "text": "The protection of private corporate charters from state legislative alteration under the Contract Clause and the inviolability of college endowments",
+          "isCorrect": false,
+          "distractorType": "Case Misattribution (Dartmouth College v. Woodward)",
+          "explanation": "Incorrect. Protecting private corporate charters from state alteration under the Contract Clause was the holding of Dartmouth College v. Woodward (1819), a separate case decided the same year."
+        },
+        {
+          "id": "C",
+          "text": "The right of state legislatures to nullify unconstitutional federal statutes through interposition and the principle of dual sovereignty",
+          "isCorrect": false,
+          "distractorType": "Faction & Doctrine Inversion",
+          "explanation": "Incorrect. Nullification and state interposition were Jeffersonian/Calhounian states'-rights doctrines (1798 and 1828), the exact opposite of John Marshall's nationalist reasoning in McCulloch v. Maryland."
+        },
+        {
+          "id": "D",
+          "text": "The legitimacy of congressional implied powers under the Necessary and Proper Clause and federal supremacy over conflicting state taxation",
+          "isCorrect": true,
+          "explanation": "Correct. In McCulloch v. Maryland (1819), Chief Justice Marshall upheld the Second Bank of the United States via the Necessary and Proper Clause (implied powers) and struck down Maryland's tax on the Bank under the Supremacy Clause ('the power to tax involves the power to destroy')."
+        }
+      ],
+      "keyTakeaway": "McCulloch v. Maryland (1819) anchored federal supremacy on two pillars: (1) Congress holds implied powers under the Necessary and Proper Clause, and (2) states cannot tax or obstruct federal institutions.",
+      "testTip": "When a stimulus quotes 'Let the end be legitimate...' or 'the power to tax involves the power to destroy,' immediately identify McCulloch v. Maryland (1819)—implied powers plus federal supremacy."
+    },
+    {
+      "id": "q_u4_07",
+      "unit": 4,
+      "topic": "4.1",
+      "topicTitle": "Political & Economic Changes (Jeffersonian Era, Marshall Court & American System)",
+      "skill": "Contextualization",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_2",
+      "stem": "The immediate political and economic crisis that prompted Maryland's 1818 tax and led to the 1819 Supreme Court opinion excerpted above was rooted in",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alexander Hamilton's 1791 proposal to charter the First Bank of the United States as part of his Report on Public Credit",
+          "isCorrect": false,
+          "distractorType": "Chronological Mismatch",
+          "explanation": "Incorrect. Hamilton's 1791 proposal sparked the original constitutional debate with Jefferson, but the 1819 McCulloch case involved the Second Bank of the United States, chartered in 1816."
+        },
+        {
+          "id": "B",
+          "text": "state hostility toward the Second Bank of the United States amid credit contraction and the onset of the Panic of 1819",
+          "isCorrect": true,
+          "explanation": "Correct. Chartered in 1816, the Second Bank of the United States tightened credit in 1818–1819, triggering bank failures and the Panic of 1819; several states (including Maryland) attempted to tax the Bank's branches out of existence."
+        },
+        {
+          "id": "C",
+          "text": "President Andrew Jackson's veto of the Second Bank's recharter bill and his removal of federal deposits into state 'pet banks'",
+          "isCorrect": false,
+          "distractorType": "Chronological Mismatch",
+          "explanation": "Incorrect. Andrew Jackson's Bank Veto and removal of federal deposits occurred in 1832–1833, more than a decade after the 1819 McCulloch v. Maryland decision."
+        },
+        {
+          "id": "D",
+          "text": "the passage of the Specie Circular requiring all western public land purchases to be paid exclusively in gold or silver coin",
+          "isCorrect": false,
+          "distractorType": "Chronological Mismatch",
+          "explanation": "Incorrect. The Specie Circular was an executive order issued by Andrew Jackson in 1836, not a cause of the 1818–1819 Maryland tax dispute."
+        }
+      ],
+      "keyTakeaway": "McCulloch v. Maryland (1819) grew out of intense state backlash against the Second Bank of the United States (chartered 1816) as credit contraction fueled the Panic of 1819.",
+      "testTip": "Do not confuse the First Bank (1791–1811), the Second Bank (chartered 1816, upheld in McCulloch 1819), and Jackson's Bank War (1832–1836)."
+    },
+    {
+      "id": "q_u4_08",
+      "unit": 4,
+      "topic": "4.1",
+      "topicTitle": "Political & Economic Changes (Jeffersonian Era, Marshall Court & American System)",
+      "skill": "Comparison",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following Marshall Court decisions strengthened national authority specifically by limiting state interference in private contracts or state appellate supremacy over federal law?<br><br>I. <em>Martin v. Hunter's Lessee</em> (1816)<br>II. <em>Dartmouth College v. Woodward</em> (1819)<br>III. <em>Cohens v. Virginia</em> (1821)<br>IV. <em>Gibbons v. Ogden</em> (1824)",
+      "options": [
+        {
+          "id": "A",
+          "text": "I, II, III, and IV",
+          "isCorrect": false,
+          "distractorType": "Over-Inclusion",
+          "explanation": "Incorrect. Although Gibbons v. Ogden (IV) also strengthened federal authority, it did so under the Interstate Commerce Clause rather than the Contract Clause or state-court appellate review."
+        },
+        {
+          "id": "B",
+          "text": "II and IV only",
+          "isCorrect": false,
+          "distractorType": "Doctrine Mismatch",
+          "explanation": "Incorrect. Gibbons v. Ogden (IV) expanded federal power via the Commerce Clause rather than the Contract Clause or appellate supremacy over state courts, and it omits Martin and Cohens."
+        },
+        {
+          "id": "C",
+          "text": "I and IV only",
+          "isCorrect": false,
+          "distractorType": "Incomplete & Doctrine Mismatch",
+          "explanation": "Incorrect. This omits Dartmouth College (Contract Clause) and Cohens (appellate supremacy) while incorrectly including Gibbons (Commerce Clause)."
+        },
+        {
+          "id": "D",
+          "text": "I, II, and III only",
+          "isCorrect": true,
+          "explanation": "Correct. Martin v. Hunter's Lessee (1816) and Cohens v. Virginia (1821) affirmed Supreme Court appellate review over state court rulings on federal questions, while Dartmouth College v. Woodward (1819) barred states from altering private corporate charters under the Contract Clause. Gibbons v. Ogden (1824) rested on the Commerce Clause."
+        }
+      ],
+      "keyTakeaway": "The Marshall Court used multiple constitutional clauses to curb state power: Contract Clause (Fletcher, Dartmouth College), federal appellate supremacy (Martin, Cohens), Necessary and Proper/Supremacy (McCulloch), and Commerce Clause (Gibbons).",
+      "testTip": "Group the Marshall Court cases by constitutional mechanism so you can quickly eliminate mismatched doctrines on Roman-numeral questions."
+    },
+    {
+      "id": "q_u4_09",
+      "unit": 4,
+      "topic": "4.1",
+      "topicTitle": "Political & Economic Changes (Jeffersonian Era, Marshall Court & American System)",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Why did President James Madison veto John C. Calhoun's Bonus Bill of 1817—even though Madison had recently signed the Tariff of 1816 and the charter for the Second Bank of the United States?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Madison believed that protective tariffs violated the Tenth Amendment and favored southern cotton planters exclusively",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion",
+          "explanation": "Incorrect. Madison signed the protective Tariff of 1816; his objection in 1817 was specifically to federal funding of internal improvements (roads and canals), not tariffs."
+        },
+        {
+          "id": "B",
+          "text": "Madison opposed all three pillars of Henry Clay's American System because he feared they would revive the Federalist Party",
+          "isCorrect": false,
+          "distractorType": "Factual Overreach",
+          "explanation": "Incorrect. Madison actually embraced two of the three pillars—the Tariff of 1816 and the Second Bank of the United States—to strengthen the postwar national economy."
+        },
+        {
+          "id": "C",
+          "text": "Madison believed Congress lacked constitutional authority to fund internal improvements without an amendment",
+          "isCorrect": true,
+          "explanation": "Correct. On his final day in office (March 3, 1817), Madison vetoed the Bonus Bill because he believed neither the General Welfare Clause nor the Commerce Clause authorized federal spending on roads and canals without an explicit constitutional amendment."
+        },
+        {
+          "id": "D",
+          "text": "Madison argued that New York's completion of the Erie Canal rendered all federally financed turnpikes and waterways unnecessary",
+          "isCorrect": false,
+          "distractorType": "Chronological Mismatch",
+          "explanation": "Incorrect. Construction on the Erie Canal only began in 1817 and was not completed until 1825; Madison's veto was rooted in constitutional strict construction, not the Erie Canal's completion."
+        }
+      ],
+      "keyTakeaway": "Post-1815 National Republicans (like Madison and Monroe) accepted protective tariffs and the Second Bank, but repeatedly vetoed federal internal-improvement bills (Bonus Bill 1817; Cumberland Road toll bill 1822) on constitutional grounds.",
+      "testTip": "Remember that internal improvements was the one piece of Clay's American System that presidents Madison, Monroe, and later Jackson resisted—often forcing states like New York (Erie Canal) to build infrastructure themselves."
+    },
+    {
+      "id": "q_u4_10",
+      "unit": 4,
+      "topic": "4.1",
+      "topicTitle": "Political & Economic Changes (Jeffersonian Era, Marshall Court & American System)",
+      "skill": "Comparison",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "How did the Missouri Compromise of 1820 differ from the Northwest Ordinance of 1787 in its treatment of slavery in western territories?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Northwest Ordinance banned slavery across the entire Old Northwest, whereas the Missouri Compromise partitioned the remaining Louisiana Purchase along the 36°30′ parallel",
+          "isCorrect": true,
+          "explanation": "Correct. Article 6 of the Northwest Ordinance (1787) prohibited slavery throughout the Northwest Territory (north of the Ohio River), while the Missouri Compromise (1820) admitted Missouri as a slave state and Maine as a free state, banning slavery only north of 36°30′ in the rest of the Louisiana Purchase."
+        },
+        {
+          "id": "B",
+          "text": "The Northwest Ordinance permitted popular sovereignty in future states, whereas the Missouri Compromise abolished slavery immediately throughout the Mississippi Valley",
+          "isCorrect": false,
+          "distractorType": "Chronological & Factual Inversion",
+          "explanation": "Incorrect. Popular sovereignty was introduced in the Compromise of 1850 and the Kansas-Nebraska Act (1854), not the 1787 Northwest Ordinance, and the 1820 Missouri Compromise preserved slavery in Missouri and south of 36°30′."
+        },
+        {
+          "id": "C",
+          "text": "The Northwest Ordinance applied only to territories acquired from France, whereas the Missouri Compromise governed lands ceded by Spain in the Adams-Onís Treaty",
+          "isCorrect": false,
+          "distractorType": "Geographic Inversion",
+          "explanation": "Incorrect. The Northwest Ordinance governed territory ceded by Great Britain in 1783 (north of the Ohio River), whereas the Missouri Compromise applied to the 1803 Louisiana Purchase acquired from France."
+        },
+        {
+          "id": "D",
+          "text": "The Northwest Ordinance included the Tallmadge Amendment for gradual emancipation, whereas the Missouri Compromise relied on the Three-Fifths Compromise to calculate Senate seats",
+          "isCorrect": false,
+          "distractorType": "Statute & Constitutional Mismatch",
+          "explanation": "Incorrect. The Tallmadge Amendment was proposed during the 1819 Missouri crisis (and failed in the Senate), not in 1787, and the Three-Fifths Compromise applied to the House of Representatives and Electoral College, not Senate seats."
+        }
+      ],
+      "keyTakeaway": "While the Northwest Ordinance (1787) banned slavery across the entire Northwest Territory, the Missouri Compromise (1820) established a geographic dividing line (36°30′) and paired free/slave state admissions to preserve Senate balance.",
+      "testTip": "Compare the three major territorial slavery frameworks in Period 3–5: Northwest Ordinance (1787, total ban north of Ohio River), Missouri Compromise (1820, 36°30′ line in Louisiana Purchase), and Kansas-Nebraska Act (1854, repeal of 36°30′ via popular sovereignty)."
+    },
+    {
+      "id": "q_u4_11",
+      "unit": 4,
+      "topic": "4.2",
+      "topicTitle": "Defend the Nation (Barbary Wars, War of 1812 & Monroe Doctrine)",
+      "skill": "Contextualization",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "President Thomas Jefferson's decision to deploy United States naval squadrons to the Mediterranean during the First Barbary War (1801–1805) was historically significant primarily because it",
+      "options": [
+        {
+          "id": "A",
+          "text": "relied on the British Royal Navy to blockade Algiers after Congress refused to fund any American warships",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion",
+          "explanation": "Incorrect. The United States acted independently with its own frigates (such as the USS Constitution and USS Philadelphia) rather than relying on the Royal Navy, and Congress authorized naval action against Tripoli."
+        },
+        {
+          "id": "B",
+          "text": "showed a strict-constructionist president projecting overseas naval force without a formal declaration",
+          "isCorrect": true,
+          "explanation": "Correct. Refusing Tripoli's increased tribute demands, Jefferson dispatched naval squadrons to protect American Mediterranean commerce and later obtained congressional authorization for defensive/offensive operations without a formal declaration of war—setting a major executive-power precedent."
+        },
+        {
+          "id": "C",
+          "text": "resulted in the permanent annexation of Tripoli as a United States naval protectorate under the Treaty of Mortefontaine",
+          "isCorrect": false,
+          "distractorType": "Treaty & Outcome Mismatch",
+          "explanation": "Incorrect. The Treaty of Mortefontaine (1800) ended the Quasi-War with France, and the 1805 treaty with Tripoli secured the release of American prisoners rather than annexing Tripoli."
+        },
+        {
+          "id": "D",
+          "text": "violated the Monroe Doctrine's pledge never to intervene in the internal affairs of Old World empires",
+          "isCorrect": false,
+          "distractorType": "Chronological Mismatch",
+          "explanation": "Incorrect. The Monroe Doctrine was not proclaimed until 1823, eighteen years after the First Barbary War ended."
+        }
+      ],
+      "keyTakeaway": "In the First Barbary War (1801–1805), Jefferson set aside his usual aversion to military spending and executive unilateralism to defend American maritime trade from North African tribute demands without a formal declaration of war.",
+      "testTip": "Note the irony APUSH loves: Jefferson, the champion of small government and strict construction, expanded executive military action in the Barbary War and executive treaty power in the Louisiana Purchase."
+    },
+    {
+      "id": "q_u4_12",
+      "unit": 4,
+      "topic": "4.2",
+      "topicTitle": "Defend the Nation (Barbary Wars, War of 1812 & Monroe Doctrine)",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Following the 1807 <em>Chesapeake–Leopard</em> affair and the economic failure of the Embargo Act, Congress enacted Macon's Bill No. 2 (1810) with the specific strategic aim of",
+      "options": [
+        {
+          "id": "A",
+          "text": "reopening trade with Britain and France while restoring an embargo on whichever power defied neutral rights",
+          "isCorrect": true,
+          "explanation": "Correct. Macon's Bill No. 2 (1810) lifted all trade restrictions with Britain and France, but stipulated that if either nation repealed its edicts against neutral shipping, the United States would reimpose non-importation against its rival—a maneuver Napoleon exploited to push the U.S. toward conflict with Britain."
+        },
+        {
+          "id": "B",
+          "text": "forbidding all United States merchant vessels from clearing American ports for any foreign destination worldwide",
+          "isCorrect": false,
+          "distractorType": "Statute Mismatch (Embargo Act of 1807)",
+          "explanation": "Incorrect. Prohibiting all American exports to any foreign port worldwide described Jefferson's Embargo Act of 1807, which Congress repealed in 1809."
+        },
+        {
+          "id": "C",
+          "text": "forging a formal defensive military alliance with Napoleonic France modeled on the 1778 Treaty of Alliance",
+          "isCorrect": false,
+          "distractorType": "Treaty & Policy Mismatch",
+          "explanation": "Incorrect. Neither Jefferson nor Madison sought a formal military alliance with Napoleon; both sought to protect American neutral shipping rights while avoiding entangling alliances."
+        },
+        {
+          "id": "D",
+          "text": "dispatching Chief Justice John Jay to London to negotiate compensation for British impressment of American sailors",
+          "isCorrect": false,
+          "distractorType": "Chronological Mismatch",
+          "explanation": "Incorrect. John Jay's mission to London occurred in 1794 under George Washington (producing Jay's Treaty) and failed to stop British impressment."
+        }
+      ],
+      "keyTakeaway": "From 1807 to 1810, the U.S. shifted from total embargo (Embargo Act, 1807) to targeted bans (Non-Intercourse Act, 1809) to conditional trade reopening (Macon's Bill No. 2, 1810), which Napoleon manipulated to isolate Britain.",
+      "testTip": "Keep the three pre-1812 trade statutes in exact sequence: Embargo Act (1807, bans all foreign exports) → Non-Intercourse Act (1809, bans only Britain/France) → Macon's Bill No. 2 (1810, reopens trade with a conditional snap-back)."
+    },
+    {
+      "id": "q_u4_13",
+      "unit": 4,
+      "topic": "4.2",
+      "topicTitle": "Defend the Nation (Barbary Wars, War of 1812 & Monroe Doctrine)",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following grievances were cited by President James Madison and congressional War Hawks in 1812 to justify a declaration of war against Great Britain?<br><br>I. British impressment of sailors from American merchant ships<br>II. British enforcement of the Orders in Council restricting neutral trade<br>III. British frontier support for Tecumseh's pan-Indian confederacy<br>IV. French seizure of American ships under the Berlin and Milan Decrees",
+      "options": [
+        {
+          "id": "A",
+          "text": "I and II only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection",
+          "explanation": "Incorrect. Impressment (I) and the Orders in Council (II) were crucial maritime causes, but frontier conflict with Tecumseh's British-backed confederacy (III) was equally central for western War Hawks."
+        },
+        {
+          "id": "B",
+          "text": "I, II, and III only",
+          "isCorrect": true,
+          "explanation": "Correct. Madison's June 1812 war message and War Hawks like Henry Clay emphasized British impressment (I), the Orders in Council (II), and British arming of Indigenous nations in the Old Northwest after the 1811 Battle of Tippecanoe (III). French decrees (IV) were a grievance against France, not Britain."
+        },
+        {
+          "id": "C",
+          "text": "II, III, and IV only",
+          "isCorrect": false,
+          "distractorType": "Belligerent Mismatch",
+          "explanation": "Incorrect. This omits British impressment (I) and incorrectly lists Napoleon's Berlin and Milan Decrees (IV) as a casus belli against Great Britain."
+        },
+        {
+          "id": "D",
+          "text": "I, II, III, and IV",
+          "isCorrect": false,
+          "distractorType": "Over-Inclusion",
+          "explanation": "Incorrect. Although French decrees also harmed American shipping, Congress declared war solely against Great Britain in June 1812, not against France."
+        }
+      ],
+      "keyTakeaway": "The War of 1812 arose from a convergence of maritime grievances (impressment and British Orders in Council) and frontier ambitions/security concerns (British backing for Tecumseh's Confederacy and War Hawk designs on Canada).",
+      "testTip": "On War of 1812 cause questions, remember that both maritime rights (impressment, Orders in Council) AND western frontier/Indigenous resistance (Tecumseh, Tippecanoe) drove the June 1812 declaration."
+    },
+    {
+      "id": "q_u4_14",
+      "unit": 4,
+      "topic": "4.2",
+      "topicTitle": "Defend the Nation (Barbary Wars, War of 1812 & Monroe Doctrine)",
+      "skill": "Sourcing and Situation",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_3",
+      "stem": "Why did the January 1815 resolutions excerpted above ultimately accelerate the collapse of the Federalist Party as a national political force?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The delegates formally voted to secede from the Union and sign a separate commercial treaty with Great Britain",
+          "isCorrect": false,
+          "distractorType": "Factual Overreach",
+          "explanation": "Incorrect. Moderate Federalists dominated the Hartford Convention and explicitly rejected outright secession, proposing constitutional amendments instead."
+        },
+        {
+          "id": "B",
+          "text": "The Supreme Court immediately invalidated the convention's resolutions in Gibbons v. Ogden as an unlawful interference with interstate commerce",
+          "isCorrect": false,
+          "distractorType": "Chronological & Case Mismatch",
+          "explanation": "Incorrect. Gibbons v. Ogden (1824) dealt with New York's steamboat monopoly nearly a decade later, not the 1815 Hartford Convention."
+        },
+        {
+          "id": "C",
+          "text": "Word of the convention's demands reached Washington just as news arrived of the Treaty of Ghent and Andrew Jackson's victory at New Orleans, making the Federalists appear unpatriotic",
+          "isCorrect": true,
+          "explanation": "Correct. Because the Treaty of Ghent (December 1814) and the Battle of New Orleans (January 1815) became public in Washington at the exact moment Hartford delegates arrived with their demands, Democratic-Republicans branded the Federalists as disloyal and treasonous, sealing the party's national demise."
+        },
+        {
+          "id": "D",
+          "text": "New England shipowners abandoned the Federalist Party because the proposed amendments called for a permanent national embargo against British goods",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion",
+          "explanation": "Incorrect. The Hartford Convention sought to limit congressional embargoes to sixty days—protecting New England commerce rather than imposing a permanent embargo."
+        }
+      ],
+      "keyTakeaway": "Although the Hartford Convention (1814–1815) rejected secession in favor of constitutional amendments, its timing alongside the Treaty of Ghent and the Battle of New Orleans fatally discredited the Federalist Party.",
+      "testTip": "Always connect the Hartford Convention's catastrophic timing (news of Ghent + New Orleans) to the 'Era of Good Feelings' one-party dominance that followed."
+    },
+    {
+      "id": "q_u4_15",
+      "unit": 4,
+      "topic": "4.2",
+      "topicTitle": "Defend the Nation (Barbary Wars, War of 1812 & Monroe Doctrine)",
+      "skill": "Continuity and Change",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_3",
+      "stem": "The constitutional strategy reflected in the January 1815 resolutions—using regional assemblies and proposed amendments to check federal majority power—most closely paralleled which earlier or later political protest?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The 1820 Missouri Compromise, in which southern senators demanded a two-thirds supermajority requirement for all future presidential elections",
+          "isCorrect": false,
+          "distractorType": "Statute & Provision Mismatch",
+          "explanation": "Incorrect. The Missouri Compromise (1820) resolved a territorial slavery crisis via state-admission pairing and the 36°30′ line; it did not propose a two-thirds supermajority for presidential elections."
+        },
+        {
+          "id": "B",
+          "text": "The 1786 Annapolis Convention, which successfully drafted the Bill of Rights to protect individual civil liberties from congressional overreach",
+          "isCorrect": false,
+          "distractorType": "Factual Mismatch",
+          "explanation": "Incorrect. The 1786 Annapolis Convention addressed interstate commerce and called for the 1787 Philadelphia Convention; the First Congress drafted the Bill of Rights in 1789."
+        },
+        {
+          "id": "C",
+          "text": "The 1791 Whiskey Rebellion, in which western frontier farmers organized an armed insurrection to overthrow the federal judiciary",
+          "isCorrect": false,
+          "distractorType": "Factual & Method Mismatch",
+          "explanation": "Incorrect. The Whiskey Rebellion (1794) was an armed tax protest in western Pennsylvania rather than a convention drafting constitutional amendments, and it targeted an excise tax rather than the judiciary."
+        },
+        {
+          "id": "D",
+          "text": "The 1798 Virginia and Kentucky Resolutions, invoking state interposition against federal war-era policies",
+          "isCorrect": true,
+          "explanation": "Correct. Just as Jefferson and Madison's 1798 Virginia and Kentucky Resolutions asserted state-level checks against Federalist war-era policies (the Alien and Sedition Acts), New England Federalists in 1815 asserted states'-rights limits against a Democratic-Republican war."
+        }
+      ],
+      "keyTakeaway": "States'-rights arguments shifted with partisan power: Democratic-Republicans used them in 1798 (Virginia and Kentucky Resolutions), New England Federalists used them in 1814–1815 (Hartford Convention), and South Carolina later revived them in 1828–1832.",
+      "testTip": "APUSH loves testing how states'-rights doctrine was invoked by whichever party was out of power in Washington."
+    },
+    {
+      "id": "q_u4_16",
+      "unit": 4,
+      "topic": "4.2",
+      "topicTitle": "Defend the Nation (Barbary Wars, War of 1812 & Monroe Doctrine)",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Although the Treaty of Ghent (1814) restored prewar territorial boundaries without addressing impressment, the War of 1812 produced which decisive transformation in North America?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Great Britain ceded Upper Canada and the Maritime Provinces to the United States in exchange for fishing rights off Newfoundland",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion",
+          "explanation": "Incorrect. The United States failed in its invasions of Canada, and the Treaty of Ghent restored the status quo ante bellum with no Canadian territory ceded to the United States."
+        },
+        {
+          "id": "B",
+          "text": "Spain surrendered West Florida and California to the United States under the terms of Pinckney's Treaty",
+          "isCorrect": false,
+          "distractorType": "Chronological & Geographic Mismatch",
+          "explanation": "Incorrect. Pinckney's Treaty (1795) settled the 31st parallel border and Mississippi navigation with Spain, not California or the War of 1812; California was ceded after the Mexican-American War in 1848."
+        },
+        {
+          "id": "C",
+          "text": "Tecumseh's death and British withdrawal shattered pan-Indian resistance east of the Mississippi River",
+          "isCorrect": true,
+          "explanation": "Correct. Tecumseh's death at the Battle of the Thames (1813), Andrew Jackson's defeat of the Red Stick Creeks at Horseshoe Bend (1814), and Britain's abandonment of its Indigenous allies at Ghent broke organized Native military resistance east of the Mississippi."
+        },
+        {
+          "id": "D",
+          "text": "Congress immediately enacted the Indian Removal Act to relocate the Five Civilized Tribes to the Oregon Country",
+          "isCorrect": false,
+          "distractorType": "Chronological & Geographic Mismatch",
+          "explanation": "Incorrect. The Indian Removal Act was passed in 1830 under Andrew Jackson, and it relocated southeastern nations to Indian Territory (modern Oklahoma), not the Oregon Country."
+        }
+      ],
+      "keyTakeaway": "Even though the Treaty of Ghent ended the War of 1812 in a diplomatic draw (status quo ante bellum), the war's real losers were Indigenous confederacies east of the Mississippi, who lost both Tecumseh and British military backing.",
+      "testTip": "On War of 1812 outcome questions, look for three major consequences: (1) collapse of Native resistance east of the Mississippi, (2) demise of the Federalist Party, and (3) surge of postwar nationalism and domestic manufacturing."
+    },
+    {
+      "id": "q_u4_17",
+      "unit": 4,
+      "topic": "4.2",
+      "topicTitle": "Defend the Nation (Barbary Wars, War of 1812 & Monroe Doctrine)",
+      "skill": "Developments and Processes",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following post-War of 1812 diplomatic agreements negotiated during the Monroe administration secured United States borders or territorial claims?<br><br>I. The Rush–Bagot Agreement (1817) demilitarizing the Great Lakes<br>II. The Anglo-American Convention of 1818 fixing the 49th parallel to the Rocky Mountains<br>III. The Adams–Onís Treaty (1819) acquiring Florida and defining the Sabine River boundary<br>IV. The Treaty of Greenville (1795) ceding the Ohio Country after Fallen Timbers",
+      "options": [
+        {
+          "id": "A",
+          "text": "I and II only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection",
+          "explanation": "Incorrect. Both Rush-Bagot (I) and the Convention of 1818 (II) were Monroe-era agreements, but this omits the landmark Adams-Onís Treaty of 1819 (III)."
+        },
+        {
+          "id": "B",
+          "text": "II, III, and IV only",
+          "isCorrect": false,
+          "distractorType": "Chronological Mismatch",
+          "explanation": "Incorrect. The Treaty of Greenville (IV) was signed in 1795 during George Washington's presidency, not during the post-War of 1812 Monroe administration."
+        },
+        {
+          "id": "C",
+          "text": "I, II, and III only",
+          "isCorrect": true,
+          "explanation": "Correct. Secretary of State John Quincy Adams under President Monroe negotiated Rush–Bagot (1817), the Convention of 1818 (49th parallel + joint occupation of Oregon), and the Adams–Onís Treaty (1819, Florida). The Treaty of Greenville (IV) occurred in 1795."
+        },
+        {
+          "id": "D",
+          "text": "I, II, III, and IV",
+          "isCorrect": false,
+          "distractorType": "Chronological Over-Inclusion",
+          "explanation": "Incorrect. Statement IV (Treaty of Greenville, 1795) belongs to Period 3 under Washington, not the post-1815 Era of Good Feelings."
+        }
+      ],
+      "keyTakeaway": "Under Secretary of State John Quincy Adams, Monroe's diplomacy stabilized northern borders with Britain (Rush–Bagot 1817, Convention of 1818) and acquired Florida from Spain (Adams–Onís Treaty 1819).",
+      "testTip": "Do not mix up Pinckney's Treaty (1795, 31st parallel & New Orleans deposit) and Treaty of Greenville (1795, Ohio) with John Quincy Adams's 1817–1819 treaties."
+    },
+    {
+      "id": "q_u4_18",
+      "unit": 4,
+      "topic": "4.2",
+      "topicTitle": "Defend the Nation (Barbary Wars, War of 1812 & Monroe Doctrine)",
+      "skill": "Claims and Evidence in Sources",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_4",
+      "stem": "The declaration in the December 1823 message that the American continents were 'henceforth not to be considered as subjects for future colonization by any European powers' was prompted most directly by",
+      "options": [
+        {
+          "id": "A",
+          "text": "France's military occupation of Mexico City and installation of an Austrian archduke as emperor",
+          "isCorrect": false,
+          "distractorType": "Chronological Mismatch",
+          "explanation": "Incorrect. France's intervention in Mexico and installation of Maximilian occurred in the 1860s during the U.S. Civil War, not in 1823."
+        },
+        {
+          "id": "B",
+          "text": "Russia's 1821 Pacific coast claim and fears of Holy Alliance intervention in Latin America",
+          "isCorrect": true,
+          "explanation": "Correct. The 'non-colonization' clause targeted Russia's 1821 ukase extending Russian claims southward along the Pacific Northwest coast, while the 'non-intervention' clause warned the European Holy Alliance against restoring Spanish rule over newly independent Latin American republics."
+        },
+        {
+          "id": "C",
+          "text": "Great Britain's annexation of the Falkland Islands and refusal to recognize Argentine independence",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion",
+          "explanation": "Incorrect. In 1823 Britain actually shared the U.S. desire to keep newly independent Latin American markets open and free from Holy Alliance reconquest."
+        },
+        {
+          "id": "D",
+          "text": "Spain's refusal to ratify the Adams–Onís Treaty unless the United States withdrew all troops from Florida",
+          "isCorrect": false,
+          "distractorType": "Chronological Mismatch",
+          "explanation": "Incorrect. Spain had already ratified the Adams–Onís Treaty in 1821, transferring Florida to the United States two years before the 1823 Monroe Doctrine."
+        }
+      ],
+      "keyTakeaway": "The 1823 Monroe Doctrine addressed two distinct threats: Russian expansion down the Pacific coast (non-colonization) and potential Holy Alliance military intervention to reconquer former Spanish colonies in Latin America (non-intervention).",
+      "testTip": "Memorize the two targets of the Monroe Doctrine: Russia in the Pacific Northwest (1821 ukase) and the European Holy Alliance in Latin America."
+    },
+    {
+      "id": "q_u4_19",
+      "unit": 4,
+      "topic": "4.2",
+      "topicTitle": "Defend the Nation (Barbary Wars, War of 1812 & Monroe Doctrine)",
+      "skill": "Sourcing and Situation",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_4",
+      "stem": "Why did Secretary of State John Quincy Adams advise the president to issue the December 1823 statement unilaterally rather than accepting British Foreign Secretary George Canning's proposal for a joint Anglo-American declaration?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Adams sought to preserve diplomatic independence and avoid a mutual pledge barring future United States acquisition of Texas or Cuba",
+          "isCorrect": true,
+          "explanation": "Correct. Canning's joint proposal included a pledge that neither Britain nor the U.S. would annex former Spanish territories; Adams refused to appear 'as a cock-boat in the wake of the British man-of-war' and wanted to keep the door open for future U.S. expansion into Texas or Cuba."
+        },
+        {
+          "id": "B",
+          "text": "Adams knew the United States Navy already outgunned the British Royal Navy in the Atlantic and needed no European assistance to deter France",
+          "isCorrect": false,
+          "distractorType": "Military Inversion",
+          "explanation": "Incorrect. The U.S. Navy was tiny compared to the British Royal Navy; Adams simply recognized that Britain's own commercial self-interest meant the Royal Navy would block Holy Alliance intervention regardless."
+        },
+        {
+          "id": "C",
+          "text": "Congress had already passed the Force Bill authorizing immediate military intervention to defend Haiti and Colombia against British merchants",
+          "isCorrect": false,
+          "distractorType": "Statute & Chronological Mismatch",
+          "explanation": "Incorrect. The Force Bill (1833) was enacted a decade later during the Nullification Crisis with South Carolina, not in 1823 regarding Latin America."
+        },
+        {
+          "id": "D",
+          "text": "Canning demanded that the United States abrogate the 1818 Anglo-American Convention and surrender its claims to the Oregon Country",
+          "isCorrect": false,
+          "distractorType": "Diplomatic Misattribution",
+          "explanation": "Incorrect. Canning's 1823 proposal concerned joint opposition to Holy Alliance intervention in Spanish America, not abrogation of the 1818 Oregon joint-occupation agreement."
+        }
+      ],
+      "keyTakeaway": "John Quincy Adams convinced Monroe to issue the Monroe Doctrine unilaterally so the U.S. would not subordinate itself to Britain or sign away future expansion into Texas or Cuba—while still benefiting from Royal Navy deterrence.",
+      "testTip": "Adams's famous phrase—not wanting the U.S. to 'come in as a cock-boat in the wake of the British man-of-war'—summarizes why the 1823 Monroe Doctrine was unilateral."
+    },
+    {
+      "id": "q_u4_20",
+      "unit": 4,
+      "topic": "4.2",
+      "topicTitle": "Defend the Nation (Barbary Wars, War of 1812 & Monroe Doctrine)",
+      "skill": "Continuity and Change",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "In the decades immediately following 1823, how did the practical enforcement and international reception of the Monroe Doctrine compare with its later nineteenth- and early twentieth-century significance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "European monarchs formally ratified the doctrine as binding international law at the Congress of Vienna in 1824",
+          "isCorrect": false,
+          "distractorType": "Factual & Chronological Inversion",
+          "explanation": "Incorrect. The Congress of Vienna met in 1814–1815, and European powers dismissed or ignored the 1823 Monroe Doctrine rather than ratifying it as international law."
+        },
+        {
+          "id": "B",
+          "text": "The Supreme Court declared the doctrine unconstitutional in 1824 because it bypassed the Senate's treaty-ratification authority",
+          "isCorrect": false,
+          "distractorType": "Factual Fabrication",
+          "explanation": "Incorrect. The Monroe Doctrine was an executive foreign-policy statement in an annual message to Congress, not a treaty, and was never invalidated by the Supreme Court."
+        },
+        {
+          "id": "C",
+          "text": "President Monroe immediately dispatched American troops to Buenos Aires and Lima to expel Spanish garrisons under the doctrine's mutual-defense clause",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion",
+          "explanation": "Incorrect. The Monroe Doctrine contained no mutual-defense clause and Monroe sent no troops to South America; the United States avoided direct military entanglement."
+        },
+        {
+          "id": "D",
+          "text": "The doctrine had little immediate enforcement power of its own in the 1820s, relying on British naval deterrence until later presidents invoked it to justify hemispheric intervention",
+          "isCorrect": true,
+          "explanation": "Correct. In 1823 the United States lacked the naval power to enforce the Monroe Doctrine; British Royal Navy supremacy actually deterred European intervention, and the doctrine only gained muscular enforcement later under James K. Polk (1840s) and Theodore Roosevelt's 1904 Corollary."
+        }
+      ],
+      "keyTakeaway": "In 1823 the Monroe Doctrine was a bold assertion backed in practice by the British Royal Navy rather than U.S. military might; its active invocation as a tool of U.S. hemispheric dominance came decades later.",
+      "testTip": "Distinguish 1823 reality (symbolic declaration + British Royal Navy enforcement) from later invocations (Polk in the 1840s, Roosevelt Corollary in 1904)."
+    },
+    {
+      "id": "q_u4_21",
+      "unit": 4,
+      "topic": "4.3",
+      "topicTitle": "Transportation and Market Revolutions Change America",
+      "skill": "Contextualization",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_5",
+      "stem": "The corporate regulations in the excerpt were primarily designed to address which of the following challenges facing early New England textile manufacturers?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Preventing skilled British artisans from smuggling water-frame spinning blueprints back to Lancashire textile firms",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion (Technology Flowed From Britain to the U.S.)",
+          "explanation": "Incorrect. Industrial espionage flowed in the opposite direction: Samuel Slater memorized British Arkwright water-frame designs in 1789 and brought them to Rhode Island, and Francis Cabot Lowell observed British power looms in 1810–1812."
+        },
+        {
+          "id": "B",
+          "text": "Overcoming rural Yankee families' reluctance to send unmarried daughters into wage labor by promising moral supervision and avoiding European-style industrial slums",
+          "isCorrect": true,
+          "explanation": "Correct. Unlike Samuel Slater's Rhode Island system—which hired entire rural families, including young children—the Waltham-Lowell system recruited young, unmarried New England farm women. To reassure skeptical rural parents and distinguish American mills from the degraded factory towns of Manchester, England, corporations enforced strict curfews, Sabbath attendance, and boarding-house chaperones."
+        },
+        {
+          "id": "C",
+          "text": "Complying with the 1842 Massachusetts Supreme Judicial Court ruling in Commonwealth v. Hunt, which mandated employer-run religious housing for unionized workers",
+          "isCorrect": false,
+          "distractorType": "Chronological & Statutory Misattribution (Commonwealth v. Hunt Legalized Unions)",
+          "explanation": "Incorrect. Commonwealth v. Hunt (1842) occurred after the 1830s regulations and ruled that labor unions and peaceful strikes were not illegal conspiracies; it did not mandate corporate boarding houses or Sabbath attendance."
+        },
+        {
+          "id": "D",
+          "text": "Replacing recently arrived Irish famine refugees with native-born male artisans after the Panic of 1837 collapsed New England agricultural prices",
+          "isCorrect": false,
+          "distractorType": "Factual & Chronological Inversion (Irish Replaced Yankee Women in the 1840s)",
+          "explanation": "Incorrect. The Irish Potato Famine migration peaked in the mid-to-late 1840s, and mill owners *replaced* native-born Yankee farm women with lower-paid Irish immigrant families—not the other way around."
+        }
+      ],
+      "keyTakeaway": "The Waltham-Lowell system relied on corporate paternalism—curfews, boarding houses, and mandatory church attendance—to recruit unmarried New England farm women and avoid the squalor associated with British industrial cities.",
+      "testTip": "Contrast the Waltham-Lowell system (young single women in supervised boarding houses, integrated spinning and weaving) with Samuel Slater's earlier Rhode Island system (hiring entire rural families, including young children)."
+    },
+    {
+      "id": "q_u4_22",
+      "unit": 4,
+      "topic": "4.3",
+      "topicTitle": "Transportation and Market Revolutions Change America",
+      "skill": "Continuity and Change",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_5",
+      "stem": "How did New England factory operatives respond to wage cuts and speedups under corporate systems like the one in the excerpt between 1834 and 1845?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They formed the Knights of Labor and staged the Great Railroad Strike of 1877 to secure a federal eight-hour workday across New England mills",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Knights of Labor 1869 / Great Railroad Strike 1877)",
+          "explanation": "Incorrect. The Knights of Labor (founded 1869) and the Great Railroad Strike (1877) belong to the Gilded Age (Period 6), decades after the antebellum Lowell mill turnouts."
+        },
+        {
+          "id": "B",
+          "text": "They petitioned President Andrew Jackson to nationalize the Boston Associates' textile corporations under the Second Bank of the United States",
+          "isCorrect": false,
+          "distractorType": "Factual Misattribution (No Nationalization Petition Occurred)",
+          "explanation": "Incorrect. Lowell operatives never petitioned Jackson to nationalize textile mills, and Jackson himself was actively dismantling—not expanding—the Second Bank of the United States in the 1830s."
+        },
+        {
+          "id": "C",
+          "text": "They won a federal ten-hour workday statute from Congress immediately after Commonwealth v. Hunt (1842)",
+          "isCorrect": false,
+          "distractorType": "Statutory Misattribution (No Federal Ten-Hour Law Passed in 1842)",
+          "explanation": "Incorrect. *Commonwealth v. Hunt* (1842) was a Massachusetts court ruling legalizing peaceful labor unions, not a federal statute, and Congress did not enact a national ten-hour law for private textile mills."
+        },
+        {
+          "id": "D",
+          "text": "They organized 'turnouts' against wage cuts, founded the Lowell Female Labor Reform Association, and petitioned for a ten-hour day",
+          "isCorrect": true,
+          "explanation": "Correct. When mill owners cut wages and sped up looms in 1834 and 1836, Lowell women staged strikes ('turnouts') invoking Revolutionary rhetoric as 'daughters of freemen.' In 1844, Sarah Bagley led the Lowell Female Labor Reform Association (LFLRA) to petition the Massachusetts legislature for a ten-hour workday, though owners increasingly replaced striking Yankee women with Irish immigrants."
+        }
+      ],
+      "keyTakeaway": "Lowell mill women resisted wage cuts and speedups through 1830s 'turnouts' and the 1840s Lowell Female Labor Reform Association's ten-hour-day petitions, before mill owners shifted toward lower-paid Irish immigrant labor.",
+      "testTip": "Remember Sarah Bagley and the Lowell Female Labor Reform Association (1844) alongside *Commonwealth v. Hunt* (1842): antebellum workers pioneered early labor organizing even before winning protective legislation."
+    },
+    {
+      "id": "q_u4_23",
+      "unit": 4,
+      "topic": "4.3",
+      "topicTitle": "Transportation and Market Revolutions Change America",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "The completion of the Erie Canal in 1825, alongside earlier steamboat and turnpike innovations such as Robert Fulton's Clermont (1807) and the National Road, most directly reshaped the early American economy by:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Diverting Old Northwest grain from New Orleans to New York City and cutting Great Lakes freight costs",
+          "isCorrect": true,
+          "explanation": "Correct. Funded by New York State under Governor DeWitt Clinton after federal internal-improvement bills (like the 1817 Bonus Bill) were vetoed, the 363-mile Erie Canal linked Lake Erie to the Hudson River. Freight costs between Buffalo and New York City plunged by roughly 90 percent, pulling western agricultural trade away from the Mississippi–New Orleans corridor and cementing New York City's dominance over Philadelphia and Baltimore."
+        },
+        {
+          "id": "B",
+          "text": "Using federal Bonus Bill appropriations signed by President James Madison to link the Potomac River directly to the Ohio River valley",
+          "isCorrect": false,
+          "distractorType": "Statutory & Regional Inversion (Bonus Bill Vetoed; C&O Canal Was Potomac–Ohio)",
+          "explanation": "Incorrect. President Madison *vetoed* Calhoun's Bonus Bill in 1817 on constitutional grounds, forcing New York to finance the Erie Canal with state bonds; linking the Potomac to the Ohio was the goal of the rival Chesapeake and Ohio Canal."
+        },
+        {
+          "id": "C",
+          "text": "Enabling Southern cotton planters to ship raw bales overland by steam locomotive directly to Pittsburgh ironworks without relying on coastal packet ships",
+          "isCorrect": false,
+          "distractorType": "Chronological & Geographic Misattribution (Railroads Came Later; Cotton Went to Coast/New England/Britain)",
+          "explanation": "Incorrect. The Erie Canal was a water route across upstate New York, not a Southern railroad, and in 1825 commercial steam railroads did not yet exist in the United States (the B&O Railroad began in 1828–1830)."
+        },
+        {
+          "id": "D",
+          "text": "Triggering the Supreme Court's ruling in Gibbons v. Ogden, which upheld New York State's right to grant Robert Fulton an exclusive steamboat monopoly on the Hudson River",
+          "isCorrect": false,
+          "distractorType": "Case Outcome Inversion (Gibbons v. Ogden Struck Down the Monopoly)",
+          "explanation": "Incorrect. In Gibbons v. Ogden (1824)—decided before the canal's 1825 completion—the Marshall Court *struck down* New York's steamboat monopoly under the federal Commerce Clause, opening interstate waterways to competition."
+        }
+      ],
+      "keyTakeaway": "The state-funded Erie Canal (1825), Fulton's steamboat, and the National Road drastically cut inland freight costs, reorienting Old Northwest commerce eastward and making New York City the nation's commercial capital.",
+      "testTip": "Connect the Transportation Revolution to three key developments: (1) state-funded canals after Madison's 1817 Bonus Bill veto, (2) *Gibbons v. Ogden* (1824) breaking Fulton's steamboat monopoly, and (3) economic integration of the Northeast and Old Northwest."
+    },
+    {
+      "id": "q_u4_24",
+      "unit": 4,
+      "topic": "4.3",
+      "topicTitle": "Transportation and Market Revolutions Change America",
+      "skill": "Comparison",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following technological innovations were actually introduced during the antebellum Market Revolution (1793–1848) and directly accelerated industrial, agricultural, or communications integration?\n\nI. Eli Whitney's cotton gin (1793) and promotion of interchangeable parts for firearms manufacturing\nII. John Deere's steel plow (1837) and Cyrus McCormick's mechanical reaper (patented 1834)\nIII. Samuel F. B. Morse's electromagnetic telegraph (1844) transmitting messages along railroad corridors\nIV. Henry Bessemer's pneumatic steel converter (1856) enabling construction of the First Transcontinental Railroad",
+      "options": [
+        {
+          "id": "A",
+          "text": "I and II only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection (Omits Morse's 1844 Telegraph)",
+          "explanation": "Incorrect. While I (Whitney's cotton gin and interchangeable parts) and II (Deere's 1837 steel plow and McCormick's 1834 mechanical reaper) are both accurate, this choice omits III: Samuel Morse's 1844 Baltimore-to-Washington telegraph demonstration."
+        },
+        {
+          "id": "B",
+          "text": "II, III, and IV only",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement & Omission (Includes 1856 Bessemer Process, Omits Whitney)",
+          "explanation": "Incorrect. IV is out of period—Henry Bessemer patented his steel converter in 1856, and the First Transcontinental Railroad was completed in 1869—while I (Eli Whitney's cotton gin and interchangeable parts) is omitted."
+        },
+        {
+          "id": "C",
+          "text": "I, II, and III only",
+          "isCorrect": true,
+          "explanation": "Correct. Eli Whitney's cotton gin and interchangeable parts (I), John Deere's steel plow and Cyrus McCormick's mechanical reaper (II), and Samuel F. B. Morse's telegraph (III) transformed Southern cotton, Midwestern commercial grain, Northern manufacturing, and national communications. Bessemer's steel process (1856) and the Transcontinental Railroad (1869) belong to Period 5/6."
+        },
+        {
+          "id": "D",
+          "text": "I, III, and IV",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement & Omission (Includes 1856 Bessemer Process, Omits Deere & McCormick)",
+          "explanation": "Incorrect. IV belongs to the post-1850s steel and transcontinental railroad era, whereas II (Deere's steel plow and McCormick's mechanical reaper) were foundational Market Revolution agricultural innovations."
+        }
+      ],
+      "keyTakeaway": "Between 1793 and 1848, Eli Whitney (cotton gin, interchangeable parts), John Deere (steel plow), Cyrus McCormick (mechanical reaper), and Samuel Morse (telegraph) drove agricultural, industrial, and communications integration.",
+      "testTip": "On Roman Numeral questions, check dates rigorously: Whitney (1793/1798), McCormick (1834), Deere (1837), and Morse (1844) fit the Market Revolution, whereas the Bessemer steel process (1856) and Transcontinental Railroad (1869) belong to Period 5/6."
+    },
+    {
+      "id": "q_u4_25",
+      "unit": 4,
+      "topic": "4.3",
+      "topicTitle": "Transportation and Market Revolutions Change America",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Why did the Panic of 1819 mark a major turning point in Americans' relationship to the expanding Market Revolution?",
+      "options": [
+        {
+          "id": "A",
+          "text": "As the nation's first severe market-wide depression—triggered by collapsing European farm demand, wild state-bank land speculation, and Second Bank credit contraction—it shattered Era of Good Feelings consensus and bred lasting distrust of banks",
+          "isCorrect": true,
+          "explanation": "Correct. After the War of 1812, British and European demand for American grain and cotton fueled reckless western land speculation financed by state banks. When European harvests recovered and the Second Bank of the United States abruptly called in loans in 1818–1819, farm prices plummeted, debtors lost land, and urban unemployment soared—convincing many westerners and workers that distant banks were 'monsters.'"
+        },
+        {
+          "id": "B",
+          "text": "It was caused by President Andrew Jackson's 1836 Specie Circular requiring gold or silver coin for federal public land purchases",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Specie Circular Triggered the Panic of 1837)",
+          "explanation": "Incorrect. Jackson's 1836 Specie Circular helped precipitate the *Panic of 1837*, eighteen years after the Panic of 1819."
+        },
+        {
+          "id": "C",
+          "text": "It prompted Congress to repeal the Tariff of 1816 immediately and abolish the Second Bank of the United States in 1820",
+          "isCorrect": false,
+          "distractorType": "Statutory Inversion (Congress Raised Tariffs in 1824 & 1828; BUS Survived Until 1836)",
+          "explanation": "Incorrect. Rather than repealing protective tariffs, Congress *raised* them in 1824 and 1828 to shield domestic industry, and the Second Bank of the United States kept its charter until 1836."
+        },
+        {
+          "id": "D",
+          "text": "It resulted from the sudden collapse of transcontinental railroad stock prices following completion of the Erie Canal",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Erie Canal 1825; Transcontinental Railroads Post-Civil War)",
+          "explanation": "Incorrect. In 1819 neither the Erie Canal (completed 1825) nor transcontinental railroads (1869) existed."
+        }
+      ],
+      "keyTakeaway": "The Panic of 1819 was the United States' first major boom-and-bust market depression, exposing Americans' vulnerability to global commodity prices and fueling populist hostility toward the Second Bank of the United States.",
+      "testTip": "Distinguish the two antebellum panics: Panic of 1819 (post-War of 1812 land bubble + BUS credit contraction under Monroe) vs. Panic of 1837 (post-Bank War pet banks + 1836 Specie Circular under Van Buren)."
+    },
+    {
+      "id": "q_u4_26",
+      "unit": 4,
+      "topic": "4.3",
+      "topicTitle": "Transportation and Market Revolutions Change America",
+      "skill": "Contextualization",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "How did the Missouri Compromise of 1820 reflect the growing intersection between western market expansion and sectional politics?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It prohibited slavery in all territories acquired from Mexico after the Treaty of Guadalupe Hidalgo",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Mexican Cession / Wilmot Proviso Was 1846–1848)",
+          "explanation": "Incorrect. Territories acquired from Mexico in the 1848 Treaty of Guadalupe Hidalgo were debated under the Wilmot Proviso and the Compromise of 1850, not the 1820 Missouri Compromise."
+        },
+        {
+          "id": "B",
+          "text": "It established popular sovereignty as the permanent federal rule for deciding slavery in both Missouri and Maine, as well as all future territories carved from the Louisiana Purchase",
+          "isCorrect": false,
+          "distractorType": "Statutory Misattribution (Popular Sovereignty Was 1850 / 1854 Kansas-Nebraska Act)",
+          "explanation": "Incorrect. Popular sovereignty was introduced in the Compromise of 1850 and the 1854 Kansas-Nebraska Act; the 1820 Missouri Compromise drew a fixed geographic line (36°30')."
+        },
+        {
+          "id": "C",
+          "text": "Balancing Missouri (slave) with Maine (free) while barring slavery north of 36°30' in the remaining Louisiana Purchase",
+          "isCorrect": true,
+          "explanation": "Correct. When Missouri sought statehood in 1819, Representative James Tallmadge proposed gradual emancipation, sparking fierce sectional debate over whether slavery's western market expansion would tip Senate power. Henry Clay's 1820 Missouri Compromise admitted Missouri (slave) and Maine (free) to preserve Senate parity and banned slavery north of 36°30' in the rest of the Louisiana Purchase."
+        },
+        {
+          "id": "D",
+          "text": "It banned the domestic interstate slave trade between the Upper South and Alabama in exchange for a lower federal tariff",
+          "isCorrect": false,
+          "distractorType": "Statutory Misattribution (Domestic Slave Trade Remained Legal)",
+          "explanation": "Incorrect. Congress never banned the domestic interstate slave trade; only the *international* slave trade was banned in 1808, and the 1820 compromise did not trade slave-trade restrictions for tariff reductions."
+        }
+      ],
+      "keyTakeaway": "Triggered by slavery's westward expansion into the Louisiana Purchase, the Missouri Compromise (1820) paired Missouri (slave) with Maine (free) and barred slavery north of 36°30'—temporarily preserving Senate balance.",
+      "testTip": "Remember Thomas Jefferson's reaction to the 1820 Missouri crisis: he called it a 'fire bell in the night,' warning that a geographic line (36°30') coinciding with a moral and economic principle would deepen sectionalism."
+    },
+    {
+      "id": "q_u4_27",
+      "unit": 4,
+      "topic": "4.3",
+      "topicTitle": "Transportation and Market Revolutions Change America",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Between 1830 and 1848, the rapid expansion of railroads alongside Samuel F. B. Morse's telegraph transformed the Market Revolution primarily by:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Replacing all northeastern canals with a federally owned national railway network funded by the Maysville Road Act",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion (Maysville Road Was Vetoed; Railroads Were Private/State-Chartered)",
+          "explanation": "Incorrect. Jackson vetoed the Maysville Road Bill in 1830, and antebellum railroads were built by private corporations (often with state charters or land grants), not as a federally owned network."
+        },
+        {
+          "id": "B",
+          "text": "Enabling year-round overland freight while synchronizing schedules and commodity prices",
+          "isCorrect": true,
+          "explanation": "Correct. Unlike northern canals and rivers that froze in winter, railroads operated year-round and could traverse steeper terrain. Paired with Morse's 1844 telegraph—whose wires were strung along rail rights-of-way—railroads enabled real-time market pricing, safer single-track dispatching, and tighter integration between Eastern cities and Midwestern farms."
+        },
+        {
+          "id": "C",
+          "text": "Completing the First Transcontinental Railroad from Omaha to Sacramento under the Pacific Railway Act",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Pacific Railway Act 1862 / Completed 1869)",
+          "explanation": "Incorrect. The Pacific Railway Act was passed in 1862 and the First Transcontinental Railroad was completed in 1869 (Period 5/6), not between 1830 and 1848."
+        },
+        {
+          "id": "D",
+          "text": "Forcing Southern planters to abandon cotton cultivation in favor of heavy locomotive manufacturing in Charleston and Savannah",
+          "isCorrect": false,
+          "distractorType": "Regional Inversion (South Invested Overwhelmingly in Cotton and Slavery, Not Heavy Industry)",
+          "explanation": "Incorrect. Southern capital remained overwhelmingly tied to cotton plantations and enslaved labor; the South built far fewer miles of railroad and far less heavy industry than the North."
+        }
+      ],
+      "keyTakeaway": "Railroads overcame the seasonal freezing and geographic limits of canals, while the telegraph (1844) synchronized dispatching and commodity prices across an integrated national market.",
+      "testTip": "Note the synergy between railroads and the telegraph: telegraph lines followed railroad tracks, turning the Northeast and Old Northwest into a tightly linked commercial zone before the Civil War."
+    },
+    {
+      "id": "q_u4_28",
+      "unit": 4,
+      "topic": "4.3",
+      "topicTitle": "Transportation and Market Revolutions Change America",
+      "skill": "Comparison",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following accurately characterizes the regional economic specialization that emerged in the United States between 1815 and 1848?\n\nI. The Northeast shifted toward mechanized textile and shoe manufacturing, urban banking, and maritime commerce.\nII. The Old Northwest specialized in commercial grain and livestock production shipped eastward via canals and railroads.\nIII. The South expanded plantation cotton cultivation into the 'Black Belt' of Alabama and Mississippi, relying on the domestic slave trade from the Upper South.\nIV. The Great Plains replaced the Upper South as the nation's leading producer of hemp and tobacco through irrigated sharecropping.",
+      "options": [
+        {
+          "id": "A",
+          "text": "I and III only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection (Omits Old Northwest Commercial Agriculture)",
+          "explanation": "Incorrect. While I (Northeast manufacturing/finance) and III (Cotton Kingdom and domestic slave trade) are accurate, this choice omits II: the Old Northwest's crucial role as the commercial grain and pork supplier linked to eastern markets."
+        },
+        {
+          "id": "B",
+          "text": "II and IV",
+          "isCorrect": false,
+          "distractorType": "Chronological & Regional Displacement (Includes Post-Civil War Sharecropping on Great Plains)",
+          "explanation": "Incorrect. IV is doubly wrong: the Great Plains was not settled for commercial agriculture until after the 1862 Homestead Act, and sharecropping emerged in the post–Civil War South, not on the antebellum Plains."
+        },
+        {
+          "id": "C",
+          "text": "I, II, and IV (three items)",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement & Omission (Includes Great Plains Sharecropping, Omits Cotton South)",
+          "explanation": "Incorrect. IV anachronistically places post-Civil War sharecropping on the Great Plains, while omitting III (the expansion of the Cotton Kingdom into the Deep South via the domestic slave trade)."
+        },
+        {
+          "id": "D",
+          "text": "I, II, and III only",
+          "isCorrect": true,
+          "explanation": "Correct. The Market Revolution bound three distinct regional economies together: Northeast industrialization and finance (I), Old Northwest commercial wheat, corn, and hog farming (II), and Deep South 'King Cotton' plantations fed by the forced migration of roughly one million enslaved people from the Upper South (III). Sharecropping and Great Plains farming belong to Period 5/6."
+        }
+      ],
+      "keyTakeaway": "By 1848, the U.S. economy rested on interdependent regional specialization: Northeastern industry/finance, Midwestern commercial grain/livestock, and Deep South cotton plantations sustained by the domestic slave trade.",
+      "testTip": "Notice how the South's 'Cotton Kingdom' was tied to the North: Northern banks financed Southern planters, Northern ships carried cotton to Liverpool and Lowell, and Midwestern pork fed enslaved laborers—making slavery a national, not merely regional, economic engine."
+    },
+    {
+      "id": "q_u4_29",
+      "unit": 4,
+      "topic": "4.4",
+      "topicTitle": "The Second American Party System",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Why did Andrew Jackson's supporters denounce the outcome of the presidential election of 1824 as a 'Corrupt Bargain'?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Martin Van Buren used the Albany Regency's patronage machine to buy Electoral College votes for William H. Crawford in New York",
+          "isCorrect": false,
+          "distractorType": "Faction & Candidate Misattribution (Crawford Finished Third; Van Buren Later Backed Jackson)",
+          "explanation": "Incorrect. Van Buren backed William H. Crawford in 1824, but Crawford suffered a paralyzing stroke and finished third; the 'Corrupt Bargain' charge targeted John Quincy Adams and Henry Clay."
+        },
+        {
+          "id": "B",
+          "text": "Chief Justice John Marshall ruled in Worcester v. Georgia that Jackson was ineligible to serve because he lacked a college degree",
+          "isCorrect": false,
+          "distractorType": "Chronological & Factual Misattribution (Worcester Was 1832 Indian Removal)",
+          "explanation": "Incorrect. *Worcester v. Georgia* (1832) was an Indian Removal case decided eight years later and had nothing to do with the 1824 election."
+        },
+        {
+          "id": "C",
+          "text": "Although Jackson won a plurality of both popular and electoral votes, Speaker of the House Henry Clay threw his support to John Quincy Adams in the House contingent election and was promptly named Secretary of State",
+          "isCorrect": true,
+          "explanation": "Correct. Because no candidate won an Electoral College majority in the four-way race (Jackson, Adams, Crawford, Clay), the Twelfth Amendment sent the election to the House of Representatives among the top three. Excluded fourth-place finisher Henry Clay—who loathed Jackson and shared Adams's nationalist American System—backed Adams, who then appointed Clay Secretary of State, the traditional stepping-stone to the presidency."
+        },
+        {
+          "id": "D",
+          "text": "Adams and Clay secretly agreed to veto the Tariff of 1824 and abolish the Second Bank of the United States in exchange for Southern electoral votes",
+          "isCorrect": false,
+          "distractorType": "Policy Inversion (Adams and Clay Strongly Supported Protective Tariffs and the BUS)",
+          "explanation": "Incorrect. Adams and Clay were the chief architects of the American System—championing protective tariffs, a national bank, and federal internal improvements."
+        }
+      ],
+      "keyTakeaway": "The 1824 'Corrupt Bargain'—when House Speaker Henry Clay backed John Quincy Adams over plurality-winner Andrew Jackson and became Secretary of State—shattered the Era of Good Feelings and launched Jackson's four-year campaign for 1828.",
+      "testTip": "Know the constitutional mechanic of 1824: under the Twelfth Amendment, when no candidate wins an Electoral College majority, the House votes *by state delegation* among the top three finishers—which eliminated 4th-place Henry Clay."
+    },
+    {
+      "id": "q_u4_30",
+      "unit": 4,
+      "topic": "4.4",
+      "topicTitle": "The Second American Party System",
+      "skill": "Continuity and Change",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following developments between 1820 and 1840 accurately reflected the transformation of voting rights during the rise of the Second American Party System?\n\nI. Most states eliminated property or taxpaying qualifications for adult white male voters, expanding the electorate dramatically.\nII. By 1832, every state except South Carolina chose its presidential electors by popular vote rather than by state legislature.\nIII. States such as New York (1821) and Pennsylvania (1838) simultaneously restricted or eliminated voting rights for free Black men.\nIV. New Jersey and Massachusetts ratified state constitutional amendments granting full suffrage to unmarried female property holders.",
+      "options": [
+        {
+          "id": "A",
+          "text": "I, II, and III only",
+          "isCorrect": true,
+          "explanation": "Correct. Jacksonian democratization was explicitly racialized and gendered: states abolished property bars for white men (I) and adopted popular election of presidential electors (II), while New York imposed a $250 property requirement solely on Black men (1821) and Pennsylvania disenfranchised Black voters altogether in 1838 (III). Women remained disenfranchised everywhere (IV is false)."
+        },
+        {
+          "id": "B",
+          "text": "I and II only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection (Omits Simultaneous Disenfranchisement of Free Black Men)",
+          "explanation": "Incorrect. While I and II are accurate, this choice omits III: the crucial Jacksonian paradox that states restricted Black male suffrage at the exact moment they expanded white male suffrage."
+        },
+        {
+          "id": "C",
+          "text": "II, III, and IV only",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion & Omission (No State Enfranchised Women; Omits White Male Suffrage)",
+          "explanation": "Incorrect. IV is false—New Jersey actually *revoked* women's earlier suffrage loophole in 1807, and no state granted women full suffrage in the 1820s–1830s—while I is omitted."
+        },
+        {
+          "id": "D",
+          "text": "I, III, and IV",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion & Omission (Includes False Female Suffrage, Omits Popular Electors)",
+          "explanation": "Incorrect. IV is false because women were barred from voting across the United States in this era, and it omits II."
+        }
+      ],
+      "keyTakeaway": "Between 1820 and 1840, mass democracy expanded through universal white male suffrage and popular elector selection, while states simultaneously narrowed or eliminated voting rights for free Black men and women.",
+      "testTip": "Always pair the expansion of *white male* suffrage in the 1820s–1830s with the simultaneous *disenfranchisement* of free Black men (e.g., NY 1821, PA 1838) and women (NJ 1807)."
+    },
+    {
+      "id": "q_u4_31",
+      "unit": 4,
+      "topic": "4.4",
+      "topicTitle": "The Second American Party System",
+      "skill": "Contextualization",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "How did Martin Van Buren's political organization in New York (the 'Albany Regency') and Andrew Jackson's defense of 'rotation in office' reshape American party politics?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They abolished all partisan newspapers and federal patronage appointments through the Pendleton Civil Service Reform Act",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Pendleton Act Was 1883)",
+          "explanation": "Incorrect. Civil service reform under the Pendleton Act occurred in 1883 (Period 6) to *curb* the spoils system, not in the Jacksonian era."
+        },
+        {
+          "id": "B",
+          "text": "They resurrected the Federalist Party's congressional 'King Caucus' to insulate presidential nominations from popular participation",
+          "isCorrect": false,
+          "distractorType": "Faction & Institutional Inversion (Van Buren Replaced Caucus Politics with Mass Party Mobilization)",
+          "explanation": "Incorrect. Van Buren championed disciplined, mass-based political parties that mobilized ordinary voters, moving away from elite legislative caucuses."
+        },
+        {
+          "id": "C",
+          "text": "They banned political parties altogether as dangerous 'factions' violating George Washington's 1796 Farewell Address",
+          "isCorrect": false,
+          "distractorType": "Ideological Inversion (Van Buren Legitimized Permanent Two-Party Competition)",
+          "explanation": "Incorrect. Whereas the Founding generation viewed parties as dangerous factions, Van Buren argued in the 1820s that permanent, competing two-party systems were healthy—checking executive power and curbing sectionalism."
+        },
+        {
+          "id": "D",
+          "text": "Normalizing permanent two-party competition and rewarding loyal partisan workers with government jobs",
+          "isCorrect": true,
+          "explanation": "Correct. Van Buren's Albany Regency pioneered modern party discipline, partisan newspapers, and patronage ('to the victor belong the spoils'). When Jackson took office in 1829, he defended 'rotation in office' as democratic—replacing entrenched officeholders with party loyalists on the grounds that federal duties were simple enough for any intelligent citizen."
+        }
+      ],
+      "keyTakeaway": "Martin Van Buren and Andrew Jackson normalized permanent two-party competition and the 'spoils system' (rotation in office) as democratic tools for mobilizing mass participation and rewarding party loyalty.",
+      "testTip": "Remember Van Buren's ideological breakthrough: he was the first major American statesman to argue that organized political parties were *beneficial*—not dangerous factions—because they bridged North–South sectional divides."
+    },
+    {
+      "id": "q_u4_32",
+      "unit": 4,
+      "topic": "4.4",
+      "topicTitle": "The Second American Party System",
+      "skill": "Continuity and Change",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "What lasting institutional innovation did the short-lived Anti-Masonic Party introduce to American national politics during the 1832 presidential election cycle?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The direct primary election and secret Australian ballot mandated by federal statute",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Progressive Era 1890s–1910s Reforms)",
+          "explanation": "Incorrect. Direct primaries and the secret Australian ballot were Progressive Era reforms adopted in the late nineteenth and early twentieth centuries, not in 1831–1832."
+        },
+        {
+          "id": "B",
+          "text": "The first national nominating convention and formal party platform",
+          "isCorrect": true,
+          "explanation": "Correct. Emerging in upstate New York after the 1826 disappearance of former Freemason William Morgan, the Anti-Masonic Party held the nation's first national nominating convention in Baltimore in September 1831 and issued a formal party platform. National Republicans and Democrats immediately adopted the convention system in 1832, permanently ending 'King Caucus.'"
+        },
+        {
+          "id": "C",
+          "text": "The first women's suffrage plank in a major-party platform, drafted by Elizabeth Cady Stanton",
+          "isCorrect": false,
+          "distractorType": "Chronological & Party Misattribution (Seneca Falls Was 1848)",
+          "explanation": "Incorrect. Elizabeth Cady Stanton drafted the Seneca Falls Declaration of Sentiments in 1848, and no national political party endorsed women's suffrage in 1831–1832."
+        },
+        {
+          "id": "D",
+          "text": "The use of federal troops under the Force Bill to supervise polling places in South Carolina",
+          "isCorrect": false,
+          "distractorType": "Statutory & Chronological Misattribution (Force Bill Was 1833 Tariff Collection)",
+          "explanation": "Incorrect. The 1833 Force Bill authorized President Jackson to use military force to collect federal tariffs during the Nullification Crisis, unrelated to the Anti-Masonic Party."
+        }
+      ],
+      "keyTakeaway": "Although short-lived, the Anti-Masonic Party (1831) pioneered the national nominating convention and written party platform—institutions immediately adopted by Democrats and Whigs to replace congressional caucuses.",
+      "testTip": "Even as a third party, the Anti-Masonic Party mattered for *process*: by holding the first national nominating convention in 1831, it democratized candidate selection beyond Washington insiders."
+    },
+    {
+      "id": "q_u4_33",
+      "unit": 4,
+      "topic": "4.4",
+      "topicTitle": "The Second American Party System",
+      "skill": "Comparison",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "In the Second Party System of the 1830s and 1840s, how did the Whig Party—formed in opposition to 'King Andrew I'—differ most sharply from the Jacksonian Democrats on economic policy?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whigs advocated strict construction of the Constitution, abolition of the Second Bank of the United States, and immediate annexation of Texas",
+          "isCorrect": false,
+          "distractorType": "Party Inversion (Describes Jacksonian Democrats, Not Whigs)",
+          "explanation": "Incorrect. Strict construction, destroying the Second Bank, and pushing Texas annexation were positions of the Democratic Party, not the Whigs—most Northern Whigs opposed Texas annexation."
+        },
+        {
+          "id": "B",
+          "text": "Whigs rejected all federal economic intervention in favor of laissez-faire free trade and hard-money specie currency",
+          "isCorrect": false,
+          "distractorType": "Party Inversion (Democrats Favored Low Tariffs & Hard Money)",
+          "explanation": "Incorrect. Whigs championed *active* federal economic development (tariffs, banks, internal improvements), whereas Jacksonian Democrats favored limited federal intervention and hard money."
+        },
+        {
+          "id": "C",
+          "text": "Whigs backed Clay's American System (bank, tariffs, internal improvements), whereas Democrats favored limited federal action",
+          "isCorrect": true,
+          "explanation": "Correct. Uniting National Republicans, southern states'-rights anti-Jacksonians, and Anti-Masons against executive overreach ('King Andrew I'), the Whigs championed Henry Clay's American System: a national bank to stabilize credit, protective tariffs for industry, and federal infrastructure subsidies. Democrats favored low tariffs, hard money, and state-level or private enterprise."
+        },
+        {
+          "id": "D",
+          "text": "Whigs emerged exclusively as a single-issue northern abolitionist party dedicated to repealing the Three-Fifths Clause and outlawing slavery",
+          "isCorrect": false,
+          "distractorType": "Party Misattribution (Confuses Whigs with Liberty/Free Soil Parties)",
+          "explanation": "Incorrect. The Whigs were a national North–South coalition (including Southern planters like Henry Clay and Zachary Taylor) that avoided an abolitionist platform; single-issue antislavery parties were the Liberty Party (1840) and Free Soil Party (1848)."
+        }
+      ],
+      "keyTakeaway": "The Second Party System pitted Whigs (supporting Clay's American System: national bank, protective tariffs, federal internal improvements) against Jacksonian Democrats (supporting limited federal economic power, low tariffs, and hard money).",
+      "testTip": "Remember why the Whigs chose their name: they named themselves after the 18th-century British and Revolutionary Whigs who opposed royal tyranny—casting Jackson as 'King Andrew I.'"
+    },
+    {
+      "id": "q_u4_34",
+      "unit": 4,
+      "topic": "4.4",
+      "topicTitle": "The Second American Party System",
+      "skill": "Argumentation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "What constitutional and political principle did President Andrew Jackson assert in his 1830 veto of the Maysville Road Bill?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Federal tax revenues should not be spent on internal improvements located entirely within a single state, striking a blow at Henry Clay's federally funded infrastructure program",
+          "isCorrect": true,
+          "explanation": "Correct. Congress passed a bill authorizing federal stock purchases for a turnpike between Maysville and Lexington—wholly inside Henry Clay's home state of Kentucky. Echoing Madison's 1817 Bonus Bill veto, Jackson vetoed it on strict-constructionist grounds, arguing that local projects lacked a truly 'national' character and inviting states to fund their own roads and canals (while still signing other multi-state river/harbor bills)."
+        },
+        {
+          "id": "B",
+          "text": "Only the Supreme Court, under Gibbons v. Ogden, could authorize state legislatures to build turnpikes or canals",
+          "isCorrect": false,
+          "distractorType": "Case Misattribution (Gibbons Struck Down a Steamboat Monopoly)",
+          "explanation": "Incorrect. *Gibbons v. Ogden* (1824) struck down a state steamboat monopoly on interstate waterways; it did not require Supreme Court permission for states to build roads."
+        },
+        {
+          "id": "C",
+          "text": "Federal internal-improvement funds could be spent only in New England and New York, where protective tariffs were most popular",
+          "isCorrect": false,
+          "distractorType": "Regional Inversion (Jackson's Base Was South and West, Not New England)",
+          "explanation": "Incorrect. Jackson's political base lay in the South and West, not New England, and his veto articulated a constitutional limit against purely intrastate subsidies anywhere."
+        },
+        {
+          "id": "D",
+          "text": "The president could veto legislation only if the Supreme Court had already declared the statute unconstitutional",
+          "isCorrect": false,
+          "distractorType": "Argument Inversion (Jackson Vetoed Bills on His Own Constitutional & Policy Judgment)",
+          "explanation": "Incorrect. Jackson used the presidential veto more aggressively than all six prior presidents combined, explicitly rejecting the idea that the president had to wait for or defer to the Supreme Court."
+        }
+      ],
+      "keyTakeaway": "Jackson's 1830 Maysville Road veto blocked federal funding for intrastate internal improvements, dealing a major setback to Henry Clay's American System and reinforcing strict construction on local subsidies.",
+      "testTip": "Notice the political brilliance of the Maysville Road veto: by vetoing a road inside Henry Clay's Kentucky, Jackson upheld strict construction for Southern voters while attacking his chief Whig rival."
+    },
+    {
+      "id": "q_u4_35",
+      "unit": 4,
+      "topic": "4.4",
+      "topicTitle": "The Second American Party System",
+      "skill": "Comparison",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following accurately describes the cultural, religious, and regional voter coalitions of the Second Party System (1830s–1840s)?\n\nI. Whigs drew heavy support from New England Yankees, commercial towns, and evangelical Protestants who favored moral reform laws such as temperance and Sabbatarianism.\nII. Democrats attracted strong majorities among Irish and German Catholic immigrants in northern cities who opposed state-enforced Protestant moral codes.\nIII. Southern planters and western frontier farmers largely backed Democrats on low-tariff, expansionist policies, though wealthier Southern commercial planters often voted Whig.\nIV. Both parties relied primarily on newly enfranchised free Black voters in New York and Pennsylvania to win northern electoral majorities.",
+      "options": [
+        {
+          "id": "A",
+          "text": "I and II only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection (Omits Southern/Western Democratic & Commercial-Planter Whig Alignment)",
+          "explanation": "Incorrect. Both I and II accurately capture the ethno-religious divide in the North, but this choice omits III: the crucial Southern/Western agrarian Democratic base alongside commercial Southern Whigs."
+        },
+        {
+          "id": "B",
+          "text": "II, III, and IV only",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion & Omission (Black Men Were Disenfranchised in PA & Restricted in NY, Omits Whig Base)",
+          "explanation": "Incorrect. IV is false—Pennsylvania disenfranchised free Black men in 1838 and New York restricted them with a $250 property bar in 1821—while I (the core Yankee/evangelical Whig coalition) is omitted."
+        },
+        {
+          "id": "C",
+          "text": "I, III, and IV (three items)",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion & Omission (Includes False Black Enfranchisement, Omits Catholic Immigrant Democrats)",
+          "explanation": "Incorrect. IV is false because free Black men were largely excluded from voting in New York and Pennsylvania, and this choice omits II."
+        },
+        {
+          "id": "D",
+          "text": "I, II, and III only",
+          "isCorrect": true,
+          "explanation": "Correct. In the Second Party System, cultural and economic identities reinforced party loyalty: Whigs rallied Yankee Protestants, commercial hubs, and wealthier Southern planters (I, III), while Democrats mobilized urban Catholic immigrants opposed to temperance/Sabbatarian laws alongside frontier farmers and Southern planters (II, III). Free Black voters were disenfranchised or heavily restricted (making IV false)."
+        }
+      ],
+      "keyTakeaway": "The Second Party System divided along both economic and ethno-cultural lines: Whigs attracted evangelical Protestants and market-oriented towns, while Democrats rallied Catholic immigrants, frontier farmers, and most Southern planters.",
+      "testTip": "On APUSH party-coalition questions, remember the cultural split: Whigs favored government-backed moral order (temperance, Sunday blue laws, public schools), which pushed Irish and German Catholic immigrants into the Democratic Party."
+    },
+    {
+      "id": "q_u4_36",
+      "unit": 4,
+      "topic": "4.4",
+      "topicTitle": "The Second American Party System",
+      "skill": "Contextualization",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Why is the presidential election of 1840 ('Tippecanoe and Tyler Too') considered the full maturation of the Second American Party System?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It marked the first victory of the newly formed Republican Party on a platform opposing the expansion of slavery into the Mexican Cession",
+          "isCorrect": false,
+          "distractorType": "Chronological & Party Displacement (Republican Party Formed 1854; First Victory 1860)",
+          "explanation": "Incorrect. The Republican Party was founded in 1854 and won its first presidential election with Abraham Lincoln in 1860 (Period 5), not in 1840."
+        },
+        {
+          "id": "B",
+          "text": "Whigs used 'log-cabin' mass rallies for William Henry Harrison, driving turnout past 80 percent in a national two-party race",
+          "isCorrect": true,
+          "explanation": "Correct. In 1840, the Whigs beat the Democrats at their own game: bypassing elitist rhetoric, they nominated War of 1812 hero William Henry Harrison and staged parades, songs, and 'Log Cabin and Hard Cider' rallies to paint Democrat Martin Van Buren as an aristocratic dandy amid the Panic of 1837. Turnout surged to 80.2% of eligible voters, cementing a competitive two-party system nationwide."
+        },
+        {
+          "id": "C",
+          "text": "It was decided in the House of Representatives after the Anti-Masonic Party won a plurality of southern electoral votes",
+          "isCorrect": false,
+          "distractorType": "Chronological & Electoral Misattribution (1824 Went to the House; Harrison Won 1840 Decisively)",
+          "explanation": "Incorrect. Only the 1824 election went to the House of Representatives; in 1840 Harrison won a decisive Electoral College landslide (234 to 60) over Van Buren."
+        },
+        {
+          "id": "D",
+          "text": "It resulted in immediate enactment of Henry Clay's American System because John Tyler enthusiastically signed a new Third Bank of the United States into law",
+          "isCorrect": false,
+          "distractorType": "Outcome Inversion (John Tyler Vetoed the Whig Bank Bills)",
+          "explanation": "Incorrect. When Harrison died one month into office, Vice President John Tyler—a former Democrat who had joined the Whigs only out of hatred for Jackson—*vetoed* Clay's Third Bank bills, prompting the entire Whig cabinet (except Daniel Webster) to resign."
+        }
+      ],
+      "keyTakeaway": "The 1840 'Log Cabin and Hard Cider' election saw the Whigs master Jacksonian mass-campaigning, pushing voter turnout past 80 percent and proving both parties could compete nationally.",
+      "testTip": "Remember the 1840 irony: Whigs won the White House using populist 'log cabin' imagery, only to have Harrison die after 31 days and be succeeded by states'-rights Virginian John Tyler, who vetoed their Whig banking agenda."
+    },
+    {
+      "id": "q_u4_37",
+      "unit": 4,
+      "topic": "4.5",
+      "topicTitle": "Conflicts of the Jacksonian Era",
+      "skill": "Contextualization",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_6",
+      "stem": "The constitutional argument advanced in the December 1828 legislative protest was most directly precipitated by which of the following federal actions?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Enactment of the Tariff of 1828, which Southern planters denounced as the 'Tariff of Abominations'",
+          "isCorrect": true,
+          "explanation": "Correct. Secretly authored by Vice President John C. Calhoun, the South Carolina Exposition and Protest (December 1828) responded directly to the Tariff of 1828. South Carolina's rice and cotton planters—facing falling staple prices and soil exhaustion—argued that high protective tariffs inflated the cost of manufactured goods they bought while threatening British retaliation against Southern cotton exports."
+        },
+        {
+          "id": "B",
+          "text": "Passage of the Alien and Sedition Acts by the Federalist Fifth Congress during the Quasi-War with France",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (1798 Alien & Sedition Acts)",
+          "explanation": "Incorrect. While the 1828 protest borrowed compact-theory language from Jefferson and Madison's 1798 Virginia and Kentucky Resolutions, those earlier protests targeted the 1798 Alien and Sedition Acts—thirty years before 1828."
+        },
+        {
+          "id": "C",
+          "text": "President Andrew Jackson's issuance of the Specie Circular requiring gold or silver coin for all federal public land purchases",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Specie Circular Was 1836)",
+          "explanation": "Incorrect. Jackson issued the Specie Circular in July 1836, eight years after the December 1828 tariff protest."
+        },
+        {
+          "id": "D",
+          "text": "Ratification of the Compromise Tariff of 1833 negotiated by Henry Clay to lower import duties gradually over a nine-year period",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Compromise Tariff Ended the Crisis in 1833)",
+          "explanation": "Incorrect. Henry Clay's Compromise Tariff of 1833 *resolved* the Nullification Crisis five years later; it did not trigger the December 1828 protest."
+        }
+      ],
+      "keyTakeaway": "John C. Calhoun's anonymously written South Carolina Exposition and Protest (1828) revived compact theory to challenge the 'Tariff of Abominations' (1828) as unconstitutional sectional favoritism.",
+      "testTip": "Connect the 1828 protest to South Carolina's deeper anxiety: planters feared that if Congress could stretch the Constitution to pass protective tariffs, it might eventually use the same implied powers to restrict or abolish slavery."
+    },
+    {
+      "id": "q_u4_38",
+      "unit": 4,
+      "topic": "4.5",
+      "topicTitle": "Conflicts of the Jacksonian Era",
+      "skill": "Comparison",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_6",
+      "stem": "Following the constitutional clash previewed in the 1828 protest and debated in the 1830 Webster–Hayne Debate, how was the Nullification Crisis ultimately resolved in 1833?",
+      "options": [
+        {
+          "id": "A",
+          "text": "President Jackson endorsed South Carolina's right to nullify federal statutes as consistent with his opposition to internal improvements in the Maysville Road veto",
+          "isCorrect": false,
+          "distractorType": "Faction & Policy Inversion (Jackson Strongly Opposed Nullification)",
+          "explanation": "Incorrect. Although Jackson favored states' rights on issues like the 1830 Maysville Road veto and Indian removal, he drew a sharp line at nullification, warning South Carolina that 'disunion by armed force is treason.'"
+        },
+        {
+          "id": "B",
+          "text": "The Supreme Court under Chief Justice John Marshall ruled in favor of Robert Hayne, declaring the Tariffs of 1828 and 1832 unconstitutional",
+          "isCorrect": false,
+          "distractorType": "Factual Misattribution (Supreme Court Never Struck Down the Tariffs)",
+          "explanation": "Incorrect. Robert Hayne debated Senator Daniel Webster on the Senate floor in 1830 ('Liberty and Union, now and forever, one and inseparable!'), not before the Supreme Court, and the Court never invalidated the tariffs."
+        },
+        {
+          "id": "C",
+          "text": "Jackson asserted federal supremacy by securing the Force Bill to collect tariffs militarily while backing Henry Clay's Compromise Tariff of 1833, prompting South Carolina to rescind tariff nullification",
+          "isCorrect": true,
+          "explanation": "Correct. After South Carolina's November 1832 Ordinance of Nullification declared the 1828 and 1832 tariffs void within the state, Jackson issued his Nullification Proclamation and obtained the Force Bill (1833) authorizing military enforcement. Simultaneously, Henry Clay brokered the Compromise Tariff of 1833 to lower rates gradually to 20% by 1842, allowing South Carolina to back down without armed conflict."
+        },
+        {
+          "id": "D",
+          "text": "South Carolina led six southern states in immediate secession, forcing Congress to abolish all federal import duties permanently",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Secession Occurred in 1860–1861; No Other State Backed Nullification in 1832)",
+          "explanation": "Incorrect. No other southern state supported South Carolina's nullification ordinance in 1832–1833; secession of southern states occurred in 1860–1861 after Abraham Lincoln's election."
+        }
+      ],
+      "keyTakeaway": "During the 1832–1833 Nullification Crisis, Jackson combined the Force Bill's threat of federal military coercion with Henry Clay's Compromise Tariff of 1833, preserving the Union while lowering tariff rates.",
+      "testTip": "Notice the political irony of 1833: South Carolina backed down on tariff nullification, yet immediately 'nullified' the Force Bill itself as a symbolic gesture—leaving the constitutional question of state sovereignty unresolved until the Civil War."
+    },
+    {
+      "id": "q_u4_39",
+      "unit": 4,
+      "topic": "4.5",
+      "topicTitle": "Conflicts of the Jacksonian Era",
+      "skill": "Argumentation",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_7",
+      "stem": "In the first paragraph of the excerpt, President Jackson makes which of the following constitutional claims regarding the Second Bank of the United States?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Supreme Court's 1819 ruling in McCulloch v. Maryland permanently barred Congress from chartering any national bank",
+          "isCorrect": false,
+          "distractorType": "Case Outcome Inversion (McCulloch Upheld the Bank's Constitutionality)",
+          "explanation": "Incorrect. In McCulloch v. Maryland (1819), Chief Justice John Marshall *upheld* the constitutionality of the Second Bank under the Necessary and Proper Clause—which is why Bank advocates cited precedent against Jackson."
+        },
+        {
+          "id": "B",
+          "text": "Only state legislatures possess the authority to charter corporations, whereas the federal government may coin gold but not regulate paper currency",
+          "isCorrect": false,
+          "distractorType": "Overstatement (Jackson Asserted Independent Executive Review, Not Exclusive State Chartering)",
+          "explanation": "Incorrect. In this passage, Jackson does not claim that state legislatures hold exclusive chartering power; rather, he challenges the notion that judicial precedent binds the president's own constitutional judgment."
+        },
+        {
+          "id": "C",
+          "text": "Because the Bank's charter was set to expire in 1836, Henry Clay and Nicholas Biddle lacked standing to submit a recharter bill during an election year",
+          "isCorrect": false,
+          "distractorType": "Factual Misattribution (Congress Had Authority to Pass Recharter Early)",
+          "explanation": "Incorrect. Although Clay and Bank president Nicholas Biddle deliberately pushed the recharter bill through Congress in 1832—four years early—to trap Jackson before the election, Congress had full legal authority to pass it, which is why Jackson had to veto it."
+        },
+        {
+          "id": "D",
+          "text": "The president has an independent constitutional duty to evaluate a bill's constitutionality rather than deferring automatically to Supreme Court precedent",
+          "isCorrect": true,
+          "explanation": "Correct. Known as 'departmentalism,' Jackson's argument rejected judicial supremacy by asserting that Congress, the Executive, and the Court are co-equal branches, each bound by its own oath to interpret the Constitution. Even though McCulloch v. Maryland (1819) had upheld the Bank, Jackson argued the Bank's current monopoly features were neither necessary nor proper."
+        }
+      ],
+      "keyTakeaway": "In his 1832 Bank Veto, Jackson asserted 'departmentalism'—that the president is not bound by Supreme Court precedent (McCulloch v. Maryland) when judging a bill's constitutionality—and framed the Bank as an aristocratic monopoly.",
+      "testTip": "Jackson's 1832 veto transformed the presidential veto power: earlier presidents rarely vetoed bills unless they deemed them unconstitutional, whereas Jackson vetoed the Bank on *both* constitutional and policy/social-equity grounds."
+    },
+    {
+      "id": "q_u4_40",
+      "unit": 4,
+      "topic": "4.5",
+      "topicTitle": "Conflicts of the Jacksonian Era",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_7",
+      "stem": "Following the veto message in the excerpt and his 1832 reelection victory, President Jackson's war against Nicholas Biddle's Second Bank of the United States most directly contributed to:",
+      "options": [
+        {
+          "id": "A",
+          "text": "The immediate adoption of a federal paper greenback currency backed by the Independent Treasury Act of 1840",
+          "isCorrect": false,
+          "distractorType": "Chronological & Policy Misattribution (Greenbacks Were Civil War 1862; Independent Treasury Was Hard Money)",
+          "explanation": "Incorrect. Federal 'greenback' fiat paper currency was issued during the Civil War (1862 Legal Tender Act), whereas Van Buren's Independent Treasury Act (1840) kept federal funds in government vaults in hard specie."
+        },
+        {
+          "id": "B",
+          "text": "Moving federal deposits to 'pet banks,' a land boom, and the Specie Circular preceding the Panic of 1837",
+          "isCorrect": true,
+          "explanation": "Correct. Determined to kill the Bank before its 1836 expiration, Jackson ordered Treasury Secretary Roger Taney in 1833 to stop depositing federal revenue in the BUS and place it in favored state banks ('pet banks'). Unchecked paper note issuance fueled western land speculation until Jackson's 1836 Specie Circular required gold or silver for public land, popping the credit bubble and contributing to the severe Panic of 1837 (prompting Van Buren's 1840 Independent Treasury)."
+        },
+        {
+          "id": "C",
+          "text": "The impeachment of Chief Justice Roger Taney by the Whig-controlled Senate for refusing to honor Nicholas Biddle's bank notes",
+          "isCorrect": false,
+          "distractorType": "Factual Misattribution (Taney Was Never Impeached; Senate Censured Jackson)",
+          "explanation": "Incorrect. The Senate *censured* President Jackson in 1834 for removing federal deposits (a censure later expunged in 1837), and Taney was never impeached—he succeeded John Marshall as Chief Justice in 1836."
+        },
+        {
+          "id": "D",
+          "text": "A prolonged deflationary depression caused by the Tariff of 1816's collapse and the Hartford Convention's blockade",
+          "isCorrect": false,
+          "distractorType": "Chronological Misattribution (Panic of 1819 / War of 1812 Era)",
+          "explanation": "Incorrect. The Tariff of 1816 and Hartford Convention (1814–1815) belong to the post–War of 1812 era; the financial crisis following Jackson's Bank War was the Panic of 1837."
+        }
+      ],
+      "keyTakeaway": "Jackson's removal of federal deposits into state 'pet banks' and his 1836 Specie Circular destabilized credit and helped precipitate the Panic of 1837, leading Martin Van Buren to establish the Independent Treasury (1840).",
+      "testTip": "Trace the Bank War chain of causation: 1832 Veto -> 1833 Deposit Removal to 'pet banks' -> Wild state-bank lending & land boom -> 1836 Specie Circular (gold/silver only for land) -> Panic of 1837 -> 1840 Independent Treasury."
+    },
+    {
+      "id": "q_u4_41",
+      "unit": 4,
+      "topic": "4.5",
+      "topicTitle": "Conflicts of the Jacksonian Era",
+      "skill": "Contextualization",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_8",
+      "stem": "The July 1830 petition in the excerpt was written to protest which of the following federal policies?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Dawes Severalty Act of 1887, which broke up communal tribal reservations into individual 160-acre family allotments",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Dawes Act Was 1887)",
+          "explanation": "Incorrect. The Dawes Severalty Act was enacted in 1887 during the Gilded Age (Period 6), fifty-seven years after the 1830 Cherokee petition."
+        },
+        {
+          "id": "B",
+          "text": "The Proclamation Line of 1763, which forbade British colonists from settling west of the Appalachian Mountains",
+          "isCorrect": false,
+          "distractorType": "Chronological & Policy Inversion (1763 Proclamation Protected Indigenous Lands)",
+          "explanation": "Incorrect. The Royal Proclamation of 1763 temporarily *protected* Indigenous lands west of the Appalachians from colonial settlement; the 1830 petition protested forced removal *westward* across the Mississippi."
+        },
+        {
+          "id": "C",
+          "text": "The Force Bill of 1833, which authorized federal troops to collect customs duties in Charleston Harbor",
+          "isCorrect": false,
+          "distractorType": "Statutory & Chronological Misattribution (Force Bill Was 1833 Nullification Crisis)",
+          "explanation": "Incorrect. The Force Bill was passed in 1833 to enforce federal tariff collection during South Carolina's Nullification Crisis, not in 1830."
+        },
+        {
+          "id": "D",
+          "text": "The Indian Removal Act of 1830, authorizing land-exchange treaties to relocate eastern tribes west of the Mississippi",
+          "isCorrect": true,
+          "explanation": "Correct. Passed narrowly by Congress in May 1830 at Jackson's urging—after gold was discovered on Cherokee land in Georgia and white settlers demanded cotton acreage—the Indian Removal Act authorized the forced exchange of eastern tribal lands for territory in Indian Territory (modern Oklahoma). The Cherokee Nation's 1830 Memorial appealed to existing federal treaties and its own constitutional government to resist removal."
+        }
+      ],
+      "keyTakeaway": "Signed in May 1830, the Indian Removal Act authorized the relocation of the 'Five Civilized Tribes' from the Southeast to Indian Territory west of the Mississippi—prompting Cherokee legal and congressional resistance.",
+      "testTip": "Notice the Cherokee Nation's rhetorical strategy in 1830: they emphasized both binding federal treaties (the Constitution's Supremacy Clause) and their own adoption of a written language, newspaper, and constitutional government."
+    },
+    {
+      "id": "q_u4_42",
+      "unit": 4,
+      "topic": "4.5",
+      "topicTitle": "Conflicts of the Jacksonian Era",
+      "skill": "Comparison",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_8",
+      "stem": "When the Cherokee Nation sought relief in the United States Supreme Court after the 1830 petition failed to halt Georgia's encroachments, how did Chief Justice John Marshall rule in Worcester v. Georgia (1832)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Cherokee Nation constituted a 'foreign state' entitled to sue Georgia directly under the Supreme Court's original jurisdiction",
+          "isCorrect": false,
+          "distractorType": "Case Misattribution (Cherokee Nation v. Georgia 1831 Denied Original Jurisdiction)",
+          "explanation": "Incorrect. In *Cherokee Nation v. Georgia* (1831), Marshall dismissed the suit by ruling that Indian tribes were 'domestic dependent nations,' not foreign states. It was only in *Worcester v. Georgia* (1832)—brought by a white missionary, Samuel Worcester—that the Court reached the merits."
+        },
+        {
+          "id": "B",
+          "text": "The 1830 Indian Removal Act violated the Fifth Amendment's Due Process Clause and must be repealed immediately by Congress",
+          "isCorrect": false,
+          "distractorType": "Factual Misattribution (Court Did Not Strike Down the Indian Removal Act)",
+          "explanation": "Incorrect. The Supreme Court did not strike down the 1830 Indian Removal Act; rather, it invalidated *Georgia's* state laws extending jurisdiction over Cherokee territory."
+        },
+        {
+          "id": "C",
+          "text": "The Cherokee Nation was a distinct political community, rendering Georgia's state statutes within its borders unconstitutional",
+          "isCorrect": true,
+          "explanation": "Correct. In Worcester v. Georgia (1832), Marshall ruled that Cherokee territory was a distinct political community in which 'the laws of Georgia can have no force,' because Indian relations belonged exclusively to the federal government. Georgia ignored the ruling, and President Jackson refused to enforce it against the state."
+        },
+        {
+          "id": "D",
+          "text": "The Treaty of New Echota (1835) legally bound all Cherokee citizens to cede their eastern homelands within two years",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Treaty of New Echota Was 1835)",
+          "explanation": "Incorrect. The Treaty of New Echota was signed in 1835 by a small unauthorized faction (the Ridge faction) three years *after* Worcester v. Georgia, and served as the pretext for the 1838 Trail of Tears."
+        }
+      ],
+      "keyTakeaway": "In Worcester v. Georgia (1832), the Marshall Court affirmed Cherokee sovereignty against Georgia's state laws, but President Jackson's refusal to enforce the ruling cleared the way for forced removal.",
+      "testTip": "Keep the two Marshall Court Cherokee cases distinct: 1831 *Cherokee Nation v. Georgia* ('domestic dependent nations' -> no standing to sue) vs. 1832 *Worcester v. Georgia* (Georgia laws unconstitutional inside Cherokee territory)."
+    },
+    {
+      "id": "q_u4_43",
+      "unit": 4,
+      "topic": "4.5",
+      "topicTitle": "Conflicts of the Jacksonian Era",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Despite Principal Chief John Ross and the overwhelming majority of Cherokee citizens rejecting relocation, federal troops forcibly marched roughly 16,000 Cherokees westward on the 1838 Trail of Tears because:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Chief Justice Roger Taney overturned Worcester v. Georgia in 1837 and ordered the U.S. Army to seize Cherokee farms",
+          "isCorrect": false,
+          "distractorType": "Case Misattribution (Taney Did Not Overturn Worcester v. Georgia)",
+          "explanation": "Incorrect. The Taney Court did not overturn *Worcester v. Georgia*; removal proceeded under an executive treaty rather than a Supreme Court reversal."
+        },
+        {
+          "id": "B",
+          "text": "An unauthorized minority faction signed the 1835 Treaty of New Echota, which the Senate ratified",
+          "isCorrect": true,
+          "explanation": "Correct. Despairing that resistance was futile, a small minority led by Major Ridge and Elias Boudinot signed the Treaty of New Echota in December 1835, ceding all Cherokee territory east of the Mississippi for $5 million and land in Indian Territory. Although Chief John Ross submitted a petition signed by nearly 16,000 Cherokees opposing the fraudulent treaty, the Senate ratified it by one vote, and President Martin Van Buren ordered General Winfield Scott to enforce removal in 1838—killing roughly 4,000 Cherokees."
+        },
+        {
+          "id": "C",
+          "text": "The Creek and Seminole nations allied with British forces in Florida to invade northern Georgia",
+          "isCorrect": false,
+          "distractorType": "Chronological & Factual Misattribution (War of 1812 Creek War Was 1813–1814)",
+          "explanation": "Incorrect. British involvement with the Creek Red Sticks ended after the War of 1812 (1813–1814); the Second Seminole War (1835–1842) was a separate resistance against removal in Florida."
+        },
+        {
+          "id": "D",
+          "text": "South Carolina nullified the 1830 Indian Removal Act and deployed state militia to drive the Cherokee across the Appalachian Mountains",
+          "isCorrect": false,
+          "distractorType": "State & Policy Inversion (Georgia Pressed for Removal; South Carolina Nullified Tariffs)",
+          "explanation": "Incorrect. South Carolina nullified the federal *tariffs* of 1828 and 1832, not the Indian Removal Act, and it was *Georgia* (not South Carolina) that pressed to expel the Cherokee."
+        }
+      ],
+      "keyTakeaway": "The 1835 Treaty of New Echota—signed by an unauthorized minority faction and ratified by the U.S. Senate despite Principal Chief John Ross's protests—provided the legal pretext for the deadly 1838 Trail of Tears.",
+      "testTip": "Remember the key names of Cherokee removal: Principal Chief John Ross (led majority resistance) vs. the Ridge/Boudinot faction (signed the 1835 Treaty of New Echota), and President Martin Van Buren (who carried out the 1838 forced march)."
+    },
+    {
+      "id": "q_u4_44",
+      "unit": 4,
+      "topic": "4.5",
+      "topicTitle": "Conflicts of the Jacksonian Era",
+      "skill": "Comparison",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Taken together, the three major conflicts of the Jacksonian era—Nullification, the Bank War, and Indian Removal—demonstrate which of the following patterns regarding federal and executive power between 1828 and 1840?\n\nI. Jackson vigorously asserted federal supremacy and executive force against South Carolina's tariff nullification, yet declined to enforce the Supreme Court's Worcester v. Georgia ruling against Georgia.\nII. Jackson expanded presidential authority through aggressive use of the veto, deposit removal, and departmentalism, provoking opponents to unite as the Whig Party.\nIII. The Bank War and Specie Circular helped trigger the Panic of 1837, leading Martin Van Buren to establish the Independent Treasury in 1840.\nIV. All three conflicts were resolved by constitutional amendments ratified under the Compromise of 1850.",
+      "options": [
+        {
+          "id": "A",
+          "text": "I, II, and III only",
+          "isCorrect": true,
+          "explanation": "Correct. Across these three conflicts, Jackson wielded executive power selectively—championing federal supremacy against South Carolina nullifiers while siding with Georgia against Cherokee treaty rights (I), expanding the presidential veto and departmentalism in ways that forged the Whig opposition (II), and destabilizing credit before Van Buren's 1840 Independent Treasury (III). None were resolved by constitutional amendments under the Compromise of 1850 (IV is false)."
+        },
+        {
+          "id": "B",
+          "text": "I and II only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection (Omits Panic of 1837 & Independent Treasury)",
+          "explanation": "Incorrect. While I and II are accurate, this choice omits III: the direct economic consequence of the Bank War and Specie Circular in the Panic of 1837 and Van Buren's 1840 Independent Treasury."
+        },
+        {
+          "id": "C",
+          "text": "II, III, and IV only",
+          "isCorrect": false,
+          "distractorType": "Chronological & Factual Displacement (Compromise of 1850 Was Not Constitutional Amendments, Omits I)",
+          "explanation": "Incorrect. IV is doubly false—the Compromise of 1850 consisted of five federal statutes (not constitutional amendments) addressing slavery in the Mexican Cession—while I is omitted."
+        },
+        {
+          "id": "D",
+          "text": "I, III, and IV",
+          "isCorrect": false,
+          "distractorType": "Chronological & Factual Displacement (Includes False Compromise of 1850 Amendments, Omits II)",
+          "explanation": "Incorrect. IV is false because the Compromise of 1850 did not amend the Constitution or resolve Jacksonian conflicts, and this choice omits II."
+        }
+      ],
+      "keyTakeaway": "Jackson's handling of Nullification, the Bank War, and Indian Removal revealed a potent but selective executive power—asserting federal supremacy against South Carolina, deferring to Georgia against the Cherokee, and reshaping both the presidency and the economy.",
+      "testTip": "Synthesize all three Jacksonian conflicts for SAQ/LEQ prompts: Jackson was *not* a simple 'states' rights' or 'nationalist' ideologue—he defended the Union against South Carolina, backed Georgia over the Cherokee, and expanded presidential power against the Bank."
     }
   ]
 };
