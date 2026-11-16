@@ -668,10 +668,19 @@
         shuffleOptions: true
       });
     } else if (presetName === "weak-remediation") {
+      // Respect currently checked sections in the builder (e.g. 4.3 or 4.1-4.5), or fallback to activeQuiz topics / Unit 4
+      const selectedInUI = getSelectedTopicsFromUI();
+      const targetTopics =
+        selectedInUI.length > 0
+          ? selectedInUI
+          : activeQuiz && activeQuiz.config && activeQuiz.config.topics?.length > 0
+          ? activeQuiz.config.topics
+          : u4Topics;
+      const labelSuffix = targetTopics.length <= 3 ? ` (${targetTopics.join(", ")})` : "";
       generateAndStartQuiz({
-        label: "Weak Unit 3 Sections & Missed Qs Drill",
+        label: `Weak Sections & Missed Qs Drill${labelSuffix}`,
         strategy: "weak",
-        topics: u3Topics,
+        topics: targetTopics,
         format: "all",
         count: 10,
         feedbackMode: "tutor",
@@ -740,8 +749,8 @@
     if (topicAcc !== null && topicAcc < 0.75) {
       score += (0.8 - topicAcc) * 40;
     }
-    if (q.unit === 3) {
-      score += 8; // Slight boost for Unit 3 primary focus
+    if (q.unit === 4) {
+      score += 10; // Slight boost for current Unit 4 focus
     }
     if (q.difficulty === "Hard") {
       score += 12; // Favor harder AP exam-level questions first
@@ -1288,7 +1297,21 @@
     });
 
     document.getElementById("drillWeakFromResultsBtn")?.addEventListener("click", () => {
-      launchPresetQuiz("weak-remediation");
+      if (activeQuiz && activeQuiz.config && activeQuiz.config.topics?.length > 0) {
+        const topics = activeQuiz.config.topics;
+        generateAndStartQuiz({
+          label: `Weak Sections Drill (${topics.join(", ")})`,
+          strategy: "weak",
+          topics,
+          format: "all",
+          count: 10,
+          feedbackMode: "tutor",
+          timerEnabled: true,
+          shuffleOptions: true
+        });
+      } else {
+        launchPresetQuiz("weak-remediation");
+      }
     });
 
     document.getElementById("backToDashboardFromResultsBtn")?.addEventListener("click", () => {
