@@ -781,6 +781,24 @@
     </div>
   </div>
 
+  <!-- ==================== REQUIRED GOOGLE SIGN-IN GATE OVERLAY ==================== -->
+  <div class="modal-backdrop" id="authGateOverlay" style="backdrop-filter: blur(6px); z-index: 200;">
+    <div class="modal-card" style="max-width: 460px; text-align: center; padding: 2.25rem 2rem;">
+      <div class="brand-badge" style="display:inline-block; margin-bottom: 1rem; font-size: 1rem; padding: 0.55rem 0.9rem;">APUSH</div>
+      <h2 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem;">Sign in with Google to Start</h2>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.55;">
+        Signing in ensures all of your quiz scores, missed questions, and study time are automatically saved to the cloud and visible in the Parent Tracker.
+      </p>
+      <button class="google-signin-btn" id="gateGoogleSignInBtn" style="padding: 0.75rem 1.5rem; font-size: 0.95rem; margin: 0 auto;">
+        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.11-6.72-4.96H1.29v3.14C3.26 21.3 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.28 14.24c-.24-.72-.38-1.49-.38-2.24s.14-1.52.38-2.24V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.99-3.14z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.99 3.14c.95-2.85 3.6-4.96 6.72-4.96z"/></svg>
+        <span>Sign in with Google</span>
+      </button>
+      <p id="gateCheckingText" style="font-size: 0.78rem; color: var(--text-muted); margin-top: 1rem;">
+        Checking your Google session...
+      </p>
+    </div>
+  </div>
+
   <!-- Firebase Compat SDKs (Google Auth + Cloud Firestore) -->
   <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>

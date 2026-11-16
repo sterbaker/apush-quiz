@@ -1976,6 +1976,14 @@ Return ONLY valid JSON matching this structure:
       }
     });
 
+    document.getElementById("gateGoogleSignInBtn")?.addEventListener("click", () => {
+      if (!firebaseAuth) {
+        openCloudModal();
+      } else {
+        triggerGoogleSignInPopup();
+      }
+    });
+
     signOutBtn?.addEventListener("click", async () => {
       if (firebaseAuth) {
         await firebaseAuth.signOut();
@@ -2048,10 +2056,13 @@ Return ONLY valid JSON matching this structure:
     const profilePill = document.getElementById("userProfilePill");
     const avatarImg = document.getElementById("userAvatarImg");
     const nameText = document.getElementById("userNameText");
+    const authGate = document.getElementById("authGateOverlay");
+    const gateCheck = document.getElementById("gateCheckingText");
 
     if (currentGoogleUser) {
       signInBtn?.classList.add("hidden");
       profilePill?.classList.remove("hidden");
+      authGate?.classList.add("hidden");
       if (avatarImg) {
         avatarImg.src =
           currentGoogleUser.photoURL ||
@@ -2063,6 +2074,10 @@ Return ONLY valid JSON matching this structure:
     } else {
       signInBtn?.classList.remove("hidden");
       profilePill?.classList.add("hidden");
+      authGate?.classList.remove("hidden");
+      if (gateCheck) {
+        gateCheck.textContent = "Not signed in — please sign in with Google above to continue.";
+      }
     }
   }
 
