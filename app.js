@@ -88,7 +88,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     initTheme();
     initNavigation();
-    renderUnitsFilterUI([4]); // Default to Unit 4 (RQ 4.1-4.2) selected
+    renderUnitsFilterUI([4], ["4.3", "4.4", "4.5"]); // Default to Modules 4.3–4.5 selected
     initBuilderControls();
     initQuizControls();
     initResultsControls();
@@ -358,18 +358,31 @@
       });
     });
 
-    // Unit 4 / Unit 3 / Clear All / Cumulative Quick Toggles
+    // Unit 4.3-4.5 / Unit 4 All / Unit 3 / Clear All / Cumulative Quick Toggles
+    const btnU4Tomorrow = document.getElementById("selectU4TomorrowBtn");
     const btnUnit4Only = document.getElementById("selectUnit4OnlyBtn");
     const btnUnit3Only = document.getElementById("selectUnit3OnlyBtn");
     const btnClearTopics = document.getElementById("clearTopicsBtn");
     const btnAllUnits = document.getElementById("selectAllUnitsBtn");
 
+    function setQuickToggleActive(activeBtn) {
+      [btnU4Tomorrow, btnUnit4Only, btnUnit3Only, btnClearTopics, btnAllUnits].forEach((b) => {
+        if (b) b.classList.toggle("active", b === activeBtn);
+      });
+    }
+
+    if (btnU4Tomorrow) {
+      btnU4Tomorrow.addEventListener("click", () => {
+        setQuickToggleActive(btnU4Tomorrow);
+        clearClusterHighlight();
+        showCumulativeDrawer = false;
+        renderUnitsFilterUI([4], ["4.3", "4.4", "4.5"]);
+      });
+    }
+
     if (btnUnit4Only) {
       btnUnit4Only.addEventListener("click", () => {
-        btnUnit4Only.classList.add("active");
-        btnUnit3Only?.classList.remove("active");
-        btnClearTopics?.classList.remove("active");
-        btnAllUnits?.classList.remove("active");
+        setQuickToggleActive(btnUnit4Only);
         clearClusterHighlight();
         showCumulativeDrawer = false;
         renderUnitsFilterUI([4]);
@@ -378,10 +391,7 @@
 
     if (btnUnit3Only) {
       btnUnit3Only.addEventListener("click", () => {
-        btnUnit3Only.classList.add("active");
-        btnUnit4Only?.classList.remove("active");
-        btnClearTopics?.classList.remove("active");
-        btnAllUnits?.classList.remove("active");
+        setQuickToggleActive(btnUnit3Only);
         clearClusterHighlight();
         showCumulativeDrawer = false;
         renderUnitsFilterUI([3]);
@@ -390,10 +400,7 @@
 
     if (btnClearTopics) {
       btnClearTopics.addEventListener("click", () => {
-        btnClearTopics.classList.add("active");
-        btnUnit4Only?.classList.remove("active");
-        btnUnit3Only?.classList.remove("active");
-        btnAllUnits?.classList.remove("active");
+        setQuickToggleActive(btnClearTopics);
         clearClusterHighlight();
         renderUnitsFilterUI([], []);
       });
@@ -401,10 +408,7 @@
 
     if (btnAllUnits) {
       btnAllUnits.addEventListener("click", () => {
-        btnAllUnits.classList.add("active");
-        btnUnit4Only?.classList.remove("active");
-        btnUnit3Only?.classList.remove("active");
-        btnClearTopics?.classList.remove("active");
+        setQuickToggleActive(btnAllUnits);
         clearClusterHighlight();
         showCumulativeDrawer = true;
         renderUnitsFilterUI([1, 2, 3, 4]);
