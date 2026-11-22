@@ -1997,6 +1997,139 @@ kbd {
   border-radius: 4px;
 }
 
+/* ==================== SAQ SHORT ANSWER LAB ==================== */
+.saq-selector-strip {
+  display: flex;
+  gap: 0.55rem;
+  overflow-x: auto;
+  padding-bottom: 0.35rem;
+}
+
+.saq-card-btn {
+  flex: 0 0 auto;
+  min-width: 210px;
+  max-width: 260px;
+  text-align: left;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.65rem 0.85rem;
+  cursor: pointer;
+  transition: all 0.14s ease;
+  font-family: inherit;
+}
+
+.saq-card-btn:hover {
+  border-color: var(--brand-primary);
+  background: var(--bg-surface-alt);
+}
+
+.saq-card-btn.active {
+  border-color: var(--brand-primary);
+  background: var(--brand-light);
+}
+
+.saq-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--brand-primary);
+  margin-bottom: 0.2rem;
+}
+
+.saq-card-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.saq-parts-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.saq-part-box {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  background: var(--bg-surface-alt);
+}
+
+.saq-part-prompt {
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.55rem;
+  line-height: 1.45;
+}
+
+.saq-part-label {
+  display: inline-block;
+  background: var(--brand-primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.12rem 0.45rem;
+  border-radius: 4px;
+  margin-right: 0.4rem;
+}
+
+.saq-textarea {
+  width: 100%;
+  min-height: 92px;
+  padding: 0.7rem 0.85rem;
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.saq-textarea:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+}
+
+.saq-word-count {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-align: right;
+  margin-top: 0.25rem;
+}
+
+.saq-rubric-box {
+  margin-top: 0.65rem;
+  padding: 0.8rem 0.9rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  border: 1px solid var(--success-border);
+  font-size: 0.83rem;
+}
+
+.saq-rubric-box .rubric-line {
+  margin-bottom: 0.45rem;
+  color: var(--text-secondary);
+}
+
+.saq-rubric-box .model-line {
+  padding-top: 0.45rem;
+  border-top: 1px dashed var(--border-strong);
+  color: var(--text-primary);
+}
+
+.saq-score-btn.selected {
+  background: var(--brand-primary);
+  color: #fff;
+  border-color: var(--brand-primary);
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .hero-stats-grid,

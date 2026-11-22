@@ -66,6 +66,7 @@
   // Active Quiz Session State
   let activeQuiz = null;
   let timerInterval = null;
+  let saqTimerInterval = null;
 
   // Cloud / Firebase State (Pre-configured for project ushap-ae945)
   const FIREBASE_CFG_KEY = "apush_firebase_config_v1";
@@ -94,6 +95,7 @@
     initResultsControls();
     initAiModalControls();
     initCloudAndParentControls();
+    initSaqLab();
     refreshDashboardAndMastery();
   });
 
@@ -146,6 +148,10 @@
     if (viewName !== "quiz" && timerInterval) {
       clearInterval(timerInterval);
       timerInterval = null;
+    }
+    if (viewName !== "saq" && saqTimerInterval) {
+      clearInterval(saqTimerInterval);
+      saqTimerInterval = null;
     }
 
     document.querySelectorAll(".view-section").forEach((sec) => {
@@ -2422,6 +2428,263 @@ Return ONLY valid JSON matching this structure:
           })
           .join("");
       }
+
+      // Append completed SAQ attempts in Parent Tracker
+      const saqLogs = targetStats.saqHistory || [];
+      if (saqLogs.length > 0) {
+        logContainer.innerHTML +=
+          `<h4 style="margin: 1rem 0 0.5rem; font-size:0.9rem; color:var(--brand-primary);">Completed SAQ Short Answers (${saqLogs.length})</h4>` +
+          saqLogs
+            .map((sq) => {
+              const cls = sq.score >= 3 ? "acc-high" : sq.score === 2 ? "acc-med" : "acc-low";
+              return `
+                <div class="parent-log-card">
+                  <div class="parent-log-top">
+                    <strong>SAQ [${sq.module}]: ${sq.title}</strong>
+                    <span class="history-score ${cls}">${sq.score} / 3 pts</span>
+                  </div>
+                  <div class="parent-log-meta">
+                    <span>&#128197; ${sq.date}</span>
+                    <span>&#9201; Time: ${Math.floor((sq.durationSeconds || 0) / 60)}m ${(sq.durationSeconds || 0) % 60}s</span>
+                  </div>
+                  <div class="parent-missed-drawer" style="border-top-style:solid;">
+                    ${["a", "b", "c"]
+                      .map(
+                        (lbl) =>
+                          `<div style="font-size:0.78rem; margin-bottom:0.3rem;"><strong>(${lbl})</strong> ${(sq.responses && sq.responses[lbl]) || "<em>(Blank)</em>"}</div>`
+                      )
+                      .join("")}
+                  </div>
+                </div>
+              `;
+            })
+            .join("");
+      }
+    }
+  }
+
+  // ==================== SAQ SHORT ANSWER PRACTICE LAB (4.5–4.8) ====================
+  let activeSaqId = null;
+  let activeSaqFilterMod = "all";
+  let saqElapsedSeconds = 0;
+  let saqSubmitted = false;
+
+  function getSaqList() {
+    return Array.isArray(window.APUSH_SAQS) ? window.APUSH_SAQS : [];
+  }
+
+  function initSaqLab() {
+    const list = getSaqList();
+    if (list.length === 0) return;
+
+    // Module filter pills
+    document.querySelectorAll("[data-saq-mod]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("[data-saq-mod]").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        activeSaqFilterMod = btn.getAttribute("data-saq-mod") || "all";
+        renderSaqSelectorStrip();
+        const filtered = getFilteredSaqs();
+        if (filtered.length > 0 && !filtered.some((s) => s.id === activeSaqId)) {
+          loadSaqIntoWorkspace(filtered[0].id);
+        }
+      });
+    });
+
+    document.getElementById("randomSaqBtn")?.addEventListener("click", () => {
+      const filtered = getFilteredSaqs();
+      if (filtered.length === 0) return;
+      const pick = filtered[Math.floor(Math.random() * filtered.length)];
+      loadSaqIntoWorkspace(pick.id);
+    });
+
+    document.getElementById("clearSaqDraftBtn")?.addEventListener("click", () => {
+      document.querySelectorAll(".saq-textarea").forEach((ta) => {
+        ta.value = "";
+      });
+      document.querySelectorAll(".saq-word-count").forEach((wc) => {
+        wc.textContent = "0 words";
+      });
+    });
+
+    document.getElementById("submitSaqBtn")?.addEventListener("click", () => {
+      saqSubmitted = true;
+      if (saqTimerInterval) {
+        clearInterval(saqTimerInterval);
+        saqTimerInterval = null;
+      }
+      document.querySelectorAll(".saq-rubric-box").forEach((box) => box.classList.remove("hidden"));
+      document.getElementById("saqScoreSummaryBox")?.classList.remove("hidden");
+    });
+
+    document.querySelectorAll(".saq-score-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const pts = parseInt(btn.getAttribute("data-saq-pts") || "0", 10);
+        document.querySelectorAll(".saq-score-btn").forEach((b) => b.classList.remove("selected"));
+        btn.classList.add("selected");
+        saveCompletedSaqAttempt(pts);
+      });
+    });
+
+    renderSaqSelectorStrip();
+    loadSaqIntoWorkspace(list[0].id);
+  }
+
+  function getFilteredSaqs() {
+    const list = getSaqList();
+    if (activeSaqFilterMod === "all") return list;
+    return list.filter((s) => s.module === activeSaqFilterMod);
+  }
+
+  function renderSaqSelectorStrip() {
+    const strip = document.getElementById("saqSelectorStrip");
+    if (!strip) return;
+    const filtered = getFilteredSaqs();
+    const history = userStats.saqHistory || [];
+
+    strip.innerHTML = filtered
+      .map((s) => {
+        const done = history.find((h) => h.id === s.id);
+        const badge = done ? `✓ ${done.score}/3` : s.type;
+        return `
+          <button type="button" class="saq-card-btn ${s.id === activeSaqId ? "active" : ""}" data-saq-id="${s.id}">
+            <div class="saq-card-top">
+              <span>Module ${s.module}</span>
+              <span>${badge}</span>
+            </div>
+            <div class="saq-card-title">${s.title}</div>
+          </button>
+        `;
+      })
+      .join("");
+
+    strip.querySelectorAll(".saq-card-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        loadSaqIntoWorkspace(btn.getAttribute("data-saq-id"));
+      });
+    });
+  }
+
+  function loadSaqIntoWorkspace(saqId) {
+    const list = getSaqList();
+    const saq = list.find((s) => s.id === saqId);
+    if (!saq) return;
+
+    activeSaqId = saq.id;
+    saqSubmitted = false;
+    saqElapsedSeconds = 0;
+
+    if (saqTimerInterval) clearInterval(saqTimerInterval);
+    updateSaqTimerDisplay();
+    saqTimerInterval = setInterval(() => {
+      const saqView = document.getElementById("view-saq");
+      if (saqView && saqView.classList.contains("active") && !saqSubmitted) {
+        saqElapsedSeconds++;
+        updateSaqTimerDisplay();
+      }
+    }, 1000);
+
+    renderSaqSelectorStrip();
+
+    const ws = document.getElementById("saqWorkspace");
+    const stimPane = document.getElementById("saqStimulusPane");
+    if (saq.stimulus) {
+      ws?.classList.remove("no-stimulus");
+      stimPane?.classList.remove("hidden");
+      document.getElementById("saqStimTypeBadge").textContent = saq.type || "Primary Source";
+      document.getElementById("saqModBadge").textContent = `Module ${saq.module}`;
+      document.getElementById("saqStimTitle").textContent = saq.stimulus.title || "";
+      document.getElementById("saqStimBody").innerHTML = saq.stimulus.content || "";
+      document.getElementById("saqStimAttribution").textContent = saq.stimulus.attribution || "";
+    } else {
+      ws?.classList.add("no-stimulus");
+      stimPane?.classList.add("hidden");
+    }
+
+    document.getElementById("saqMetaModule").textContent = `Module ${saq.module}: ${saq.moduleTitle}`;
+    document.getElementById("saqMetaType").textContent = `${saq.type} SAQ`;
+    document.getElementById("saqTitleHeading").textContent = saq.title;
+    document.getElementById("saqPromptIntro").textContent = saq.promptIntro || "Answer (a), (b), and (c).";
+
+    const partsContainer = document.getElementById("saqPartsContainer");
+    if (partsContainer) {
+      partsContainer.innerHTML = saq.parts
+        .map(
+          (p) => `
+          <div class="saq-part-box">
+            <div class="saq-part-prompt">
+              <span class="saq-part-label">(${p.label})</span> ${p.prompt}
+            </div>
+            <textarea class="saq-textarea" data-saq-part="${p.label}" placeholder="Write 2–4 sentences using ACE: Answer the prompt directly, Cite specific historical evidence, and Explain how it proves your point..."></textarea>
+            <div class="saq-word-count" id="saqWc_${p.label}">0 words</div>
+            <div class="saq-rubric-box hidden">
+              <div class="rubric-line"><strong>College Board Scoring Guideline (1 pt):</strong> ${p.rubric}</div>
+              <div class="model-line"><strong>Model 3/3 ACE Response:</strong> ${p.modelResponse}</div>
+            </div>
+          </div>
+        `
+        )
+        .join("");
+
+      partsContainer.querySelectorAll(".saq-textarea").forEach((ta) => {
+        ta.addEventListener("input", () => {
+          const lbl = ta.getAttribute("data-saq-part");
+          const words = ta.value.trim() ? ta.value.trim().split(/\s+/).length : 0;
+          const wcEl = document.getElementById(`saqWc_${lbl}`);
+          if (wcEl) wcEl.textContent = `${words} word${words === 1 ? "" : "s"}`;
+        });
+      });
+    }
+
+    document.getElementById("saqScoreSummaryBox")?.classList.add("hidden");
+    document.querySelectorAll(".saq-score-btn").forEach((b) => b.classList.remove("selected"));
+    const statusEl = document.getElementById("saqSaveStatusMsg");
+    if (statusEl) statusEl.textContent = "";
+  }
+
+  function updateSaqTimerDisplay() {
+    const mins = Math.floor(saqElapsedSeconds / 60);
+    const rem = saqElapsedSeconds % 60;
+    const textEl = document.getElementById("saqTimerText");
+    if (textEl) textEl.textContent = `${String(mins).padStart(2, "0")}:${String(rem).padStart(2, "0")}`;
+    const paceEl = document.getElementById("saqPaceIndicator");
+    if (paceEl) {
+      if (saqElapsedSeconds <= 800) {
+        paceEl.textContent = "AP Pace OK (<13:20)";
+        paceEl.classList.remove("behind");
+      } else {
+        paceEl.textContent = "Over 13:20 Pace";
+        paceEl.classList.add("behind");
+      }
+    }
+  }
+
+  function saveCompletedSaqAttempt(scorePts) {
+    const saq = getSaqList().find((s) => s.id === activeSaqId);
+    if (!saq) return;
+    const responses = {};
+    document.querySelectorAll(".saq-textarea").forEach((ta) => {
+      responses[ta.getAttribute("data-saq-part")] = ta.value.trim();
+    });
+
+    if (!Array.isArray(userStats.saqHistory)) userStats.saqHistory = [];
+    userStats.saqHistory.unshift({
+      id: saq.id,
+      module: saq.module,
+      title: saq.title,
+      score: scorePts,
+      durationSeconds: saqElapsedSeconds,
+      date: new Date().toLocaleDateString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }),
+      responses
+    });
+    userStats.saqHistory = userStats.saqHistory.slice(0, 25);
+    userStats.totalStudySeconds = (userStats.totalStudySeconds || 0) + saqElapsedSeconds;
+    saveStats();
+    renderSaqSelectorStrip();
+
+    const statusEl = document.getElementById("saqSaveStatusMsg");
+    if (statusEl) {
+      statusEl.textContent = `Saved ${scorePts}/3 score & your written (a)/(b)/(c) responses to Cloud Sync and Parent Tracker!`;
     }
   }
 })();

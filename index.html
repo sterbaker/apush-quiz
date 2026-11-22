@@ -16,15 +16,19 @@
       <div class="brand" id="brandHomeBtn" role="button" tabindex="0" title="Return to Dashboard">
         <div class="brand-badge">APUSH</div>
         <div class="brand-text">
-          <h1>Road to a 5 <span class="unit-highlight">Unit 3 Mastery Lab</span></h1>
-          <p>Period 3 (1754–1800) + Cumulative Units 1–2 Test Prep</p>
+          <h1>Road to a 5 <span class="unit-highlight">APUSH Mastery Lab</span></h1>
+          <p>Unit 4 (Modules 4.1–4.8 MCQ &amp; SAQ) + Units 1–3 Cumulative</p>
         </div>
       </div>
 
       <nav class="main-nav" aria-label="Main Navigation">
         <button class="nav-tab active" data-view="dashboard">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
-          Dashboard &amp; Builder
+          MCQ Builder
+        </button>
+        <button class="nav-tab" data-view="saq">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          SAQ Practice (4.5–4.8)
         </button>
         <button class="nav-tab" data-view="mastery">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
@@ -36,7 +40,7 @@
         </button>
         <button class="nav-tab" data-view="strategy">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          Unit 3 Cheat Sheet
+          Cheat Sheet
         </button>
       </nav>
 
@@ -593,6 +597,93 @@
       </div>
     </section>
 
+    <!-- ==================== VIEW 4C: SAQ SHORT ANSWER PRACTICE LAB (4.5–4.8) ==================== -->
+    <section id="view-saq" class="view-section">
+      <div class="section-intro">
+        <div>
+          <h2>SAQ Short Answer Question Lab (Modules 4.5–4.8)</h2>
+          <p>Practice authentic 3-part <strong>(a), (b), (c)</strong> APUSH Short Answer Questions using the <strong>ACE</strong> method (<em>Answer &bull; Cite specific evidence &bull; Explain</em>). Recommended pace: 13 minutes per SAQ.</p>
+        </div>
+        <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
+          <div class="timer-display" id="saqTimerBox" title="AP Exam Pace: 13m 20s per SAQ">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span id="saqTimerText">00:00</span>
+            <span class="pace-indicator" id="saqPaceIndicator">Target &lt; 13:20</span>
+          </div>
+          <button class="btn-secondary" id="randomSaqBtn">&#9889; Random 4.5–4.8 SAQ</button>
+        </div>
+      </div>
+
+      <!-- Module Filter Pills + SAQ Picker -->
+      <div class="presets-bar" style="margin-bottom: 1rem;">
+        <span class="presets-label">Filter by Module:</span>
+        <button class="cluster-pill active" data-saq-mod="all">All (4.5–4.8)</button>
+        <button class="cluster-pill" data-saq-mod="4.5">4.5: Jacksonian Conflicts</button>
+        <button class="cluster-pill" data-saq-mod="4.6">4.6: Awakening &amp; Reform</button>
+        <button class="cluster-pill" data-saq-mod="4.7">4.7: Abolition &amp; Women's Rights</button>
+        <button class="cluster-pill" data-saq-mod="4.8">4.8: Old South &amp; Resistance</button>
+      </div>
+
+      <div class="saq-selector-strip" id="saqSelectorStrip">
+        <!-- Populated dynamically -->
+      </div>
+
+      <!-- Active SAQ Split Workspace -->
+      <div class="quiz-workspace" id="saqWorkspace" style="margin-top: 1.15rem;">
+        <!-- Left: Stimulus (hidden for No Stimulus SAQs) -->
+        <div class="stimulus-pane" id="saqStimulusPane">
+          <div class="stimulus-header">
+            <span class="stimulus-type-badge" id="saqStimTypeBadge">Primary Source</span>
+            <span class="stimulus-set-info" id="saqModBadge">Module 4.5</span>
+          </div>
+          <h3 class="stimulus-title" id="saqStimTitle">Document Title</h3>
+          <div class="stimulus-body" id="saqStimBody"></div>
+          <div class="stimulus-attribution" id="saqStimAttribution"></div>
+        </div>
+
+        <!-- Right: 3-Part Prompt + ACE Inputs + Rubric Grading -->
+        <div class="question-pane">
+          <div class="question-meta-bar">
+            <span class="meta-badge unit-badge" id="saqMetaModule">Module 4.5</span>
+            <span class="meta-badge skill-badge" id="saqMetaType">Primary Source SAQ</span>
+            <span class="meta-badge topic-badge">ACE Method: 2–4 crisp sentences per part</span>
+          </div>
+
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;" id="saqTitleHeading">SAQ Title</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;" id="saqPromptIntro"></p>
+
+          <div id="saqPartsContainer" class="saq-parts-stack">
+            <!-- Parts (a), (b), (c) populated dynamically -->
+          </div>
+
+          <div class="question-actions-bar" style="margin-top: 1.15rem;">
+            <button class="btn-secondary" id="clearSaqDraftBtn">Clear Responses</button>
+            <div style="display:flex; gap: 0.6rem; flex-wrap:wrap;">
+              <button class="btn-secondary hidden" id="gradeSaqAiBtn" title="Uses your optional Gemini/OpenAI key if saved">Grade with AI</button>
+              <button class="btn-primary" id="submitSaqBtn">Submit &amp; Reveal 3-Point Rubric</button>
+            </div>
+          </div>
+
+          <!-- Self-Score & Cloud Save Bar (Shown after revealing rubric) -->
+          <div class="rationale-box hidden" id="saqScoreSummaryBox" style="padding: 1rem;">
+            <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.75rem;">
+              <div>
+                <h4 style="font-size:0.95rem;">Self-Grade Your SAQ (College Board 0–3 Scale)</h4>
+                <p style="font-size:0.8rem; color:var(--text-secondary);">Compare each part against the official rubric and 3/3 model response above, then record your score to sync to the Parent Tracker.</p>
+              </div>
+              <div style="display:flex; gap:0.4rem; align-items:center;">
+                <button class="btn-xs saq-score-btn" data-saq-pts="0">0 / 3</button>
+                <button class="btn-xs saq-score-btn" data-saq-pts="1">1 / 3</button>
+                <button class="btn-xs saq-score-btn" data-saq-pts="2">2 / 3</button>
+                <button class="btn-xs saq-score-btn" data-saq-pts="3">3 / 3</button>
+              </div>
+            </div>
+            <div id="saqSaveStatusMsg" style="font-size:0.8rem; margin-top:0.5rem; color:var(--success-text); font-weight:600;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ==================== VIEW 5: UNIT 3 CHEAT SHEET & TEST STRATEGY ==================== -->
     <section id="view-strategy" class="view-section">
       <div class="section-intro">
@@ -805,6 +896,7 @@
   <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
   <script src="questions.js"></script>
+  <script src="saqs.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
