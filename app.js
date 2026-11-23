@@ -2463,9 +2463,9 @@ Return ONLY valid JSON matching this structure:
     }
   }
 
-  // ==================== SAQ SHORT ANSWER PRACTICE LAB (4.5–4.8) ====================
+  // ==================== SAQ SHORT ANSWER PRACTICE LAB (4.5–4.8 + PAST UNITS) ====================
   let activeSaqId = null;
-  let activeSaqFilterMod = "all";
+  let activeSaqFilterMod = "4.5-4.8";
   let saqElapsedSeconds = 0;
   let saqSubmitted = false;
 
@@ -2533,6 +2533,12 @@ Return ONLY valid JSON matching this structure:
   function getFilteredSaqs() {
     const list = getSaqList();
     if (activeSaqFilterMod === "all") return list;
+    if (activeSaqFilterMod === "4.5-4.8") {
+      return list.filter((s) => ["4.5", "4.6", "4.7", "4.8"].includes(s.module));
+    }
+    if (activeSaqFilterMod === "4.1-4.4") {
+      return list.filter((s) => ["4.1", "4.2", "4.3", "4.4"].includes(s.module));
+    }
     return list.filter((s) => s.module === activeSaqFilterMod);
   }
 
