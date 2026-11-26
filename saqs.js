@@ -1,5 +1,5 @@
-// AP US History (APUSH) Comprehensive SAQ Bank — Unit 4 (4.1–4.8) & Unit 3 (3.2–3.12)
-// 22 authentic 3-part College Board Short Answer Questions with scoring guidelines & ACE model responses.
+// AP US History (APUSH) Comprehensive SAQ Bank — Units 1–4 (28 SAQs)
+// Authentic 3-part College Board Short Answer Questions with scoring guidelines & ACE model responses.
 
 window.APUSH_SAQS = [
   {
@@ -689,6 +689,196 @@ window.APUSH_SAQS = [
         "prompt": "Briefly explain ONE specific outcome of the Battle of Fallen Timbers (1794) and the Treaty of Greenville (1795) for United States expansion and Native American nations in the Northwest Territory.",
         "rubric": "1 pt: Explains that General Anthony Wayne's victory over the Western Confederacy (Miami, Shawnee, and allied nations led by Little Turtle/Blue Jacket) at the Battle of Fallen Timbers in 1794—coupled with British refusal to shelter Native fighters at Fort Miami—forced twelve Native American nations to sign the Treaty of Greenville (1795), ceding most of present-day Ohio and parts of Indiana to the United States in exchange for annuity payments and opening the Northwest Territory to rapid white settlement. Do NOT accept vague statements like 'the U.S. won more land' without naming the Western Confederacy/Ohio cession or white settlement.",
         "modelResponse": "Following General Anthony Wayne's decisive victory over the Western Confederacy at the Battle of Fallen Timbers in 1794, twelve Native American nations were compelled to sign the Treaty of Greenville in 1795. Under the treaty, Indigenous leaders ceded most of present-day Ohio and parts of Indiana to the United States in exchange for annual federal payments, shattering organized Native military resistance in the region and opening the Northwest Territory to rapid American settlement."
+      }
+    ]
+  },
+  {
+    "id": "saq_u1_1",
+    "module": "U1",
+    "moduleTitle": "Unit 1 (1.2–1.4): Pre-Contact Societies & Columbian Exchange",
+    "title": "Pre-Contact Diversity and the Columbian Exchange (1491–1607)",
+    "type": "Secondary Source",
+    "stimulus": {
+      "title": "Biological Consequences of Transatlantic Contact",
+      "content": "\"The two worlds, which God had cast asunder, were reunited, and the two halves of the planet began to merge into a single biological system. The most immediate and catastrophic consequence of this reunion was the arrival of Old World pathogens in the Americas, where Indigenous populations lacked immunological defenses and suffered demographic collapse on an unprecedented scale. Yet the exchange was never one-sided: American food crops—above all maize and the potato—crossed the Atlantic to become dietary staples that fueled rapid population growth across Europe, Africa, and Asia, even as European livestock reshaped American grasslands.\"",
+      "attribution": "— Adapted from a historical synthesis on transatlantic ecology, 1972"
+    },
+    "promptIntro": "Using the excerpt, answer (a), (b), and (c).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Briefly describe ONE major argument made in the excerpt regarding the consequences of transatlantic contact after 1492.",
+        "rubric": "1 pt: Accurately identifies a central argument from the excerpt—either that Old World diseases caused catastrophic demographic collapse among immunologically vulnerable Indigenous Americans, or that the Columbian Exchange was a bidirectional biological transformation in which New World crops (maize, potatoes) fueled Old World population growth while European livestock altered American environments. Do NOT accept vague statements like 'things were traded between Europe and America' without capturing the biological/demographic argument.",
+        "modelResponse": "The excerpt argues that post-1492 transatlantic contact merged previously isolated hemispheres into a single biological system with profound, bidirectional demographic consequences. While Old World pathogens devastated Indigenous American populations who lacked immunity, calorie-rich New World crops like maize and potatoes simultaneously drove rapid population growth across Europe, Africa, and Asia."
+      },
+      {
+        "label": "b",
+        "prompt": "Briefly explain ONE specific way pre-contact Indigenous societies in North America adapted to their local environments prior to 1492, using an example from ONE of the following regions: the Eastern Woodlands, the Great Plains, or the Pacific Northwest.",
+        "rubric": "1 pt: Explains a specific environmental adaptation in one named region: (1) Eastern Woodlands/Northeast: 'Three Sisters' agriculture (maize, beans, squash) supporting semi-permanent villages and political confederacies like the Haudenosaunee (Iroquois); (2) Great Plains: mobile hunter-gatherer bands tracking bison herds (and using controlled burns to maintain grasslands); or (3) Pacific Northwest: permanent cedar-plank villages and stratified societies (potlatch) sustained by abundant salmon runs and marine resources. Do NOT accept post-contact adaptations (e.g., Spanish horses on the Great Plains) or generic claims that 'Native Americans lived off the land.'",
+        "modelResponse": "In the Eastern Woodlands prior to 1492, Indigenous peoples such as the Haudenosaunee (Iroquois) adapted to fertile temperate forests by cultivating the 'Three Sisters'—maize, beans, and squash—planted together to replenish soil nitrogen and maximize yields. This intensive agriculture supported relatively dense, semi-permanent villages and complex political confederacies without requiring constant migration."
+      },
+      {
+        "label": "c",
+        "prompt": "Briefly explain ONE specific demographic or economic impact of EITHER Old World diseases on the Americas OR New World crops on the Eastern Hemisphere between 1492 and 1607.",
+        "rubric": "1 pt: Explains a specific impact between 1492 and 1607: for Old World diseases (smallpox, measles, influenza), up to 80–90% Indigenous mortality fractured empires (e.g., Aztec/Mexica, Inca), eased Spanish conquest, and created severe colonial labor shortages that spurred the transatlantic African slave trade; OR for New World crops (maize, potatoes, cassava), higher caloric yields per acre reduced famines, increased European/African/Asian population growth, and expanded Old World agricultural surpluses and urbanization. Do NOT accept vague claims that 'many people died' or 'people ate new foods' without explaining a specific demographic or economic consequence.",
+        "modelResponse": "The introduction of Old World diseases such as smallpox and measles devastated Indigenous populations by as much as 80 to 90 percent in many regions between 1492 and 1607, shattering political and social structures within the Mexica (Aztec) and Inca empires. Economically, this catastrophic demographic collapse created acute labor shortages on Spanish plantations and silver mines, prompting colonists to import enslaved Africans to replace dwindling Indigenous workers."
+      }
+    ]
+  },
+  {
+    "id": "saq_u1_2",
+    "module": "U1",
+    "moduleTitle": "Unit 1 (1.5): Spanish Colonial Labor & Casta System",
+    "title": "Debating Spanish Rule and Colonial Labor Systems (1550)",
+    "type": "Primary Source",
+    "stimulus": {
+      "title": "Debate Over the Treatment of Indigenous Peoples, 1550",
+      "content": "Excerpt 1:\n\"Those who are dim-witted and mentally lazy, although they may be physically strong enough to fulfill all the necessary tasks, are by nature slaves. It is just and useful that it be this way. . . . How can we doubt that these people, so uncivilized, so barbaric, so contaminated with so many sins and obscenities, have been justly conquered by such an excellent, pious, and most just king?\"\n\nExcerpt 2:\n\"All the peoples of the world are men, and the definition of all men, collectively and severally, is one: that they are rational beings. . . . Thus all mankind is one. The only proper method of spreading the Christian faith is by peaceful persuasion, gentle teaching, and good example, not by war, terror, and forced servitude.\"",
+      "attribution": "— Adapted from formal disputations before the Spanish Crown, 1550"
+    },
+    "promptIntro": "Using the excerpts, answer (a), (b), and (c).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Briefly describe ONE major difference between Excerpt 1 and Excerpt 2 regarding the nature of Indigenous peoples or the justification for Spanish rule.",
+        "rubric": "1 pt: Accurately contrasts Excerpt 1's argument that Indigenous peoples are 'by nature slaves' and uncivilized—thereby justifying military conquest and forced subjugation—with Excerpt 2's argument that all humans are rational beings created equal who must be converted through peaceful persuasion rather than war and forced servitude. Do NOT accept vague responses like 'one liked Native Americans and the other didn't' without explaining the philosophical/religious contrast over rationality and coercion.",
+        "modelResponse": "Excerpt 1 invokes classical notions of natural hierarchy to argue that Indigenous peoples are inherently inferior ('by nature slaves') and 'barbaric,' which justifies Spanish military conquest and forced subjugation. By contrast, Excerpt 2 asserts the shared humanity and rationality of all peoples, arguing that Christianity must be spread solely through peaceful persuasion rather than violence or coerced labor."
+      },
+      {
+        "label": "b",
+        "prompt": "Briefly explain ONE specific colonial labor system or imperial reform implemented by the Spanish Crown in the Americas between 1500 and 1560.",
+        "rubric": "1 pt: Explains a specific labor system or reform: (1) the encomienda system (Crown grants of Indigenous tribute and labor to conquistadors in exchange for Christian instruction); (2) the New Laws of 1542 (imperial legislation banning Indigenous enslavement and phasing out hereditary encomiendas after lobbying by reformers); or (3) the repartimiento system (a rotational, state-regulated forced labor draft replacing private encomiendas). Do NOT accept generic statements about 'Spanish slavery' without naming and explaining encomienda, repartimiento, or the New Laws of 1542.",
+        "modelResponse": "Early in its colonization, the Spanish Crown instituted the encomienda system, granting conquistadors the right to extract tribute and forced labor from specific Indigenous communities in exchange for nominal protection and Catholic instruction. Following reports of widespread abuse and demographic collapse, the Crown issued the New Laws of 1542 to abolish Indigenous chattel slavery and phase out hereditary encomiendas, eventually shifting toward the state-regulated repartimiento labor draft."
+      },
+      {
+        "label": "c",
+        "prompt": "Briefly explain ONE specific way the debate over Indigenous labor and resulting Spanish policies contributed to the rise of the transatlantic African slave trade OR the casta system in Spanish America.",
+        "rubric": "1 pt: Explains either: (1) African slave trade: as the New Laws of 1542 and reformers' advocacy restricted Indigenous enslavement while Native populations collapsed from disease, Spanish colonists (and initially some reformers) turned increasingly to enslaved Africans—who were viewed as legally enslavable and resistant to Old World diseases—to work sugar plantations and silver mines; OR (2) casta system: extensive intermarriage and racial mixing among Spanish colonists (peninsulares/criollos), Indigenous peoples, and enslaved Africans produced a rigid, legalistic racial hierarchy (mestizos, mulattos/zambos) that determined taxes, legal rights, and social status. Do NOT accept vague answers that 'racism started' without connecting Spanish labor policy or demographic mixing to African slavery or the casta hierarchy.",
+        "modelResponse": "As the New Laws of 1542 curtailed the outright enslavement of Indigenous peoples and Old World epidemics decimated Native workforces, Spanish colonists faced severe labor shortages on Caribbean sugar plantations and mainland estates. Consequently, the Spanish Empire increasingly relied on the transatlantic slave trade to import enslaved Africans, embedding racialized chattel slavery into the colonial economy alongside the rigid casta hierarchy."
+      }
+    ]
+  },
+  {
+    "id": "saq_u1_3",
+    "module": "U1",
+    "moduleTitle": "Unit 1 (1.6): Cultural & Religious Interactions",
+    "title": "European-Indigenous Cultural and Religious Interactions (1500–1700)",
+    "type": "No Stimulus",
+    "stimulus": null,
+    "promptIntro": "Answer (a), (b), and (c).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Briefly explain ONE specific cause OR consequence of the Pueblo Revolt of 1680 in Spanish New Mexico.",
+        "rubric": "1 pt: Explains a specific cause (e.g., Spanish suppression of traditional Pueblo religious practices and kivas, forced tribute and labor under encomienda, or prolonged drought and Apache raids undermining Spanish authority) OR a specific consequence (e.g., the Pueblo expelled Spanish colonists and missionaries from New Mexico for twelve years under Popé; upon reconquest in the 1690s, Spain ended encomienda labor and granted greater religious autonomy/toleration to Pueblo communities). Do NOT accept generic statements like 'Native Americans rebelled because they were mad' without citing specific causes or outcomes.",
+        "modelResponse": "The Pueblo Revolt of 1680 was triggered by decades of Spanish coercion, including the forced labor of encomienda, heavy tribute demands, and Franciscan missionaries' violent suppression of traditional Pueblo kivas and religious ceremonies. Led by Popé, the coordinated uprising drove Spanish settlers out of New Mexico for twelve years and forced Spain, after its 1690s reconquest, to abolish encomienda labor and tolerate Pueblo spiritual practices."
+      },
+      {
+        "label": "b",
+        "prompt": "Briefly explain ONE specific way Spanish missionaries' approaches to Native Americans differed from French OR Dutch colonists' approaches in North America between 1500 and 1700.",
+        "rubric": "1 pt: Explains a clear contrast: Spanish colonization emphasized direct territorial conquest, large-scale Franciscan/Catholic missions, and coercive religious conversion/assimilation of dense Indigenous populations; by contrast, French (and Dutch) colonies had small European populations focused on the fur trade, relying on diplomatic alliances, gift-giving, intermarriage (métis), and Jesuit accommodation of Indigenous languages and customs rather than military subjugation. Do NOT accept vague claims that 'the French were nicer' without citing the fur trade, demographic differences, or diplomatic/religious practices.",
+        "modelResponse": "Unlike Spanish colonizers, who used military force and permanent mission complexes to conquer and forcibly convert large Indigenous populations, French colonists in New France were vastly outnumbered and centered their economy on the fur trade. Consequently, the French relied on mutual diplomatic alliances with nations such as the Huron and Algonquin, encouraging intermarriage and relying on Jesuit missionaries who learned Native languages and sought accommodation rather than coercion."
+      },
+      {
+        "label": "c",
+        "prompt": "Briefly explain ONE specific example of cultural syncretism or mutual adaptation between Native Americans and Europeans during the colonial period.",
+        "rubric": "1 pt: Explains a specific example of two-way cultural blending or adaptation, such as: Pueblo and Mexican Indigenous communities blending Catholic saints and iconography with traditional kachina/ancestral rituals; Plains nations adopting European horses and firearms to transform bison hunting and warfare; or French/Dutch fur traders adopting Indigenous languages, kinship rituals, birchbark canoes, and snowshoes. Do NOT accept one-sided examples of pure forced assimilation without showing blending or mutual adaptation.",
+        "modelResponse": "In Spanish New Mexico and New Spain, Indigenous peoples practiced religious syncretism by blending Catholic rituals and veneration of saints with their own traditional spiritual beliefs, such as associating Christian figures with ancestral kachinas or local sacred landscapes. Meanwhile, across the Great Plains, Indigenous nations adopted European horses—originally brought by the Spanish—and integrated them into existing hunting and diplomatic cultures, dramatically expanding their mobility and bison-hunting range."
+      }
+    ]
+  },
+  {
+    "id": "saq_u2_1",
+    "module": "U2",
+    "moduleTitle": "Unit 2 (2.2–2.3): New England vs. Chesapeake Colonies",
+    "title": "Founding Visions: New England and the Chesapeake (1609–1630)",
+    "type": "Primary Source",
+    "stimulus": {
+      "title": "Colonial Founding Documents, 1618 and 1630",
+      "content": "Excerpt 1 (1618):\n\"For the better encouragement of all sorts of persons that shall transport themselves or others to plant and inhabit in Virginia, we do hereby order and grant that every person who shall at his own cost transport any person thither shall have fifty acres of land for himself and fifty acres for every person so transported, to be held in free and common socage, for the advancement of profitable commodities and trade.\"\n\nExcerpt 2 (1630):\n\"We must delight in each other, make others' conditions our own, rejoice together, mourn together, labor and suffer together, always having before our eyes our commission and community in the work, our community as members of the same body. . . . For we must consider that we shall be as a city upon a hill. The eyes of all people are upon us.\"",
+      "attribution": "— Colonial company instructions and a settler's lay sermon, 1618 and 1630"
+    },
+    "promptIntro": "Using the excerpts, answer (a), (b), and (c).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Briefly describe ONE major difference between the colonial goals or social ideals expressed in Excerpt 1 and Excerpt 2.",
+        "rubric": "1 pt: Accurately contrasts Excerpt 1's emphasis on individual economic profit, private land accumulation (the 50-acre headright), and commercial trade in Virginia with Excerpt 2's emphasis on a collective religious covenant, mutual social obligation, and serving as a moral example ('city upon a hill') in Massachusetts Bay. Do NOT accept vague claims that 'one was about money and the other about religion' without referencing specific ideas from both excerpts.",
+        "modelResponse": "Excerpt 1 reflects an individualistic, commercial vision for Virginia, using 50-acre headright land grants to incentivize private investment and profitable commodity production. In contrast, Excerpt 2 articulates a communal religious covenant for Massachusetts Bay, urging settlers to subordinate personal gain to collective mutual care so their godly society would stand as an exemplary 'city upon a hill.'"
+      },
+      {
+        "label": "b",
+        "prompt": "Briefly explain ONE specific demographic OR economic contrast between the Chesapeake colonies and the New England colonies between 1607 and 1700.",
+        "rubric": "1 pt: Explains a specific demographic or economic contrast: (1) Demographic: the Chesapeake initially attracted mostly young, single male indentured servants who suffered high mortality from malaria/typhoid and skewed sex ratios, whereas New England attracted intact Puritan family units with balanced sex ratios, healthier climates, and rapid natural population growth; OR (2) Economic: the Chesapeake developed a plantation monoculture centered on cash-crop tobacco and bound labor, whereas New England's rocky soil fostered small family farms alongside a diversified commercial economy of timber, fishing, shipbuilding, and maritime trade. Do NOT accept vague statements like 'the North had factories and the South had cotton' (anachronistic for the 17th century).",
+        "modelResponse": "Demographically, 17th-century Chesapeake colonies like Virginia and Maryland were populated overwhelmingly by young, single male indentured servants who endured high mortality rates from waterborne diseases and skewed sex ratios that slowed natural population growth. By contrast, New England was settled largely by intact Puritan family units who enjoyed a healthier climate, longer life expectancies, and rapid natural population increase."
+      },
+      {
+        "label": "c",
+        "prompt": "Briefly explain ONE specific way religious dissent or church governance shaped the political or territorial development of New England between 1630 and 1675.",
+        "rubric": "1 pt: Explains a specific development such as: (1) Puritan authorities in Massachusetts Bay restricting the colony's franchise (voting) to male 'visible saints' (church members) and enforcing religious orthodoxy; (2) the banishment of dissenters Roger Williams (who advocated separation of church and state and fair land purchases from Native Americans) and Anne Hutchinson (antinomian controversy), leading to the founding of Rhode Island as a haven for religious toleration; or (3) the Half-Way Covenant (1662), which eased church membership rules as second-generation piety declined. Do NOT accept vague claims that 'Puritans didn't like other religions' without naming a specific political institution, dissenter, or colony.",
+        "modelResponse": "Puritan leaders in Massachusetts Bay restricted voting in colonial elections to male church members and banished religious dissenters who threatened communal orthodoxy. When minister Roger Williams challenged the colony's union of church and state and Anne Hutchinson defied clerical authority, both were exiled and helped establish Rhode Island as a separate colony grounded in religious toleration."
+      }
+    ]
+  },
+  {
+    "id": "saq_u2_2",
+    "module": "U2",
+    "moduleTitle": "Unit 2 (2.4–2.6): Mercantilism, Bacon's Rebellion & Slavery",
+    "title": "Mercantilism, Labor Transitions, and Resistance (1651–1754)",
+    "type": "No Stimulus",
+    "stimulus": null,
+    "promptIntro": "Answer (a), (b), and (c).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Briefly explain ONE specific way British mercantilist policies OR the practice of 'salutary neglect' affected the economic or political development of the North American colonies between 1651 and 1754.",
+        "rubric": "1 pt: Explains either: (1) Mercantilism/Navigation Acts (1651–1696): required colonial goods (tobacco, sugar, indigo) to be shipped on British/colonial vessels through British ports, which stimulated New England shipbuilding and guaranteed protected markets while generating colonial resentment and smuggling; OR (2) Salutary Neglect: lax British enforcement of trade laws under Robert Walpole allowed colonial assemblies to expand self-governance (power of the purse) and fostered widespread colonial smuggling and commercial autonomy. Do NOT accept vague statements like 'Britain taxed the colonies' (anachronistic before 1763).",
+        "modelResponse": "Under the Navigation Acts, Britain enforced mercantilist policies requiring colonial 'enumerated goods' like tobacco to be transported exclusively on English or colonial ships and routed through English ports. While this restricted direct trade with rival empires, it also stimulated a thriving shipbuilding and maritime carrying industry in New England while lax enforcement during 'salutary neglect' allowed colonial assemblies to exercise substantial political self-rule."
+      },
+      {
+        "label": "b",
+        "prompt": "Briefly explain ONE specific way Bacon's Rebellion (1676) accelerated the transition from indentured servitude to racialized African chattel slavery in the Chesapeake.",
+        "rubric": "1 pt: Explains how Nathaniel Bacon's 1676 uprising—in which landless former indentured servants (both white and Black) rebelled against Governor William Berkeley's elite Tidewater government over frontier Native land—terrified Virginia's planter elite. To prevent future cross-racial class rebellions, planters shifted away from volatile white indentured servants (who eventually became free and demanded land) toward lifelong, hereditary African chattel slavery, reinforced by slave codes (e.g., Virginia Slave Codes of 1705) that granted legal privileges to poor whites to divide them from enslaved Africans. Do NOT accept vague claims that 'Bacon's Rebellion ended indentured servitude' without explaining the planters' fear of landless freemen and the shift to racialized slavery.",
+        "modelResponse": "In Bacon's Rebellion (1676), impoverished former indentured servants—both white and Black—united to burn Jamestown and challenge Governor William Berkeley's Tidewater elite over access to frontier land. Fearing future uprisings by landless, armed freemen, Chesapeake planters rapidly replaced European indentured servants with enslaved Africans bound for life, enacting strict racial slave codes to cement a cross-class alliance among whites."
+      },
+      {
+        "label": "c",
+        "prompt": "Briefly explain ONE specific form of overt OR covert resistance by enslaved Africans in British North America between 1680 and 1754, using the Stono Rebellion (1739) or another specific historical example.",
+        "rubric": "1 pt: Explains either: (1) Overt resistance: the Stono Rebellion (1739) in South Carolina, where enslaved Africans led by Jemmy seized weapons, killed enslavers, and marched toward Spanish Florida (which promised freedom), prompting South Carolina's strict Negro Act of 1740; or the 1712 New York Slave Revolt; OR (2) Covert/everyday resistance: work slowdowns, breaking tools, feigning illness, running away to Maroon communities or Spanish Florida, or preserving African languages (Gullah), music, and kinship networks. Do NOT accept generic statements like 'slaves fought back' without a specific historical example or mechanism.",
+        "modelResponse": "In the 1739 Stono Rebellion in South Carolina, an armed band of enslaved Africans led by a literate Kongolese man named Jemmy raided a store for weapons and marched south toward Spanish Florida, where royal decrees promised freedom to fugitive slaves. Although the colonial militia suppressed the uprising, the rebellion terrified lowcountry planters and prompted the passage of the restrictive Negro Act of 1740."
+      }
+    ]
+  },
+  {
+    "id": "saq_u2_3",
+    "module": "U2",
+    "moduleTitle": "Unit 2 (2.7): First Great Awakening & Anglicization",
+    "title": "The First Great Awakening, Print Culture, and Colonial Society (1730–1754)",
+    "type": "Primary Source",
+    "stimulus": {
+      "title": "Revivalist Sermon Excerpt, c. 1740",
+      "content": "\"All our righteousness is as filthy rags; all our own works cannot save us. You must be born again! Do not trust in the cold, formal learning of unconverted ministers who have never felt the saving grace of God in their own hearts. Whether you be rich merchant or poor laborer, bond or free, the wrath of God hangs over the unconverted soul, and only an immediate, heartfelt turning to Christ can deliver you.\"",
+      "attribution": "— Adapted from an itinerant revivalist sermon, c. 1740"
+    },
+    "promptIntro": "Using the excerpt, answer (a), (b), and (c).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Briefly describe ONE religious or social idea expressed in the excerpt that challenged established colonial churches during the First Great Awakening (1730s–1740s).",
+        "rubric": "1 pt: Accurately identifies a challenging idea from the excerpt, such as: (1) the insistence on an immediate, emotional 'New Birth' conversion experience rather than formal doctrine or good works; (2) the denunciation of established, university-trained ministers as 'unconverted' and spiritually dead; or (3) spiritual egalitarianism—asserting that rich and poor, enslaved and free stood equally in need of grace. Do NOT accept vague claims that 'people became more religious' without identifying the challenge to clerical authority, formalism, or social hierarchy.",
+        "modelResponse": "The excerpt challenges established colonial churches by urging listeners to reject 'cold, formal learning' and distrust unconverted, university-educated ministers in favor of an immediate, emotional 'New Birth.' Furthermore, by declaring that rich merchants, laborers, and enslaved people all stand on equal spiritual footing before God, the revivalist message undermined traditional social and clerical hierarchies."
+      },
+      {
+        "label": "b",
+        "prompt": "Briefly explain ONE specific division or institutional consequence created by the First Great Awakening between 'New Lights' and 'Old Lights' in the British North American colonies.",
+        "rubric": "1 pt: Explains a specific consequence: (1) Congregationalist and Presbyterian churches fractured into 'Old Lights'/'Old Sides' (defending traditional, educated clergy and orderly worship) and 'New Lights'/'New Sides' (embracing itinerant preaching and emotional revivals); (2) New Lights founded new colleges—including Princeton (College of New Jersey), Rutgers, Brown, and Dartmouth—to train revivalist ministers; or (3) dissenting Baptist and Methodist congregations grew rapidly, especially in the South and backcountry, challenging established Anglican/Congregationalist tax support. Do NOT accept vague answers like 'churches split up' without naming Old/New Lights, specific denominations, or institutions.",
+        "modelResponse": "The First Great Awakening fractured Congregationalist and Presbyterian churches into 'Old Lights,' who defended traditional, college-educated clergy and orderly worship, and 'New Lights,' who championed itinerant preaching and emotional conversions. To train ministers sympathetic to the revivals, New Lights founded new institutions of higher learning—including the College of New Jersey (Princeton) and Dartmouth—while Baptist and Methodist congregations expanded rapidly."
+      },
+      {
+        "label": "c",
+        "prompt": "Briefly explain ONE specific way transatlantic print culture, Enlightenment ideas, OR the John Peter Zenger trial (1735) contributed to colonial political culture or 'Anglicization' in the 18th century.",
+        "rubric": "1 pt: Explains a specific contribution: (1) Print culture & Anglicization: colonial newspapers, pamphlets, and imported British goods integrated the colonies into a shared British Atlantic world, circulating shared consumer tastes and political/Enlightenment ideas (Locke, natural rights, Radical Whig warnings against tyranny); OR (2) Zenger Trial (1735): New York printer John Peter Zenger was acquitted of seditious libel for criticizing the royal governor because the jury accepted truth as a defense, establishing a vital colonial precedent for freedom of the press and public scrutiny of royal officials. Do NOT accept vague claims that 'newspapers were popular' without linking print, Enlightenment thought, or the Zenger verdict to colonial political culture or Anglicization.",
+        "modelResponse": "In the 1735 John Peter Zenger trial, a New York jury acquitted printer Zenger of seditious libel after his lawyer argued that publishing truthful criticisms of the royal governor was not a crime. The verdict, amplified by growing colonial newspapers and transatlantic print networks, established a powerful precedent for freedom of the press and encouraged colonists to claim traditional English liberties against arbitrary royal authority."
       }
     ]
   }

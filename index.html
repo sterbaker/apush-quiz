@@ -128,11 +128,14 @@
       <!-- Smart Quiz Presets Bar -->
       <div class="presets-bar">
         <span class="presets-label">1-Click Reading Quizzes &amp; Drills:</span>
-        <button class="preset-chip urgent-chip" data-preset="rq-4-1-4-2" style="background: var(--brand-primary); color: #fff; border-color: var(--brand-primary);">
-          <span class="chip-icon">&#128293;</span> RQ 4.1–4.2: Political/Econ &amp; Defend Nation
+        <button class="preset-chip urgent-chip" data-preset="rq-4-6-4-8" style="background: #0f766e; color: #fff; border-color: #0f766e;">
+          <span class="chip-icon">&#128293;</span> RQ 4.6–4.8: Reform, Abolition &amp; Old South (12 Qs)
         </button>
         <button class="preset-chip urgent-chip" data-preset="rq-4-3-4-5" style="background: var(--brand-accent); color: #fff; border-color: var(--brand-accent);">
           <span class="chip-icon">&#9889;</span> RQ 4.3–4.5: Market Rev, 2nd Party System &amp; Jackson Conflicts
+        </button>
+        <button class="preset-chip urgent-chip" data-preset="rq-4-1-4-2" style="background: var(--brand-primary); color: #fff; border-color: var(--brand-primary);">
+          <span class="chip-icon">&#127963;&#65039;</span> RQ 4.1–4.2: Political/Econ &amp; Defend Nation
         </button>
         <button class="preset-chip urgent-chip" data-preset="rq-4-1">
           <span class="chip-icon">&#127963;&#65039;</span> 4.1 Only
@@ -169,8 +172,9 @@
             <div class="section-header-inline">
               <label class="section-label" style="margin-bottom:0;">1. Choose Which Sections to Quiz</label>
               <div class="unit-quick-toggles">
+                <button type="button" class="btn-xs" id="selectU4LateBtn" title="Select ONLY Modules 4.6–4.8">Unit 4.6–4.8 Only</button>
                 <button type="button" class="btn-xs active" id="selectU4TomorrowBtn" title="Select ONLY Modules 4.3–4.5">Unit 4.3–4.5 Only</button>
-                <button type="button" class="btn-xs" id="selectUnit4OnlyBtn" title="Select all Unit 4 (4.1–4.5)">All Unit 4 (4.1–4.5)</button>
+                <button type="button" class="btn-xs" id="selectUnit4OnlyBtn" title="Select all Unit 4 (4.1–4.8)">All Unit 4 (4.1–4.8)</button>
                 <button type="button" class="btn-xs" id="selectUnit3OnlyBtn" title="Select all Unit 3 sections (3.2–3.12)">Unit 3 (3.2–3.12)</button>
                 <button type="button" class="btn-xs" id="clearTopicsBtn" title="Uncheck all so you can pick 1 or 2 specific sections">Clear All</button>
                 <button type="button" class="btn-xs" id="selectAllUnitsBtn" title="Include Units 1–4 for cumulative APUSH review">+ Cumulative</button>
@@ -624,7 +628,9 @@
         <button class="cluster-pill" data-saq-mod="4.8">4.8: Old South &amp; Resistance</button>
         <button class="cluster-pill" data-saq-mod="4.1-4.4">4.1–4.4 (Earlier Unit 4)</button>
         <button class="cluster-pill" data-saq-mod="U3">Unit 3 (1754–1800)</button>
-        <button class="cluster-pill" data-saq-mod="all">All SAQs (22)</button>
+        <button class="cluster-pill" data-saq-mod="U2">Unit 2 (1607–1754)</button>
+        <button class="cluster-pill" data-saq-mod="U1">Unit 1 (1491–1607)</button>
+        <button class="cluster-pill" data-saq-mod="all">All SAQs (28)</button>
       </div>
 
       <div class="saq-selector-strip" id="saqSelectorStrip">

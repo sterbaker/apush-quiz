@@ -364,7 +364,8 @@
       });
     });
 
-    // Unit 4.3-4.5 / Unit 4 All / Unit 3 / Clear All / Cumulative Quick Toggles
+    // Unit 4.6-4.8 / Unit 4.3-4.5 / Unit 4 All / Unit 3 / Clear All / Cumulative Quick Toggles
+    const btnU4Late = document.getElementById("selectU4LateBtn");
     const btnU4Tomorrow = document.getElementById("selectU4TomorrowBtn");
     const btnUnit4Only = document.getElementById("selectUnit4OnlyBtn");
     const btnUnit3Only = document.getElementById("selectUnit3OnlyBtn");
@@ -372,8 +373,17 @@
     const btnAllUnits = document.getElementById("selectAllUnitsBtn");
 
     function setQuickToggleActive(activeBtn) {
-      [btnU4Tomorrow, btnUnit4Only, btnUnit3Only, btnClearTopics, btnAllUnits].forEach((b) => {
+      [btnU4Late, btnU4Tomorrow, btnUnit4Only, btnUnit3Only, btnClearTopics, btnAllUnits].forEach((b) => {
         if (b) b.classList.toggle("active", b === activeBtn);
+      });
+    }
+
+    if (btnU4Late) {
+      btnU4Late.addEventListener("click", () => {
+        setQuickToggleActive(btnU4Late);
+        clearClusterHighlight();
+        showCumulativeDrawer = false;
+        renderUnitsFilterUI([4], ["4.6", "4.7", "4.8"]);
       });
     }
 
@@ -567,7 +577,18 @@
     const u4Topics = bank.units.find((u) => u.id === 4)?.topics.map((t) => t.id) || ["4.1", "4.2"];
     const allTopics = bank.units.flatMap((u) => u.topics.map((t) => t.id));
 
-    if (presetName === "rq-4-1-4-2") {
+    if (presetName === "rq-4-6-4-8") {
+      generateAndStartQuiz({
+        label: "RQ 4.6–4.8: Reform, Abolition & Old South",
+        strategy: "smart",
+        topics: ["4.6", "4.7", "4.8"],
+        format: "all",
+        count: 12,
+        feedbackMode: "tutor",
+        timerEnabled: true,
+        shuffleOptions: true
+      });
+    } else if (presetName === "rq-4-1-4-2") {
       generateAndStartQuiz({
         label: "RQ 4.1–4.2: Political/Econ & Defend the Nation",
         strategy: "smart",

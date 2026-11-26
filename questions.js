@@ -1,4 +1,4 @@
-// AP US History (APUSH) Comprehensive Question Bank — Units 1–4 (112 Questions, 26 Stimuli)
+// AP US History (APUSH) Comprehensive Question Bank — Units 1–4 (136 Questions, 30 Stimuli)
 // Authentic Honors/AP Exam-level multiple-choice questions with all-true distractors and balanced option lengths.
 
 window.APUSH_DATA = {
@@ -121,8 +121,8 @@ window.APUSH_DATA = {
     {
       "id": 4,
       "code": "Unit 4",
-      "title": "Period 4: 1800–1848 (Modules 4.1–4.5)",
-      "subtitle": "Jeffersonian Era, War of 1812, Market Revolution, 2nd Party System & Jackson",
+      "title": "Period 4: 1800–1848 (Modules 4.1–4.8)",
+      "subtitle": "Jeffersonian Era, Market Rev, Jackson, Reform, Abolition & Old South",
       "weight": "10–17% Exam Weight (Current Focus)",
       "topics": [
         {
@@ -144,6 +144,18 @@ window.APUSH_DATA = {
         {
           "id": "4.5",
           "title": "Conflicts of the Jacksonian Era"
+        },
+        {
+          "id": "4.6",
+          "title": "Religion, Reform, and Culture (Second Great Awakening, Transcendentalism & Institutions)"
+        },
+        {
+          "id": "4.7",
+          "title": "Abolitionism and Women's Rights (Garrison, Douglass & Seneca Falls)"
+        },
+        {
+          "id": "4.8",
+          "title": "The Old South, King Cotton, and Enslaved Resistance"
         }
       ]
     }
@@ -356,6 +368,38 @@ window.APUSH_DATA = {
       "title": "Memorial of a Native Nation to the United States Congress, 1830",
       "content": "“We wish to remain on the land of our fathers. We have a perfect and original right to remain without interruption or molestation. The treaties with us, and laws of the United States made in pursuance of treaties, guaranty our residence and our privileges, and secure us against intruders. ... It cannot be that the community we are addressing, remarkable for its intelligence and religious sensibilities, and pre-eminent for its devotion to the rights of man, will lay aside this character, and become the oppressor of a people who have made rapid advances in civilization, established a constitutional government, and trusted their future to the pledged faith of the American Republic.”",
       "attribution": "— Petition from the elected council of a southeastern Indigenous nation to the U.S. Congress, July 1830"
+    },
+    "stim_u4_9": {
+      "id": "stim_u4_9",
+      "unit": 4,
+      "type": "Primary Source",
+      "title": "Revivalist Sermon on Moral Agency, New York, 1835",
+      "content": "“A revival of religion is not a miracle, or dependent on a miracle, in any sense. It is a purely philosophical result of the right use of the constituted means—as much so as any other effect produced by the application of means... God has made man a moral free agent. Sin is a voluntary act of the mind, and holiness is equally a voluntary act. For a sinner to sit still and wait for God to convert him without his own agency is as absurd as for a farmer to sit in his parlor and wait for a harvest without plowing or sowing his field. When sinners are told that they are unable to repent, their consciences are lulled to sleep; when they are pressed with their immediate duty to make themselves a new heart, the Spirit of God awakens them to instant action.”",
+      "attribution": "— Published lectures by a prominent New York evangelical revivalist minister, 1835"
+    },
+    "stim_u4_10": {
+      "id": "stim_u4_10",
+      "unit": 4,
+      "type": "Primary Source",
+      "title": "Editorial in an Antislavery Newspaper, Boston, January 1831",
+      "content": "“Assenting to the 'self-evident truth' maintained in the American Declaration of Independence, 'that all men are created equal, and endowed by their Creator with certain inalienable rights—among which are life, liberty and the pursuit of happiness,' I shall strenuously contend for the immediate enfranchisement of our slave population. In an earlier address, I unreflectingly assented to the popular but pernicious doctrine of gradual abolition. I seize this opportunity to make a full and unequivocal recantation, and thus publicly to ask pardon of my God, of my country, and of my brethren the poor slaves, for having uttered a sentiment so full of timidity, injustice and absurdity... I am in earnest—I will not equivocate—I will not excuse—I will not retreat a single inch—AND I WILL BE HEARD.”",
+      "attribution": "— Opening editorial of a weekly abolitionist newspaper published in Boston, January 1831"
+    },
+    "stim_u4_11": {
+      "id": "stim_u4_11",
+      "unit": 4,
+      "type": "Primary Source",
+      "title": "Resolutions Adopted at a Convention in Upstate New York, July 1848",
+      "content": "“We hold these truths to be self-evident: that all men and women are created equal; that they are endowed by their Creator with certain inalienable rights... The history of mankind is a history of repeated injuries and usurpations on the part of man toward woman, having in direct object the establishment of an absolute tyranny over her. He has never permitted her to exercise her inalienable right to the elective franchise. He has compelled her to submit to laws, in the formation of which she had no voice. He has made her, if married, in the eye of the law, civilly dead. He has taken from her all right in property, even to the wages she earns... Resolved, That it is the duty of the women of this country to secure to themselves their sacred right to the elective franchise.”",
+      "attribution": "— Declaration and resolutions adopted by delegates at a women's rights convention in upstate New York, July 1848"
+    },
+    "stim_u4_12": {
+      "id": "stim_u4_12",
+      "unit": 4,
+      "type": "Primary Source",
+      "title": "Defense of Southern Social Institutions, 1837–1854",
+      "content": "“I hold that in the present state of civilization, where two races of different origin, and distinguished by color, and other physical differences, as well as intellectual, are brought together, the relation now existing in the slaveholding States between the two, is, instead of an evil, a good—a positive good... There never has yet existed a wealthy and civilized society in which one portion of the community did not, in point of fact, live on the labor of the other. Compare the condition of our enslaved laborers—cared for in sickness, infancy, and old age—with the free laborers of Northern cities and European factories, who are cast aside to starve in almshouses whenever market wages fall or their strength fails.”",
+      "attribution": "— Synthesized from public addresses and treatises by southern political theorists, 1837–1854"
     }
   },
   "questions": [
@@ -4950,6 +4994,990 @@ window.APUSH_DATA = {
       ],
       "keyTakeaway": "Jackson's handling of Nullification, the Bank War, and Indian Removal revealed a potent but selective executive power—asserting federal supremacy against South Carolina, deferring to Georgia against the Cherokee, and reshaping both the presidency and the economy.",
       "testTip": "Synthesize all three Jacksonian conflicts for SAQ/LEQ prompts: Jackson was *not* a simple 'states' rights' or 'nationalist' ideologue—he defended the Union against South Carolina, backed Georgia over the Cherokee, and expanded presidential power against the Bank."
+    },
+    {
+      "id": "q_u4_45",
+      "unit": 4,
+      "topic": "4.6",
+      "topicTitle": "Religion, Reform, and Culture (Second Great Awakening, Transcendentalism & Institutions)",
+      "skill": "Sourcing and Situation",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_9",
+      "stem": "The theological shift articulated in the 1835 excerpt—from passive reliance on divine election to active human moral agency—most directly reflected which broader religious movement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Second Great Awakening in regions such as western New York's Burned-Over District, where revivalists preached perfectionism and individual responsibility for salvation",
+          "isCorrect": true,
+          "explanation": "Correct. Charles Grandison Finney—whose revivals swept western New York's Burned-Over District—rejected strict Calvinist predestination in favor of moral free agency and human perfectionism, defining the Second Great Awakening."
+        },
+        {
+          "id": "B",
+          "text": "The First Great Awakening of the 1730s and 1740s, which pitted New Light itinerants against Old Light Congregationalist ministers",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Period 2 Colonial Revival)",
+          "explanation": "Incorrect. The First Great Awakening occurred nearly a century earlier in the 1730s–1740s and generally remained rooted in Calvinist theology (as preached by Jonathan Edwards and George Whitefield), whereas Finney's 1835 revivals broke with predestination."
+        },
+        {
+          "id": "C",
+          "text": "Deism among Revolutionary-era intellectuals who viewed God as a distant watchmaker rather than an active presence in human affairs",
+          "isCorrect": false,
+          "distractorType": "Ideological Mismatch (Enlightenment Rationalism vs. Evangelical Revivalism)",
+          "explanation": "Incorrect. Enlightenment Deism rejected miracles, biblical revelation, and emotional conversion experiences, whereas the 1835 excerpt comes from an evangelical Protestant revivalist urging sinners to seek salvation through the Spirit of God."
+        },
+        {
+          "id": "D",
+          "text": "Traditional Puritan Calvinism of seventeenth-century Massachusetts Bay, which restricted church membership to visible saints",
+          "isCorrect": false,
+          "distractorType": "Chronological & Theological Inversion (Puritan Predestination)",
+          "explanation": "Incorrect. Seventeenth-century Massachusetts Puritans upheld strict Calvinist predestination—holding that humans could not choose or earn salvation—which is the exact doctrine the 1835 speaker attacks."
+        }
+      ],
+      "keyTakeaway": "The Second Great Awakening, exemplified by Charles Grandison Finney in New York's Burned-Over District, replaced passive Calvinist predestination with moral free agency and perfectionism.",
+      "testTip": "When a stimulus emphasizes 'moral free agent,' 'voluntary act,' or 'new measures' in the 1820s–1830s, connect it to Finney and the Second Great Awakening's democratization of salvation."
+    },
+    {
+      "id": "q_u4_46",
+      "unit": 4,
+      "topic": "4.6",
+      "topicTitle": "Religion, Reform, and Culture (Second Great Awakening, Transcendentalism & Institutions)",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_9",
+      "stem": "Which of the following developments was most directly stimulated by the revivalist emphasis on human perfectionism and moral reform expressed in the excerpt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Congressional passage of the Wade-Davis Bill requiring a majority of white male citizens in former Confederate states to swear an Ironclad Oath",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Reconstruction Era, 1864)",
+          "explanation": "Incorrect. The Wade-Davis Bill was a Radical Republican Reconstruction measure passed in 1864 during the Civil War, unrelated to the antebellum benevolent reform impulse of the 1830s."
+        },
+        {
+          "id": "B",
+          "text": "The proliferation of voluntary benevolent societies dedicated to temperance, Sabbatarianism, prison reform, and the abolition of slavery",
+          "isCorrect": true,
+          "explanation": "Correct. Because Second Great Awakening revivalists taught that individuals and society could be perfected through human effort, converts formed a 'Benevolent Empire' of voluntary reform societies targeting alcohol, Sabbath-breaking, prisons, asylums, and slavery."
+        },
+        {
+          "id": "C",
+          "text": "The enactment of the Alien and Sedition Acts by Federalist lawmakers seeking to suppress Democratic-Republican newspaper editors during the Quasi-War",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Period 3, 1798)",
+          "explanation": "Incorrect. The Alien and Sedition Acts were passed in 1798 by Federalists during John Adams's presidency, decades before the 1835 revivalist lecture."
+        },
+        {
+          "id": "D",
+          "text": "The establishment of the Anglican Church as the tax-supported state religion in colonial Virginia and Maryland",
+          "isCorrect": false,
+          "distractorType": "Chronological & Institutional Mismatch (Colonial Established Churches)",
+          "explanation": "Incorrect. Tax-supported Anglican establishments existed in colonial Virginia and Maryland during the seventeenth and eighteenth centuries and were disestablished after the American Revolution."
+        }
+      ],
+      "keyTakeaway": "Second Great Awakening perfectionism fueled the antebellum 'Benevolent Empire'—voluntary associations aimed at curing social ills from intemperance to slavery.",
+      "testTip": "APUSH causation questions link the Second Great Awakening directly to antebellum reform movements: abolition, temperance, women's rights, public education, and asylum reform."
+    },
+    {
+      "id": "q_u4_47",
+      "unit": 4,
+      "topic": "4.6",
+      "topicTitle": "Religion, Reform, and Culture (Second Great Awakening, Transcendentalism & Institutions)",
+      "skill": "Comparison",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following statements accurately describe antebellum temperance reform between 1826 and 1851?<br><br>I. The American Temperance Society (1826) initially relied on moral suasion and voluntary abstinence pledges.<br>II. Temperance advocates received strong support from Protestant evangelical reformers and Whig-leaning employers.<br>III. The 1851 Maine Law marked a shift from moral suasion toward state-level statutory prohibition of alcohol sales.<br>IV. The Eighteenth Amendment to the U.S. Constitution was ratified in 1852 as a direct result of the Maine Law.",
+      "options": [
+        {
+          "id": "A",
+          "text": "I and II only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection",
+          "explanation": "Incorrect. Statements I and II are both accurate, but Statement III is also true: the 1851 Maine Law pioneered statewide legal prohibition."
+        },
+        {
+          "id": "B",
+          "text": "II and IV only",
+          "isCorrect": false,
+          "distractorType": "Chronological Error (Eighteenth Amendment Ratified in 1919)",
+          "explanation": "Incorrect. While Statement II is true, Statement IV is false: the Eighteenth Amendment (national Prohibition) was ratified in 1919, not 1852."
+        },
+        {
+          "id": "C",
+          "text": "I, II, and III only",
+          "isCorrect": true,
+          "explanation": "Correct. Founded in 1826, the American Temperance Society began with moral suasion and pledges (I), drew heavy support from evangelical Protestants and industrial employers seeking sober workers (II), and eventually pivoted to state-level legal bans beginning with the 1851 Maine Law (III)."
+        },
+        {
+          "id": "D",
+          "text": "I, II, III, and IV",
+          "isCorrect": false,
+          "distractorType": "Chronological Overreach (1919 Amendment Placed in 1852)",
+          "explanation": "Incorrect. Statements I, II, and III are accurate, but Statement IV is false because national constitutional prohibition via the Eighteenth Amendment did not occur until 1919."
+        }
+      ],
+      "keyTakeaway": "Antebellum temperance evolved from voluntary 'moral suasion' (American Temperance Society, 1826) to coercive state legislation (the Maine Law, 1851), long before the 1919 Eighteenth Amendment.",
+      "testTip": "Track the two phases of antebellum reform—not just in temperance, but also in abolitionism: an early phase of moral suasion followed by a later shift toward legal and political coercion."
+    },
+    {
+      "id": "q_u4_48",
+      "unit": 4,
+      "topic": "4.6",
+      "topicTitle": "Religion, Reform, and Culture (Second Great Awakening, Transcendentalism & Institutions)",
+      "skill": "Developments and Processes",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "As secretary of the Massachusetts Board of Education beginning in 1837, Horace Mann championed the 'common school' movement primarily to",
+      "options": [
+        {
+          "id": "A",
+          "text": "establish federally funded land-grant universities specializing in agricultural science and mechanical engineering across the western territories",
+          "isCorrect": false,
+          "distractorType": "Chronological & Policy Mismatch (Morrill Land-Grant Act of 1862)",
+          "explanation": "Incorrect. Federally funded land-grant colleges for agriculture and engineering were created by the Morrill Land-Grant Act of 1862 during the Civil War, not by Horace Mann's state-level common school movement."
+        },
+        {
+          "id": "B",
+          "text": "replace all private Protestant academies in New England with secular French-style lycées governed directly by the U.S. Department of Education",
+          "isCorrect": false,
+          "distractorType": "Institutional & Chronological Mismatch (U.S. Dept. of Education Created Later)",
+          "explanation": "Incorrect. Mann promoted state-supervised public schools rather than a federal Department of Education, and his common schools incorporated nonsectarian Protestant moral instruction rather than abolishing private academies."
+        },
+        {
+          "id": "C",
+          "text": "require compulsory bilingual instruction in German and English for newly arrived European immigrant children in Midwestern cities",
+          "isCorrect": false,
+          "distractorType": "Policy Inversion (Common Schools Emphasized English Assimilation)",
+          "explanation": "Incorrect. Mann's Massachusetts common schools emphasized English-language instruction and cultural assimilation into shared American civic norms rather than compulsory bilingualism."
+        },
+        {
+          "id": "D",
+          "text": "create tax-supported, professionally staffed public schools that would assimilate diverse populations and instill civic virtue",
+          "isCorrect": true,
+          "explanation": "Correct. Horace Mann advocated tax-supported common schools with standardized curricula, longer school terms, and trained teachers ('normal schools') to prepare citizens for republican self-government and assimilate growing immigrant and working-class populations."
+        }
+      ],
+      "keyTakeaway": "Horace Mann's common school movement in Massachusetts established the model for tax-supported public education, teacher training ('normal schools'), and civic assimilation.",
+      "testTip": "Remember why industrialists and Whigs backed Mann's common schools: public education promised both an informed electorate and a punctual, disciplined workforce."
+    },
+    {
+      "id": "q_u4_49",
+      "unit": 4,
+      "topic": "4.6",
+      "topicTitle": "Religion, Reform, and Culture (Second Great Awakening, Transcendentalism & Institutions)",
+      "skill": "Contextualization",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "In the 1840s, Dorothea Dix conducted extensive investigations across Massachusetts and other states that led directly to which of the following institutional reforms?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The separation of mentally ill individuals from common jails and almshouses into state-funded psychiatric hospitals",
+          "isCorrect": true,
+          "explanation": "Correct. After witnessing mentally ill prisoners chained in unheated Massachusetts jails in 1841, Dorothea Dix lobbied state legislatures across the country to construct humane, state-funded mental asylums."
+        },
+        {
+          "id": "B",
+          "text": "The creation of the Freedmen's Bureau to provide legal aid, medical care, and schools to formerly enslaved people across the South",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Reconstruction Era, 1865)",
+          "explanation": "Incorrect. Congress established the Freedmen's Bureau in March 1865 to assist formerly enslaved people after the Civil War, whereas Dix's asylum campaign occurred in the 1840s."
+        },
+        {
+          "id": "C",
+          "text": "The passage of federal pure food and drug legislation regulating patent medicines and meatpacking plants in major urban centers",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Progressive Era, 1906)",
+          "explanation": "Incorrect. The Pure Food and Drug Act and Meat Inspection Act were Progressive Era federal laws passed in 1906 under Theodore Roosevelt, not antebellum reforms."
+        },
+        {
+          "id": "D",
+          "text": "The founding of Hull House in Chicago to offer English classes, childcare, and vocational training to immigrant families",
+          "isCorrect": false,
+          "distractorType": "Chronological & Actor Mismatch (Jane Addams, 1889)",
+          "explanation": "Incorrect. Hull House was a Gilded Age settlement house founded by Jane Addams and Ellen Gates Starr in Chicago in 1889."
+        }
+      ],
+      "keyTakeaway": "Dorothea Dix's 1840s investigative reports persuaded numerous state legislatures to remove people with mental illnesses from prisons and establish specialized state psychiatric hospitals.",
+      "testTip": "Do not confuse antebellum institutional reformers (Dorothea Dix, Horace Mann) with Progressive Era or Gilded Age reformers (Jane Addams, Upton Sinclair)."
+    },
+    {
+      "id": "q_u4_50",
+      "unit": 4,
+      "topic": "4.6",
+      "topicTitle": "Religion, Reform, and Culture (Second Great Awakening, Transcendentalism & Institutions)",
+      "skill": "Comparison",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following pairs accurately matches an antebellum utopian community with its distinctive social or economic practice?",
+      "options": [
+        {
+          "id": "A",
+          "text": "New Harmony in Indiana — practiced 'complex marriage,' in which every adult member was considered married to all other adult members of the opposite sex",
+          "isCorrect": false,
+          "distractorType": "Community-Practice Swap (Complex Marriage Belonged to Oneida)",
+          "explanation": "Incorrect. 'Complex marriage' was practiced by John Humphrey Noyes's Oneida Community in New York, not by Robert Owen's secular socialist experiment at New Harmony, Indiana."
+        },
+        {
+          "id": "B",
+          "text": "The Shakers — practiced strict celibacy, communal property ownership, and gender equality in spiritual leadership",
+          "isCorrect": true,
+          "explanation": "Correct. Followers of Mother Ann Lee, the Shakers established self-sufficient communal villages characterized by strict celibacy, shared property, simple craftsmanship, and ecstatic worship."
+        },
+        {
+          "id": "C",
+          "text": "The Oneida Community in New York — was founded by Transcendentalist writers near Boston to combine manual farm labor with literary pursuits",
+          "isCorrect": false,
+          "distractorType": "Community-Practice Swap (Transcendentalist Experiment Was Brook Farm)",
+          "explanation": "Incorrect. The Transcendentalist experiment near Boston that blended farming with intellectual life was Brook Farm (founded by George Ripley in 1841), not the Oneida Community."
+        },
+        {
+          "id": "D",
+          "text": "Brook Farm in Massachusetts — was established by Robert Owen as a secular industrial cooperative based on rationalist education",
+          "isCorrect": false,
+          "distractorType": "Community-Practice Swap (Robert Owen Founded New Harmony)",
+          "explanation": "Incorrect. British industrialist Robert Owen founded New Harmony in Indiana in 1825, whereas Brook Farm was a Transcendentalist community in West Roxbury, Massachusetts."
+        }
+      ],
+      "keyTakeaway": "Antebellum utopian experiments offered radical alternatives to market individualism: Shakers (celibacy/communalism), Oneida (complex marriage/perfectionism), Brook Farm (Transcendentalism), and New Harmony (secular socialism).",
+      "testTip": "Memorize the four classic antebellum utopias as a quick matching grid: Shakers = celibacy; Oneida = complex marriage; Brook Farm = Transcendentalist writers; New Harmony = Robert Owen's secular socialism."
+    },
+    {
+      "id": "q_u4_51",
+      "unit": 4,
+      "topic": "4.6",
+      "topicTitle": "Religion, Reform, and Culture (Second Great Awakening, Transcendentalism & Institutions)",
+      "skill": "Argumentation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "In his 1841 essay 'Self-Reliance,' Ralph Waldo Emerson articulated a core principle of American Transcendentalism by urging individuals to",
+      "options": [
+        {
+          "id": "A",
+          "text": "submit their personal conscience to the established doctrines of orthodox Calvinist churches and state-chartered synods",
+          "isCorrect": false,
+          "distractorType": "Ideological Inversion (Transcendentalism Rejected Orthodox Dogma)",
+          "explanation": "Incorrect. Transcendentalism emerged partly as a reaction against both strict Calvinist orthodoxy and dry Unitarian rationalism, emphasizing personal spiritual insight over institutional creeds."
+        },
+        {
+          "id": "B",
+          "text": "embrace industrial factory discipline and market competition as the truest measure of human spiritual progress",
+          "isCorrect": false,
+          "distractorType": "Ideological Inversion (Transcendentalism Critiqued Materialism)",
+          "explanation": "Incorrect. Emerson and his fellow Transcendentalists warned that commercialism, conformity, and industrialization alienated individuals from nature and their own moral intuition."
+        },
+        {
+          "id": "C",
+          "text": "trust their own inner intuition and resist social conformity, inherited traditions, and institutional authority",
+          "isCorrect": true,
+          "explanation": "Correct. In 'Self-Reliance,' Emerson famously declared that 'whoso would be a man, must be a nonconformist,' urging Americans to trust inner conscience and direct experience of nature over conformity."
+        },
+        {
+          "id": "D",
+          "text": "organize into disciplined partisan political machines to win federal patronage and electoral majorities",
+          "isCorrect": false,
+          "distractorType": "Faction & Philosophy Mismatch (Van Buren's Party Machines vs. Emerson)",
+          "explanation": "Incorrect. Disciplined partisan machines and patronage politics were championed by Jacksonian politicians like Martin Van Buren, not by Emerson's individualistic Transcendentalist philosophy."
+        }
+      ],
+      "keyTakeaway": "Ralph Waldo Emerson's 'Self-Reliance' (1841) captured Transcendentalism's core creed: individual intuition, nonconformity, and spiritual connection to nature over institutional authority.",
+      "testTip": "Transcendentalism combines Romanticism's reverence for nature and emotion with an American emphasis on individualism—contrasting sharply with Enlightenment empiricism and industrial conformity."
+    },
+    {
+      "id": "q_u4_52",
+      "unit": 4,
+      "topic": "4.6",
+      "topicTitle": "Religion, Reform, and Culture (Second Great Awakening, Transcendentalism & Institutions)",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following accurately characterize Henry David Thoreau's 1849 essay 'Resistance to Civil Government' (<em>Civil Disobedience</em>)?<br><br>I. Thoreau was jailed after refusing to pay the Massachusetts poll tax in protest against the Mexican-American War and slavery.<br>II. Thoreau argued that citizens have a moral duty to withhold allegiance from an unjust government rather than wait for majorities to repeal unjust laws.<br>III. Thoreau's essay later influenced twentieth-century nonviolent resistance movements led by Mohandas Gandhi and Martin Luther King Jr.<br>IV. Thoreau called for an armed uprising of New England militias to seize federal arsenals in Washington, D.C.",
+      "options": [
+        {
+          "id": "A",
+          "text": "I only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection",
+          "explanation": "Incorrect. Statement I accurately describes Thoreau's 1846 tax refusal, but Statements II and III are also essential features and legacies of his essay."
+        },
+        {
+          "id": "B",
+          "text": "I and II only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection",
+          "explanation": "Incorrect. Statements I and II are both accurate, but Statement III is also historically true: Gandhi and Martin Luther King Jr. both drew inspiration from Thoreau's essay."
+        },
+        {
+          "id": "C",
+          "text": "II and IV only",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion (Thoreau Advocated Nonviolent Noncooperation)",
+          "explanation": "Incorrect. While Statement II is true, Statement IV is false: Thoreau advocated peaceful tax refusal and conscientious noncooperation, not armed insurrection against Washington, D.C."
+        },
+        {
+          "id": "D",
+          "text": "I, II, and III only",
+          "isCorrect": true,
+          "explanation": "Correct. Thoreau's refusal to pay the poll tax in 1846 stemmed from opposition to slavery and the Mexican-American War (I); he argued that individual conscience outweighs majority rule (II); and his philosophy of nonviolent resistance directly inspired Gandhi and Martin Luther King Jr. (III)."
+        }
+      ],
+      "keyTakeaway": "Thoreau's 'Civil Disobedience' (1849) translated Transcendentalist individualism into political protest against slavery and the Mexican-American War, influencing global nonviolent movements.",
+      "testTip": "Connect Thoreau's 1846 jailing directly to Unit 5's Mexican-American War: many northern Whigs and Transcendentalists viewed the war as a proslavery land grab."
+    },
+    {
+      "id": "q_u4_53",
+      "unit": 4,
+      "topic": "4.7",
+      "topicTitle": "Abolitionism and Women's Rights (Garrison, Douglass & Seneca Falls)",
+      "skill": "Comparison",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_10",
+      "stem": "The editorial's sharp rejection of 'gradual abolition' in January 1831 marked a decisive break with which earlier antislavery organization?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The American Colonization Society, which promoted gradual, compensated emancipation paired with resettling freed African Americans in Liberia",
+          "isCorrect": true,
+          "explanation": "Correct. Founded in 1816, the American Colonization Society (ACS) advocated gradual emancipation, compensation to slaveholders, and relocating free Black Americans to Liberia—an approach Garrison denounced in the first issue of The Liberator (1831)."
+        },
+        {
+          "id": "B",
+          "text": "The Free-Soil Party, which opposed the expansion of slavery into newly acquired western territories during the 1848 presidential election",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Free-Soil Party Founded in 1848)",
+          "explanation": "Incorrect. The Free-Soil Party was formed in 1848—seventeen years after this January 1831 editorial—in response to the Mexican-American War and the Wilmot Proviso."
+        },
+        {
+          "id": "C",
+          "text": "The American Federation of Labor, which organized skilled white craft workers around higher wages and the eight-hour workday in the late nineteenth century",
+          "isCorrect": false,
+          "distractorType": "Chronological & Topic Mismatch (Gilded Age Labor Union, 1886)",
+          "explanation": "Incorrect. The American Federation of Labor was founded in 1886 by Samuel Gompers to represent skilled industrial workers, decades after the antebellum abolitionist movement."
+        },
+        {
+          "id": "D",
+          "text": "The Republican Party, which campaigned in 1856 and 1860 on a platform of halting slavery's westward expansion while leaving it intact in the South",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Republican Party Founded in 1854)",
+          "explanation": "Incorrect. The Republican Party was organized in 1854 after the Kansas-Nebraska Act, more than two decades after Garrison launched The Liberator in 1831."
+        }
+      ],
+      "keyTakeaway": "William Lloyd Garrison's 1831 launch of The Liberator revolutionized abolitionism by rejecting the American Colonization Society's gradualist, deportation-based strategy in favor of immediate, uncompensated emancipation.",
+      "testTip": "Contrast the 1816 American Colonization Society (gradual, compensated, Black removal to Liberia) with 1830s Garrisonian abolitionism (immediate, uncompensated, racial equality in America)."
+    },
+    {
+      "id": "q_u4_54",
+      "unit": 4,
+      "topic": "4.7",
+      "topicTitle": "Abolitionism and Women's Rights (Garrison, Douglass & Seneca Falls)",
+      "skill": "Continuity and Change",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_10",
+      "stem": "Disagreements over the uncompromising 'moral suasion' strategy championed in the 1831 editorial eventually contributed to an 1840 schism in the American Anti-Slavery Society when",
+      "options": [
+        {
+          "id": "A",
+          "text": "southern proslavery delegates walked out of the convention to form the Confederate States of America in Montgomery, Alabama",
+          "isCorrect": false,
+          "distractorType": "Chronological & Faction Mismatch (Confederacy Formed in 1861)",
+          "explanation": "Incorrect. Proslavery southern delegates did not belong to the American Anti-Slavery Society, and the Confederacy was formed in February 1861 after Abraham Lincoln's election."
+        },
+        {
+          "id": "B",
+          "text": "political abolitionists broke away to form the Liberty Party, while radicals also clashed over women's leadership roles",
+          "isCorrect": true,
+          "explanation": "Correct. In 1840, abolitionists who favored electoral politics and constitutional action (such as James G. Birney and the Tappan brothers) split from Garrison's anti-political, pro-women's-rights wing to create the Liberty Party."
+        },
+        {
+          "id": "C",
+          "text": "President Andrew Jackson issued an executive order banning the U.S. Postal Service from carrying any newspapers across state lines",
+          "isCorrect": false,
+          "distractorType": "Chronological & Policy Mismatch (Jackson Left Office in 1837)",
+          "explanation": "Incorrect. Andrew Jackson left the presidency in March 1837; while his administration allowed southern postmasters to withhold abolitionist tracts in 1835, he did not ban all newspapers from interstate mail in 1840."
+        },
+        {
+          "id": "D",
+          "text": "Frederick Douglass and William Lloyd Garrison jointly endorsed the Dred Scott decision as a tool for northern mobilization",
+          "isCorrect": false,
+          "distractorType": "Chronological & Factual Inversion (Dred Scott Was 1857)",
+          "explanation": "Incorrect. The Supreme Court issued Dred Scott v. Sandford in 1857, and both Garrison and Douglass condemned the ruling rather than endorsing it."
+        }
+      ],
+      "keyTakeaway": "In 1840, the American Anti-Slavery Society fractured over Garrison's rejection of electoral politics (prompting the creation of the Liberty Party) and his support for women's leadership.",
+      "testTip": "Remember the key 1840 split: Garrisonians stayed committed to moral suasion, women's equality, and rejecting the U.S. Constitution as a 'covenant with death,' while political abolitionists launched the Liberty Party."
+    },
+    {
+      "id": "q_u4_55",
+      "unit": 4,
+      "topic": "4.7",
+      "topicTitle": "Abolitionism and Women's Rights (Garrison, Douglass & Seneca Falls)",
+      "skill": "Comparison",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "How did Frederick Douglass's founding of the <em>North Star</em> in 1847 and Sojourner Truth's speeches in the 1850s shape the antebellum reform landscape?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They persuaded Congress to repeal the Three-Fifths Clause of the U.S. Constitution prior to the Civil War",
+          "isCorrect": false,
+          "distractorType": "Chronological Error (Three-Fifths Clause Nullified by 13th/14th Amendments)",
+          "explanation": "Incorrect. The Three-Fifths Clause was never repealed prior to the Civil War; it was rendered moot by the Thirteenth Amendment (1865) and superseded by the Fourteenth Amendment (1868)."
+        },
+        {
+          "id": "B",
+          "text": "They convinced William Lloyd Garrison to abandon moral suasion and run as the Liberty Party's presidential nominee",
+          "isCorrect": false,
+          "distractorType": "Actor & Position Inversion (Garrison Rejected Electoral Politics)",
+          "explanation": "Incorrect. William Lloyd Garrison never ran for president or joined the Liberty Party; in fact, Douglass's growing belief in political action under the Constitution eventually caused a rift between Douglass and Garrison."
+        },
+        {
+          "id": "C",
+          "text": "They brought firsthand testimonies of enslavement and intersectional critiques of racism and sexism to the forefront of abolitionist and women's rights activism",
+          "isCorrect": true,
+          "explanation": "Correct. Formerly enslaved speakers and writers—led by Frederick Douglass (the North Star, 1847) and Sojourner Truth (notably at the 1851 Akron Women's Rights Convention)—provided indispensable eyewitness authority against slavery while challenging racism and gender inequality."
+        },
+        {
+          "id": "D",
+          "text": "They endorsed the American Colonization Society's plan to relocate all free Black Americans to West Africa",
+          "isCorrect": false,
+          "distractorType": "Ideological Inversion (Douglass Strongly Opposed Colonization)",
+          "explanation": "Incorrect. Both Frederick Douglass and Sojourner Truth vehemently opposed the American Colonization Society, insisting on Black Americans' birthright to full citizenship in the United States."
+        }
+      ],
+      "keyTakeaway": "Black abolitionists like Frederick Douglass and Sojourner Truth reshaped antebellum reform through lived testimony, independent Black journalism (the North Star), and linking racial and gender justice.",
+      "testTip": "Watch for APUSH questions highlighting Frederick Douglass's evolution: after founding the North Star (1847), he broke with Garrison by arguing the Constitution could be interpreted as an antislavery document."
+    },
+    {
+      "id": "q_u4_56",
+      "unit": 4,
+      "topic": "4.7",
+      "topicTitle": "Abolitionism and Women's Rights (Garrison, Douglass & Seneca Falls)",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following were direct political or legislative responses to Nat Turner's 1831 rebellion and the rise of radical abolitionism in the 1830s?<br><br>I. Southern state legislatures tightened slave codes, restricting enslaved people's literacy, movement, and religious gatherings.<br>II. Southern postmasters and mobs seized and burned abolitionist pamphlets sent through the federal mails.<br>III. The U.S. House of Representatives adopted the 'Gag Rule' in 1836 to automatically table antislavery petitions without debate.<br>IV. Virginia's legislature voted in 1832 to enact immediate, uncompensated emancipation throughout the Commonwealth.",
+      "options": [
+        {
+          "id": "A",
+          "text": "I only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection",
+          "explanation": "Incorrect. Tighter slave codes (I) were indeed enacted, but Statements II and III also accurately describe southern and congressional responses in the 1830s."
+        },
+        {
+          "id": "B",
+          "text": "I and III only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection",
+          "explanation": "Incorrect. Statements I and III are true, but Statement II is also true: in 1835, Charleston mobs and southern postmasters intercepted and burned abolitionist mailings."
+        },
+        {
+          "id": "C",
+          "text": "I, II, III, and IV",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion (Virginia Legislature Rejected Emancipation in 1832)",
+          "explanation": "Incorrect. While the Virginia legislature famously debated gradual emancipation in 1831–1832 after Nat Turner's rebellion, it voted down emancipation and instead enacted harsher slave codes."
+        },
+        {
+          "id": "D",
+          "text": "I, II, and III only",
+          "isCorrect": true,
+          "explanation": "Correct. After Nat Turner's 1831 revolt and Garrison's postal campaigns, southern states tightened slave codes (I), southern postmasters suppressed abolitionist mailings (II), and Congress imposed the 1836 Gag Rule on antislavery petitions (III)."
+        }
+      ],
+      "keyTakeaway": "Nat Turner's Rebellion (1831) and 1830s abolitionist mailings triggered harsher southern slave codes, censorship of the U.S. mail, and the 1836 House Gag Rule.",
+      "testTip": "Note the turning point of 1831–1832 in Virginia: it was the last major legislative debate on ending slavery in the Upper South before the region closed ranks behind proslavery defense."
+    },
+    {
+      "id": "q_u4_57",
+      "unit": 4,
+      "topic": "4.7",
+      "topicTitle": "Abolitionism and Women's Rights (Garrison, Douglass & Seneca Falls)",
+      "skill": "Contextualization",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Sarah and Angelina Grimké challenged the antebellum 'Cult of Domesticity' in the 1830s primarily by",
+      "options": [
+        {
+          "id": "A",
+          "text": "lecturing publicly to 'promiscuous' mixed-gender audiences against slavery and defending women's right to political speech",
+          "isCorrect": true,
+          "explanation": "Correct. Born into a wealthy South Carolina slaveholding family, the Grimké sisters moved north, joined the abolitionist movement, and defied norms against women speaking in public—prompting Sarah Grimké's Letters on the Equality of the Sexes (1838)."
+        },
+        {
+          "id": "B",
+          "text": "publishing Godey's Lady's Book to instruct middle-class mothers on how to confine their moral influence strictly within the private home",
+          "isCorrect": false,
+          "distractorType": "Ideological Inversion (Godey's Lady's Book Reinforced Domesticity)",
+          "explanation": "Incorrect. Godey's Lady's Book (edited by Sarah Josepha Hale) promoted the Cult of Domesticity and 'separate spheres,' whereas the Grimké sisters challenged those boundaries."
+        },
+        {
+          "id": "C",
+          "text": "organizing the Lowell Female Labor Reform Association exclusively to lobby for protective tariffs on imported British textiles",
+          "isCorrect": false,
+          "distractorType": "Actor & Goal Mismatch (Sarah Bagley Led Lowell Labor Reform)",
+          "explanation": "Incorrect. The Lowell Female Labor Reform Association was led in the 1840s by Sarah Bagley to campaign for a ten-hour workday for factory operatives, not by the Grimké sisters for tariffs."
+        },
+        {
+          "id": "D",
+          "text": "founding the Daughters of Liberty to enforce colonial boycotts of British tea and stamped paper during the 1760s",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Period 3 Revolutionary Era)",
+          "explanation": "Incorrect. The Daughters of Liberty organized boycotts and homespun cloth production during the imperial crisis of the 1760s–1770s, decades before the Grimké sisters' 1830s activism."
+        }
+      ],
+      "keyTakeaway": "The Grimké sisters connected abolitionism to women's rights by defying the Cult of Domesticity to lecture before mixed-gender audiences and defend women's moral equality.",
+      "testTip": "When Congregationalist ministers rebuked the Grimké sisters for stepping outside 'woman's proper sphere,' the sisters' defense helped spark the early American feminist argument."
+    },
+    {
+      "id": "q_u4_58",
+      "unit": 4,
+      "topic": "4.7",
+      "topicTitle": "Abolitionism and Women's Rights (Garrison, Douglass & Seneca Falls)",
+      "skill": "Contextualization",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_11",
+      "stem": "The grievances listed in the July 1848 resolutions—specifically condemning women's legal 'civil death' under marriage and lack of property rights—were a direct critique of the Anglo-American common-law doctrine of",
+      "options": [
+        {
+          "id": "A",
+          "text": "primogeniture, which required all landed estates to pass intact to the eldest male heir",
+          "isCorrect": false,
+          "distractorType": "Legal Concept Mismatch (Primogeniture Concerned Inheritance by Eldest Son)",
+          "explanation": "Incorrect. Primogeniture governed inheritance by the eldest son and had largely been abolished by American states during and after the Revolutionary War, whereas the 1848 excerpt specifically describes a married woman's legal status."
+        },
+        {
+          "id": "B",
+          "text": "coverture, under which a married woman's legal identity, property, and wages were subsumed under those of her husband",
+          "isCorrect": true,
+          "explanation": "Correct. Under the common-law doctrine of coverture, a married woman ('feme covert') could not independently own property, sign contracts, keep her wages, or sue in court—making her, as the Declaration of Sentiments put it, 'civilly dead.'"
+        },
+        {
+          "id": "C",
+          "text": "popular sovereignty, which allowed white male residents in western federal territories to vote on the legality of slavery",
+          "isCorrect": false,
+          "distractorType": "Topic Mismatch (Territorial Slavery Policy)",
+          "explanation": "Incorrect. Popular sovereignty was a sectional compromise doctrine championed by Lewis Cass and Stephen Douglas regarding slavery in western territories, not a marital property law."
+        },
+        {
+          "id": "D",
+          "text": "virtual representation, which held that the British Parliament represented all subjects regardless of whether they actually voted",
+          "isCorrect": false,
+          "distractorType": "Chronological & Topic Mismatch (1760s British Imperial Theory)",
+          "explanation": "Incorrect. Virtual representation was a British constitutional argument during the 1760s Stamp Act crisis, not the marital legal doctrine targeted by the 1848 Declaration of Sentiments."
+        }
+      ],
+      "keyTakeaway": "The 1848 Declaration of Sentiments directly attacked the common-law doctrine of coverture, under which married women lost independent legal standing, property rights, and control over their wages.",
+      "testTip": "Pair the terms 'civilly dead' (from the Declaration of Sentiments) and 'coverture' together—New York's 1848 Married Women's Property Act had only just begun to chip away at coverture."
+    },
+    {
+      "id": "q_u4_59",
+      "unit": 4,
+      "topic": "4.7",
+      "topicTitle": "Abolitionism and Women's Rights (Garrison, Douglass & Seneca Falls)",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_11",
+      "stem": "Which earlier transatlantic event directly inspired the organizers of the July 1848 convention to convene a separate gathering devoted to women's rights?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The ratification of the Nineteenth Amendment to the U.S. Constitution, which prompted feminists to draft a global human rights charter",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Nineteenth Amendment Ratified in 1920)",
+          "explanation": "Incorrect. The Nineteenth Amendment granting women's suffrage was ratified in 1920—seventy-two years after the 1848 Seneca Falls Convention."
+        },
+        {
+          "id": "B",
+          "text": "The passage of the 1848 Married Women's Property Act in New York, which banned women from attending political rallies",
+          "isCorrect": false,
+          "distractorType": "Policy Inversion (1848 NY Act Expanded Married Women's Property Rights)",
+          "explanation": "Incorrect. New York's 1848 Married Women's Property Act actually expanded women's legal rights to own property separately from their husbands; it did not ban women from political rallies."
+        },
+        {
+          "id": "C",
+          "text": "The 1840 World Anti-Slavery Convention in London, where female American delegates were excluded from the main floor",
+          "isCorrect": true,
+          "explanation": "Correct. When Lucretia Mott and Elizabeth Cady Stanton attended the 1840 World Anti-Slavery Convention in London, organizers barred women from speaking or sitting on the main floor—prompting Stanton and Mott to resolve to hold a women's rights convention upon returning to America."
+        },
+        {
+          "id": "D",
+          "text": "The 1833 Nullification Crisis, which demonstrated that state conventions could invalidate federal statutes",
+          "isCorrect": false,
+          "distractorType": "Topic Mismatch (Tariff & Federalism Crisis)",
+          "explanation": "Incorrect. The 1832–1833 Nullification Crisis centered on South Carolina's opposition to federal tariffs and had no direct connection to organizing the 1848 women's rights convention."
+        }
+      ],
+      "keyTakeaway": "Exclusion of female delegates—including Lucretia Mott—at the 1840 World Anti-Slavery Convention in London motivated Mott and Elizabeth Cady Stanton to organize the 1848 Seneca Falls Convention.",
+      "testTip": "This is a classic APUSH causation chain: Abolitionism -> Women's exclusion at London (1840) -> Seneca Falls Convention (1848)."
+    },
+    {
+      "id": "q_u4_60",
+      "unit": 4,
+      "topic": "4.7",
+      "topicTitle": "Abolitionism and Women's Rights (Garrison, Douglass & Seneca Falls)",
+      "skill": "Continuity and Change",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following accurately describe the outcomes and historical significance of the 1848 Seneca Falls Convention?<br><br>I. The <em>Declaration of Sentiments</em> deliberately modeled its language and structure on the 1776 Declaration of Independence.<br>II. Elizabeth Cady Stanton's resolution demanding women's elective franchise passed narrowly after receiving crucial support from Frederick Douglass.<br>III. The convention immediately secured the passage of a federal constitutional amendment granting women the right to vote.<br>IV. Although ridiculed in much of the contemporary press, the convention launched an organized national women's rights movement.",
+      "options": [
+        {
+          "id": "A",
+          "text": "I only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection",
+          "explanation": "Incorrect. Statement I is true, but Statements II and IV are also accurate descriptions of the convention's proceedings and impact."
+        },
+        {
+          "id": "B",
+          "text": "I and II only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection",
+          "explanation": "Incorrect. Both Statements I and II are accurate, but Statement IV is also true: Seneca Falls catalyzed annual national women's rights conventions."
+        },
+        {
+          "id": "C",
+          "text": "II, III, and IV only",
+          "isCorrect": false,
+          "distractorType": "Chronological Overreach (Federal Suffrage Achieved in 1920)",
+          "explanation": "Incorrect. Statement III is false: a federal women's suffrage amendment (the Nineteenth Amendment) was not ratified until 1920, more than seventy years later."
+        },
+        {
+          "id": "D",
+          "text": "I, II, and IV only",
+          "isCorrect": true,
+          "explanation": "Correct. The Declaration of Sentiments echoed the Declaration of Independence (I), Stanton's controversial suffrage plank passed with Frederick Douglass's backing (II), and despite press mockery, the convention launched a sustained national movement (IV)."
+        }
+      ],
+      "keyTakeaway": "At Seneca Falls (1848), reformers adapted the Declaration of Independence to demand legal equality and—narrowly, with Frederick Douglass's support—women's suffrage, launching the organized movement.",
+      "testTip": "Notice why the suffrage resolution was the most controversial item at Seneca Falls in 1848: even Lucretia Mott initially worried it would make the convention look ridiculous, until Douglass argued forcefully in its favor."
+    },
+    {
+      "id": "q_u4_61",
+      "unit": 4,
+      "topic": "4.8",
+      "topicTitle": "The Old South, King Cotton, and Enslaved Resistance",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Following the 1808 federal ban on the transatlantic slave trade, the rapid expansion of 'King Cotton' across the Deep South most directly triggered which demographic shift?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The 'Second Middle Passage,' an internal domestic slave trade that forcibly relocated roughly one million enslaved people from the Upper South to the Deep South",
+          "isCorrect": true,
+          "explanation": "Correct. As soil exhaustion hit tobacco plantations in the Upper South (Virginia and Maryland) and short-staple cotton boomed across Alabama, Mississippi, and Louisiana, planters sold roughly one million enslaved African Americans southward in the 'Second Middle Passage,' shattering countless families."
+        },
+        {
+          "id": "B",
+          "text": "The Great Migration of African Americans from rural southern plantations to northern and midwestern industrial cities during the First World War",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Period 7, 1910s–1920s)",
+          "explanation": "Incorrect. The Great Migration occurred a century later during World War I and the 1920s, whereas the antebellum cotton boom relocated enslaved people within the South."
+        },
+        {
+          "id": "C",
+          "text": "A massive influx of Irish and German wage laborers onto Mississippi and Alabama cotton plantations in the 1830s and 1840s",
+          "isCorrect": false,
+          "distractorType": "Geographic & Labor Mismatch (Immigrants Settled Primarily in the North/Midwest)",
+          "explanation": "Incorrect. Antebellum Irish and German immigrants overwhelmingly settled in northern cities and midwestern farms, avoiding the slave-labor plantation economy of the Deep South."
+        },
+        {
+          "id": "D",
+          "text": "The voluntary emancipation of most enslaved laborers in Virginia and Maryland as tobacco planters shifted to mechanized wheat harvesting",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion (Upper South Sold Surplus Enslaved Workers Rather Than Freeing Them)",
+          "explanation": "Incorrect. Rather than freeing their enslaved workforce when shifting from tobacco to wheat, Upper South slaveholders profited enormously by selling enslaved men, women, and children into the Deep South's domestic slave trade."
+        }
+      ],
+      "keyTakeaway": "After Congress banned the international slave trade in 1808, 'King Cotton' fueled the 'Second Middle Passage'—the massive forced migration of enslaved people from the Upper South to the Deep South.",
+      "testTip": "Always distinguish the Upper South (exporting enslaved people via the domestic trade) from the Deep South/Black Belt (importing enslaved labor for cotton production)."
+    },
+    {
+      "id": "q_u4_62",
+      "unit": 4,
+      "topic": "4.8",
+      "topicTitle": "The Old South, King Cotton, and Enslaved Resistance",
+      "skill": "Contextualization",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Although roughly three-quarters of white Southern families owned no enslaved people by 1860, non-slaveholding yeoman farmers largely supported the slaveholding planter aristocracy because",
+      "options": [
+        {
+          "id": "A",
+          "text": "southern state governments guaranteed every landless white family a forty-acre homestead and an annual cash subsidy from cotton export taxes",
+          "isCorrect": false,
+          "distractorType": "Factual & Constitutional Error (No Export Taxes or State Homestead Subsidies)",
+          "explanation": "Incorrect. The U.S. Constitution explicitly prohibits taxes on exports, and southern planter-dominated legislatures generally resisted welfare subsidies or public spending."
+        },
+        {
+          "id": "B",
+          "text": "white supremacy, kinship ties, and aspirations to upward mobility united white Southerners across class lines against enslaved people",
+          "isCorrect": true,
+          "explanation": "Correct. Even non-slaveholding yeomen defended the slave system because racial hierarchy ensured they were not at the bottom of society, many aspired to buy an enslaved person someday, and they relied on local planters for credit, cotton gins, and kinship networks."
+        },
+        {
+          "id": "C",
+          "text": "yeoman farmers depended directly on planter-owned textile mills in Georgia and South Carolina for full-time industrial factory employment",
+          "isCorrect": false,
+          "distractorType": "Chronological & Economic Mismatch (Southern Mill Boom Occurred in the New South Era)",
+          "explanation": "Incorrect. Large-scale textile industrialization in the Piedmont South took off in the post-Reconstruction 'New South' era (1880s–1900s), whereas antebellum yeomen were predominantly subsistence and small-scale farmers."
+        },
+        {
+          "id": "D",
+          "text": "the U.S. Constitution prohibited non-slaveholders from voting in state legislative elections throughout the antebellum South",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion (White Male Suffrage Expanded in the Antebellum South)",
+          "explanation": "Incorrect. During the Jacksonian era, most southern states expanded universal white male suffrage, empowering non-slaveholding white voters—who nonetheless overwhelmingly voted to preserve slavery."
+        }
+      ],
+      "keyTakeaway": "Racial solidarity ('herrenvolk democracy'), kinship ties, and aspirations to slaveownership bound non-slaveholding white yeomen to the planter elite.",
+      "testTip": "When explaining why poor white Southerners fought to preserve slavery, emphasize three pillars: white supremacy (racial status), economic aspiration (hoping to acquire enslaved people), and local interdependence (credit/gins)."
+    },
+    {
+      "id": "q_u4_63",
+      "unit": 4,
+      "topic": "4.8",
+      "topicTitle": "The Old South, King Cotton, and Enslaved Resistance",
+      "skill": "Continuity and Change",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_12",
+      "stem": "The ideological shift reflected in the 1837–1854 Southern defense of slavery departed most sharply from the earlier views of Revolutionary-era Virginia planters such as Thomas Jefferson by",
+      "options": [
+        {
+          "id": "A",
+          "text": "endorsing gradual emancipation paired with federal compensation to slaveholders",
+          "isCorrect": false,
+          "distractorType": "Policy Inversion (1830s–1850s Theorists Rejected Emancipation)",
+          "explanation": "Incorrect. Later proslavery theorists like John C. Calhoun and George Fitzhugh rejected emancipation altogether, whereas some Revolutionary-era figures had entertained gradual emancipation or colonization."
+        },
+        {
+          "id": "B",
+          "text": "acknowledging that slavery violated natural rights while claiming immediate abolition would threaten social stability",
+          "isCorrect": false,
+          "distractorType": "Chronological Inversion (Describes Jefferson's 'Necessary Evil' Position)",
+          "explanation": "Incorrect. Acknowledging slavery as a moral evil while fearing immediate emancipation ('holding the wolf by the ear') was Thomas Jefferson's Revolutionary-era position—precisely what Calhoun rejected in 1837."
+        },
+        {
+          "id": "C",
+          "text": "rejecting the 'necessary evil' apology and asserting that slavery was a 'positive good' beneficial to both races",
+          "isCorrect": true,
+          "explanation": "Correct. Whereas Jefferson and many early republic planters described slavery as a regrettable 'necessary evil' inherited from British rule, John C. Calhoun (1837) and later proslavery writers championed slavery as a 'positive good' rooted in racial hierarchy, biblical sanction, and classical civilization."
+        },
+        {
+          "id": "D",
+          "text": "arguing that Congress possessed full constitutional authority to ban slavery in all western territories",
+          "isCorrect": false,
+          "distractorType": "Constitutional Inversion (Calhoun Denied Congressional Power Over Territorial Slavery)",
+          "explanation": "Incorrect. John C. Calhoun argued the exact opposite: that territories were the common property of all states and Congress had no constitutional power to exclude slavery from them."
+        }
+      ],
+      "keyTakeaway": "Between the 1780s and the 1830s, Southern ideology shifted from apologizing for slavery as a 'necessary evil' (Jefferson) to defending it aggressively as a 'positive good' (Calhoun).",
+      "testTip": "This 'necessary evil' to 'positive good' shift is one of the highest-yield continuity-and-change concepts in APUSH Unit 4."
+    },
+    {
+      "id": "q_u4_64",
+      "unit": 4,
+      "topic": "4.8",
+      "topicTitle": "The Old South, King Cotton, and Enslaved Resistance",
+      "skill": "Argumentation",
+      "difficulty": "Hard",
+      "stimulusId": "stim_u4_12",
+      "stem": "In comparing Southern plantation slavery favorably against Northern 'wage slavery,' proslavery theorists such as George Fitzhugh argued that",
+      "options": [
+        {
+          "id": "A",
+          "text": "northern factory owners provided enslaved-like lifetime medical care and old-age pensions to immigrant textile workers in Lowell",
+          "isCorrect": false,
+          "distractorType": "Argument Inversion (Fitzhugh Claimed Northern Owners Abandoned Workers)",
+          "explanation": "Incorrect. Proslavery theorists argued the exact opposite—that northern industrialists discarded sick or elderly wage workers without care once they ceased to be profitable."
+        },
+        {
+          "id": "B",
+          "text": "industrial capitalism in the North generated far greater racial equality and higher living standards for free Black citizens than southern society",
+          "isCorrect": false,
+          "distractorType": "Ideological Inversion (Proslavery Writers Portrayed Northern Free Black Life as Miserable)",
+          "explanation": "Incorrect. Proslavery writers pointed to northern segregation, poverty, and anti-Black riots to claim that free Black Americans fared worse in the North than under southern paternalism."
+        },
+        {
+          "id": "C",
+          "text": "the southern economy should immediately abandon cotton agriculture and construct state-owned steel mills to compete directly with Britain",
+          "isCorrect": false,
+          "distractorType": "Economic Mismatch (Fitzhugh Defended Agrarian Paternalism Over Industrialism)",
+          "explanation": "Incorrect. Fitzhugh's Sociology for the South (1854) attacked industrial laissez-faire capitalism and celebrated agrarian slave society rather than calling for southern steel mills."
+        },
+        {
+          "id": "D",
+          "text": "southern slavery guaranteed lifelong food, shelter, and care, whereas northern capitalism exploited and discarded free workers",
+          "isCorrect": true,
+          "explanation": "Correct. Using the paternalistic 'positive good' argument, George Fitzhugh and John C. Calhoun contended that enslaved people enjoyed cradle-to-grave security, whereas northern 'wage slaves' were ruthlessly exploited by factory owners and left to starve during depressions."
+        }
+      ],
+      "keyTakeaway": "Proslavery writers like George Fitzhugh countered northern abolitionism by attacking 'wage slavery' in northern factories and claiming southern slavery offered paternalistic cradle-to-grave security.",
+      "testTip": "Recognize the term 'paternalism' in Unit 4: planters portrayed themselves as benevolent caretakers of a childlike workforce, masking the daily violence and family separations of slavery."
+    },
+    {
+      "id": "q_u4_65",
+      "unit": 4,
+      "topic": "4.8",
+      "topicTitle": "The Old South, King Cotton, and Enslaved Resistance",
+      "skill": "Comparison",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following enslaved conspiracies or rebellions occurred in 1822 in Charleston, South Carolina, when a free Black carpenter allegedly planned to seize local arsenals and escape to Haiti?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Denmark Vesey's conspiracy",
+          "isCorrect": true,
+          "explanation": "Correct. In 1822, Denmark Vesey—a literate, free Black carpenter in Charleston who had purchased his freedom—was accused of organizing an armed insurrection to seize arsenals and sail to Haiti; Vesey and 34 others were executed."
+        },
+        {
+          "id": "B",
+          "text": "Gabriel Prosser's 1800 conspiracy near Richmond, Virginia, which was disrupted by severe rainstorms and betrayal",
+          "isCorrect": false,
+          "distractorType": "Chronological & Geographic Mismatch (Virginia, 1800)",
+          "explanation": "Incorrect. Gabriel Prosser (an enslaved blacksmith) planned a revolt near Richmond, Virginia in 1800—twenty-two years before 1822—before heavy rain and informants foiled the plot."
+        },
+        {
+          "id": "C",
+          "text": "The 1739 Stono Rebellion near Charleston, in which enslaved Africans marched toward Spanish Florida",
+          "isCorrect": false,
+          "distractorType": "Chronological Displacement (Period 2 Colonial Era, 1739)",
+          "explanation": "Incorrect. The Stono Rebellion occurred in colonial South Carolina in 1739, when enslaved Africans sought refuge in Spanish Florida, long before Haitian independence."
+        },
+        {
+          "id": "D",
+          "text": "Nat Turner's 1831 insurrection in Southampton County, Virginia, which killed over fifty white residents",
+          "isCorrect": false,
+          "distractorType": "Chronological & Geographic Mismatch (Virginia, 1831)",
+          "explanation": "Incorrect. Nat Turner's Rebellion occurred in 1831 in Southampton County, Virginia, not in 1822 in Charleston, South Carolina."
+        }
+      ],
+      "keyTakeaway": "Denmark Vesey's 1822 conspiracy in Charleston—alongside Gabriel Prosser's 1800 plot and Nat Turner's 1831 revolt—demonstrated persistent armed resistance and heightened southern fears of Haitian-inspired insurrection.",
+      "testTip": "Keep the three major nineteenth-century southern plots straight by date and place: Gabriel Prosser (1800, Richmond VA), Denmark Vesey (1822, Charleston SC), Nat Turner (1831, Southampton County VA)."
+    },
+    {
+      "id": "q_u4_66",
+      "unit": 4,
+      "topic": "4.8",
+      "topicTitle": "The Old South, King Cotton, and Enslaved Resistance",
+      "skill": "Developments and Processes",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "Which of the following constituted common forms of day-to-day covert resistance by enslaved African Americans in the antebellum South?<br><br>I. Slowing the pace of fieldwork, feigning illness, and breaking agricultural tools.<br>II. Preserving distinct Afro-Christian spirituals and cultural traditions in the slave quarters.<br>III. Organizing legally recognized labor unions to negotiate collective bargaining contracts with planters.<br>IV. Establishing clandestine literacy networks despite state laws prohibiting enslaved education.",
+      "options": [
+        {
+          "id": "A",
+          "text": "I only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection",
+          "explanation": "Incorrect. Work slowdowns and tool-breaking (I) were classic forms of covert resistance, but Statements II and IV were also vital ways enslaved people resisted dehumanization."
+        },
+        {
+          "id": "B",
+          "text": "I, II, and IV only",
+          "isCorrect": true,
+          "explanation": "Correct. Because armed revolts faced overwhelming white militia power, enslaved people resisted daily through work slowdowns and tool sabotage (I), preserving Afro-Christian spirituals and kinship culture (II), and secretly learning to read and write (IV)."
+        },
+        {
+          "id": "C",
+          "text": "I and II only",
+          "isCorrect": false,
+          "distractorType": "Incomplete Selection",
+          "explanation": "Incorrect. Statements I and II are both true, but Statement IV is also accurate: enslaved people risked severe punishment to learn literacy in secret."
+        },
+        {
+          "id": "D",
+          "text": "II, III, and IV only",
+          "isCorrect": false,
+          "distractorType": "Legal & Historical Impossibility (Enslaved People Had No Legal Union Rights)",
+          "explanation": "Incorrect. Statement III is false: enslaved people were legally defined as chattel property without civil rights and could not form legally recognized labor unions or sign collective bargaining contracts."
+        }
+      ],
+      "keyTakeaway": "Day-to-day covert resistance—work slowdowns, broken tools, secret literacy, and autonomous cultural/religious life—was far more common than open armed rebellion.",
+      "testTip": "APUSH questions frequently contrast rare overt rebellions (Nat Turner) with pervasive covert resistance (slowdowns, feigned illness, spirituals, and temporary running away)."
+    },
+    {
+      "id": "q_u4_67",
+      "unit": 4,
+      "topic": "4.8",
+      "topicTitle": "The Old South, King Cotton, and Enslaved Resistance",
+      "skill": "Causation",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "How did Black Christianity and spirituals function within enslaved communities across the antebellum South?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They led planters to abolish overseers and grant Sundays off by federal statute",
+          "isCorrect": false,
+          "distractorType": "Factual & Constitutional Error (No Federal Statute Abolished Overseers)",
+          "explanation": "Incorrect. No federal statute ever abolished plantation overseers or regulated plantation labor schedules in the antebellum South."
+        },
+        {
+          "id": "B",
+          "text": "They strictly reinforced proslavery sermons by forbidding any hope of earthly deliverance",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion (Enslaved Spirituals Emphasized Deliverance)",
+          "explanation": "Incorrect. While white planters sponsored sermons stressing obedience ('servants, obey your masters'), enslaved worshippers in secret 'hush harbors' emphasized the Exodus story of Moses leading enslaved Israelites to freedom."
+        },
+        {
+          "id": "C",
+          "text": "They blended African and Protestant traditions to foster solidarity, dignity, and coded hopes of liberation",
+          "isCorrect": true,
+          "explanation": "Correct. Combining West African call-and-response rhythms with Protestant biblical imagery (especially Moses and the Exodus), Black Christianity and spirituals sustained community solidarity, human dignity, and sometimes coded escape messages."
+        },
+        {
+          "id": "D",
+          "text": "They were practiced exclusively inside white-controlled urban Episcopal churches under the direct supervision of state militias",
+          "isCorrect": false,
+          "distractorType": "Factual Inversion (Enslaved Worship Flourished in Secret 'Hush Harbors')",
+          "explanation": "Incorrect. Enslaved people practiced autonomous worship in secret woodland 'hush harbors' and slave-quarter praise houses, away from white surveillance."
+        }
+      ],
+      "keyTakeaway": "Afro-Christian spirituals and secret 'hush harbor' worship blended African and Protestant traditions to sustain enslaved solidarity and keep alive hopes of liberation.",
+      "testTip": "Remember the key cultural synthesis: planters used Christianity to preach obedience, but enslaved people reinterpreted the Bible—especially the Book of Exodus—as a promise of deliverance."
+    },
+    {
+      "id": "q_u4_68",
+      "unit": 4,
+      "topic": "4.8",
+      "topicTitle": "The Old South, King Cotton, and Enslaved Resistance",
+      "skill": "Contextualization",
+      "difficulty": "Hard",
+      "stimulusId": null,
+      "stem": "The Underground Railroad operated during the antebellum era primarily as",
+      "options": [
+        {
+          "id": "A",
+          "text": "a federally chartered steam locomotive network subsidized by Congress to transport freedpeople to Kansas",
+          "isCorrect": false,
+          "distractorType": "Literal Misinterpretation & Chronological Error",
+          "explanation": "Incorrect. The Underground Railroad was neither a literal railroad nor federally subsidized; in fact, federal laws like the Fugitive Slave Acts of 1793 and 1850 penalized those who assisted runaways."
+        },
+        {
+          "id": "B",
+          "text": "a formal military alliance between British Canada and the New England states to invade Virginia",
+          "isCorrect": false,
+          "distractorType": "Factual Fabrication (No Canadian-New England Invasion Alliance)",
+          "explanation": "Incorrect. While British Canada abolished slavery in 1833–1834 and became a haven for fugitives, Britain and New England never formed a military alliance to invade Virginia."
+        },
+        {
+          "id": "C",
+          "text": "an overland wagon route funded by the American Colonization Society to escort enslaved people from New Orleans to Liberia",
+          "isCorrect": false,
+          "distractorType": "Organization & Destination Mismatch (ACS Sent Free Blacks by Ship to Liberia)",
+          "explanation": "Incorrect. The American Colonization Society transported free or manumitted Black Americans by ship to Liberia, whereas the Underground Railroad helped self-emancipating fugitives reach free northern states and Canada."
+        },
+        {
+          "id": "D",
+          "text": "an informal network of Black and white abolitionists guiding fugitive enslaved people to free states and Canada",
+          "isCorrect": true,
+          "explanation": "Correct. Using railroad terminology ('conductors' like Harriet Tubman, 'stations' or safe houses), free Black communities, Quakers, and abolitionists operated an informal, clandestine network aiding self-emancipating fugitives escaping the South."
+        }
+      ],
+      "keyTakeaway": "The Underground Railroad was an informal, clandestine network of free Black activists, Quakers, and abolitionists—most famously Harriet Tubman—who aided fugitive enslaved people fleeing to the North and Canada.",
+      "testTip": "Note that after the harsh Fugitive Slave Act of 1850, even northern states were no longer safe, pushing Underground Railroad routes all the way across the border into British Canada."
     }
   ]
 };
