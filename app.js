@@ -84,6 +84,7 @@
   let currentGoogleUser = null;
   let cloudStudentsCache = {}; // uid -> { uid, displayName, email, photoURL, updatedAt, stats }
   let selectedParentStudentId = "local";
+  let cloudSyncError = null;
 
   // ==================== INITIALIZATION ====================
   document.addEventListener("DOMContentLoaded", () => {
@@ -167,7 +168,7 @@
     if (viewName === "dashboard" || viewName === "mastery") {
       refreshDashboardAndMastery();
     } else if (viewName === "parent") {
-      renderParentTrackerView();
+      fetchAllStudentsFromFirestore();
     }
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -2205,6 +2206,7 @@ Return ONLY valid JSON matching this structure:
     try {
       firestoreDb.collection("apush_students").onSnapshot(
         (snapshot) => {
+          cloudSyncError = null;
           snapshot.forEach((doc) => {
             cloudStudentsCache[doc.id] = doc.data();
           });
@@ -2215,7 +2217,12 @@ Return ONLY valid JSON matching this structure:
           }
         },
         (err) => {
+          cloudSyncError = err && err.message ? err.message : String(err);
           console.warn("Firestore listener warning:", err);
+          const parentSec = document.getElementById("view-parent");
+          if (parentSec && parentSec.classList.contains("active")) {
+            renderParentTrackerView();
+          }
         }
       );
     } catch (e) {}
@@ -2228,13 +2235,16 @@ Return ONLY valid JSON matching this structure:
     }
     try {
       const snap = await firestoreDb.collection("apush_students").get();
+      cloudSyncError = null;
       snap.forEach((doc) => {
         cloudStudentsCache[doc.id] = doc.data();
       });
       populateParentStudentDropdown();
       renderParentTrackerView();
     } catch (e) {
+      cloudSyncError = e && e.message ? e.message : String(e);
       console.warn("Error fetching students:", e);
+      renderParentTrackerView();
     }
   }
 
@@ -2287,7 +2297,11 @@ Return ONLY valid JSON matching this structure:
     const lastActiveTag = document.getElementById("parentLastActiveTag");
 
     if (syncBadge && syncDesc) {
-      if (isCloudProfile) {
+      if (cloudSyncError) {
+        syncBadge.textContent = "Firestore Permission Error";
+        syncBadge.classList.remove("live");
+        syncDesc.innerHTML = `<strong style="color:var(--danger-text);">Cloud read blocked (${cloudSyncError}).</strong> Your Firebase 30-day Test Mode rules likely expired! Go to Firebase Console &rarr; Firestore Database &rarr; Rules and set: <code>allow read, write: if request.auth != null;</code>`;
+      } else if (isCloudProfile) {
         syncBadge.textContent = "Live Cloud Sync";
         syncBadge.classList.add("live");
         syncDesc.innerHTML = `Streaming live progress for <strong>${activeProfileName}</strong> via Google Cloud Firestore.`;
